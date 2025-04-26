@@ -1,0 +1,802 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>กระดานธรรม 2</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<style type="text/css">
+#fadeinbox{position:absolute;width:300px;left:0;top:-400px;border:2px solid black;background-color:lightyellow;padding:4px;z-index:100;visibility:hidden;}
+</style>
+<script type="text/javascript">
+var displaymode="always"
+var enablefade="yes" 
+var autohidebox=["yes", 5] 
+var showonscroll="yes" 
+var IEfadelength=1 
+var Mozfadedegree=0.05 
+if (parseInt(displaymode)!=NaN)
+var random_num=Math.floor(Math.random()*displaymode)
+function displayfadeinbox(){
+var ie=document.all && !window.opera
+var dom=document.getElementById
+iebody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body
+objref=(dom)? document.getElementById("fadeinbox") : document.all.fadeinbox
+var scroll_top=(ie)? iebody.scrollTop : window.pageYOffset
+var docwidth=(ie)? iebody.clientWidth : window.innerWidth
+docheight=(ie)? iebody.clientHeight: window.innerHeight
+var objwidth=objref.offsetWidth
+objheight=objref.offsetHeight
+objref.style.left=docwidth/2-objwidth/2+"px"
+objref.style.top=scroll_top+docheight/2-objheight/2+"px"
+if (showonscroll=="yes")
+showonscrollvar=setInterval("staticfadebox()", 50)
+if (enablefade=="yes" && objref.filters){
+objref.filters[0].duration=IEfadelength
+objref.filters[0].Apply()
+objref.filters[0].Play()
+}
+objref.style.visibility="visible"
+if (objref.style.MozOpacity){
+if (enablefade=="yes")
+mozfadevar=setInterval("mozfadefx()", 90)
+else{
+objref.style.MozOpacity=1
+controlledhidebox()
+}}
+else
+controlledhidebox()
+}
+function mozfadefx(){
+if (parseFloat(objref.style.MozOpacity)<1)
+objref.style.MozOpacity=parseFloat(objref.style.MozOpacity)+Mozfadedegree
+else{
+clearInterval(mozfadevar)
+controlledhidebox()
+}}
+function staticfadebox(){
+var ie=document.all && !window.opera
+var scroll_top=(ie)? iebody.scrollTop : window.pageYOffset
+objref.style.top=scroll_top+docheight/2-objheight/2+"px"
+}
+function hidefadebox(){
+objref.style.visibility="hidden"
+if (typeof showonscrollvar!="undefined")
+clearInterval(showonscrollvar)
+}
+function controlledhidebox(){
+if (autohidebox[0]=="yes"){
+var delayvar=(enablefade=="yes" && objref.filters)? (autohidebox[1]+objref.filters[0].duration)*1000 : autohidebox[1]*1000
+setTimeout("hidefadebox()", delayvar)
+}}
+function initfunction(){
+setTimeout("displayfadeinbox()", 100)
+}
+function get_cookie(Name){
+var search=Name+"="
+var returnvalue=""
+if (document.cookie.length > 0){
+offset=document.cookie.indexOf(search)
+if (offset !=-1){
+offset+=search.length
+end=document.cookie.indexOf(";", offset)
+if (end==-1)
+end=document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}}
+return returnvalue;
+}
+if (displaymode=="oncepersession" && get_cookie("fadedin")=="" || displaymode=="always" || parseInt(displaymode)!=NaN && random_num==0){
+if (window.addEventListener)
+window.addEventListener("load", initfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initfunction)
+else if (document.getElementById)
+window.onload=initfunction
+document.cookie="fadedin=yes"
+}
+</script>
+<meta name="keywords" content="กระดานธรรม 2">
+<bgsound src="music2.mid" loop="1">
+<style type="text/css">
+#fadeinbox{position:absolute;width:300px;left:0;top:-400px;border:2px solid black;background-color:lightyellow;padding:4px;z-index:100;visibility:hidden;}
+</style>
+<script src="rightmenu.js" type=text/javascript>
+</script>
+<style>
+<!--
+#men{BORDER-RIGHT:2px outset;BORDER-TOP:2px outset;Z-INDEX:1;LEFT:0px;VISIBILITY:hidden;BORDER-LEFT:2px outset;BORDER-BOTTOM:2px outset;POSITION:absolute;TOP:0px
+}
+#men A{PADDING-RIGHT:1px;PADDING-LEFT:1px;PADDING-BOTTOM:4px;MARGIN:1px 1px 1px 16px;FONT:12px sans-serif;WIDTH:100%;PADDING-TOP:3px;HEIGHT:100%;TEXT-DECORATION:none
+}
+.ico{BORDER-RIGHT:medium none;BORDER-TOP:medium none;FLOAT:left;BORDER-LEFT:medium none;BORDER-BOTTOM:medium none
+}
+//-->
+</style>
+<style type="text/css">
+#csstopmenu,#csstopmenu ul{padding:0;margin:0;list-style:none;}
+#csstopmenu li{float:left;position:relative;}
+#csstopmenu a{text-decoration:none;}
+.mainitems{border:1px solid black;border-left-width:0;background-color:E9C671;}
+.headerlinks a{margin:auto 8px;font-weight:bold;color:black;}
+.submenus{display:none;width:10em;position:absolute;top:1.2em;left:0;background-color:000044;border:1px solid black;}
+.submenus li{width:100%;}
+.submenus li a{display:block;width:100%;text-indent:3px;}
+html>body .submenus li a{width:auto;}
+.submenus li a:hover{background-color:yellow;color:black;}
+#csstopmenu li>ul{/* non IE browsers */
+top:auto;left:auto;}
+#csstopmenu li:hover ul,li.over ul{display:block;}
+html>body #clearmenu{height:3px;}
+</style>
+<script type="text/javascript">
+startMenu=function(){
+if (document.all&&document.getElementById){
+cssmenu=document.getElementById("csstopmenu");
+for (i=0; i<cssmenu.childNodes.length; i++){
+node=cssmenu.childNodes[i];
+if (node.nodeName=="LI"){
+node.onmouseover=function(){
+this.className+=" over";
+}
+node.onmouseout=function(){
+this.className=this.className.replace(" over", "")
+}}}}}
+if (window.attachEvent)
+window.attachEvent("onload", startMenu)
+else
+window.onload=startMenu;
+</script>
+<meta name="author" content="พนมพร">
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body link="#EED04F" vlink="#FFFFCC" alink="fuchsia" background="GoldenButterfly.jpg" style="font-family:Tahoma; font-style:normal; font-weight:normal; font-size:12pt; margin-left:3cm;" text="#EAC936">
+<div id=glow_text align="left">
+    <table border="0" width="80%">
+        <tr>
+            <td width="1119">
+                <h1 align=center style="margin-top:2mm; margin-bottom:0mm;"><font face="MS Sans Serif" color="blue"><span style="font-size:18pt;">&nbsp;&nbsp;&nbsp;ปฏิจจสมุปบาท</span></font><span style="font-size:18pt;"><b><font face="MS Sans Serif" color="blue"> 
+                <script language=javascript>
+//----   Choice of variables   ----
+glow_color="gold"
+glow_min=2
+glow_max=5
+glow_speed=200
+//---------The description---------
+//----------------------------------
+function f_glow(){
+glow_size+=glow_const
+if (glow_size>glow_max || glow_size<glow_min) glow_const*=(-1)
+document.all.glow_text.style.filter="glow(color="+glow_color+", strength="+glow_size+")"
+}
+if(document.all){glow_const=1; glow_size=glow_min; document.all.glow_text.style.width="100%"; setInterval("f_glow()",glow_speed)}
+
+                    
+                </script></font></b><font color="blue">&nbsp;</font></span></h1>
+            </td>
+        </tr>
+    </table>
+</div>
+<div align="left">
+<table style="font-family:'MS Sans Serif'; margin-bottom:-0.5cm;" border="0" width="80%" height="48">
+    <tr align="center" valign="middle">
+        <td width="362" height="68" align="left" valign="middle">
+            <p align="left" style="margin-top:-6mm; margin-bottom:7mm;">&nbsp;
+            <ul id="csstopmenu">
+                <li class="mainitems" style="border-left-width: 1px">
+                <div class="headerlinks">
+                    <p style="margin-bottom:0mm;"><font face="Tahoma" color="#850947"><span style="font-size:10pt;">&nbsp;</span><b><span style="font-size:10pt;">รายการปรับปรุงใหม่&nbsp;</span></b><span style="font-size:10pt;">&gt;&gt;&nbsp;</span></font>
+                </div>
+                <ul class="submenus">
+                    <li><span style="font-size:10pt;"><a href="438.htm"><font face="Tahoma">สมาธิขั้นใดจำเป็นในการเจริญกรรมฐาน</font></a></span>
+                    <li><span style="font-size:10pt;"><a href="437.htm"><font face="Tahoma">ข้อควรพิจารณาอยู่เนืองๆ</font></a></span>
+                    <li><span style="font-size:10pt;"><a href="434.htm"><font face="Tahoma">สัญญาเวทยิตนิโรธ</font></a></span>
+                    <li><a href="795.htm"><span style="font-size:10pt;"><font face="Tahoma">สติต้องประกอบด้วยปัญญายิ่ง</font></span></a>
+                </ul>
+            </ul>
+        </td>
+        <td width="159" height="68" align="center" valign="top">
+            <p style="margin-top:0mm; margin-bottom:0mm;" align="center"><span style="font-size:12pt;"><b><font face="Tahoma">กระดานธรรม 
+            <a href="900.htm"><img src="number19_brown2.gif" width="28" height="36" border="0" align="absmiddle"></a></font></b></span></p>
+            <p style="line-height:0mm; margin-top:1mm; margin-bottom:1mm;" align="center"><span style="font-size:12pt;"><b><font face="Tahoma"><a href="900.htm"><img src="number19_brown1.gif" width="28" height="36" border="0" align="absmiddle"></a> 
+            &nbsp;&nbsp;<a href="902.htm"><img src="number19_brown3.gif" width="28" height="36" border="0" align="absmiddle"></a></font></b></span></p>
+        </td>
+        <td width="352" height="68" align="center" valign="middle">
+            <p style="margin-right:2mm; margin-left:2mm;" align="center">&nbsp;<form id="f1" name="f1" action="javascript:void()" onsubmit="if(this.t1.value!=null &amp;&amp; this.t1.value!='')
+parent.findString(this.t1.value);return false;">
+                <p align="right"><span style="letter-spacing:0;"><input type="text" id="t1" name="t1" value="" placeholder="พิมพ์ค้นหาในหน้านี้ ที่นี่.." size="20">
+<input type="submit" name="b1" value="Ent. หรือคลิก" style="font-family:Leelawadee;"></span>
+</form>
+
+<span style="letter-spacing:0;"><script>
+    var TRange=null;
+
+function findString (str) {
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (window.find) {
+
+  // CODE FOR BROWSERS THAT SUPPORT window.find
+
+  strFound=self.find(str);
+  if (!strFound) {
+   strFound=self.find(str,0,1);
+   while (self.find(str,0,1)) continue;
+  }
+ }
+ else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // EXPLORER-SPECIFIC CODE
+
+  if (TRange!=null) {
+   TRange.collapse(false);
+   strFound=TRange.findText(str);
+   if (strFound) TRange.select();
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange();
+   strFound=TRange.findText(str);
+   if (strFound) TRange.select();
+  }
+ }
+ else if (navigator.appName=="Opera") {
+  alert ("Opera browsers not supported, sorry...")
+  return;
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+ return;
+}
+</script></span>&nbsp;        </td>
+    </tr>
+</table>
+<table border="3" width="81%" bordercolorlight="#000066" bordercolordark="black" style="font-family:'MS Sans Serif'; font-size:12pt; margin-top:3mm; margin-bottom:0mm;">
+    <tr height="50">
+        <td width="422" height="49" align="left">
+            <p style="margin-left:0cm;" align="left"><a href="719.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑.ธรรม 
+            หรือ ธรรมชาติ</font></span></a><span style="font-size:16pt;"><font face="Leelawadee"> 
+            </font></span></p>
+        </td>
+        <td width="445" height="49">
+            <p style="margin-left:0px;" align="left"><a href="601.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๖.ทำความเข้าในในพุทธศาสนากันก่อน</font></span></a><span style="font-size:16pt;"><font face="Leelawadee"> 
+            - พุทธทาส</font></span></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" align="left" height="46">
+            <p><a href="718.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒.มหาสติ</font></span></a></p>
+        </td>
+        <td width="445" height="17">
+            <p align="left"><a href="443.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๗.กฏธรรมชาติของชีวิต 
+            อันน่ารู้ยิ่ง</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" align="left">
+            <p><a href="710.htm"><span style="font-size:16pt;"><font face="Leelawadee">๓.ปฏิบัติอะไร 
+            จึงได้บุญกุศลสูงสุด</font></span></a></p>
+        </td>
+        <td width="445" height="19">
+            <p><a href="378.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๘.อุเบกขา 
+            แบบต่างๆ</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" align="left" valign="middle" height="46">
+            <p><a href="385.htm"><span style="font-size:16pt;"><font face="Leelawadee">๔.ฝัน 
+            &nbsp;มาวิเคราะห์ความฝันกันเถอะ</font></span></a></p>
+        </td>
+        <td width="445" height="15">
+            <p><a href="409.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๙.อัตตวาทุปาทาน 
+            &nbsp;หนึ่งในอุปาทาน ๔</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" align="left" height="49">
+            <p><a href="711.htm"><span style="font-size:16pt;"><font face="Leelawadee">๕.ตัณหาอะไรที่มีคุณ</font></span></a></p>
+        </td>
+        <td width="445" height="49">
+            <p><a href="789.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๐.มาอันเนื่องมาจาก 
+            นั่นไม่ใช่เรา เราไม่ใช่นั่น</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" align="left" height="46">
+            <p><a href="397.htm"><span style="font-size:16pt;"><font face="Leelawadee">๖.เวทนาภายในเป็นไฉน 
+            &nbsp;เวทนาภายนอกเป็นไฉน</font></span></a></p>
+        </td>
+        <td width="445" height="11">
+            <p><a href="760.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๑.กิเลสตัณหาอุปาทาน</font></span></a><span style="font-size:16pt;"><font face="Leelawadee"> 
+                แสดงวงจรความเนื่องสัมพันธ์กัน</font></span></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="422" height="46" align="left">
+            <p><a href="795.htm"><span style="font-size:16pt;"><font face="Leelawadee">๗.สติยังต้องประกอบด้วยปัญญายิ่ง</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p><a href="413.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๒.ธรรม 
+            เครื่องแก้ไขทุกข์ต่างๆ</font></span></a></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="422" height="46" align="left">
+            <p><a href="392.htm"><span style="font-size:16pt;"><font face="Leelawadee">๘.สังขารทั้งปวง 
+            เกิดแต่เหตุปัจจัย</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p><a href="420.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๓.สุญญตา 
+            หรือ ความว่าง</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" height="46" align="left">
+            <p><a href="376.htm"><span style="font-size:16pt;"><font face="Leelawadee">๙.จิตเห็นกาย 
+            เวทนา จิต ธรรม อย่างไร</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p><a href="419.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๔.อุปัฏฐาน 
+            หรือสติชัดอันให้โทษในวิปัสสนูปกิเลส</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" height="46" align="left">
+            <p><a href="367.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๐.สัมมาสมาธิ</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p><a href="426.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๕.วิหารธรรม 
+            เครื่องอยู่ของพระอริยเจ้า</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" height="46" align="left">
+            <p><a href="432.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๑.บุคคลาธิษฐาน 
+            และธรรมาธิษฐาน</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p align="left"><a href="791.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๖.เพ่งจิต</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" height="46" align="left">
+            <p><a href="437.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๒.ข้อควรพิจารณาอยู่เนืองๆ</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p><a href="438.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๗.สมาธิขั้นใด 
+            จำเป็นในการเจริญกรรมฐาน</font></span></a></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="422" height="46" align="left">
+            <p><a href="441.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๓.สังขารทั้งปวง</font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p><a href="434.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๘.สมาบัติ</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" height="47" align="left">
+            <p><a href="449.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๔.อินทรียสังวร</font></span></a><span style="font-size:16pt;"><font face="Leelawadee"> 
+            </font></span></p>
+        </td>
+        <td width="445" height="47">
+            <p><a href="781.htm"><span style="font-size:16pt;"><font face="Leelawadee">๒๙.นิพพิทา</font></span></a></p>
+        </td>
+    </tr>
+    <tr height="50">
+        <td width="422" height="46" align="left">
+            <p><a href="guestbook.htm"><span style="font-size:16pt;"><font face="Leelawadee">๑๕.สมุดเยี่ยม</font></span></a><span style="font-size:16pt;"><font face="Leelawadee"> 
+            &nbsp;&nbsp;&nbsp;</font></span><a href="guestbook.htm"><span style="font-size:16pt;"><font face="Leelawadee"><img src="bookAnimate.gif" width="32" height="32" border="0" align="absmiddle"></font></span></a></p>
+        </td>
+        <td width="445" height="42">
+            <p style="margin-left:0px;"><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 730, 450, 1, 1, 1, 1, 1)" target="_self" title="อธิบายศัพท์ในwebนี้"><span style="font-size:16pt;"><font face="Leelawadee">๓๐.ค้นหาคำศัพท์</font></span></a><span style="font-size:16pt;"><font face="Leelawadee"> 
+            &nbsp;&nbsp;</font></span><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 730, 450, 1, 1, 1, 1, 1)" target="_self"><span style="font-size:16pt;"><font face="Leelawadee"><img height=32 alt="อธิบายศัพท์ในwebนี้" src="Magnify0b.gif" width=32 align=absMiddle border="0"></font></span></a></p>
+        </td>
+    </tr>
+</table>
+</div>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><form method=GET action="http://www.google.com/search">
+    <table bgcolor="#FFFFFF" width="461" align="center" style="margin-top:5mm; margin-bottom:-0.2cm;" border="2" bordercolordark="#996600" bordercolorlight="#CC9900">
+        <tr>
+            <td width="128" height="53">
+                <p align="left"><span style="font-size:12pt;"><font face="Leelawadee"><a name="nn"></a></font></span><a href="http://www.google.com/"><span style="font-size:12pt;"><font face="Leelawadee"><img src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" width="128" height="53"></font></span></a></p>
+            </td>
+            <td width="315" height="53">
+                <p align="left"><span style="font-size:12pt;"><font face="Leelawadee"><input type=text name=q size="31" maxlength=255 value="" style="font-family:Tahoma; font-size:10pt;"> 
+                <input type=submit name=btnG value="ค้นหา" style="font-family:Tahoma; font-size:10pt;"><br></font><font color="#54678C" face="Leelawadee"><b><input type=radio name=sitesearch value=""> 
+                </b></font><b><font color="#54678C" face="Leelawadee">ทั่วโลก </font></b><font color="#54678C" face="Leelawadee"><b>&nbsp;<input type=radio name=sitesearch value="www.nkgen.com" checked></b>ค้นหาเฉพาะใน</font><b><font color="#54678C" face="Leelawadee">&quot;</font><font color="blue" face="Leelawadee">ปฏิจจสมุปบาท</font><font color="#54678C" face="Leelawadee">&quot;</font></b></span></p>
+            </td>
+        </tr>
+    </table>
+</form>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center">
+<font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p align="center" style="line-height:170%;"><u><font color="#339900" face="Leelawadee"><span style="font-size:16pt;"><input type=button value="กลับหน้าเดิม" onclick="history.go(-1)" style="font-family:'MS Sans Serif'; font-style:normal; font-weight:bold; font-size:12px; color:rgb(254,213,134); background-color:rgb(162,112,37); border-width:2px; border-color:rgb(128,64,0); border-style:solid;"></span></font></u></p>
+<form name="form1">
+    <p style="line-height:170%;" align="center"><b><a href="BLANK1.htm"><font face="Leelawadee"><span style="font-size:16pt;"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></span></font></a></b></p>
+    <p style="line-height:170%;" align="center"> <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/837879/t/1"></script>&nbsp;
+    <p style="line-height:170%;" align="center">&nbsp;</p>
+    <p style="line-height:170%;" align="center">&nbsp;</p>
+</form>
+<p align="left"><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;<font color="#D1A62E"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+</font></font></span><span style="font-size:10pt;"><font face="Leelawadee"><font color="#D1A62E"><a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></a>
+<a target="_blank" href="http://truehits.net/">Truehits.net</a>
+</noscript>
+<!-- END WEBSTAT CODE --> </font></font></span></p>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    &nbsp;<p align="center">&nbsp;</p>
+<div id="fadeinbox" style="filter:progid:DXImageTransform.Microsoft.RandomDissolve(duration=1) progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135) ; -moz-opacity:0">
+    <p style="line-height:100%; margin-top:2mm; margin-bottom:0;" align="center"><font face="Leelawadee" color="#A87B1C"><span style="font-size:16pt;">ยินดีต้อนรับสู่กระดานธรรม 
+    ๒</span></font><font face="Leelawadee"><span style="font-size:16pt;"> 
+    
+    </span></font><p style="line-height:100%; margin-top:4mm; margin-bottom:1mm;" align="center"><font face="Leelawadee" color="#A87B1C"><span style="font-size:16pt;">&nbsp;</span></font><a href="378.htm"><font face="Leelawadee" color="#A87B1C"><span style="font-size:16pt;">อุเบกขา 
+    แบบต่างๆ</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">
+</span></font></div>
+<div align="center">
+    <p><marquee id="alertit" style="position:absolute;left:0px;top:0;background-color:#FFFFE6" onmouseover="this.scrollAmount=0" onmouseout="this.scrollAmount=speed"></marquee><script type="text/javascript">
+var themsg='<span style="font:normal 20px MS Sans Serif;color:blue;"><a href="443.htm"><font color="blue">กฏธรรมชาติของชีวิต</font></a>&nbsp;<font color="#000099">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><a href="367.htm"><font color="blue">สัมมาสมาธิ</font></a>&nbsp;&nbsp;&nbsp;&nbsp;</font><a href="426.htm"><font color="blue">วิหารธรรม</font></a>'
+var speed=2 
+var loops=1 
+function populatescroller(){
+var windowwidth=iecompattest().clientWidth
+document.getElementById("alertit").innerHTML=themsg
+document.getElementById("alertit").style.width=windowwidth
+document.getElementById("alertit").scrollAmount=speed
+document.getElementById("alertit").scrollDelay=20
+document.getElementById("alertit").loop=loops
+document.getElementById("alertit").onfinish=function(){
+document.getElementById("alertit").style.visibility="hidden"
+}}
+function iecompattest(){
+return (document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+if (document.all && document.getElementById){
+window.onload=populatescroller
+window.onresize=populatescroller
+}
+    </script>&nbsp;
+</div>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรปฏิจจสมุปบาท</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรโดยขยายความ</font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee">ค้นหาคำศัพท์</font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</a>. 
+        </font></li>
+        <li><span style="font-size:12pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">ภาพกระบวนธรรมขันธ์ 
+        ๕</a></font></span></li>
+        <li><font face="Leelawadee" color="#990000">ใช้ Ctrl+F ค้นหาในหน้านี้</font></li>
+        <li><font face="Leelawadee" color="#990000">ใช้&nbsp;Ctrl+C = Copy</font></li>
+</div>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรปฏิจจสมุปบาท</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรโดยขยายความ</font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee">ค้นหาคำศัพท์</font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</a>. 
+        </font></li>
+        <li><span style="font-size:12pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">ภาพกระบวนธรรมขันธ์ 
+        ๕</a></font></span></li>
+        <li><font face="Leelawadee" color="#990000">ใช้ <b>Ctrl+F</b> ค้นหาในหน้านี้</font></li>
+        <li><font face="Leelawadee" color="#990000">ใช้&nbsp;<b>Ctrl+C</b> = Copy</font></li>
+</div>
+</body>
+
+</html>

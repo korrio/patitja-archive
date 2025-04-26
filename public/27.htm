@@ -1,0 +1,788 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>อทุกขมสุข หรืออุเบกขาเวทนา และอวิชชานุสัย</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<meta name="description" content="แสดงอุเบกขาเวทนา ที่เข้าใจผิดกันว่า ไม่มีทุกข์โทษภัย">
+<meta name="keywords" content="อทุกขมสุข,อุเบกขาเวทนา,อุเบกขา,เวทนา">
+<meta name="author" content="พนมพร">
+<script language="JavaScript" type="text/javascript">
+/*
+Animate your text - Script
+Visit http://rainbow.arch.scriptmania.com/scripts/
+ for this script and many more
+*/
+        var ie4 = false;
+        if(document.all) {
+                ie4 = true; 
+        }       
+        function setContent(name, value) {
+                var d;  
+                if (ie4) { 
+                        d = document.all[name];
+                } else {
+                        d = document.getElementById(name);
+                }       
+                d.innerHTML = value;    
+        }       
+
+	function getContent(name) {
+		var d;
+                if (ie4) {
+                        d = document.all[name];
+                } else {
+                        d = document.getElementById(name);
+                }
+                return d.innerHTML;
+	}
+
+        function setColor(name, value) {
+                var d;  
+                if (ie4) { 
+                        d = document.all[name];
+                } else {
+                        d = document.getElementById(name);
+                }
+                d.style.color = value;  
+        }
+
+	function getColor(name) {
+                var d;
+                if (ie4) {
+                        d = document.all[name];
+                } else {
+                        d = document.getElementById(name);
+                }
+                return d.style.color;
+        }
+
+        function animate(name, col) {
+		var value = getContent(name);
+		if (value.indexOf('<span') >= 0) { return; }
+		var length = 0;
+                var str = '';
+		var ch;
+		var token = '';
+		var htmltag = false;	
+                for (i = 0; i < value.length; i++) {
+			ch = value.substring(i, i+1);
+			if (i < value.length - 1) { nextch = value.substring(i+1, i+2); } else { nextch = ' '; }
+			token += ch;
+			if (ch == '<' && '/aAbBpPhHiIoOuUlLtT'.indexOf(nextch) >= 0) { htmltag = true; }
+			if (ch == '>' && htmltag) { htmltag = false; }
+			if (!htmltag && ch.charCodeAt(0) > 30 && ch != ' ' && ch != '\n') {		
+                        	str += '<span id="' + name + '_' + length + '">' + token + '</span>';
+				token = '';
+				length++;
+			}
+                }
+                setContent(name, str);
+                command = 'animateloop(\'' + name + '\', ' + length + ', 0, 1, \'' + col + '\')';
+                setTimeout(command , 100);
+        }
+
+        function animateloop(name, length, ind, delta, col) {
+		var next = ind + delta;
+		if (next >= length) { delta = delta * -1; next = ind + delta; }
+		if (next < 0) { delta = delta * -1; next = ind + delta; }
+                setColor(name + '_' + ind, getColor(name + '_' + next));
+                setColor(name + '_' + next, col);
+                command = 'animateloop(\'' + name + '\', ' + length + ', ' + next + ', ' + delta + ', \'' + col + '\')';
+                setTimeout(command , 100);
+        }
+</script>
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="Beige.jpeg" style="font-family:Tahoma; font-weight:normal; font-size:12pt;">
+<p align="center" style="margin-bottom:0mm;"><a href="BLANK1.htm" title="  กลับสารบัญ  "><font face="Leelawadee"><span style="font-size:16pt;"><img src="logo3.gif" width="77" height="88" border="0"></span></font></a></p>
+<table align="center" border="0" width="100%" style="font-family:'MS Sans Serif'; margin-top:1mm;">
+    <tr>
+        <td width="200">
+            <p align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><a href="5011.htm"><font face="Leelawadee" color="#9966FF"><span style="font-size:10pt;"><img src="home.gif" width="16" height="17" border="0" align="absmiddle"></span></font><span style="font-size:10pt;"><font face="Leelawadee" color="#9966FF"> 
+            เวทนา</font></span></a></p>
+        </td>
+        <td width="822">
+            <p align="center"><font face="Leelawadee" color="blue"><span style="font-size:18pt;">อทุกขมสุข 
+            หรืออุเบกขาเวทนา และอวิชชานุสัย <script language="JavaScript">
+animate('animate', '#ff8000');
+            </script></span></font></td>
+        <td width="193" align="right" valign="bottom">
+            <p align="right"><font face="Leelawadee" color="#9999FF"><span style="font-size:12pt;"><img src="Mouse.gif" align="absmiddle" width="32" height="32" border="0"></span></font><font face="Leelawadee" color="#9966FF"><span style="font-size:12pt;">คลิกขวาเมนู</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0; margin-left:0px;" align="center"><font color="#000099" face="Leelawadee"><span style="font-size:18pt;">อทุกขมสุขเวทนา 
+&nbsp;เป็นสุขเพราะรู้ชอบ </span></font><font color="blue" face="Leelawadee"><span style="font-size:18pt;">&nbsp;</span></font><font color="#660000" face="Leelawadee"><span style="font-size:18pt;">เป็นทุกข์เพราะรู้ผิด.</span></font></p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0; margin-left:0px;" align=center><font color="#999999" face="Leelawadee"><span style="font-size:12pt;">(</span></font><a href="422.htm#511" target="_blank"><font color="#999999" face="Leelawadee"><span style="font-size:12pt;">จูฬเวทัลลสูตร</span></font></a><font color="#999999" face="Leelawadee"><span style="font-size:12pt;">) 
+</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#000099"><b>อทุกขมสุขเวทนา 
+</b></font><font face="Leelawadee">หรือ </font><font face="Leelawadee" color="#000099"><b>อุเบกขาเวทนา</b></font><font face="Leelawadee"> 
+ถ้าพิจารณาจากชื่อหรือเข้าใจโดยผิวเผินแล้ว ดูน่าจักเป็นของดีที่น่าปฏิบัติหรือน่าให้เกิดให้เป็น 
+&nbsp;ด้วยมักพาลกันไปเข้าใจผิดเป็น</font><a href="http://" title="  เป็นสำคัญ  "><font face="Leelawadee" color="#000033">นัย</font></a><font face="Leelawadee">ๆไปว่า 
+หมายถึง เฉยๆที่หมายถึงเป็นกลางดัง<a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">อุเบกขา</a>ในโพชฌงค์องค์แห่งการปฏิบัติเพื่อการดับทุกข์หรือตรัสรู้หรืออุเบกขาในพรหมวิหารไปเสีย 
+&nbsp;&nbsp;&nbsp;แต่ในความเป็นจริงแล้วมีความหมายที่ไม่เหมือนกัน &nbsp;และอุเบกขาเวทนานี้นี่เองเป็น</font><font face="Leelawadee" color="#000099"><a href="javascript:na_open_window('win', 'ex3.htm#เวทนา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">เวทนา</a></font><font face="Leelawadee">ชนิดที่เป็น</font><font face="Leelawadee" color="#000099"><b>เหตุ</b></font><font face="Leelawadee">ทําให้เกิดความทุกข์(ทุกข์อุปาทานอันเร่าร้อน)</font><font face="Leelawadee" color="#000099"><b><i>เกิดขึ้นตามมา</i></b></font><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="#000099"><b>ได้อย่างมากถี่บ่อยเป็นที่สุด</b></font><font face="Leelawadee"> 
+&nbsp;&nbsp;และยังเป็นเหตุปัจจัยให้เกิด</font><font face="Leelawadee" color="#000099"><a href="javascript:na_open_window('win', 'ex3.htm#อวิชชานุสัย', 0, 0, 790, 230, 1, 0, 0, 1, 1)">อวิชชานุสัย</a>(คือสภาพที่นอนเนื่องในสันดาน 
+เพราะความไม่รู้ตามความเป็นจริง) &nbsp;</font><font face="Leelawadee">&nbsp;</font><font face="Leelawadee" color="#000099"><b>อุเบกขาเวทนา</b></font><font face="Leelawadee">จึงเป็นสิ่งที่ควรศึกษาทำความรู้จักทำความเข้าใจเป็นอย่างยิ่ง&nbsp;&nbsp;&nbsp;เพราะแม้ในเบื้องต้นแลดูไมู่เป็นทุกข์โทษภัย 
+แต่กลับเป็น<b><a href="javascript:na_open_window('win', 'ex3.htm#เหตุ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">เหตุ</a></b>ก่อให้เกิดความทุกข์อันเร่าร้อนเผาลนในที่สุด</font></span><font face="Leelawadee"><span style="font-size:16pt; word-spacing:0; letter-spacing:0;">ได้อย่างถี่บ่อยเป็นที่สุด</span></font><span style="font-size:16pt;"><font face="Leelawadee"><b>โดยไม่รู้ตัว 
+</b>ก็ด้วยเพราะความไม่รู้หรือ</font></span><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; word-spacing:0; letter-spacing:0;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; word-spacing:0; letter-spacing:0;">นั่นเอง</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:0;" align="center"><span style="font-size:16pt;"><font face="Leelawadee">มีพุทธพจน์ที่ตรัสแสดง</font><font face="Leelawadee" color="#000099">เวทนา 
+</font></span><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;ไว้ใน 
+</span></font><span style="font-size:16pt;"><b><font face="Leelawadee" color="#000099">ฉฉักกสูตร 
+</font></b></span><font face="Leelawadee"><span style="font-size:16pt;">ดังนี้</span></font></p>
+<p align="left" style="line-height:2.2; margin-top:1mm; margin-bottom:0;"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#000099">&nbsp;&quot;ดูกรภิกษุทั้งหลาย 
+&nbsp;บุคคลอาศัย</font><b><font face="Leelawadee" color="#000099">จักษุ</font></b><font face="Leelawadee" color="#666666">(ตา)</font><font face="Leelawadee" color="#000099">และ<b>รูป</b></font><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="#666666">(ย่อม<b>ต้อง</b>)</font><font face="Leelawadee" color="#000099">เกิด<b>จักษุวิญญาณ</b> 
+&nbsp;ความประจวบของธรรมทั้ง ๓ เป็น<a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ผัสสะ</a></font><font face="Leelawadee" color="#666666">(การกระทบสัมผัสขององค์ชีวิต)</font><font face="Leelawadee" color="#000099">, 
+&nbsp;เพราะผัสสะเป็นปัจจัย&nbsp;ย่อม</font><font face="Leelawadee" color="#666666">(<b>ต้อง</b>)</font><font face="Leelawadee" color="#000099">เกิดความเสวย</font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)"><font face="Leelawadee" color="#000099">อารมณ์</font></a><font face="Leelawadee" color="#666666">(เวทนา)</font><font face="Leelawadee"> 
+&nbsp;</font><font face="Leelawadee" color="#000099">เป็นสุขบ้าง</font><font face="Leelawadee" color="#666666">(สุขเวทนา)</font><font face="Leelawadee" color="#000099">, 
+&nbsp;เป็นทุกข์บ้าง</font><font face="Leelawadee" color="#666666">(ทุกขเวทนา),</font><font face="Leelawadee"> 
+&nbsp;</font><font face="Leelawadee" color="#000099">มิใช่ทุกข์มิใช่สุขบ้าง</font></span><font face="Leelawadee" color="#666666"><span style="font-size:16pt; letter-spacing:0;">(</span><span style="font-size:16pt;">อทุกขมสุขหรืออุเบกขาเวทนา)</span></font></p>
+<p style="line-height:2.2; margin-top:0mm; margin-bottom:0;" align="left"><font face="Leelawadee" color="#666666"><span style="font-size:16pt;">[ที่หมายความสำคัญยิ่งว่า 
+&nbsp;เมื่อมีการ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt;"><b><font face="Leelawadee" color="#666666">ผัสสะ</font></b></span></a><font face="Leelawadee" color="#666666"><span style="font-size:16pt;">กันแล้ว 
+ย่อมต้องเกิด</span></font><a href="javascript:na_open_window('win', 'ex3.htm#เวทนา', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt;"><b><font face="Leelawadee" color="#666666">เวทนา</font></b></span></a><font face="Leelawadee" color="#666666"><span style="font-size:16pt;">อย่างใดอย่างหนึ่งใน 
+๓ ขึ้นเป็นธรรมดาหรือ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ตถตา', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt;"><font face="Leelawadee" color="#666666">ตถตา</font></span></a><font face="Leelawadee" color="#666666"><span style="font-size:16pt;">]</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#000099">&nbsp;เขา</font><font face="Leelawadee" color="#666666">(บุคคล)</font><font face="Leelawadee" color="#000099">อันสุขเวทนาถูกต้องแล้ว 
+&nbsp;ย่อมไม่เพลิดเพลิน &nbsp;ไม่พูดถึง &nbsp;ไม่ดำรงอยู่ด้วยความติดใจ &nbsp;จึงไม่มี 
+</font><a href="javascript:na_open_window('win', 'ex3.htm#ราคานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">ราคานุสัย</font></a><font face="Leelawadee"> 
+</font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0;">นอนเนื่องอยู่</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#000099">&nbsp;&nbsp;อันทุกขเวทนาถูก 
+ต้องแล้ว &nbsp;ย่อมไม่เศร้าโศก &nbsp;ไม่ลำบาก &nbsp;ไม่ร่ำไห้ &nbsp;ไม่คร่ำครวญทุ่มอก 
+&nbsp;ไม่ถึงความหลงพร้อม &nbsp;จึงไม่มี </font><a href="javascript:na_open_window('win', 'ex3.htm#ปฏิฆานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">ปฏิฆานุสัย</font></a></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0;"> 
+นอนเนื่องอยู่</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">อัน</span></font><b><font face="Leelawadee" color="#6600FF"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">อทุกขมสุขเวทนา</span></font></b><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">ถูกต้องแล้ว 
+&nbsp;ย่อมทราบชัด <b>ความตั้งขึ้น</b> &nbsp;<b>ความดับไป</b> &nbsp;<b>คุณ</b> 
+&nbsp;<b>โทษ</b> &nbsp;และ<b>ที่สลัดออกแห่งเวทนา</b>นั้น &nbsp;ตามความเป็นจริง 
+&nbsp;จึงไม่มี </span></font><a href="javascript:na_open_window('win', 'ex3.htm#อวิชชานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="กิเลส ที่แฝงตัวนอนเนื่องในสันดาน อันเกิด
+จากความไม่รู้ตามความเป็นจริง, อันจักอาจทํา
+ให้เกิด การกระทําหรือการประพฤติ, ปฏิบัติ
+โดยไม่รู้ตามความเป็นจริงในสภาวะธรรมนั้นๆ อันอาจก่อทุกข์ " target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">อวิชชานุสัย</span></font></a><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);"> 
+นอนเนื่องอยู่ </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#000099">ดูกรภิกษุทั้งหลาย 
+&nbsp;&nbsp;ข้อที่บุคคลนั้นละ</font><a href="javascript:na_open_window('win', 'ex3.htm#ราคานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">ราคานุสัย</font></a><font face="Leelawadee" color="#000099">เพราะสุขเวทนาบรรเทา, 
+&nbsp;&nbsp;ละ</font><a href="javascript:na_open_window('win', 'ex3.htm#ปฏิฆานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">ปฏิฆานุสัย</font></a><font face="Leelawadee" color="#000099">เพราะทุกขเวทนา, 
+&nbsp;</font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0;">&nbsp;</span><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">ถอน</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อวิชชานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="กิเลส ที่แฝงตัวนอนเนื่องในสันดาน อันเกิด
+จากความไม่รู้ตามความเป็นจริง, อันจักอาจทํา
+ให้เกิด การกระทําหรือการประพฤติ, ปฏิบัติ
+โดยไม่รู้ตามความเป็นจริงในสภาวะธรรมนั้นๆ อันอาจก่อทุกข์ " target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">อวิชชานุสัย</span></font></a><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">เพราะ</span></font><b><font face="Leelawadee" color="#6600FF"><span style="font-size:16pt; letter-spacing:0; background-color:rgb(255,255,204);">อทุกขมสุขเวทนา</span></font></b><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0;">,</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="#0000CC">&nbsp;</font><font face="Leelawadee" color="blue">&nbsp;</font><font face="Leelawadee" color="#000099">ยังวิชชาให้เกิดขึ้นเพราะละ<b>อวิชชา</b>เสียได้ 
+</font><font face="Leelawadee">&nbsp;</font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0;">แล้วจักเป็นผู้กระทำที่สุดแห่งทุกข์ในปัจจุบันได้ 
+&nbsp;นั่นเป็นฐานะที่มีได้ &nbsp;ฯ.&quot;</span></font></p>
+<p style="line-height:2.2; margin-top:0mm; margin-bottom:0;" align="center"><font face="Leelawadee" color="#666666"><span style="font-size:16pt; letter-spacing:0;">(</span></font><span style="font-size:16pt; letter-spacing:0;"><a href="451.htm#823" target="_blank"><font face="Leelawadee" color="#666666">ฉฉักกสูตร</font></a></span><font face="Leelawadee" color="#666666"><span style="font-size:16pt; letter-spacing:0;"> 
+&nbsp;พระไตรปิฎก เล่มที่ ๑๔/๘๒๓)</span></font></p>
+<p style="line-height:2.2; margin-bottom:2mm;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">ถ้าเรา</span></font><a href="javascript:na_open_window('win', 'ex3.htm#โยนิโสมนสิการ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt;"><font face="Leelawadee">โยนิโสมนสิการ</font></span></a><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">โดยแยบคาย 
+ในธรรมดังกล่าว จักเกิด</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ปัญญาจักษุ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt;"><font face="Leelawadee">ปัญญาจักษุ</font></span></a><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">ได้ดังนี้</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0mm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กล่าวคือ 
+เมื่อเกิดการ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:16pt;">ผัสสะ</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ขึ้น 
+ย่อมเกิด</span></font><b><font face="Leelawadee"><span style="font-size:16pt;">เวทนา</span></FONT></B><font face="Leelawadee"><span style="font-size:16pt;">อย่างใดอย่างหนึ่งเกิดขึ้น</span></font><span style="font-size:16pt;"><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee">เป็นธรรมดา</font></a></span><font face="Leelawadee"><span style="font-size:16pt;">ทุกครั้งทุกทีไป 
+&nbsp;เป็นสภาวธรรมหรือ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ธรรมชาติ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:16pt;">ธรรมชาติ</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ของชีวิต 
+จึงต้องเป็นไปดังนี้เองเป็นธรรมดาหรือ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ตถตา', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:16pt;">ตถตา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;ที่ย่อมเกิดความรู้สึกเป็น</span></font><font color="#000099" face="Leelawadee"><b><span style="font-size:16pt;">สุข</span></b></font><font face="Leelawadee"><span style="font-size:16pt;">(สุขเวทนา-ถูกใจ 
+ชอบใจ สบายกายสบายใจ) &nbsp;หรือ</span></font><b><font color="#000099" face="Leelawadee"><span style="font-size:16pt;">ทุกข</span></font></b><font face="Leelawadee"><span style="font-size:16pt;">์(ทุกขเวทนา 
+- ไม่ถูกใจ ไม่ชอบใจ ไม่สบายกายไม่สบายใจ) &nbsp;หรือ</span></font><font color="#000099" face="Leelawadee"><b><span style="font-size:16pt;">เฉยๆ</span></b></font><font face="Leelawadee"><span style="font-size:16pt;">(อุเบกขาเวทนา-ไม่สุขไม่ทุกข์) 
+อย่างใดอย่างหนึ่งขึ้น จากการไป<b>รับรู้</b>คือกระทบเข้ากับสิ่งที่เป็น</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 780, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:16pt;">อารมณ์</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">นั้นๆ 
+ทุกครั้งทุกทีไป &nbsp;แม้แต่ที่บอกว่าไม่มีความรู้สึก นั่นแหละความรู้สึก</span></font><font color="#000099" face="Leelawadee"><b><span style="font-size:16pt;">เฉยๆ</span></b></font><font face="Leelawadee"><span style="font-size:16pt;">ที่ว่า 
+</span></font><font color="#000099" face="Leelawadee"><b><span style="font-size:16pt;">ไม่ใช่ว่าไม่มีเวทนาเกิดขึ้น &nbsp;นั่นแหละก็คืออุเบกขาเวทนาหรืออทุกขมสุขเวทนา 
+คือ รู้สึกรับรู้ เพียงแต่รู้สึกไม่สุขไม่ทุกข์หรือเฉยๆเท่านั้นเอง</span></b></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0mm;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อาการของอทุกขมสุขหรืออุเบกขาเวทนา 
+คือไม่สุขไม่ทุกข์ &nbsp;กล่าวคือเมื่อจิตเกิดการกระทบคือผัสสะกับ</span></font><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">อารมณ์</font></a><font face="Leelawadee">แล้ว 
+เกิดความรู้สึกจากการรับรู้ใน</font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">อารมณ์</font></a><font face="Leelawadee">นั้นแบบ 
+เฉยๆหรือเปล่าๆหรือกลางๆจากการกระทบกับอารมณ์นั้น คือไม่รู้สึกเป็นสุขชนิดชอบใจสบายใจถูกใจ &nbsp;หรือไม่รู้สึกเป็นทุกข์ชนิดไม่ชอบใจไม่สบายใจไม่ถูกใจ 
+&nbsp;</font><font face="Leelawadee" color="#000099">&nbsp;<b>อทุกขมสุขคือเฉยๆ ดังนี้นี่เองจึงมักแผ่วเบา 
+จึงสังเกตุได้ยาก</b> &nbsp;<b>เพราะเกิดขึ้นเป็นประจำอย่างยิ่ง จนเคยชินเป็นอย่างยิ่ง</b></font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"> 
+&nbsp;&nbsp;จนแลดูประหนึ่งราวกับว่าเป็น</span></font><a href="http://" title="   คุณประโยชน์  "><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><font face="Leelawadee" color="#000033">คุณ</font></span></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">อย่างหนึ่งทีเดียว 
+คือไม่ทำให้เกิดความทุกข์ &nbsp;<b>และแลดูราวกับว่าไม่มีทุกข์โทษภัย &nbsp;&nbsp;แต่ตามความจริงอย่าง</b><a href="javascript:na_open_window('win', 'ex3.htm#ปรมัตถ์', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><b>ปรมัตถ์</b></a><b>นั้น 
+อุเบกขาเวทนาสามารถเป็น<a href="javascript:na_open_window('win', 'ex3.htm#เหตุ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">เหตุ</a>ที่เป็น<a href="javascript:na_open_window('win', 'ex3.htm#ปัจจัย', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ปัจจัย</a>ทำให้เกิดทุกข์โทษขึ้นได้อย่างยิ่ง</b> 
+จึงเป็นเหตุให้เกิดทุกข์ตัวสำคัญหนึ่งทีเดียว ด้วย</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"> 
+&nbsp;ดังเช่น </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0mm;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ท่านออกไปภายนอก 
+ย่อมเจอะเจอคนเป็นร้อยเป็นพัน มีทั้งที่รู้จักรักใคร่, เกลียดชัง, และทั้งที่ไม่รู้จักมักคุ้น 
+&nbsp;&nbsp;&nbsp;ในผู้ที่รู้จักรักใคร่เมื่อพบเจอะเจอกันย่อมยังให้เกิดสุขเวทนาคือความรู้สึกไปในทางสบายใจสบายกาย,&nbsp;&nbsp;&nbsp;ส่วนในผู้ที่เกลียดชังนั้น 
+ย่อมเกิดทุกขเวทนาความรู้สึกไม่ชอบใจ ไม่สบายใจไม่สบายกาย, &nbsp;&nbsp;ส่วนในผู้ที่ไม่รู้จักคุ้นเคยอันมีเป็นจำนวนมากมายนั้น 
+กล่าวคือไม่มี</span></font><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><font face="Leelawadee" color="#000099">สัญญา</font><font face="Leelawadee">คือ</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">ความจำได้,หมายรู้ใดๆกับบุคคลเหล่านั้นอย่างเฉพาะเจาะจงหรือส่วนตัว 
+&nbsp;ท่านย่อมมองเห็นและมีความรู้สึกในบุคคลเหล่านั้นโดยทั่วๆไปหรือ</span></font><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><font face="Leelawadee" color="#000099"><b>เฉยๆ</b></font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">นั่นเอง 
+กล่าวคือเกิด</span></font><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><font face="Leelawadee" color="#000099"><b>อทุกขมสุขเวทนา</b></font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="#000099"><b>อุเบกขาเวทนา</b></font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">ต่อเหล่าบุคคลรอบข้างนั้นนั่นเอง 
+&nbsp;แต่เพราะ</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">ความไม่รู้ 
+จึงปล่อยกายใจไปเพ่งมองหรือเลื่อนไหลไปคิดนึก<b>ปรุงแต่ง</b>หรือฟุ้งซ่านในสิ่งเหล่านั้น 
+เช่น เออ คนนั้นสวยดีเหมือนกันหนอ, มองตรงนี้ก็งามดีหนอ,&nbsp;หล่อจริงหนอ แมนจริงหนอ 
+จนอาจก่อเป็นทุกข์ต่างๆขึ้น<b>ในที่สุด</b>,&nbsp;&nbsp;&nbsp;ตาไปกระทบสิ่งต่างๆทั่วไปที่ไม่มีสัญญาจำเฉพาะเรื่องหรืออาสวะกิเลส 
+</span></font><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><font face="Leelawadee" color="#000099">ก็เกิดเหล่าอทุกขมสุขขึ้นอยู่เสมอๆ 
+เกือบตลอดเวลานั่นเอง</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"> 
+กล่าวคือ มีการเกิดขึ้นของอทุกขมสุขอยู่แทบตลอดเวลา เช่น ตามองโต๊ะ ก็เกิด</span></font><span style="font-size:16pt; letter-spacing:0; line-height:2.2;"><font face="Leelawadee" color="#000099">อทุกขมสุข</font><font face="Leelawadee">ขึ้นเป็นธรรมดา 
+</font><font face="Leelawadee" color="#000099">ไม่ใช่ไม่เกิดเวทนาขึ้น เพียงแต่เคยชินและแผ่วเบาเป็นอย่างยิ่ง</font><font face="Leelawadee"> 
+จึงสังเกตุไม่เห็น</font><font face="Leelawadee" color="blue">เวทนา</font><font face="Leelawadee">จากการ</font><font face="Leelawadee" color="#000099">ผัสสะ</font><font face="Leelawadee">นั้น 
+&nbsp;<b>จึงเข้าใจผิดไปว่า</b></font><font face="Leelawadee" color="#660000"><b>ไม่มีเวทนาใดๆเกิดขึ้น</b></font><font face="Leelawadee"> 
+และมักไปคิดนึกปรุงแต่งโดยไม่รู้ตัว เช่นโต๊ะไม่สวยเลยหนอ เปลี่ยนใหม่เป็นแบบนั้นแบบนี้ดีกว่าหนอ 
+เป็นต้น&nbsp;&nbsp;&nbsp;&nbsp;จึงต้องเป็นการเห็นด้วยปัญญา เพราะความเคยชินที่สั่งสมยิ่ง 
+เปรียบได้ดังการแต่งตัวสวมใส่เสื้อผ้าเสียเคยชิน &nbsp;เวลาสวมใส่เสื้อผ้าอยู่ก็รู้สึกปกติธรรมดา 
+&nbsp;แต่เวลาไม่นุ่งผ้าอัน<b>ไม่ปรุงแต่ง</b> กลับไปรู้สึกโหวงเหวง เปล่าเปลือย 
+รู้สึกผิดปกติ &nbsp;</font><font face="Leelawadee" color="#000099">&nbsp;อุเบกขาเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">จึงเป็นความเคยชินเหมือนดั่งกายที่<a href="javascript:na_open_window('win', 'ex3.htm#โผฏฐัพพะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">โผฏฐัพพะ</a>กับเสื้อผ้าหรือการนุ่งผ้านั่นเอง 
+ที่ตามปกติแล้วมักเกิดความรู้สึกเป็นปกติธรรมดาคืออุเบกขาเวทนาหรืออทุกขมสุขเวทนา 
+ทั้งๆที่สวมใส่คือโผฏฐัพพะกล่าวคือมีสิ่งอื่นแทรกแปลกปลอมผัสสะอยู่ &nbsp;&nbsp;จึงเหมือนการเกิดการผัสสะของอายตนะอื่นๆต่างๆนาๆแล้วเกิด<b>อุเบกขาเวทนา</b>ขึ้นนั่นเอง 
+ที่มักเกิดขึ้นอยู่เสมอๆแต่เป็นไปโดยไม่รู้ตัวด้วยอวิชชา จึงเกิดความประมาทขาดความระมัดระวัง 
+จึงพาลเป็นเหตุให้ปรุงแต่งคือฟุ้งซ่านจนเกิด<a href="javascript:na_open_window('win', 'ex3.htm#ทุกข์อุปาทาน', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ทุกข์อุปาทาน</a>ขึ้นในที่สุด</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#666666"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee">&nbsp;ด้วยเหตุดังกล่าวนี้ 
+การปฏิบัติโดยอาศัยความรู้ความเข้าใจในแนวทาง</font><font face="Leelawadee" color="blue">เวทนา</font><font face="Leelawadee">นั้น 
+&nbsp;พระองค์ท่านจึงตรัสแนวปฏิบัติใน</font><font face="Leelawadee" color="blue">อทุกขมสุข</font><font face="Leelawadee">คือ</font><font face="Leelawadee" color="blue">อุเบกขาเวทนา</font><font face="Leelawadee">ไว้แตกต่างจาก 
+</font><font face="Leelawadee" color="#0000CC">สุขเวทนา </font><font face="Leelawadee">และ 
+</font><font face="Leelawadee" color="#0000CC">ทุกขเวทนา</font><font face="Leelawadee"> 
+ดังที่พระองค์ท่านกล่าวไว้ในเวทนาทั้ง ๒ คือ สุขหรือทุกข์ กล่าวคือ ในเวทนาทั้ง 
+๒ นี้ย่อมมีความรู้สึกรับรู้ในเวทนาทั้งสองได้เด่นชัด ดังนั้นเมื่อสติระลึกรู้เท่าทัน 
+ก็ให้ปฏิบัติไปตามธรรมที่กล่าวนั้น คือ ถ้าเป็นสุขก็ไม่ติดเพลิน ไม่ดำรงอยู่ด้วยความติดใจ 
+&nbsp;&nbsp;และเมื่อเป็นทุกข์ก็ไม่พิรี้พิไร ไม่รำพัน ไม่บ่นถึง ไม่หลง(โมหะ)ด้วยรู้ตามจริง 
+จึงไม่(คิดนึก)ปรุงแต่ง,&nbsp;&nbsp;&nbsp;แต่ยามเมื่อพระองค์ท่านกล่าวถึง</font><font face="Leelawadee" color="#0000CC">อทุกขมสุขเวทนา</font><font face="Leelawadee"> 
+อันคือย่อมรู้สึกเฉยๆ </font><font face="Leelawadee" color="blue">ความรู้สึกที่เกิดขึ้นจากการรับรู้</font><font face="Leelawadee">ไม่เด่นชัดปรากฏ 
+&nbsp;</font><font face="Leelawadee" color="blue"><b>แต่มักเกิดขึ้นอยู่ตลอดเวลา</b></font><font face="Leelawadee"> 
+&nbsp;พระองค์ท่านจึงโปรดให้พิจารณาให้ <b>รู้ถึงเหตุในการ</b></font><b><font face="Leelawadee" color="blue">เกิด</font></b><font face="Leelawadee"><b>ขึ้น</b>(ตั้งขึ้น), 
+</font><font face="Leelawadee" color="blue"><b>ดับไป</b></font><font face="Leelawadee">, 
+</font><font face="Leelawadee" color="blue"><b>คุณ</b></font><font face="Leelawadee"> 
+และ</font><font face="Leelawadee" color="blue"><b>โทษ</b></font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+เหล่านั้นแทน &nbsp;ก็เพื่อให้เกิดความรู้ความเข้าใจอย่างแจ่มแจ้งอย่างแท้จริงคืออย่างปรมัตถ์ 
+</span></font><span style="font-size:16pt; letter-spacing:0;"><b><font face="Leelawadee" color="#000099">&nbsp;ก็จักได้สังวรระวังไม่ประมาทในอุเบกขาเวทนา</font></b></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+&nbsp;&nbsp;แล้วจึงกล่าวถึงการสลัดออกแห่งอทุกขมสุขเวทนาที่สามารถทำให้เกิด<a href="javascript:na_open_window('win', 'ex3.htm#ทุกข์อุปาทาน', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ทุกข์อุปาทาน</a>ได้เช่นกันไว้ 
+&nbsp;&nbsp;ดังนั้นเมื่อนำมา<a href="javascript:na_open_window('win', 'ex3.htm#โยนิโสมนสิการ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">โยนิโสมนสิการ</a>โดยแยบคาย 
+ก็จะพบความจริงเป็นอย่างยิ่งใน</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๑. 
+ความตั้งขึ้น หรือการเกิดขึ้น</span></font><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">ของอุเบกขาเวทนา 
+เป็นกระบวนธรรมของชีวิตจึงย่อมต้องเกิดขึ้นได้</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+&nbsp;อันเกิดขึ้นจากเหตุปัจจัยเมื่อเกิดการผัสสะกับ</span></font><span style="font-size:16pt; letter-spacing:0;"><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">อารมณ์</font></a><font face="Leelawadee">ต่างๆที่<b>ต้องเกิดเวทนาอย่างหนึ่งอย่างใดขึ้นเป็นธรรมดา</b> 
+&nbsp;<b>และอุเบกขาเวทนานี้เกิดขึ้นแทบทุกๆขณะจิต</b></font><font face="Leelawadee" color="#000099"><b>มากกว่าเวทนาใดๆ 
+จึงควรไม่ประมาท</b></font><font face="Leelawadee"> และเมื่อเกิดขึ้นแล้วก็เพราะเป็นความรู้สึกเฉยๆ 
+ไม่สุข ไม่ทุกข์ อันเคยชินยิ่งดั่งการนุ่งผ้า จึงไม่รู้สึกตัว &nbsp;จึงกล่าวได้ว่า</font><font face="Leelawadee" color="#000099">เป็นการกระทบ(ผัสสะ)อันแผ่วเบายิ่ง 
+&nbsp;</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">และเกิดเป็นประจำในชีวิตประจำวันมากที่สุด 
+&nbsp;จนสั่งสมเป็นความเคยชินเป็นอย่างยิ่ง &nbsp;และยิ่งด้วย</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">&nbsp;จึงไม่เคยสังเกตุพิจารณาโดยแยบคายจึงไม่เคยเห็นความรู้สึกรับรู้ใน</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#000099">อทุกขมสุข</font><font face="Leelawadee">ที่เกิดขึ้นนั้นๆ 
+&nbsp;จึงต้องใช้</font><font face="Leelawadee" color="blue">ปัญญา</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">เข้ามาช่วยให้รู้เห็นในการเกิด 
+ดับ คุณ โทษ และการสลัดออก</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#0000CC">๒. 
+ความดับไป</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+</span><span style="font-size:16pt;">&nbsp;เมื่อสิ่งทั้งหลายที่หมายถึงสังขารทั้งปวง 
+อันย่อมครอบคลุมถึงเวทนาทั้งปวงด้วย &nbsp;เมื่อมีการเกิดขึ้นเพราะเหตุปัจจัยจึงต้องดับไป</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;&nbsp;สิ่งทั้งหลายนั้นย่อมดำรงคงอยู่ได้ในขณะหนึ่งหรือระยะเวลาหนึ่งๆเพราะเหตุปัจจัยนั้นยังคงปรุงแต่งกันอยู่&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">แต่เมื่อเหตุปัจจัยที่มาปรุงแต่งหมดไป 
+หรือแปรปรวนเสื่อมสลายดับสูญไป</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;สิ่งคือผลที่เกิดขึ้นและที่ตั้งอยู่ก็ย่อมต้องดับไปหรือเสื่อมสลายตามไปด้วย</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">เป็นไปตามเหตุ 
+กล่าวคือ เป็นไปตามธรรมที่ว่า </span></font><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0;"><b>สิ่งใดสิ่งหนึ่งเกิดขึ้น</b></span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;"><b>เป็นธรรมดา</b></span></font></a><font face="Leelawadee" color="#000099"><span style="font-size:16pt; letter-spacing:0;"><b> 
+สิ่งนั้นย่อมดับไป</b></span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;"><b>เป็นธรรมดา</b></span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">, 
+&nbsp;<b>จึงสักแต่ว่า เป็นเช่นนั้นเองเป็นธรรมดา หรือ<a href="javascript:na_open_window('win', 'ex3.htm#ตถตา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ตถตา</a></b> 
+<b>จึงไม่ควรไปยึดหรืออยากด้วยกิเลสหรือตัณหา ก็เพราะการที่คงอยู่ไม่ได้ มีอาการแปรปรวนและต้องดับไปในที่สุดนั่นเอง 
+จึงย่อมต้องผิดหวังด้วยการกับไปเป็นที่สุดนั่นเอง &nbsp;อีกทั้งยังให้เกิดการโหยไห้อาลัยหาในสุขทุกข์เหล่านั้นในภายหน้าโดยไม่รู้ตัว</b>, 
+&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#000099">&nbsp;เมื่อไม่เห็นการเกิด 
+ย่อมไม่เห็นการดับไป</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+จนเกิดปัญญาว่า จริงๆแล้วมีการเกิดดับอยู่เกือบตลอดเวลาตามเหตุปัจจัย หรือการ<a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ผัสสะ</a> 
+&nbsp;จึงย่อมขาดความสำรวมสังวรระมัดระวังโดยไม่รู้ตัว</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">นั่นเอง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#0000CC">๓. 
+คุณ</font><font face="Leelawadee"> &nbsp; เพราะเฉยๆ จึงเป็นคุณ คือย่อมไม่ก่อให้เกิดความรู้สึกรับรู้ในการผัสสะเป็น</font><font face="Leelawadee" color="blue">ทุกข์หรือทุกขเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">ใดๆ 
+&nbsp;จึงย่อมไม่เป็นทุกข์ ไม่เร่าร้อน ไม่เผาลน ไม่กระวนกระวาย &nbsp;จึงจัดว่าเป็นคุณ 
+ให้ความสงบ ไม่กระวนกระวายเร่าร้อนในระดับหนึ่งหรือในระดับทางโลก ในขั้นแรก</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee" color="#0000CC">๔.โทษ</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+&nbsp;&nbsp;ด้วยคุณดังข้างต้นแต่ด้วย</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"> 
+</span><span style="font-size:16pt;">เนื่องจากอุเบกขาเวทนาเป็น</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">อาการของจิตที่เกิดบ่อยที่สุดในชีวิตประจําวัน 
+&nbsp;</font></span><font face="Leelawadee"><span style="font-size:16pt;">เพราะย่อมเกิดขึ้น</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="เปิดหน้าต่างย่อย" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">เ</span></font><span style="font-size:16pt;"><font face="Leelawadee">มื่อเหล่า</font><font face="Leelawadee" color="#0000CC">อายตนะ</font></span><font face="Leelawadee"><span style="font-size:16pt;">ไปผัสสะกับ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">อารมณ์</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ต่างๆที่ไม่สุขไม่ทุกข์ 
+จึงย่อมเกิดขึ้นเป็นส่วนใหญ่ตลอดเวลาในชีวิตประจำวัน &nbsp;และเพราะความรู้สึกที่ไม่สุขไม่ทุกข์หรือเฉยๆ 
+เปล่าๆดังที่กล่าว &nbsp;<b>จึงก่อให้เกิดความประมาท</b></span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue"><b>ด้วยไม่รู้และโดยไม่รู้ตัว</b></font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;<b>จึงขาดความใส่ใจและประมาทในสิ่งนั้นๆ &nbsp;&nbsp;จึงมักเกิดการปล่อยกายปล่อยใจไปปรุงแต่งหรือฟุ้งซ่านออกไป 
+</b>เพราะ</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">ไม่เห็นในโทษหรือไม่รู้ไม่เข้าใจตามความเป็นจริง</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">ของเวทนา</font><font face="Leelawadee"> 
+ที่อาจจะเกิดขึ้นตามมาจาก</font><font face="Leelawadee" color="#000099">อทุกขมสุข</font></span><font face="Leelawadee"><span style="font-size:16pt;">นี้&nbsp;&nbsp;&nbsp;เมื่อไม่ใส่ใจจึงทําให้ไม่เกิดวิชชา(ความรู้ความเข้าใจ)ขึ้น, 
+&nbsp;และ</span><span style="font-size:16pt; letter-spacing:0;">เนื่องจาก</span><span style="font-size:16pt;">ความรู้สึกเฉยๆหรือความรู้สึกไม่สุขไม่ทุกข์นี้เองจึงทําให้ไม่เห็นหรือไม่มีความรู้สึกที่ชัดแจ้งเหมือน</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">สุขเวทนา</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="blue">ทุกขเวทนา</font><font face="Leelawadee">ที่เมื่อเกิดขึ้นแล้วความรู้สึกสัมผัสหรือรับรู้ความรู้สึกได้เด่นชัด 
+&nbsp;</font></span><font face="Leelawadee" color="blue"><span style="font-size:16pt;">และยิ่งด้วย</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee" color="blue"><span style="font-size:16pt;">ความไม่รู้ตามความเป็นจริง</span></font><span style="font-size:16pt;"><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="#6600FF"><b>จึงเสริมไปด้วยเข้าใจผิดกันโดยนัยๆด้วยว่า 
+ไม่มีโทษไม่มีภัยใดๆ</b></font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;ดังนั้นจึงประมาท ขาดความระมัดระวัง <b>จึงมักปล่อยใจปล่อยกายไปฟุ้งซ่านหรือปรุงแต่งต่างๆนาๆใน</b></span></font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"><b>อารมณ์</b></span></font></a><font face="Leelawadee"><span style="font-size:16pt;"><b>ที่ผัสสะนั้น</b> 
+&nbsp;&nbsp;</span></font><font face="Leelawadee" color="blue"><span style="font-size:16pt;"><b>จน</b></span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC"><b>เกิดเป็นความเคยชินสั่งสมยิ่งในการปรุงแต่งในอทุกขมสุขเวทนา</b> 
+&nbsp;เพราะไม่รู้ตามความเป็นจริงว่าจะทําให้เกิดทุกข์ได้ &nbsp;จนเป็นนิสัยที่นอนเนื่องในสันดานอีกด้วย(</font><a href="javascript:na_open_window('win', 'ex3.htm#อวิชชานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee" color="#0000CC">อวิชชานุสัย</font></a></span><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">) 
+จึงกระทำเป็นประจำสม่ำเสมอๆ จนควบคุมบังคับไม่ได้</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๕. 
+การสลัดออกแห่งอทุขมสุขเวทนานั้น &nbsp;</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="black">เนื่องจาก</font><font face="Leelawadee" color="#0000CC">อทุกขมสุข</font><font face="Leelawadee" color="black">เป็นกระบวนธรรมหรือธรรมชาติในการดำรงชีวิตอันสำคัญยิ่งอย่างหนึ่ง 
+และ</font><font face="Leelawadee" color="blue">เกิดอยู่แทบตลอดเวลา</font><font face="Leelawadee" color="black">&nbsp;และมีโทษดังที่กล่าว 
+จึงต้องสลัดออก ที่มีความหมายว่า แม้ยังคงเกิดขึ้น</font><font face="Leelawadee" color="#0000CC">เป็นธรรมดา 
+</font><font face="Leelawadee" color="black">แต่ปฏิบัติเพื่อการสลัดออกเยี่ยงไร(ด้วยวิชชาอย่างไร)<b>จึงไม่ก่อคือกลับกลายไปเป็นทุกข์โทษภัย</b> 
+&nbsp;จึงหมายถึงการมีสติปัญญา คือระลึกรู้เท่าทันอุเบกขาเวทนาที่เมื่อเกิดขึ้นแล้ว 
+ก็ไม่ฟุ้งซ่านปรุงแต่งสืบต่อไป &nbsp;กล่าวคือไม่คิดนึก</font><font face="Leelawadee" color="#0000CC">ปรุงแต่งคือฟุ้งซ่าน</font></span><font face="Leelawadee" color="black"><span style="font-size:16pt; line-height:2.2;">ต่างๆนาๆให้เกิดการ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee">ผัสสะ</font></span></a><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee">เป็นผล</font></span><font face="Leelawadee" color="black"><span style="font-size:16pt; line-height:2.2;">สืบเนื่องจนกลายเป็นทุกข์อุปาทานอันแสนเร่าร้อนต่อไป 
+&nbsp;หรือการ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self" title="เปิด หน้าต่างย่ย
+ดูความหมาย"><font face="Leelawadee" color="blue"><span style="font-size:16pt;">อุเบกขา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ในโพชฌงค์</span></font><font face="Leelawadee" color="black"><span style="font-size:16pt; line-height:2.2;">เสียนั่นเอง</span></font></p>
+<p style="line-height:2.2; margin-top:3mm; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;<img src="tn_stern_11.gif" width="21" height="20" border="0" vspace="7" align="absmiddle">อนึ่งมีความเข้าใจผิดกันมากระหว่าง</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">อทุกขมสุขเวทนา</font><font face="Leelawadee">ที่บางทีก็เรียกว่า</font><font face="Leelawadee" color="blue">อุเบกขาเวทนา&nbsp;</font><font face="Leelawadee">ที่หมายถึงความรู้สึกไม่สุขไม่ทุกข์หรือเฉยๆ</font><font face="Leelawadee" color="blue">&nbsp;</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;กับ</span></font><a href="javascript:na_open_window('win', '371.htm', 0, 0, 770, 280, 1, 0, 0, 0, 1)" target="_self" title="เปิด หน้าต่างย่ย
+ดูความหมาย"><font face="Leelawadee" color="blue"><span style="font-size:16pt;">อุเบกขา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ในโพชฌงค์ 
+องค์สำคัญในการตรัสรู้หรือปฏิบัติ &nbsp;&nbsp;ไปเข้าใจผิดว่าเป็นธรรมหรือเป็นสิ่งเดียวกัน 
+&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">อุเบกขาเวทนา</font><font face="Leelawadee">เป็นการเกิดขึ้นจากการ</font><font face="Leelawadee" color="blue">ผัสสะ</font></span><font face="Leelawadee"><span style="font-size:16pt;">อันย่อมต้องเกิดขึ้น</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ของชีวิต 
+จะไม่ให้มี ไม่ให้เกิด ไม่ให้เป็น ก็ไม่ได้, &nbsp;&nbsp;ส่วน</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self" title="เปิด หน้าต่างย่ย
+ดูความหมาย"><font face="Leelawadee" color="blue"><span style="font-size:16pt;">อุเบกขา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">ในการปฏิบัติเป็น</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">จิตสังขาร</font></span><font face="Leelawadee"><span style="font-size:16pt;">อย่างหนึ่งที่ต้องสังขารขึ้นหรือ</span></font><span style="font-size:16pt;"><b><font face="Leelawadee" color="#000099">มีเจตนา</font></b></span><font face="Leelawadee"><span style="font-size:16pt;">ให้เกิดขึ้น 
+&nbsp;ขอให้ทำความเข้าใจให้ถูกต้องด้วย &nbsp;&nbsp;เพราะเมื่อรู้สึกเฉยๆก็ไปเข้าใจผิดว่า 
+เป็นการ</span></font><a href="javascript:na_open_window('win', '371.htm', 0, 0, 770, 280, 1, 0, 0, 0, 1)" target="_self" title="เปิด หน้าต่างย่ย
+ดูความหมาย"><font face="Leelawadee" color="blue"><span style="font-size:16pt;">อุเบกขา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">เป็นกลางวางทีเฉยในโพชฌงค์เสีย</span><span style="font-family:'MS Sans Serif'; font-weight:normal; font-size:16pt; line-height:2.2; margin-top:0; margin-bottom:0;"> 
+</span></font><span style="font-family:'MS Sans Serif'; font-weight:normal; font-size:16pt; line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee">&nbsp;จึงพากันเข้าใจผิดไปว่า 
+ได้ปฏิบัติดีปฏิบัติชอบปฏิบัติถูกต้องดีแล้วเสียก็มี</font></span><font face="Leelawadee"><span style="font-family:'MS Sans Serif'; font-weight:normal; font-size:16pt; line-height:2.2;"> 
+</span></font><span style="font-family:'MS Sans Serif'; font-weight:normal; font-size:16pt; line-height:2.2;"><font face="Leelawadee">&nbsp;</font><font face="Leelawadee" color="blue"><b>ตลอดจนเมื่อกระทบผัสสะกับสิ่งใดเป็นสุขเป็นทุกข์ขึ้นก็กดข่ม 
+คือพยายามหรืออยากให้เป็นอุเบกขาเวทนา ด้วยเข้าใจผิดว่าต้องเฉยๆ จึงจะถูกต้อง</b></font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee">ลองพิจารณาให้เห็น</font><font face="Leelawadee" color="#0000CC">อทุกขมสุข</font><font face="Leelawadee">อย่างชัดแจ้งขึ้น 
+&nbsp;&nbsp;ดังท่านออกไปนอกบ้าน &nbsp;เมื่อใดที่ตาของท่านกระทบเพื่อนสนิทมิตรสหาย 
+ขณะนั้นก็เกิด</font><font face="Leelawadee" color="blue">สุขเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">ขึ้น</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;"> 
+&nbsp;&nbsp;เมื่อตากระทบกับผู้ที่เกลียดหรือชังก็เกิด</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="blue">ทุกขเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">ขึ้น</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;"> 
+&nbsp;&nbsp;ในขณะที่ตากระทบกับบุคคลอื่นๆรอบข้างจำนวนอีกมากมายเป็นร้อยเป็นพัน 
+ซึ่งมิได้มีสัญญา(จำ)หรืออาสวะกิเลสใดๆในบุคคลเหล่านั้น &nbsp;ย่อมหมายถึง<b>ในขณะจิตนั้นนั่นเอง 
+ท่านได้เกิด</b></span></font><b><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="blue">อทุกขมสุขเวทนา</font></span></b><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;"><b>ขึ้นแล้ว</b>เป็นร้อยเป็นพันเช่นกัน</span></font><a href="javascript:na_open_window('win', '368.htm', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt;">เป็นธรรมดา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;"> 
+&nbsp;เป็นความรู้สึกไม่สุขไม่ทุกข์หรือเฉยๆในบุคคลอื่นๆรอบข้าง </span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="blue">ไม่ใช่ว่าไม่มีเวทนาเกิดขึ้น 
+&nbsp;มีเวทนาเกิดขึ้นเช่นกัน แต่เป็นแบบเฉยๆหรืออทุกขมสุขเวทนานั่นเอง</font><font face="Leelawadee">&nbsp;จะเห็นว่าถ้าจำแนกเป็นความถี่บ่อยในการเกิดขึ้นแล้ว 
+</font><font face="Leelawadee" color="blue">จะเห็นได้ชัดว่าเกิดขึ้นบ่อยครั้งเป็นที่สุด 
+</font></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">เพียงแต่ว่าไม่รู้ตัวด้วย</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;"> 
+</span><span style="font-size:16pt; line-height:2.2;">และเพราะความแผ่วเบาหรือไม่เด่นชัดของความรู้สึกที่เกิดขึ้นนั่นเอง 
+ตลอดจนความเคยชินที่ได้สั่งสมในการดำเนินชีวิตอย่าง</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">มาช้านานนั่นเอง&nbsp;&nbsp;แล้วลองโยนิโสมนสิการดูต่อไปว่า 
+อทุกขมสุขที่เกิดขึ้นนั้น </span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="blue">ไม่เป็นทุกข์โทษภัยในขณะแรกที่เกิด 
+ก็จริงอยู่</font></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;"> 
+แต่เพราะความไม่รู้หรือ</span></font><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อวิชชา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;"> 
+หรือ<a href="javascript:na_open_window('win', 'ex3.htm#โมหะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">โมหะ</a> 
+จึงมักปล่อยกายใจไปคิดนึก</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="#0000CC">ปรุงแต่ง 
+</font><font face="Leelawadee">หรือฟุ้งซ่านต่อไป ดังเช่น ตาไปกระทบรูป เช่น สิ่งของที่แม้จะมีความสวยงามก็จริงอยู่ 
+แต่ก็ยังเป็นเพียงอทุกขมสุขเวทนาแต่มี</font><a href="http://" title="เครื่องล่อใจ,เหยื่อ
+หรือแฝงกิเลส"><font face="Leelawadee" color="blue">อามิส</font></a><font face="Leelawadee"> 
+&nbsp;แต่เมื่อไม่รู้จึงไม่ระมัดระวัง จึงไปฟุ้งซ่าน ไปปรุงแต่งใดๆเข้า..สวยจริงๆหนอ,&nbsp;น่าเอาไปตั้งในบ้านตรงนี้คงสวย,&nbsp;ใส่อันนี้แล้วคงงาม&nbsp;ต่างๆเหล่านี้เป็นต้น 
+&nbsp;</font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt; line-height:2.2;">อทุกขมสุขอันแลดูราวกับว่าไม่มีโทษไม่มีภัยเหล่านั้น 
+&nbsp;จึงอาจแปรปรวนกลับกลายเป็นโทษเป็นภัย ก่อเป็นอุปาทานทุกข์ขึ้นมาโดยไม่รู้ตัวในที่สุด</span></font></p>
+<table border="1" width="668" align="center" cellspacing="0" bordercolordark="white" bordercolorlight="black" bgcolor="white" style="line-height:2; margin-top:3mm; margin-bottom:3mm;">
+    <tr>
+        <td width="662">
+            <p style="line-height:2; margin-top:5mm; margin-bottom:0mm;" align="center"><font face="Leelawadee" color="#CC0000"><span style="font-size:16pt;">รูป(ธรรมารมณ์)&nbsp;+ 
+            ใจ + มโนวิญญูาณขันธ์ &nbsp;<img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"> 
+            </span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#6600FF">เวทนาขันธ์</font></span></p>
+            <p style="line-height:2; margin-top:2mm; margin-bottom:1mm;" align="center"><a href="news:" title="มโนกรรม ที่เกิดขึ้นจากสังขารขันธ์
+แปรไปทำหน้าที่เป็นธรรมารมณ์อีกครั้ง"><span style="font-size:12pt;"><font face="Leelawadee" color="red">มโน<img src="anired06_up.gif" width="12" height="15" border="0">กรรม</font></span></a><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:14pt;">&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:14pt;"><font face="Leelawadee" color="blue">&nbsp;กระบวนธรรมของขันธ์ทั้ง 
+            ๕</font><font face="Leelawadee" color="#0000CC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp; 
+            </span></font></p>
+            <p style="line-height:2; margin-top:2mm; margin-bottom:2mm;" align="center"><font face="Leelawadee" color="#CC0000"><span style="font-size:16pt;">สังขารขันธ์</span><span style="font-size:12pt;">(เกิด</span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title="ความคิดนึก ที่เป็นผลเกิดขึ้นจากสังขารขันธ์"><span style="font-size:12pt;"><font face="Leelawadee">มโนกรรม</font></span></a><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">ขึ้น)</span><span style="font-size:16pt;"> 
+            </span><span style="font-size:16pt; line-height:100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;<img src="anired06_back.gif" width="25" height="12" border="0" align="absmiddle"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สัญญาขันธ์</span></font></p>
+            <p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:12pt;"><font face="Leelawadee">วงจรแสดงขันธ์ทั้ง๕ 
+            ที่วนเวียนปรุงแต่ง</font></span></p>
+            <p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:12pt;"><font face="Leelawadee">จนอาจเกิด</font><font face="Leelawadee" color="#990000">ตัณหา</font><font face="Leelawadee">ขึ้นต่อ</font><font face="Leelawadee" color="#6600FF">เวทนาขันธ์</font><font face="Leelawadee">ใดๆขึ้น 
+            </font></span></p>
+            <p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:12pt;"><font face="Leelawadee">อันเป็นการดำเนินไปตามวงจรของการเกิดขึ้นแห่งทุกข์ 
+            ปฏิจจสมุปบาท</font></span></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กล่าวดังข้างต้น 
+อาจมองไม่เห็นชัดนัก &nbsp;ลองพิจารณาจากเรื่องเพศ &nbsp;บางครั้งเกิด</span></font><span style="font-size:16pt; line-height:2.2;"><a href="javascript:na_open_window('win', 'ex3.htm#ธรรมารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">ธรรมารมณ์</font></a></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">คิดนึกผุดเรื่องเพศขึ้นมาเฉยๆ 
+&nbsp;คำว่าเฉยนี้หมายถึงคิดนึกผุดลอยขึ้นมาในขณะแรก แม้เป็นเรื่องเพศแต่ก็ไม่ได้ก่อให้เป็นสุขเวทนาหรือมีความรู้สึกต่อ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">อารมณ์</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">ที่เกิดขึ้นนั้นอย่างจริงจัง 
+&nbsp;กล่าวคือแรกๆคิดอาจเป็น</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="blue">สุขเวทนา</font><font face="Leelawadee">แต่เป็นแบบแผ่วเบา 
+หรืออาจเฉยๆเป็น</font><font face="Leelawadee" color="blue">อทุกขมสุขเวทนา</font><font face="Leelawadee">แต่ย่อมมี</font><a href="http://" title="เครื่องล่อใจ,เหยื่อ
+หรือแฝงกิเลส"><font face="Leelawadee" color="blue">อามิส</font></a></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">หรือกิเลสใน</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อารมณ์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">อารมณ์</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">เหล่านั้นแฝงอยู่(เวทนามี</span></font><span style="font-size:16pt; line-height:2.2;"><a href="http://" title="เครื่องล่อใจ,เหยื่อ
+หรือแฝงกิเลส"><font face="Leelawadee" color="blue">อามิส</font></a><font face="Leelawadee"> 
+ดังที่กล่าวในสติปัฏฐาน ๔) &nbsp;แต่ขาดสติและปัญญา จึงเผลอจิตไปฟุ้งซ่านคิดนึกปรุงแต่งเรื่อยเปื่อย 
+เช่น คิดฟุ้งซ่านถึงคนนี้ คนนั้น &nbsp;คิดถึงแบบนี้ &nbsp;แบบนั้น &nbsp;คิดระลึกไปในอดีตเรื่องเพศ 
+ฯ. ในที่สุดจึงเกิด</font><font face="Leelawadee" color="blue">ตัณหา</font></span><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">ขึ้นจาก</span></font><a href="javascript:na_open_window('win', 'ex3.htm#เวทนา', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0; line-height:2.2;">เวทนา</span></font></a><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">นั้นๆขึ้นเป็นที่สุด 
+จนเร่าร้อนเผาลน</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span><span style="font-family:Leelawadee; font-weight:normal; font-size:16pt; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มนุษย์เราเคยชินอย่างยิ่งดุจดั่งอุเบกขาเวทนาต่อการนุ่งห่มเสื้อผ้า 
+กล่าวคือ เกิดอาการที่</span></font><span style="font-family:Tahoma; font-weight:normal; font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="#000099">กาย</font></span><font face="Leelawadee"><span style="font-family:Leelawadee; font-weight:normal; font-size:16pt; line-height:2.2;">กระทบ<a href="javascript:na_open_window('win', 'ex3.htm#โผฏฐัพพะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">โผฏฐัพพะ</a>กับเสื้อผ้าที่นุ่งห่มจนเคยชินอย่างยิ่งจนเป็น</span></font><span style="font-family:Leelawadee; font-weight:normal; font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="#000099">อุเบกขาเวทนา</font></span><font face="Leelawadee"><span style="font-family:Leelawadee; font-weight:normal; font-size:16pt; line-height:2.2;"> 
+&nbsp;การใส่เสื้อผ้าจึงไม่ก่อความรู้สึกผิดปกติใดๆ &nbsp;แต่ยามที่ถอดเสื้อผ้าอันเป็นการไม่ปรุงแต่งใดๆ 
+&nbsp;กลับรู้โหวงเหวง &nbsp;นั่นก็ด้วยความเคยชินอย่างยิ่งจนเป็นอทุกขมสุขหรืออุเบกขาเวทนา 
+&nbsp;ตามปกติจึงแผ่วเบาจนสังเกตุไม่เห็นความรู้สึกใดๆที่เกิดจากการ<a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ผัสสะ</a>กับเหล่าเสื้อผ้านั้นๆเลย 
+ยกเว้นเมื่อมีสติระลึกรู้ตั้งใจสังเกตุ&nbsp;&nbsp;&nbsp;และถ้าเผลอจิตไปปรุงแต่งในอุเบกขาเวทนาเหล่านั้นเข้าก็จะเกิดตัณหาจึงเป็นทุกข์หรือสุขขึ้นได้ในที่สุด 
+ดังเมื่อปรุงแต่งฟุ้งซ่านไปว่า เสื้อที่สวมใส่สวยหรือไม่สวย ถูกใจ ชอบใจ ไม่ถูกใจ 
+ควรแบบนั้น ควรแบบนี้ ฯลฯ.</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; line-height:2.2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอให้สังเกตุ 
+และพิจารณาโดยแยบคาย &nbsp;จะพบว่าทุกข์อุปาทานทั้งหลาย &nbsp;เกิดขึ้นมาจาก</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee" color="blue">อทุกขมสุขเวทนาหรืออุเบกขาเวทนา</font><font face="Leelawadee">เป็นส่วนใหญ่ทีเดียวด้วย</font><a href="javascript:na_open_window('win', 'ex3.htm#อวิชชานุสัย', 0, 0, 770, 330, 1, 0, 0, 1, 1)"><font face="Leelawadee">อวิชชานุสัย</font></a><font face="Leelawadee"> 
+&nbsp;โดยเฉพาะอย่างยิ่งจากอทุกขมสุขเวทนาชนิดมี</font></span><a href="http://" title="เครื่องล่อใจ,เหยื่อ
+หรือแฝงกิเลส"><font face="Leelawadee" color="blue"><span style="font-size:16pt; line-height:2.2;">อามิส</span></font></a><font face="Leelawadee" color="blue"><span style="font-size:16pt; line-height:2.2;"> 
+</span></font><span style="font-size:16pt; line-height:2.2;"><font face="Leelawadee">&nbsp;หรือก็คือในองค์ธรรมเวทนา 
+ในปฏิจจสมุปบาทธรรมนั่นเองที่เป็น</font><font face="Leelawadee" color="#000099">เวทนามีอามิส</font><font face="Leelawadee">อยู่ในที 
+อันเนื่องมาจาก<a href="javascript:na_open_window('win', 'ex3.htm#อาสวะกิเลส', 0, 0, 790, 230, 1, 0, 0, 1, 1)">อาสวะกิเลส</a>(สัญญาอย่างหนึ่ง)ที่แฝงมา</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ถ้าเราพิจารณาโดยละเอียดตามความเป็นจริงหรือโยนิโสมนสิการจักเห็นได้ว่า</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">อทุกขมสุข</font><font face="Leelawadee"> 
+หรือ</font><font face="Leelawadee" color="#0000CC">อุเบกขาเวทนา</font><font face="Leelawadee"> 
+หรือ</font><font face="Leelawadee" color="#0000CC">เฉยๆ</font><font face="Leelawadee"> 
+เป็นตัวการต้นเหตุก่อให้เกิดความทุกข์อย่างมากมายในชีวิตทีเดียวเพราะความไม่รู้(อวิชชา) 
+เพราะความรู้สึก</font><b><font face="Leelawadee" color="#000099">เฉยๆ</font></b><font face="Leelawadee">หรือความรู้สึก</font><font face="Leelawadee" color="#000099"><b>ไม่สุขไม่ทุกข์</b></font><font face="Leelawadee" color="fuchsia"> 
+</font><font face="Leelawadee">จึงไม่เห็นหรือมีความรู้สึกที่ชัดแจ้งเหมือน</font><font face="Leelawadee" color="#0000CC">สุขเวทนา</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="#0000CC">ทุกขเวทนา</font><font face="Leelawadee">ที่เกิดขึ้น 
+&nbsp;</font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt; background-color:white;">ดังนั้นจึงมักปล่อยใจปล่อยกายไป</span></font><span style="font-size:16pt; background-color:white;"><font face="Leelawadee" color="#0000CC"><a href="javascript:na_open_window('win', 'ex3.htm#คิดนึกปรุงแต่ง', 0, 0, 790, 230, 1, 0, 0, 1, 1)">คิดนึกปรุงแต่ง</a></font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt; background-color:white;">โดยไม่รู้ตัว(สติ)และด้วยความเข้าใจว่าไม่มีโทษไม่มีภัย</span></font><span style="font-size:16pt;"><font face="Leelawadee">&nbsp;จึงมักเป็นปัจจัยให้เกิด</font><font face="Leelawadee" color="#0000CC">ตัณหา</font><font face="Leelawadee">ซึ่งนอนเนื่องแอบแฝงอยู่ 
+เกิดขึ้นต่อ</font><font face="Leelawadee" color="#0000CC">เวทนา</font><font face="Leelawadee">ของเหล่าความคิดนึกปรุงแต่งต่างๆนาๆนั้น 
+&nbsp;</font><font face="Leelawadee" color="#000099">โดย</font><b><font face="Leelawadee" color="#6600FF">ตัณหา</font></b><font face="Leelawadee" color="#000099">นั้นอาจเกิดจาก</font><b><font face="Leelawadee" color="#6600FF">เวทนา</font></b><font face="Leelawadee" color="#000099">ของการ</font><b><font face="Leelawadee" color="#6600FF">คิดนึกปรุงแต่ง</font></b><font face="Leelawadee" color="#000099">เรื่อยเปื่อยต่างๆนาๆเรื่องใดครั้งหนึ่งก็ได้ 
+จนกลายเป็นทุกข์ในที่สุด,&nbsp;&nbsp;และเพราะอวิชชานี่เองจึงวนเวียนปรุงแต่งต่างๆนาๆในอทุกขมสุขที่เกิดขึ้นในชีวิตจนเป็นสังขาร(ในปฏิจจสมุปบาท)ที่เกิดจากการสั่งสมอบรมประพฤติปฏิบัต</font><font face="Leelawadee" color="#0000CC">ิ, 
+&nbsp;</font><font face="Leelawadee" color="#000099"><b>&nbsp;หรือเกิดอวิชชานุสัยขึ้นนั่นเอง</b></font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ถ้าพิจารณาในรูปของกระบวนจิต 
+ในกรณี</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">อทุกขมสุข</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="#0000CC">อุเบกขาเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;โดยทั่วไปความคิดนึกหรือขันธ์ ๕ ที่เกิดนั้นจะอยู่ในรูปขันธ์ ๕ ธรรมชาติอันไม่เป็นทุกข์ 
+&nbsp;แต่แล้วเกิดการฟุ้งซ่านหรือคิดปรุงแต่งอยู่เสมอๆจาก<a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 330, 1, 0, 0, 1, 1)">มโนกรรม</a>  
+ &nbsp;&nbsp;แต่แล้วเวทนาใดเวทนาหนึ่งที่เกิดขึ้นจากการฟุ้งซ่าน,คิดนึกปรุงแต่งต่างๆนั้น 
+&nbsp;เป็นปัจจัยให้</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">เ</font><font face="Leelawadee" color="#0000CC">กิดตัณหา</font><font face="Leelawadee">ขึ้น 
+&nbsp;มักเกิดขึ้นอย่างค่อยๆเป็น ค่อยๆไป อย่างไม่รู้ตัว เพราะวนเวียนคิดนึกปรุงแต่งนั่นเอง&nbsp;&nbsp;&nbsp;จนกลายเป็น</font><font face="Leelawadee" color="#0000CC">อุปาทานขันธ์ 
+๕ อันเป็นทุกข์</font></span><font face="Leelawadee"><span style="font-size:16pt;">ในที่สุดโดยไม่รู้ตัว</span></font></p>
+<p align="CENTER" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#000099"><span style="font-size:16pt;">แสดง 
+อวิชชานุสัย แบบอื่นๆ</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="red"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อวิชชานุสัย', 0, 0, 770, 200, 1, 0, 0, 1, 1)" title="กิเลส ที่แฝงตัวนอนเนื่องในสันดาน อันเกิด
+จากความไม่รู้ตามความเป็นจริง, อันจักอาจทํา
+ให้เกิด การกระทําหรือการประพฤติ, ปฏิบัติ
+โดยไม่รู้ตามความเป็นจริงในสภาวะธรรมนั้นๆ อันอาจก่อทุกข์ " target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;">อวิชชานุสัย</span></font></a><font face="Leelawadee"><span style="font-size:16pt;"> 
+อันก่อให้เกิด</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="navy">การประพฤติ,การปฏิบัติ 
+อันอาจก่อโทษได้ในภายหลังเนื่องจากความไม่รู้ตามความเป็นจริงในสภาวะธรรมหรือสิ่งนั้นๆ</font><font face="Leelawadee"> 
+ดังเช่นตัวอย่างที่เห็นง่ายๆในกรณีเด็กๆ ผู้ใหญ่จะตักเตือนเด็กๆเรื่องเล่นไฟ,อาวุธปืน 
+หรือมีดว่าอันตราย เด็กก็รับทราบ</font><font face="Leelawadee" color="#0000CC">เฉยๆโดยไม่รู้ตามความเป็นจริงว่ามีอันตราย</font><font face="Leelawadee"> 
+สังเกตุได้จากเด็กจะเล่นแบบหลบๆซ่อนๆ </font><font face="Leelawadee" color="#000099">แต่ความที่ไม่รู้ไม่เข้าใจในโทษตามความเป็นจริงของสิ่งนั้นอย่างแท้จริง</font><font face="Leelawadee"> 
+เด็กแทบทุกคนจะแอบเล่นทันที ที่มีโอกาสอํานวย จนถ้าเกิดอุบัติเหตุหรือเห็นโทษในสิ่งนั้นเช่นถูกไฟลวก 
+เด็กจะเรียนรู้และระมัดระวังในสิ่งนั้นๆทันที &nbsp;เป็นสัญญาจําได้และรู้ในโทษของสิ่งนั้นตามความเป็นจริง 
+และจะเกิดความระมัดระวังในสิ่งนั้นในคราวต่อๆไป อันนี้เป็นผลของ</font><font face="Leelawadee" color="#0000CC">อวิชชานุสัย</font></span><font face="Leelawadee"><span style="font-size:16pt;">เช่นกันที่เมื่อแยกแยะแล้วจักพอเห็นโทษได้ชัดเจนขึ้น</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อย่างใน</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">นักปฏิบัติก็เช่นเดียวกันมักเกิดอวิชชานุสัย 
+</font><font face="Leelawadee">อันยังให้เกิดกิเลสตัณหา</font><font face="Leelawadee" color="#0000CC">เนื่องจากความไม่รู้ตามความเป็นจริง</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+ซึ่งมองไม่ค่อยเห็น เช่นเห็นของสวยพยายามกดข่มว่าไม่สวย อยากในสิ่งใดก็สร้างตัณหาความไม่อยากมาต่อสู้, 
+กดข่ม ดังตัวอย่างเรื่องอาหารที่ได้กล่าวไปแล้วในบทท้ายอริยสัจ ซึ่งเป็นเพราะความไม่รู้แจ้งว่าก่อตัณหาอีกตัวหนึ่งขึ้นมา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><i><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;</span></font></i><font face="Leelawadee" color="#000099"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มีอาหารของโปรดอันโอชะมาวางตรงหน้า 
+เกิดเหตุปัจจัยอันมี อาหารนั้นเกิดอวิชชาสัมผัสอันเนื่องมาจากตา, จมูก และใจ ที่ไปสัมผัสรู้ 
+เกิดเวทนา อันอาจยังให้เกิดสังขารขันธ์ขนิดตัณหาความอยากในอาหารนั้น &nbsp;ถ้าเราไม่รีบเบี่ยงเบนอย่างฉับไว 
+หรือ</span></font><a href="javascript:na_open_window('win', 'javascript:na_open_window('" target="_self" title="เปิด หน้าต่างย่ย
+ดูความหมาย"><span style="font-size:16pt;"><font face="Leelawadee" color="blue">อุเบกขา</font></span></a><font face="Leelawadee"><span style="font-size:16pt;"> 
+</span></font><span style="font-size:16pt;"><font face="Leelawadee">เช่นลุกเดินออกไป 
+หรือเบี่ยงเบนไปในสิ่งอื่น แต่กลับนั่งดู, นั่งจ้อง, นั่งพิจารณา เพื่อต่อสู้กับตัณหาความอยากในทางโลกๆนั้นเป็นการผิด 
+&nbsp;เพราะจักต้องก่อตัณหาอีกตัวหนึ่งเป็นตัณหาในทางธรรมคือ</font><font face="Leelawadee" color="#6600FF">ความไม่อยาก(<a href="javascript:na_open_window('win', 'ex3.htm#วิภวตัณหา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">วิภวตัณหา</a>)</font><font face="Leelawadee" color="#000099">ซ่อนซ้อนอยู่ในความอยากอาหารนั้น 
+&nbsp;เป็นตัณหาซ้อนตัณหาหรือ</font><a href="javascript:na_open_window('win', 'ex3.htm#โมหะ', 0, 0, 770, 200, 1, 0, 0, 1, 1)"><font face="Leelawadee">โมหะ</font></a><font face="Leelawadee" color="#000099">(ความหลง)นั่นเอง 
+&nbsp;ที่เราปุถุชนพากันหลงอยู่เป็นประจํา &nbsp;กล่าวคือจิตหลง หลงทางจนไม่รู้ว่าต้องการหรือจัดการอย่างไรกันแน่. 
+&nbsp;&nbsp;ซึ่งเราในที่สุดเป็นฝ่ายพ่ายแพ้สิ้น ไม่ทางใดก็ทางหนึ่งอย่างแน่นอน 
+&nbsp;กล่าวคือถ้าตัณหาแรกคือความอยาก(<a href="javascript:na_open_window('win', 'ex3.htm#ภวตัณหา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ภวตัณหา</a>)ในอาหารชนะลงมือกิน 
+ก็คือการพ่ายแพ้แก่ตัณหา(<a href="javascript:na_open_window('win', 'ex3.htm#ภวตัณหา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ภวตัณหา</a>)ความอยากอาหารนั้นในที่สุด, 
+&nbsp;&nbsp;แต่ถ้าตัณหาในธรรมคือความไม่อยาก(</font><font face="Leelawadee" color="#6600FF"><a href="javascript:na_open_window('win', 'ex3.htm#วิภวตัณหา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">วิภวตัณหา</a></font><font face="Leelawadee" color="#000099">)เป็นฝ่ายชนะ 
+ไม่กินอาหารนั้น ก็คือการพ่ายแพ้แก่ตัณหา(</font><font face="Leelawadee" color="#6600FF"><a href="javascript:na_open_window('win', 'ex3.htm#วิภวตัณหา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">วิภวตัณหา</a></font><font face="Leelawadee" color="#000099">)ในทางธรรมนั้นเช่นกัน 
+&nbsp;&nbsp;จึงเป็นฝ่ายพ่ายแพ้แน่นอนแก่ตัณหาฝ่ายใด ฝ่ายหนึ่ง &nbsp;&nbsp;เมื่อตัณหาเกิดทุกข์อุปาทานย่อมบังเกิดอย่างแน่นอน 
+ดังนั้นจึงต้องรู้ตามความเป็นจริง และให้ &quot; </font><font face="Leelawadee" color="#6600FF">ละ 
+</font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt;">&quot; การ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ผัสสะ', 0, 0, 1250, 230, 1, 0, 0, 1, 1)"><span style="font-size:16pt;"><font face="Leelawadee">ผัสสะ</font></span></a><font face="Leelawadee" color="#000099"><span style="font-size:16pt;">กันโดยเร็วเท่าที่สติรู้ทันทันที &nbsp;อย่าไปคิดสู้รบปรบมือ ต่อล้อต่อเถียง เปิดโอกาสให้จิตคิดปรุงแต่ง 
+ไม่ว่ากับตัณหาฝ่ายใด กล่าวคือ</span></font><a href="javascript:na_open_window('win', 'javascript:na_open_window('" target="_self" title="เปิด หน้าต่างย่ย
+ดูความหมาย"><span style="font-size:16pt;"><font face="Leelawadee" color="blue">อุเบกขา</font></span></a><font face="Leelawadee"><span style="font-size:16pt;"> 
+</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#000099">วางทีเฉยอยู่ 
+ด้วยเจตนาด้วยการไม่เอนเอียงไปปรุงแต่ง&nbsp;ไม่ว่าดีหรือชั่ว คือ ดีก็ไม่ ชั่วก็ไม่, 
+แม้แต่เราถูกก็ไม่&nbsp;เขาผิดก็ไม่,&nbsp;&nbsp;&nbsp;ให้ &quot;</font><font face="Leelawadee" color="#6600FF">นําออก</font><font face="Leelawadee" color="#000099">&quot; 
+คือ &quot;</font><u><font face="Leelawadee" color="#6600FF">ละ</font></u><font face="Leelawadee" color="#000099">&quot; การผัสสะเสียโดยเร็ว, &nbsp;&nbsp;ตลอดจนมี</font><font face="Leelawadee" color="#0000CC">สติ</font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt;">ระมัดระวัง 
+ตัณหาแม้ในธรรม หรือ &quot;กุศลตัณหา&quot; ที่แม้เป็นกุศลแต่เมื่อประกอบด้วยตัณหาแล้วก็จะทำให้เกิดทุกข์อุปาทานได้เช่นกัน 
+ที่อาจจักบังเกิดขึ้นในทุกกรณี &nbsp;&nbsp;&nbsp;นี้เป็นเพียงตัวอย่างพื้นๆ เพียงเพื่อแจงให้เห็นการทํางานของตัณหา</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#6600FF"><b>อันละเอียดอ่อนซ่อนเงื่อน</b></font></span><font face="Leelawadee" color="#000099"><span style="font-size:16pt;"> 
+&nbsp;จักได้ระมัดระวังป้องกันตัณหาอันยังให้เกิดทุกข์ในชีวิตจริงๆ </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#000099"><span style="font-size:16pt;"><img src="star1.gif" width="32" height="32" border="0" vspace="0" align="absmiddle">&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee">การ 
+</font><b><font face="Leelawadee" color="blue">ละ</font></b><font face="Leelawadee"> 
+นี้จึงไม่ใช่การอยากพยายามไปละ เวทนาหรือสังขารขันธ์ต่างๆที่ย่อมเกิดขึ้นเป็นไปตามธรรมคือเหตุปัจจัย 
+&nbsp;แต่หมายถึงการละในสิ่งที่จะเป็นเหตุต่างๆที่ทำให้เกิดการสืบเนื่องต่อไปอีก</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ในกรณีของ 
+</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#000099">กิจอันพึงกระทําในอริยสัจ๔ 
+</font><font face="Leelawadee">คือทุกข์ให้</font><font face="Leelawadee" color="#0000CC"><b>รู้</b> 
+&nbsp;</font><font face="Leelawadee">สมุทัยให้</font><font face="Leelawadee" color="#0000CC"><b>ละ</b></font><font face="Leelawadee"> 
+ก็เฉกเช่นกัน &nbsp;ทุกข์ให้รู้นั้นให้ร<u>ู้</u>ตามความเป็นจริงในคุณโทษของสภาวะของสิ่งนั้นๆ 
+&nbsp;ไม่ละโดยสร้างตัณหามาซ้อนตัณหาอันคือความหลงหรือโมหะนั่นเอง, ไม่กดข่มไว้ 
+หรือ</font><font face="Leelawadee" color="#0000CC">การละทันทีโดยไม่รู้ไม่เข้าใจอันเป็นอวิชชานุสัยเช่นกัน 
+&nbsp;</font><font face="Leelawadee"> ดังนั้นจึงจักต้องรู้ในทุกข์นั้นอย่างถูกต้อง 
+อย่าปล่อยให้เป็นอวิชชานุสัย แล้วจากนั้นให้</font><font face="Leelawadee" color="#000099"><b>ละ</b></font><font face="Leelawadee">ทันทีและฉับไวที่สุด</font><font face="Leelawadee" color="#0000CC">เท่าที่กําลังของสติและปัญญาของเราจักทําได้หรือรู้ทัน</font><font face="Leelawadee"> 
+อย่าสร้างเงื่อนไขใดๆไปต่อรอง จึงจักถูกต้อง, </font><font face="Leelawadee" color="blue">&nbsp;<b>ละ</b> 
+</font><font face="Leelawadee">นี้มิได้หมายถึงหนีปัญหา แต่เป็นการ</font><font face="Leelawadee" color="blue">สู้ด้วยปัญญาและสติ</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+ด้วยเหตุที่รู้อย่างแจ่มแจ้งว่า &nbsp;สิ่งเหล่านี้ก่อให้เกิดเวทนาจากสังขารความคิดนึกต่างๆขึ้น 
+อันอาจเป็นปัจจัยให้เกิดตัณหา จึงยังให้เกิดทุกข์</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#000099">ละ 
+</font><font face="Leelawadee">นั้นก็ต้องเข้าใจให้ถูกต้องเช่นกันคือ</font><font face="Leelawadee" color="#0000CC">ละตัณหา</font><font face="Leelawadee">ความอยากหรือไม่อยากในเรื่องนั้นๆคือละเหตุแห่งทุกข์คือตัณหา 
+</font><font face="Leelawadee" color="#000099">ไม่ใช่ละกิจหรือหน้าที่อันพึงกระทํา</font><font face="Leelawadee"> 
+เช่นการแก้ไขปัญหานั้นๆ &nbsp;เพียงแต่พยายาม</font><font face="Leelawadee" color="#0000CC"><b>ละตัณหา</b></font><font face="Leelawadee">อันมักแอบแฝงมากับเวทนาของความคิดแก้ปัญหานั้นๆ</font><font face="Leelawadee" color="#0000CC">โดยใช้สติ 
+</font></span><font face="Leelawadee"><span style="font-size:16pt;">รู้เท่าทันเวทนาหรือตัณหา 
+ดังเช่นถ้าเราทั้งหิวข้าวอยากทานข้าวเป็นขันธ์ ๕ ปกติเป็นทุกขเวทนาทางกายตามธรรมชาติ 
+แต่ก็อาจมีตัณหาความอยากทานอะไรเป็นพิเศษแฝงมาด้วย เมื่อเราจะทานข้าวปรากฏว่ามีอาหารของโปรดด้วยเราจะทํากิจของสมุทัยคือละ 
+ไม่กินอาหารนั้นเลยหรือ เพราะรู้ว่ามีความอยาก ไม่ใช่แน่นอน เราต้องรู้ตามความเป็นจริงในคุณโทษของสิ่งนั้นๆ 
+เราต้องกินอาหารนั้นอันเป็นกิจที่พึงกระทํา เนื่องจากร่างกายมีความหิวต้องการอาหารนั้น 
+สิ่งที่เราควรละคือตัณหาความอยากในอาหารนั้นโดยสติ จึงจักควรกินอาหารนั้นโดยมีสติรู้เท่าทัน 
+อร่อยก็อร่อยตามรสชาติของอาหารและสัญญาจําของเราเองตามความเป็นจริง ไม่ไปฝืนว่ามันไม่อร่อย 
+แต่อย่าอยากหรือยึดติดหรือเพลินกับความอร่อยจนลืมความพอดีหรือขาดสติ &nbsp;&nbsp;อย่าเผลอจิตไปปรุงแต่งจนเกิดทุกข์เพราะความอยากกินนั่น 
+อยากกินนี่ &nbsp;จึงตัองเป็นทุกข์เพราะ</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#000099">การแสวงหา</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตัวอย่างในทางโลกๆเช่น</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เราโกรธเพื่อนหรือลูกน้อง 
+เราเคยสังเกตุหรือไม่ว่าเขาเจตนาหรือมีเหตุผลเยี่ยงไร เราจะโกรธทันทีที่เขากระทบความพึงพอใจในตนของตน 
+ความเชื่อ หรือศรัทธาของตน โดยไม่เคยสังเกตุหรือ &quot;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="navy">รู้&quot; 
+</font></span><font face="Leelawadee"><span style="font-size:16pt;">ตามความเป็นจริงอันสําคัญยิ่ง 
+ต่อจากนั้นเราจักคิดนึกปรุงแต่งอันเป็นอุปาทานขันธ์ทั้งสิ้น &nbsp;ลูกน้องหรือเพื่อนเตือนอาจมีเหตุผลหรือเจตนาดีแฝงอยู่ก็ได้ 
+แต่เราโกรธเสียแล้ว &nbsp;ย่อมปิดกั้นการรับรู้ตามความเป็นจริงเสีย เช่นใช้ลูกน้องไปทําอะไรสักอย่าง 
+หายไปนานมากๆเราจะมีความโกรธกรุ่นขึ้นมาก่อนที่ลูกน้องจะกลับมารายงานเสียแล้ว เขาอาจมีเหตุผลที่สมควรก็ได้เช่นเกิดอุบัติเหตุ 
+แต่พอกลับมาเรามักจะต่อว่าก่อนแล้วค่อยรับฟังแต่เป็นการรับฟังภายใต้อิทธิพลของอุปาทานเราเองที่ครอบงําอยู่เสียเป็นส่วนใหญ่ 
+ดังนั้นกิจอันพึงกระทําในอริยสัจเรื่องทุกข์ให้รู้ ต้องรู้ว่าเป็นอุปาทานขันธ์และรู้ตามความเป็นจริง 
+จึงจักถูกต้อง ไม่ใช่รู้จากการปรุงแต่ง, ฟุ้งซ่านของเราเอง อันเป็นอวิชชา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทุกข์ 
+เกิดแต่เหตุปัจจัยจากความไม่รู้เห็นตามความเป็นจริงในคุณโทษของสภาวะนั้นๆ และเกิดแต่สิ่งที่ได้ประพฤติปฏิบัติมาแล้ว(สังขารวิบาก)อันไม่สามารถกลับกลายเปลี่ยนแปลงได้อีกแล้ว 
+เมื่อมาปฏิบัติเพื่อดับทุกข์มักจะเกิดความรู้สึกอยากให้ทุกข์นั้นมันหมดสิ้นไปดังใจหวัง 
+เมื่อไม่สามารถปฏิบัติได้เพราะขาดความรู้ความเข้าใจในตอนแรกๆ ก็หมดกําลังใจหรือความหวัง 
+เลิกศึกษาปฏิบัติไปเลยเหตุเพราะตั้งความหวังไว้สูง และไม่มีความเพียรหรือสัมมาวายามะเพียงพอ</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">โลภ 
+โกรธ หลง ในมุมมองแบบปฏิจจสมุปบาท</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">อาการโลภ 
+โกรธ หลง ถ้าเรามองจากกระบวนการปฏิจจสมุปบาท เราจักมองเห็นได้ว่าเกิดขึ้นจากตัณหาคือ 
+ความอยาก, ความไม่อยาก แต่ทําให้เกิดได้ ๓ อาการ</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">โลภ-โลภะ 
+</font><font face="Leelawadee">&nbsp;</font><font face="Leelawadee" color="blue">หรือ 
+ราคะ มีโทษน้อย แต่คลายช้า</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+เกิดจากตัณหาความทะยานอยากในสิ่งใดๆ ตามเวทนาหรืออารมณ์ที่เกิดขึ้นอันมักเป็นสุขเวทนาแล้วจิตจักมีอาการทะยานออกไปยึดไปอยาก 
+อยากให้ได้ อยากให้มี อยากให้เป็น อยากให้เกิด ตามเวทนาหรืออารมณ์นั้นๆ จิตจักเกิดอุปาทานความพึงพอใจที่จะให้ได้สิ่งนั้นๆตาม 
+ตัณหาทะยานอยาก เมื่อไม่ได้สนองอุปาทานดังใจภพหรือสภาวะที่เกิดก็จักเกิดเป็นความโลภ 
+หรือราคะ ถ้าได้สมปรารถนาอุปาทานได้รับการตอบสนองก็จักเกิดความสุขแบบโลกๆอันยังให้เกิดทุกข์ในภายหลัง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">โกรธ-โทสะ</font><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="blue">มีโทษมาก แต่คลายเร็ว</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+มักเกิดจากตัณหาความไม่อยากในสิ่งใดๆ ตามเวทนาหรืออารมณ์ที่เกิดขึ้นอันมักเป็นทุกขเวทนา 
+ไม่อยากให้เกิด ไม่อยากให้มี ไม่อยากให้เป็น จิตจักมีอาการทะยานออกไปผลักไสต่อต้าน 
+รวมถึงต่อสู้ ต่อสิ่งนั้นๆหรืออารมณ์นั้นๆ จิตจักเกิดอุปาทานชนิดที่ความพึงพอใจไม่ได้รับการตอบสนองตามความพึงพอใจของตน 
+ภพหรือสภาวะที่เกิดจึงเป็นความขัดข้อง, ขุ่นเคือง หรือปฏิฆะ อันยังให้เกิดอาการไม่พอใจต่างๆนาๆ(อุปาทานขันธ์๕) 
+เช่นตั้งแต่ไม่พอใจ ไม่ชอบใจ ไปจนโกรธ เกรี้ยวกราด ทําร้ายอันแสดงออกถึงความไม่ชอบ 
+ไม่อยากให้เกิด ไม่อยากให้เป็น ไม่อยากให้มี</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">หลง-โมหะ</font><font face="Leelawadee"> 
+เป็นอาการที่ละเอียดซับซ้อนที่สุดใน ๓ อาการนี้ </font><font face="Leelawadee" color="blue">มีโทษมากและคลายช้าด้วย</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+และมักเกิดอยู่เสมอๆโดยไม่รู้ตัว เป็นขบวนการที่มีต้นกําเนิดพอที่จะจําแนกออกเป็น 
+๒ ลักษณะ</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๑. 
+เกิดจากอวิชชา คือ</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="red">ความไม่รู้ตามความเป็นจริง</font></span><font face="Leelawadee"><span style="font-size:16pt;">ในสภาวะธรรมหรือสิ่งนั้น 
+หรือเกิดจากอวิชชานุสัย(กิเลสที่นอนเนื่องในสันดานเพราะไม่รู้ตามความเป็นจริง)นั่นเอง 
+อันทําให้เกิดความหลง ซึ่งเป็นสาเหตุที่ครอบคลุมทั้งโลภะและโทสะ อันล้วนเป็นสังขารขันธ์ในขันธ์๕</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๒. 
+เกิดจากตัณหาเองโดยตรง มีเกิดซํ้าๆซ้อนๆ หรือสลับสับเปลี่ยนกัน ดังเช่น</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เกิดภวตัณหาซ้อนภวตัณหา 
+หรือความอยากซ้อนอยาก ดังเช่นอยากได้รถไว้ใช้งานสักคัน จะมีตัณหาซ้อนเพิ่มขึ้นอีก 
+ว่าน่าจะเป็นรถดีๆแพงๆจะได้โก้ๆหน่อยกลายเป็นความหลง ตัดสินใจไม่ถูก ต้องซื้อรถดีๆ 
+ถูกใจ สวยๆ หรือเอาประโยชน์สูงสุดไว้ใช้งาน</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เกิดจาก 
+วิภวตัณหา สลับกับ วิภวตัณหา หรือความไม่อยากซ้อนหรือสลับกับความไม่อยาก</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และอาจเกิดทั้ง๒ 
+คือ</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="red">ทั้งความอยาก</font><font face="Leelawadee">และ</font><font face="Leelawadee" color="red">ความไม่อยาก</font></span><font face="Leelawadee"><span style="font-size:16pt;">ก็ได้ 
+อันมีทั้งตัณหาความไม่อยาก ซ้อนหรือสลับสับเปลี่ยนกับ ตัณหาความอยากในสิ่งๆเดียวกันตามที่ได้กล่าวมาแล้วหลายๆครั้ง 
+&nbsp;ดังตัวอย่างในเรื่องอาหาร</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตลอดจนตัณหาความไม่อยาก 
+สลับกับ ตัณหาความอยาก ก็เป็นเฉกเช่นกันดังตัวอย่างเมื่อมีทุกขเวทนาหรือความทุกข์ 
+ในสิ่งใดๆขึ้นมาในขั้นแรกจักเกิดตัณหาความไม่อยากให้เกิด, ให้เป็น จิตจักทะยานออกไปผลักไส 
+ต่อต้านหรือ ต่อสู้ ต่อทุกขเวทนาหรือความทุกข์นั้นๆทันทีเป็นปกติวิสัย ขณะที่ผลักไสต่อสู้อยู่นั้น 
+จักมีจิตหนึ่งที่แวบออกไปคิดปรุงแต่งสิ่งหนึ่งสิ่งใด เป็นความอยากที่จักไปใช้ดับหรือแก้ไขอันเนื่องกับทุกขเวทนาหรือทุกข์นั้นๆ 
+เช่น เป็นทุกข์จากการขาดทรัพย์ ขาดเงิน ขณะที่เป็นทุกข์อยู่ในเรื่องขาดเงิน</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">ไม่อยาก</font><font face="Leelawadee">ให้มันเกิด 
+</font><font face="Leelawadee" color="#0000CC">ไม่อยาก</font><font face="Leelawadee">ให้มันเป็นกับเรา 
+&nbsp;อีกขณะจิตหนึ่งจักไปคิดนึกปรุงแต่งความ<u>อยาก</u>ได้เงินมาแก้ทุกข์นั้น 
+เช่น ถูกหวยซักงวดจะได้แก้จน แก้ปัญหา หมดทุกข์ หมดโศก ถ้าสังเกตุดีๆจักเห็นอาการเหล่านี้สลับซับซ้อนกันในจิตเป็นอาการที่จิตมีตัณหาเกิดขึ้นซํ้าซ้อนกันจนแยกแทบไม่ออก 
+</font><font face="Leelawadee" color="#0000CC">มีทั้งความไม่อยาก มีทั้งความอยากในสิ่งที่เนื่องเกี่ยวพันกัน</font><font face="Leelawadee"> 
+อันยังให้เกิดอุปาทานมีทั้งความพึงพอใจและไม่พึงพอใจแปรปรวน ไปตามตัณหาที่แปรปรวน 
+</font><font face="Leelawadee" color="red">เกิดเป็นกามภพ ชนิดความหลงหรือโมหะนั่นเอง</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+ทําให้ผู้ติดอยู่ในบ่วงจักจําแนกแยกทุกข์นั้นไม่เห็นชัดเจนอันทําให้เกิดความหลง 
+เหมือนคนหลงทางไม่รู้จะไปซ้ายหรือไปขวาดี, ดังนั้นเมื่อไม่รู้ตามความเป็นจริง จึงยังให้เกิดราคะความอยากทางโลกๆหรือปฏิฆะความขุ่นข้อง,ขัดเคือง 
+แบบใดก็ได้ขึ้นอยู่กับตัณหานั้นๆปนเปแปรปรวนไปมา</span></font></p>
+<p align="CENTER" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">ข้อคิด</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เราพึงทราบกันแล้วว่า 
+ขันธ์ทั้ง๕ ที่ประกอบเป็นตัวเป็นตนของมนุษย์นั้น นอกจากประกอบกันแล้วยังต้องทํางานประสานสอดคล้องกันด้วยจึงยังความเป็นมนุษย์อย่างสมบูรณ์ไม่บกพร่อง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตลอดจนทราบปฏิจจสมุปบาท 
+ว่าตัณหาเป็นปัจจัยจึงมีอุปาทาน อันทําให้เกิดอุปาทานทุกข์ที่พระพุทธองค์ทรงหมายให้ดับไป</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดังนั้นในการดําเนินชีวิต 
+ขันธ์๕ก็จักต้องดําเนินไปตามปกติของมนุษย์ เพียงแต่เพียรพยายามม</span></font><span style="font-size:16pt;"><u><font face="Leelawadee">ี</font></u><font face="Leelawadee" color="#0000CC">สติ 
+</font><font face="Leelawadee">หรือรู้เท่าทัน</font><font face="Leelawadee" color="#0000CC">เวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+อันจักทําให้สังขารขันธ์(จิตสังขาร-มโนสังขาร)อันจักเกิดขึ้นเบาบางลง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และมีสติรู้เท่าทันจิตหรือจิตสังขารที่เกิดขึ้นแล้ว 
+อันคือจิตตานุปัสสนาในสติปัฏฐานอันได้แก่ </span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#0000CC">ความคิด</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="#0000CC">จิต</font><font face="Leelawadee">ในรูปแบบต่างๆอันได้แก่โลภ 
+โกรธหลง หดหู่ ฟุ้งซ่าน รําคาญใจ เมตตา กรุณา มุทิตา ปีติ ฯลฯ. คืออาการของจิตทั้งหลายตัวอย่างเช่นใน 
+เจตสิก ๕๒ ยกเว้นเพียงเวทนาและสัญญาทั้ง ๕๐ ที่เหลือล้วนจัดเป็นสังขารขันธ์ชนิดจิตสังขารทั้งสิ้น, 
+&nbsp;อันจักยังต้องเกิดในปุถุชน มากบ้าง น้อยบ้าง เป็นปกติวิสัย อย่าไปได้ฟุ้งซ่านรําคาญใจกับจิตสังขารคิดที่เกิดขึ้น 
+&nbsp;เพียงแต่ต้อง อย่าเกิด</font><font face="Leelawadee" color="#0000CC">ตัณหาจากเวทนาของความคิดนึกปรุงแต่ง 
+&nbsp;ความอยากหรือไม่อยาก</font><font face="Leelawadee">ใดๆไปในเวทนาของ</font><font face="Leelawadee" color="#0000CC">สังขารปรุงแต่งหรือความคิดปรุงแต่งหรือจิต</font><font face="Leelawadee">นั้นๆ 
+&nbsp; จิตนั้นก็จักสงบเงียบลงไป เพราะ</font><font face="Leelawadee" color="red">ความคิดนึกปรุงแต่งมักมีกิเลสตัณหาแฝงมากับเวทนาด้วยอย่างไม่รู้ตัว</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;ซึ่งมักแอบแฝงมาในรูปความคิดเห็นต่างๆอันย่อมมีเวทนาเกิดขึ้นแต่ไม่แสดงอย่างชัดเจนว่าเกิดกิเลสตัณหาในตอนแรกๆ 
+เมื่อรู้ตัวอีกครั้งก็ตกอยู่ในทะเลทุกข์แล้ว</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#000099"><span style="font-size:16pt;">ข้อคิดข้อปฏิบัติ</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">สติ</font><font face="Leelawadee">หรือจิต(สติเป็นสังขารขันธ์ชนิดหนึ่งอันเป็นส่วนหนึ่งของนามหรือจิต)</font><font face="Leelawadee" color="blue">รู้เท่าทันกาย</font></span><font face="Leelawadee"><span style="font-size:16pt;">สักแต่ว่ากาย 
+รับรู้ตามความเป็นจริง ไม่เอาสมมติและความยึดมั่นต่างๆเข้าไปร่วมว่าเป็นคน เป็นตัวตน 
+เป็นเขา เป็นเรา หรือกายของเรา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">สติ</font><font face="Leelawadee">(หรือจิต) 
+</font><font face="Leelawadee" color="blue">รู้เท่าทันเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt;">หรือการเสวยอารมณ์ว่าสักแต่ว่าเป็นเช่นนั้นเอง 
+&nbsp;ไม่ไปยึดมั่นถือมั่นในอารมณ์ใดๆ ให้เข้าใจความเป็นสภาวะธรรม(ชาติ)อันพึงบังเกิด 
+พึงมีตามธรรมชาติตามหน้าที่ของเวทนา แล้วหยุดคิดนึกปรุงแต่งอันยังให้เกิดเวทนาของความคิดปรุงแต่งใหม่ขึ้นมาอีก</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">สติ</font><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="blue">รู้เท่าทันตัณหา</font><font face="Leelawadee"> 
+&nbsp;แล้วละเสีย &nbsp;โดยการหยุดคิดนึกปรุงแต่งอันยังให้เกิด</font><font face="Leelawadee" color="blue">เวทนาขึ้นอีก</font><font face="Leelawadee">อันเป็นอาหารอันโอชะของ</font></span><font face="Leelawadee" color="blue"><span style="font-size:16pt;">ตัณหา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">สติ</font><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="blue">รู้เท่าทันจิต</font><font face="Leelawadee">คือมโนสังขารหรือจิตสังขารต่างๆ 
+เช่น </font><font face="Leelawadee" color="blue">ความคิดที่เกิด</font><font face="Leelawadee">, 
+โลภ, โกรธ, หลง, หดหู่, ฟุ้งซ่าน, จิตหลุดพ้น, จิตเป็นฌาน เป็นสมาธิ &nbsp;แล้วหยุดคิดนึกปรุงแต่งอันยังให้เกิด</font><font face="Leelawadee" color="blue">เวทนาขึ้นอีก</font><font face="Leelawadee">อันเป็นอาหารอันโอชะของ</font></span><font face="Leelawadee" color="blue"><span style="font-size:16pt;">ตัณหา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="blue">สติ</font><font face="Leelawadee"> 
+</font><font face="Leelawadee" color="blue">รู้เท่าทันหรือรู้ในธรรม</font></span><font face="Leelawadee"><span style="font-size:16pt;">ที่บังเกิดขึ้นแก่จิต 
+เป็นเครื่องระลึก &nbsp;เครื่องรู้ &nbsp;เครื่องเตือนสติ</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เมื่อฝึก 
+ก็ฝึกตามลำดับขั้นตอนก็ได้ หรือตามจริตหรือปัญญาของตนเอง&nbsp;&nbsp;&nbsp;แต่การใช้งานจริงคือการใช้ในชีวิตประจำวัน 
+&nbsp;สติเห็นสิ่งใดก็ปฏิบัติในสิ่งนั้นๆ &nbsp;ไม่จำเป็นต้องปฏิบัติแต่ข้อใดข้อหนึ่ง 
+&nbsp;สามารถสลับสับเปลี่ยนไปมาได้ &nbsp;ยกเว้นเมื่อโยนิโสมนสิการหรือฝึกอยู่เท่านั้นจึงอาจอยู่กับกาย 
+หรือเวทนา หรือจิต หรือธรรม เป็นกิจๆไป</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><a href="378.htm"><font face="Leelawadee"><span style="font-size:16pt;"><b>อุเบกขาแบบต่างๆ</b></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">แสดงความแตกต่างของ</span></font><span style="font-size:16pt;"><font face="Leelawadee" color="#000099">อุเบกขาเวทนา</font></span><font face="Leelawadee"><span style="font-size:16pt;"> 
+กับอุเบกขาแบบต่างๆ ที่มักพาให้สับสน</span></font></p>
+<p align="center"><a href="javascript:history.go(-1)"><font face="Leelawadee"><span style="font-size:16pt;"><img src="back1.gif" width="94" height="40" border="0" alt="กลับหน้าเดิม"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><a href="BLANK1.htm"><font face="Leelawadee"><span style="font-size:16pt;"><img src="title.gif" width="93" height="33" border="0" alt="กลับไปสารบัญ"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#D1A62E"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:1.8; margin:0;" align="left"><span style="font-size:16pt;"><font face="Leelawadee"><span style="font-size:16pt;"><font color="#D1A62E"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+<a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></a>
+<a target="_blank" href="http://truehits.net/">Truehits.net</a>
+</noscript>
+<!-- END WEBSTAT CODE --> </font></span></font></span></p>
+<p><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<font face="Leelawadee"><script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    &nbsp;</font><h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรปฏิจจสมุปบาท</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรโดยขยายความ</font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee">ค้นหาคำศัพท์</font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</a>. 
+        </font></li>
+        <li><span style="font-size:12pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">ภาพกระบวนธรรมขันธ์ 
+        ๕</a></font></span></li>
+        <li><font face="Leelawadee" color="#990000">ใช้ <b>Ctrl+F</b> ค้นหาในหน้านี้</font></li>
+        <li><font face="Leelawadee" color="#990000">ใช้&nbsp;<b>Ctrl+C</b> = Copy</font></li>
+</div>
+</body>
+
+</html>

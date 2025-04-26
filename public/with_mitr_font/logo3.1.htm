@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body, p, div, span, h1, h2, h3, h4, h5, h6, li, td, th {
+    font-family: "Mitr", sans-serif !important;
+  }
+  </style><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>No title</title>
+<meta name="author" content="พนมพร คูภิรมย์">
+<meta name="generator" content="Namo WebEditor v5.0">
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<div id=glow_text>
+    <h1 align="center" style="margin-top:2mm;"><a href="BLANK1.htm"><img src="logo3.gif" width="77" height="88" border="0"></a><span style="font-size:18pt;"><font face="MS Sans Serif">
+        <script language=javascript>
+//----   Choice of variables   ----
+glow_color="#FED586"
+glow_min=2
+glow_max=5
+glow_speed=100
+//---------The description---------
+/*
+glow_color - color of the glow
+glow_min - minimal size
+glow_max - maximal size
+glow_speed - the glow speed
+*/
+//----------------------------------
+function f_glow(){
+ glow_size+=glow_const
+ if (glow_size>glow_max || glow_size<glow_min) glow_const*=(-1)
+ document.all.glow_text.style.filter = "glow(color="+glow_color+", strength="+glow_size+")"
+}
+if(document.all){glow_const=1; glow_size=glow_min; document.all.glow_text.style.width="100%"; setInterval("f_glow()",glow_speed)}
+
+</script>
+</font></span></h1>
+</div>
+</body>
+
+</html>

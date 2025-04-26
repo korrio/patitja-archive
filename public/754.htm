@@ -1,0 +1,282 @@
+<html>
+
+<head>
+<title>Buddha</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<script language="Javascript">
+// Fireworks Script
+
+// Craig Blanchette - Craiga    http://www.Craiga.us
+
+// Works in IE5+ and NS6+
+
+
+
+howmany     = 120                                                // How many sparks come off firework?
+
+howbig      = 100                                                // How big (radius, will be about 8 times as big as this number)
+
+launchspeed = 15                                                // Speed of the launcher
+
+colors = new Array('yellow','orange','blue','white','red','lightgreen');  // Colors of sparks
+
+
+
+function spark(div)
+
+{
+
+  this.css    = document.getElementById(div).style; 
+
+  
+
+  this.show   = function()   { this.css.visibility="visible"; }
+
+  this.hide   = function()   { this.css.visibility="hidden"; }
+
+  this.moveTo = function(x,y){ this.x=x; this.y=y; this.css.left=x; this.css.top=y; }
+
+  this.bg     = function(col){ this.css.backgroundColor=col; }
+
+  this.resize = function(w,h){ this.css.overflow="hidden"; this.css.width=w; this.css.height=h; }
+
+  
+
+  return this; 
+
+}
+
+
+
+function init(){
+
+  if(parseInt(launch.top) > center_y){
+
+     launch.top = parseInt(launch.top)-launchspeed; 
+
+     setTimeout('init()',1); 
+
+  }else{
+
+     launch.visibility="hidden"; 
+
+     for(i=0;i<sparks.length;i++){
+
+       sparks[i].show(); 
+
+       sparks[i].inc = (Math.random()*10); 
+
+       sparks[i].ang = (Math.random()*360); 
+
+     }
+
+     counter = 0; 
+
+     doExplode(); 
+
+  }
+
+}
+
+
+
+function doExplode(){
+
+  if(counter < howbig){
+
+    counter++; 
+
+    for(i=0;i<sparks.length;i++){
+
+      x = center_x + (counter*sparks[i].inc) * Math.sin(sparks[i].ang * Math.PI/180); 
+
+      y = center_y + (counter*sparks[i].inc) * Math.cos(sparks[i].ang * Math.PI/180); 
+
+      sparks[i].moveTo(x,y); 
+
+    }
+
+   setTimeout('doExplode()',1);
+
+  }else{
+
+    for(i=0;i<sparks.length;i++){
+
+      sparks[i].hide(); 
+
+    }
+
+    launch.visibility="visible"; 
+
+    getDimens(); 
+
+    launch.top = bottom-15; 
+
+    launch.left = l; 
+
+    init();
+
+   } 
+
+}
+
+
+
+function getDimens(){
+
+    if(document.all){
+
+      bottom = document.body.clientHeight; 
+
+      width  = document.body.clientWidth;
+
+    }else{
+
+      bottom = innerHeight;
+
+      width  = innerWidth;   
+
+    }
+
+      center_y = (bottom/2)-50; 
+
+      center = width/2; 
+
+      l = (Math.random()*(width/2))+(width/4); 
+
+      center_x = l; 
+
+}
+
+</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Boddha image,รูปพระพุทธเจ้า">
+<script language="JavaScript">
+<!--
+function namosw_rotate_banner_go() 
+{
+  var targetstr = document._rotatetargets[document._rotate_no];
+  if (targetstr == 'blank') {
+    window.open(document._rotatelinks[document._rotate_no], 'win1');
+  } else {
+    var frameobj;
+    if (targetstr == '') targetstr = 'self';
+    if ((frameobj = eval(targetstr)) != null)
+      frameobj.location = document._rotatelinks[document._rotate_no];
+  }
+}
+
+function namosw_rotate_banner()
+{
+  if (!document._rotateimages) {
+    document._rotateimages  = new Array();
+    document._rotatelinks   = new Array();
+    document._rotatetargets = new Array();
+
+    document._rotate_name = 'image2';
+    document._rotate_interval = 5000;
+    document._rotate_itemnum = 5;
+    document._rotateimages[document._rotateimages.length] = "b12.1.gif";
+    document._rotatelinks[document._rotatelinks.length] = "1mainpage.htm#title";
+    document._rotatetargets[document._rotatetargets.length] = "parent";
+    document._rotateimages[document._rotateimages.length] = "buddha1.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "1mainpage.htm#title";
+    document._rotatetargets[document._rotatetargets.length] = "parent";
+    document._rotateimages[document._rotateimages.length] = "b69.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "1mainpage.htm#title";
+    document._rotatetargets[document._rotatetargets.length] = "parent";
+    document._rotateimages[document._rotateimages.length] = "images2.gif";
+    document._rotatelinks[document._rotatelinks.length] = "http://";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "b8.1.gif";
+    document._rotatelinks[document._rotatelinks.length] = "http://";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    setInterval("namosw_rotate_banner()", document._rotate_interval);
+    document._rotate_no = -1;
+  }
+
+  document._rotate_no++;
+  if (document._rotate_no == document._rotateimages.length)
+    document._rotate_no = 0;
+
+  document.images[document._rotate_name].src = document._rotateimages[document._rotate_no];
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="black" text="gray" onload="starter(); namosw_rotate_banner();">
+<script language="Javascript">
+sparks = new Array(); 
+
+  document.write('<div id="launcher" style="position: absolute; width: 3; height: 15; overflow: hidden; background-color: white"></div>');
+
+  launch = document.getElementById('launcher').style;  
+
+for(i=0;i<howmany;i++){
+
+  document.write('<div id="spark'+i+'" style="position: absolute"></div>'); 
+
+    
+
+  sparks[i] = new spark('spark'+i); 
+
+  sparks[i].resize(1,1); 
+
+  sparks[i].hide(); 
+
+  num = Math.round(Math.random()*(colors.length-1))
+
+  col = colors[num]; 
+
+  sparks[i].bg(col); 
+
+}
+
+function starter(){
+
+getDimens(); 
+
+launch.top = bottom-15; 
+
+launch.left = l; 
+
+init(); 
+
+}
+
+</script>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<table align="center" border="6" bordercolor="#FAD002" bordercolorlight="#947B01" width="52" bgcolor="#FFFF99">
+    <tr>
+        <td width="42" align="center" valign="middle">
+            <p style="font-family:'MS Sans Serif',serif; line-height:1.8;"><a href="javascript:namosw_rotate_banner_go()" target="_self"><img src="b12.jpg" width="85" height="125" border="0" alt="b12.jpg" name="image2"></a></p>
+        </td>
+    </tr>
+</table>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"></p>
+<form name="form1">
+    <p align="center"><u><font face="MS Sans Serif" color="#339900"><input type=button value="กลับหน้าเดิม" onclick="history.go(-1)" style="font-family:'MS Sans Serif'; font-style:normal; font-weight:lighter; font-size:15px; color:rgb(254,213,134); background-color:rgb(162,112,37); border-width:2px; border-color:rgb(128,64,0); border-style:solid;"></font></u></p>
+</form>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"><font face="MS Sans Serif">&nbsp;</font><b><a href="BLANK1.htm"><font face="MS Sans Serif"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></font></a><font face="MS Sans Serif"> 
+</font></b></p>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"><font face="MS Sans Serif"><font face="MS Sans Serif">&nbsp;</font></font></p>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"><font face="MS Sans Serif"><font face="MS Sans Serif"><!--BEGIN WEB STAT CODE----><script language="javascript1.1">
+page="รูป";
+</script><script language="javascript1.1" src="http://hits.truehits.in.th/data/h0012229.js">
+</script><!-- END WEBSTAT CODE --><!-- Begin Nedstat Basic code --><!-- Title: 4*!82 --><!-- URL: http://www.nkgen.com/ --></font></font>&nbsp;</p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font face="MS Sans Serif"><font face="MS Sans Serif">&nbsp;</font></font></p>
+<p align="left" style="line-height:2; margin-top:0; margin-bottom:0;"><font face="MS Sans Serif"><font face="MS Sans Serif">&nbsp;</font></font></p>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"></p>
+</body>
+
+</html>

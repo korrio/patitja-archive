@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>ค้นหาคำศัพท์</title>
+<meta name="GENERATOR" content="Namo WebEditor v5.0">
+<meta name="description" content="Creates a banner frame on the top, menu frame on the left, and main frame on the right. Hyperlinks in the banner frame are targeted to the menu frame.">
+<meta name="keywords" content="คำศัพท์พุทธศาสตร์">
+</head>
+
+<frameset rows="7%, 93%" cols="1*" border="5">
+    <frame name="banner" scrolling="no" marginwidth="10" marginheight="14" namo_target_frame="contents" src="ex1.htm">
+    <frameset rows="1*" cols="11%, 89%">
+        <frame name="contents" scrolling="auto" marginwidth="2" marginheight="5" namo_target_frame="detail" src="ex2.htm">
+        <frame name="detail" scrolling="yes" marginwidth="10" marginheight="14" src="ex3.htm">
+    </frameset>
+    <noframes>
+    <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+    <form name="sampleform" method="POST" action="/cgi-bin/formsubmit.pl" onsubmit="return createTarget(this.target)" target="http://www.nkgen.com">
+        <form name="sampleform" method="POST" action="/cgi-bin/formsubmit.pl" onsubmit="return createTarget(this.target)" target="http://www.nkgen.com">
+            <p align="center">&nbsp;</p>
+        </form>
+    </form>
+ <form action="" name="form1" onsubmit="search(document.form1, self); return false">
+        <p>
+          <input type="text" name="findthis" size="15" title="Press 'ALT s' after clicking submit to repeatedly search page">
+          <br>
+          <br>
+          <input type="submit" value="Find in Page" accesskey="s">
+        </p>
+      </form>
+
+    </body>
+    </noframes>
+</frameset>
+</html>

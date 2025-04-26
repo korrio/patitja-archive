@@ -1,0 +1,424 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body, p, div, span, h1, h2, h3, h4, h5, h6, li, td, th {
+    font-family: "Mitr", sans-serif !important;
+  }
+  </style><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>แนะนําหนังสือ</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<bgsound src="VC181.MID" loop="infinite">
+<script src="rightmenu.js" type=text/javascript>
+//Right-click menu- By Eyecon (http://www.webteam.ro)
+//Slight modifications by JK
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+</script>
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<script language="JavaScript1.2">
+<!--
+
+/*
+Flying Cupids- By Dynamic Drive, based on script by Kurt (kurt.grigg@virgin.net)
+For full source, usage terms, and 100's more DHTML scripts
+Visit http://www.dynamicdrive.com
+*/
+
+Cupid=new Image();
+Cupid.src="bookAnimate.gif";  //specify path to Cupid image
+amount=3;  //Number of cupids, minimum must be 3.
+Xpos=700;  //cupids x coordinates, in pixel
+Ypos=200;  //cupids y coordinates, in pixel
+step=0.1; //Animation speed (smaller is slower)
+dismissafter=10;  //seconds after which Cupids should disappear, in seconds
+
+var ns6=document.getElementById&&!document.all
+bats=new Array(3)
+if (document.layers){
+for (i=0; i < amount; i++) 
+{document.write("<LAYER NAME=n"+i+" LEFT=0 TOP=-50><a href='http://www.dynamicdrive.com'><IMG SRC='"+Cupid.src+"' NAME='nsi' width=69 height=60 border=0></a></LAYER>")}
+}
+else if (document.all||ns6){
+document.write('<div id="out" style="position:absolute;top:0;left:0"><div id="in" style="position:relative">');
+for (i=0; i < amount; i++){
+if (document.all)
+document.write('<a href="http://www.nkgen.com"><img src="'+Cupid.src+'" id="msieBats" style="position:absolute;top:-50;left:0" border=0></a>')
+else
+document.write('<a href="http://www.nkgen.com"><img src="'+Cupid.src+'" id="ns6Bats'+i+'" width=69 height=60 style="position:absolute;top:-50;left:0" border=0></a>')
+}
+document.write('</div></div>');
+}
+
+yBase=xBase=currStep=a_count=0;
+b_count=1;
+c_count=2;
+d_count=3;
+move=1;
+if (document.layers||ns6){
+yBase=window.innerHeight/3;
+xBase=window.innerWidth/6;
+if (document.layers)
+window.captureEvents(Event.MOUSEMOVE);
+
+}
+if (document.all){
+yBase = window.document.body.offsetHeight/3;
+xBase = window.document.body.offsetWidth/6;
+}
+
+function dismisscupid(){
+clearInterval(flycupid)
+if (document.layers){
+for (i2=0; i2 < amount; i2++){
+document.layers['n'+i2].visibility="hide"
+}
+}
+else if (document.all)
+document.all.out.style.visibility="hidden"
+else if (ns6)
+document.getElementById("out").style.visibility="hidden"
+}
+
+if (document.layers){
+for (i=0; i < amount; i++)
+document.layers['n'+i].document.images['nsi'].src=Cupid.src
+}
+else if (document.all){
+for (i=0; i < amount; i++)
+document.all.msieBats[i].src=Cupid.src
+}
+else if (ns6){
+for (i=0; i < amount; i++)
+document.getElementById("ns6Bats"+i).src=Cupid.src
+}
+
+function Animate(){
+a_count+=move;
+b_count+=move;
+c_count+=move;
+currStep+=step;
+if (a_count >= bats.length) a_count=0;
+if (b_count >= bats.length) b_count=0;
+if (c_count >= bats.length) c_count=0;
+if (document.layers){
+for (i=0; i < amount; i++) {
+  var NewL="n"+i
+  document.layers[NewL].top = Ypos+yBase*Math.sin(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/10)
+  document.layers[NewL].left =Xpos+xBase*Math.cos(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/62)
+  }
+}
+
+if (document.all){
+for (i=0; i < amount; i++){
+  document.all.msieBats[i].style.pixelTop = Ypos+yBase*Math.sin(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/10)
+  document.all.msieBats[i].style.pixelLeft =Xpos+xBase*Math.cos(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/62)
+ }
+}
+
+if (ns6){
+for (i=0; i < amount; i++){
+  document.getElementById("ns6Bats"+i).style.top = Ypos+yBase*Math.sin(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/10)
+  document.getElementById("ns6Bats"+i).style.left =Xpos+xBase*Math.cos(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/62)
+ }
+}
+
+}
+flycupid=setInterval('Animate()',30);
+setTimeout("dismisscupid()",dismissafter*1000)
+//-->
+</script>
+<meta name="description" content="แนะนำหนังสือทางพระพุทธศาสนา">
+<meta name="keywords" content="หนังสือธรรมะ">
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="#906D18" vlink="#906D18" alink="#BF9C59" background="image1.jpg" style="font-family:Tahoma; font-size:12pt;">
+<p align="center" style="margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee">&nbsp;</font></span><a href="BLANK1.htm"><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee"><img src="book3.gif" width="70" height="70" border="4" alt="กลับไปสารบัญ"></font></span></a></p>
+<p style="margin-top:2mm; margin-bottom:0;" align="center"><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;"><b>แนะนําหนังสือธรรมะน่าอ่าน</b></span></font></p>
+<p align="left" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๑. 
+<b>พุทธธรรม</b></span></font></p>
+<p align="left" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#A26601"><span style="font-family:Tahoma; font-size:16pt; letter-spacing:-0.1px; line-height:2.2;">ถูกจัดอันดับเป็น<img src="star1.gif" width="32" height="32" border="0" vspace="5" align="absmiddle">&nbsp;๑ 
+ในหนังสือดี ๑๐๐ เล่มที่คนไทยควรอ่าน <img src="star1.gif" width="32" height="32" border="0" vspace="5" align="absmiddle">&nbsp;&nbsp;หมวดศาสนา, 
+ปรัชญา </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">เป็นหนังสือทรงคุณค่ายิ่ง 
+ที่น่าเก็บไว้ศึกษา ค้นคว้าเป็นแนวทางปฎิบัติ &nbsp;เป็นข้อเขียนที่ทรงภูมิปัญญาและเป็นกลางอย่างแท้จริง 
+&nbsp;รวบรวมแก่นธรรมสําคัญๆไว้อย่างครบถ้วนบริบูรณ์ &nbsp; ตลอดจนปฏิจจสมุปบาท</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">พระธรรมปิฎก</font><font face="Leelawadee" color="black"> 
+</font></span><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">(ป.อ. 
+ปยุตฺโต) </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;"><a href="https://www.watnyanaves.net/uploads/File/books/pdf/buddhadhamma_extended_edition.pdf">สามารถดาวน์โหลดได้ฟรี</a></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">สำหรับ 
+Iphone และ Ipad ดาวน์โหลดฟรีได้ใน App Store, พิมพ์ค้นหาด้วย&quot;พุทธธรรม&quot;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">มีจำหน่าย 
+เป็นหนังสือดิจิตอล ใน <a href="https://play.google.com/store/books/details/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%9B_%E0%B8%8E%E0%B8%81_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A2_%E0%B8%97%E0%B8%98_%E0%B8%9B%E0%B8%A2_%E0%B8%95_%E0%B9%82%E0%B8%95_%E0%B8%9E_%E0%B8%97%E0%B8%98%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1_%E0%B8%89%E0%B8%9A_%E0%B8%9A%E0%B8%9B%E0%B8%A3_%E0%B8%9A%E0%B8%82%E0%B8%A2%E0%B8%B2%E0%B8%A2?id=cKZJCgAAQBAJ">Google 
+Play</a> ในราคา ๑๑๒.๕๐</span></font></p>
+<p align="left" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">ธรรมบรรยาย 
+&quot;</span></font><a href="https://www.watnyanaves.net/th/album_detail/practising-dhamma-the-right-way"><font face="Leelawadee"><span style="font-size:16pt;">ปฏิบัติธรรมถูกทาง สร้างบุญก็ได้ ไปนิพพานก็ถึง</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">&quot;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><span style="font-size:16pt;"><a href="sti400.htm"><font face="Leelawadee">ธรรมข้อคิด 
+จากหนังสือพุทธธรรม</font></a></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee">&nbsp;</font></p>
+<p align="left" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๒. 
+<b>ปฏิจจสมุปบาท &nbsp; หนังสือชุดลอยปทุม</b></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">กล่าวถึง 
+ปฏิจจสมุปบาท ในแนวทางที่ถูกต้อง เป็นพื้นฐานเพื่อการ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#โยนิโสมนสิการ', 0, 0, 780, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">โยนิโสมนสิการ</span></font></a></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">ท่านพุทธทาสภิกขุ</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ธรรมสภา 
+โทร. 0-2434-4267, 0-2434-3566, 0-2441-1588</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">&nbsp;</font></span><span style="font-size:16pt;"><font face="Leelawadee" color="#A26601"><a name="๓">๓</a></font></span><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">. 
+</font></span><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;"><b>ปฏิจจสมุปบาท 
+หลักปฏิบัติอริยสัจจ์ที่สมบูรณ์แบบ </b>&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">กล่าวถึงปฏิจจสมุปบาทในช่วงต้นเหมือนเล่มข้างต้น 
+พร้อมทั้งปฏิจจสมุปบาทที่ตรัสโดยพระพุทธเจ้า และมีกล่าวถึงเหตุใดปฏิจจสมุปบาทจึงถูกเข้าใจกันมาอย่างผิดพุทธประสงค์เป็นเวลาพันกว่าปี</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">ท่านพุทธทาสภิกขุ</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ธรรมสภา 
+โทร. 0-2434-4267, 0-2434-3566, 0-2441-1588</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๔. 
+<b>ปฏิจจสมุปบาทคืออะไร? </b></span></font></p>
+<p align="left" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">พุทธทาสภิกขุ 
+</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ในตอนท้ายมีกล่าวถึงเหตุใดปฏิจจสมุปบาทจึงถูกเข้าใจกันมาอย่างผิดพุทธประสงค์เป็นเวลาพันกว่าปี</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">สํานักพิมพ์สุขภาพใจ 
+&nbsp;&nbsp;โทร.&nbsp;0-2415-6797, 0-2415-2621, 0-2415-6507</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๕. 
+<b>อิทัปปัจจยตา ฉบับย่นความจากชุด&quot;ธรรมโฆษณ์&quot; </b></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#A26601"><span style="font-family:Tahoma; font-size:16pt; letter-spacing:-0.1px; line-height:2.2;">จากหนังสือ<b>อิทัปปัจจยตา</b>ที่ถูกจัดอันดับเป็น&nbsp;&nbsp;<img src="star1.gif" width="32" height="32" border="0" vspace="5" align="absmiddle">&nbsp;๑ 
+ในหนังสือดี ๑๐๐ เล่มที่คนไทยควรอ่าน <img src="star1.gif" width="32" height="32" border="0" vspace="5" align="absmiddle">&nbsp;&nbsp;หมวดศาสนา, 
+ปรัชญา </span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">ท่านพุทธทาสภิกขุ</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ย่นความโดย&quot;</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">เช่นนั้นเอง</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&quot;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">มีจำหน่ายหนังสือชุด 
+&quot;<b>ธรรมโฆษณ์</b>&quot; ทั้งหมด <a href="http://www.trilakbooks.com/product/323831/%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%88%E0%B8%88%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%9B%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%AD%E0%B8%A9%E0%B8%90%E0%B9%8C-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%AD%E0%B8%A9%E0%B8%90%E0%B9%8C.html">ที่นี่</a></span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๖. 
+<b>พระพุทธเจ้าสอนอะไร </b></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">เน้นให้เห็นและเข้าใจว่าพระพุทธเจ้าท่านสอนอะไร 
+เข้าใจถึงพุทธประสงค์ที่ถูกต้อง เพื่อให้รู้จุดมุ่งหมายอย่างถูกต้อง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">WALPOLA 
+SRI RAHULA</font></span><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">,&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">แปลและเรียบเรียงโดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">ชูศักดิ์ 
+ทิพย์เกษรและคณะ</span></font></p>
+<p align="left" style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โรงพิมพ์มหาจุฬาลงกรณราชวิทยาลัย 
+&nbsp;โทร. 0-2224-8214, 0-2221-8892</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๗. 
+<b>อตุโล ไม่มีใดเทียม &nbsp;</b></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ประวัติ 
+ปฏิปทา และคําสอน ของ</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#9D6D2C">พระราชวุฒาจารย์</font><font face="Leelawadee"> 
+(</font><font face="Leelawadee" color="#A26601">หลวงปู่ดูลย์ อตุโล</font><font face="Leelawadee">) 
+เป็นหนังสือทรงคุณค่าน่าอ่านที่เน้นเกี่ยวกับการ</font><font face="Leelawadee" color="#9D6D2C">ปฏิบัติทางจิต 
+หรือปัญญา</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">เป็นสําคัญ 
+ถ้าผู้อ่านมีพื้นความรู้ปฏิจจสมุบาท อริยสัจ๔และขันธ์๕แล้วจักเห็นสาระคุณประโยชน์ 
+ความบันเทิงธรรมที่แอบแฝงอยู่ในคําสอน อ่านดูง่ายๆแต่ควรพิจารณาให้ลึกซึ้ง(โยนิโสมนสิการ 
+หรือธรรมะวิจยะ)</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">จากบันทึกความทรงจําของ</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">พระโพธินันทมุนี 
+(สมศักดิ์ ปณฺฑิโต)</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;"> 
+</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">รวบรวมและเรียบเรียงโดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">รองศาสตราจารย์ 
+ดร.ปฐม นิคมานนท์</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">สนใจติดต่อ 
+&nbsp;วัดบูรพาราม อ.เมือง จ.สุรินทร์</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โทร. 
+0-4451-4234</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">หรือหาอ่านได้ใน 
+</span></font><a href="http://www.e4thai.com/e4e/images/pdf2/LuangPoo-Doon.pdf"><font face="Leelawadee"><span style="font-size:16pt;">http://www.e4thai.com/e4e/images/pdf2/LuangPoo-Doon.pdf</span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">หรือ 
+ซื้อแบบดิจิตอลได้ที่นี่ </span></font><span style="font-size:16pt;"><font face="Leelawadee"><a href="https://www.mebmarket.com/index.php?action=BookDetails&book_id=24450">https://www.mebmarket.com/index.php?action=BookDetails&amp;book_id=24450</a></font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๘.<b> 
+หลวงปู่ฝากไว้</b></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">บันทึกคติธรรมและธรรมเทศนา 
+แบบสั้นๆ เล่มเล็กๆเหมาะแก่การพกพา(แต่ใจความลึกชึ้ง)ของหลวงปู่</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#A26601">ดูลย์ 
+อตุโล</font><font face="Leelawadee">(ใน </font><font face="Leelawadee" color="#A26601">อตุโล 
+ไม่มีใดเทียม</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;"> 
+ก็มีเช่นกันในตอนท้ายเล่ม)</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">สั่งชื้อได้ตามที่อยู่ข้างบน</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">หรือหาอ่านได้ใน 
+:</span></font><a href="pudule.htm" target="_self"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">http://www.nkgen.com/pudule.htm</span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๙. 
+<b>ตามรอยบาทพระศาสดา &nbsp;ศึกษาพุทธประวัติจากสังเวชนียสถาน</b></span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">เป็นหนังสือที่มีรูปเล่ม 
+ตลอดจนภาพประกอบที่สวยงาม และให้ความรู้อย่างคาดไม่ถึง แต่ราคาค่อนข้างจะแพง(480บาท)เพราะมีภาพประกอบอย่างสวยงามสมราคา 
+&nbsp;แนะนําให้อ่านเพราะคุ้มค่าที่อ่านและเก็บรักษาไว้</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">ไพโรจน์(ลออ) 
+&nbsp;คุ้มไพโรจน์</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ธรรมสภา 
+โทร. 0-2434-4267, 0-2434-3566, 0-2441-1588</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๑๐. 
+<b>กรณีเงื่อนงํา:พระพุทธเจ้าปรินิพพานด้วยพระโรคอะไร?</b></span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">ท่านพระธรรมปิฎกเมตตาชี้แจงสั่งสอนแนวทางพิจารณาเพื่อความเข้าใจที่ถูกต้อง, 
+ในหนังสือเล่มนี้ได้ชี้ให้เห็นทุกขเวทนาอันเป็นทุกข์ธรรมชาติที่บังเกิดมีและไม่มีผู้ใดหลีกเลี่ยงได้แม้พระศาสดาให้เห็นอย่างชัดแจ้ง 
+&nbsp;เพื่อความเข้าใจในเวทนาอย่างถูกต้อง โดยเฉพาะนักปฏิบัติจักได้ไม่ปฎิบัติออกนอกลู่นอกทาง 
+พยายามดับเวทนา ดับความรู้สึก หรือต้องเฉยๆ(อทุกขมสุข) ไม่รู้สึกรู้สาแต่เพียงอย่างเดียวอันไปยึดถือว่าถูกต้อง 
+เพราะไม่รู้ไม่เข้าใจในเวทนาอย่างแท้จริง, อ่านแล้วควรพิจารณาทุกขเวทนาทางกายเปรียบเทียบกับทุกขเวทนาทางใจดังเช่นทางกายมี 
+ทางใจมี? &nbsp;ในเมื่อพระพุทธองค์และพระอริยสาวกล้วนมีทุกขเวทนา(ทั้งทางกายแและใจ?) 
+แต่เหตุไฉนท่านจึงกล่าวว่าไม่เป็นทุกข์?</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ตลอดจนกล่าวถึงวิชชา๓ของพุทธศาสนาไว้ในแนวความเข้าใจเดียวกันกับผู้เขียน 
+ในหน้า๔๑ </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">พระธรรมปิฎก 
+(ป.อ. ปยุตฺโต)</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;สํานักพิมพ์ 
+มูลนิธิพุทธธรรม &nbsp;โทร 0-2589-9012, 0-580-2719, โทรสาร 0-2954-4791&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๑๑. 
+<b>ปฏิจจสมุปบาทจากพระโอษฐ์ ฉบับ ๑๐๐ ปี ชาตกาล สืบสานปณิธารพุทธทาส</b></span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">เป็นหนังสือรวบรวมปรมัตถธรรมเกี่ยวกับปฏิจจสมุปบาทของท่านพุทธทาสอย่างสมบูรณ์ 
+หนา ๑๐๕๘ หน้า,&nbsp;เป็นหนังสือที่คู่ควรแก่การอ่านและค้นคว้าปฏิจจสมุปบาท (พิมพ์ครั้งที่๕ 
+กันยายน ๒๕๔๕)</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">แปลและรวบรวมจากพระไตรปิฏกภาษาบาลี 
+โดย</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">ท่านพุทธทาสภิกขุ</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">สำนักพิมพ์สุขภาพใจ 
+&nbsp;โทร 0-2415-2621, &nbsp;โทรสาร 0-2416-7744</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;"><a href="http://www.trilakbooks.com/product/323831/%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%88%E0%B8%88%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%9B%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%AD%E0%B8%A9%E0%B8%90%E0%B9%8C-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%AD%E0%B8%A9%E0%B8%90%E0%B9%8C.html">มีจำหน่ายที่นี่</a> 
+ราคา ๕๐๐ บาท </span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">หรือศึกษาได้ 
+<a href="http://www.openbase.in.th/files/04%20%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%88%E0%B8%88%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%9B%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%AD%E0%B8%A9%E0%B8%90%E0%B9%8C.pdf">ที่นี่</a></span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๑๒. 
+<b>ตามรอยพระพุทธเจ้า</b></span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">เป็นหนังสือที่เนื่องมาจากสารคดีทางโทรทัศน์ที่ออกอากาศทางสถานีโทรทัศน์ช่อง๙ 
+อสมท. เรื่อง&quot;</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#000099"><a href="350.htm" target="_blank"><b>ตามรอยพระพุทธเจ้า</b></a></font><font face="Leelawadee">&quot; 
+เห็นวางจำหน่ายในรูป VCD ตามร้านหนังสือเช่นกัน &nbsp;เป็นหนังสือที่นำเนื้อหาคำกล่าวในสารคดีชุดนี้ทั้งหมดมารวบรวมไว้เป็นหนังสือในชื่อเดียวกัน 
+&nbsp;ให้ความรู้ทางประวัติศาสตร์พุทธศาสนาอย่างดีเยี่ยม แสดงถึงความรุ่งเรืองของพระพุทธศาสนาที่เจริญถึงขีดสุดเป็นเวลายาวนานถึง 
+๑,๗๐๐ ปีในดินแดนชมพูทวีป แล้วเสื่อมถอยจนพุทธศาสนาสูญสิ้นไปจากดินแดนชมพูทวีป 
+จนเกิดขึ้นใหม่เมื่อกึ่งพุทธกาลหรือเมื่อ พ.ศ.๒๔๙๙ นี้เองภายใต้การนำของท่าน<a href="http://www.geocities.com/watdonta_y/mbedkar.htm" title="   ต้องเชื่อม Internet   ">ดร.อัมเบดก้าร์</a>&nbsp;&nbsp;ซึ่งมีพระเถระจากประเทศไทยคือ</font><b><font face="Leelawadee" color="#A26601">ท่านปัญญานันทะเถระ</font></b><font face="Leelawadee"> 
+ร่วมเป็นสักขีพยานในการปฏิญาณตนเป็นชาวพุทธด้วย,&nbsp;&nbsp;&nbsp;พุทธศาสนาในอินเดียได้แสดงอาการเสื่อมที่เกิดขึ้นมาจากการนับถือกันอย่างงมงาย 
+สืบทอดกันมาแต่ขาดการเจริญวิปัสสนาหรือขาดปัญญานั่นเอง&nbsp;จึงเป็นอุทาหรณ์อย่างดีแก่พุทธศาสนิกชนที่จะได้ช่วยกันเผยแผ่และปฏิบัติอย่างถูกต้องเพื่อป้องกันพระพุทธศาสนามิให้ดำเนินไปผิดพลาดอย่างในอดีต 
+ดังในดินแดนชมพูทวีปที่เป็นต้นกำเนิดของพระพุทธศาสนาเอง ที่แอบแฝงนับถือในพระเจ้า 
+เทพเจ้า สิ่งศักสิทธิ์ทั้งหลายอย่างงมงาย จนครอบงำและทำลายพระพุทธศาสนาอันดีงามยิ่งมาแล้ว 
+ดังที่แสดงในหนังสือสารคดีชุดนี้โดยละเอียด &nbsp;&nbsp;หนังสือนี้ช่วยชี้ให้เห็นว่าสังขารทั้งปวงล้วนอนิจจัง 
+ทุกขัง อนัตตา ที่เป็นไปดังนั้นเองแม้แต่ในพระพุทธศาสนาอันดีงามยิ่ง และชี้ให้ชาวพุทธหันมาให้ความสำคัญในตัว 
+&quot;</font><font face="Leelawadee" color="#000099">ธรรม</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&quot; 
+มากกว่าตัวบุคคลหรือพิธีกรรมใดๆ</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">ลักษณา 
+จีระจันทร์</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">ปัจจุบันสามารถรับชม 
+VDO ได้ฟรี <a href="http://www.nkgen.com/350.htm">ที่นี่</a> </span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">๑๓. 
+<b>ผีมีจริงหรือไม่</b></span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">เป็นหนังสือที่พิมพ์ขึ้นแสดง 
+</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#000099">อาจาริยบูชาชาตกาล 
+๑ ศตวรรษท่านพุทธทาสภิกขุ</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;"> 
+&nbsp;ท่านพุทธทาสได้เขียนเรื่องนี้ตั้งแต่ พ.ศ.๒๔๙๕ &nbsp;แต่ความที่เป็นปรมัตถธรรมจึง</span></font><a href="http://" title=" ให้ผลไม่จำกัดกาล คือ ไม่ขึ้นกับกาลเวลา ไม่จำกัดด้วยกาล 
+ อีกอย่างหนึ่ง ว่าเป็นจริงอยู่อย่างไร ก็เป็นจริงอยู่อย่างนั้นเรื่อยไป
+"><font face="Leelawadee"><span style="font-size:16pt; line-height:1.8;">อกาลิโก</span></font></a><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ยิ่งนัก 
+ท่านได้แสดงธรรมว่า ผีเกิดขึ้นมาได้อย่างไร อย่างถูกต้องดีงามตาม</span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><a href="javascript:na_open_window('win', 'ex3.htm#ปรมัตถ์', 0, 0, 780, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">ปรมัตถ์</font></a><font face="Leelawadee">อย่างผู้รู้ 
+&nbsp;ตลอดจนกล่าวถึง</font><font face="Leelawadee" color="#000099">ปฏิจจสมุปบาท</font><font face="Leelawadee">ที่ได้หลงอธิบายกันอย่างผิดลู่ผิดทางกันมาเป็นเวลาอาจถึงสองพันกว่าปี 
+&nbsp;อาจตั้งแต่การสังคายนาครั้งที่ ๓ ในสมัยพระเจ้าอโศกมหาราช ประมาณพ.ศ. ๓๐๐ 
+&nbsp;จนมาถึงคัมภีร์วิสุทธิมรรค ที่เขียนขึ้นมาเมื่อประมาณ พ.ศ.๙๐๐ เศษ &nbsp;&nbsp;เมื่ออ่านปฏิจจสมุปบาทของท่านในเล่มนี้แล้ว 
+นำมาดำเนินการ</font><a href="javascript:na_open_window('win', 'ex3.htm#โยนิโสมนสิการ', 0, 0, 780, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">โยนิโสมนสิการ</font></a></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ร่วมกับการปฏิจจสมุปบาทในเว็บนี้แล้ว 
+ก็จะเกิดความรู้ความเข้าใจในปฏิจจสมุปบาทได้อย่างกลมกลืนและแจ่มแจ้งขึ้นๆไปอีก</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">ในหน้าที่ 
+๑๘๒ - ๑๘๙ มีการกล่าวถึงการ </span></font><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee" color="#000099">เกิดหรือชาติ 
+</font></span><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">อยู่ 
+๓ นัย อย่างดีงามยิ่ง โดยคุณประจวบ โภคทรัพย์ อันมี ๑. การเกิดโดยอาศัยบิดามารดาเป็นปัจจัย 
+&nbsp;๒.การเกิดโดยอาศัยอำนาจแห่งกรรม &nbsp;๓. การเกิดทางด้านจิตใจ อันเป็นพุทธศาสนาขั้นปรมัตถ์ 
+ซึ่งย่อมมุ่งหมายถึงความเกิดตามหลักของปฏิจจสมุปบาท &nbsp;อันเป็นเรื่องสำคัญของพระพุทธศาสนา</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:16pt; letter-spacing:-0.1px;">โดย 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">พุทธทาสภิกขุ</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt; letter-spacing:-0.1px;">บรรณาธิการ 
+</span></font><font face="Leelawadee" color="#A26601"><span style="font-size:16pt; letter-spacing:-0.1px;">สัมพันธ์ 
+ก้องสมุทร</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">จัดทำและพิมพ์โดย 
+หนังสือดอกโมกข์ &nbsp;โทร 0- 2747-1028 &nbsp;/ &nbsp;0-2393-0023-4 
+</span></font></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="text-align:center; line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee">&nbsp;</font></span><a href="BLANK1.htm"><span style="font-size:16pt; letter-spacing:-0.1px;"><font face="Leelawadee"><img src="bdy3.gif" width="80" height="60" border="0" alt="ขอความสุขสวัสดี  จงบังเกิดแก่นักปฏิบัติทั้งทางโลกและทางธรรมทุกประการ"></font></span></a></p>
+<p style="text-align:left; line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p align="center"><a href="javascript:history.go(-1)"><span style="font-size:16pt;"><font face="Leelawadee"><img src="back1.gif" width="94" height="40" border="0"></font></span></a><p style="text-align:center; line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><a href="BLANK1.htm"><span style="font-size:16pt;"><font face="Leelawadee,MS Sans Serif"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></font></span></a></p>
+<p style="text-align:center; line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:16pt;"><font face="Leelawadee"><script type=text/javascript>
+//MENU TITLE
+eyesys_title="ปฏิจจสมุปบาท  เมนู"
+//TITLE BACKGROUND COLORS
+eyesys_titlecol1="black"
+eyesys_titlecol2="blue"
+//TITLE COLOR
+eyesys_titletext="white"
+//MENU & ITEM BACKGROUND COLOR
+eyesys_bg="#229922"
+//ITEM BACKGROUND COLOR ON MOUSE OVER
+eyesys_bgov="#006699"
+//MENU COLOR
+eyesys_cl="white"
+//MENU COLOR ON MOUSE OVER
+eyesys_clov="white"
+//MENU WIDTH
+eyesys_width=160
+//menu starts here
+eyesys_init()
+//menu item sintax:  eyesys_item(text,icon,link)
+//for no icon use 'null'
+eyesys_item('กลับสารบัญ','home.gif','BLANK1.htm')
+eyesys_item('กระดานธรรม',null,'900.htm')
+eyesys_item('ค้นหาคำศัพท์',null,'ex.htm')
+eyesys_item('ดูวงจรปฏิจจสมุปบาท',null,'5vj.htm')
+eyesys_item('ข่าวปรับปรุง',null,'wnews.htm')
+eyesys_item('แจ้งแก้ไข',null,'email2.htm')
+eyesys_item('สมุดเยี่ยม',null,'guestbook.htm')
+//mene closes here
+eyesys_close()
+</script>&nbsp;</font></span></p>
+<table align="center" border="0" width="284">
+    <tr>
+        <td width="274" align="center" valign="middle">
+            <table align="center" border="0" width="255">
+                <tr align="center" valign="middle">
+                    <td width="245" align="center" valign="middle">
+                        <p align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;<script language="javascript1.1">
+page="Misc.";
+                        
+                        </script><script language="javascript1.1" src="http://hits.truehits.in.th/data/h0012229.js">
+                        
+                        </script></span></font></p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<p align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body, p, div, span, h1, h2, h3, h4, h5, h6, li, td, th {
+    font-family: "Mitr", sans-serif !important;
+  }
+  </style><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="author" content="พนมพร">
+<meta name="generator" content="Namo WebEditor v5.0">
+<bgsound src="enya-fromwhereiam.mid" loop="infinite">
+<script src="rightmenu.js" type=text/javascript>
+//Right-click menu- By Eyecon (http://www.webteam.ro)
+//Slight modifications by JK
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+</script>
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<script type="text/javascript">
+/***********************************************
+* Bullet Link script- ฉ Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Write out bullet image. Change "mybullet.gif" below to desired image path:
+var bulletimg='<img id="bullet" style="position:absolute; left: -300px" src="bookAnimate.gif">'
+
+var bulletoffX=2 //Set horizontal offset of bullet image from link's root. (ie: -2 or 5)
+var bulletoffY=15 //Set vertical offset of bullet image from link's root. (ie: -2 or 5)
+
+function caloffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function displaybullet(linkobj){
+bulletobj.style.left=caloffset(linkobj, "left")-bulletobj.width-bulletoffX+"px"
+bulletobj.style.top=caloffset(linkobj, "top")-bulletoffY+linkobj.offsetHeight/3+"px"
+bulletobj.style.visibility="visible"
+}
+
+function modifylinks(){
+bulletobj=document.all? document.all.bullet : document.getElementById("bullet")
+for (i=0; i<document.links.length; i++){
+if (document.links[i].className=="ddbullet"){
+document.links[i].onmouseover=function(){displaybullet(this)}
+document.links[i].onmouseout=function(){bulletobj.style.visibility="hidden"}
+}
+}
+}
+
+if (document.all || document.getElementById)
+document.write(bulletimg)
+
+if (window.addEventListener)
+window.addEventListener("load", modifylinks, false)
+else if (window.attachEvent)
+window.attachEvent("onload", modifylinks)
+else if (document.getElementById || document.all)
+window.onload=modifylinks
+
+</script>
+<title>โควิด</title>
+<meta name="keywords" content="โควิด ฉุกเฉิน, ช่วยตัวเอง">
+<meta name="description" content="วิธีช่วยตัวเองเมื่อติดโควิด">
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="#FFFFEF" text="black" link="blue" vlink="purple" alink="red" style="font-family:Tahoma; font-size:12pt; color:rgb(0,0,51); margin-right:4mm; margin-left:4mm;">
+<p style="line-height:1.8; margin-top:-2mm; margin-bottom:0mm;" align="center"><font face="Leelawadee"><span style="font-size:20pt;">&nbsp;&nbsp;&nbsp;<script>
+var text="ข้อมูลน่ารู้เกี่ยวกับโควิด" 
+var speed=80 
+if (document.all||document.getElementById){document.write('<span id="highlight">'+text+'</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){if (seq==6){b--
+if (b==0)
+seq=1
+}
+if (seq==5){r++
+if (r==12)
+seq=6
+}
+if (seq==4){g--
+if (g==0)
+seq=5
+}
+if (seq==3){b++
+if (b==12)
+seq=4
+}
+if (seq==2){r--
+if (r==0)
+seq=3
+}
+if (seq==1){g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script> &nbsp;&nbsp;</span></font></p>
+<p align="center" style="line-height:1.8; margin-top:-3mm;"><font face="Leelawadee"><span style="font-size:14pt; line-height:1.8;"><img src="bar_y_1.gif" width="230" height="3" border="0"></span></font></p>
+<p style="line-height:1.8; margin-top:-3mm; margin-bottom:0mm;" align="center"><font face="Leelawadee"><span style="font-size:14pt; line-height:1.8;">เนื่องจากโควิดในที่สุดจะเป็นโรคประจำโลก 
+ที่จะอยู่กับเราไปอีกนานแสนนานเหมือนดังไข้หวัดทั่วๆไปแต่รุนแรงและระบาดได้มากกว่า</span></font></p>
+<p style="line-height:1.8; margin-top:-3mm; margin-bottom:0mm;" align="center"><font face="Leelawadee"><span style="font-size:14pt; line-height:1.8;">จึงจำเป็นต้องรู้วิธีดูแลป้องกันตน</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:14pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:16pt;">&nbsp;&nbsp;</span><a href="5033.htm"><span style="font-size:16pt;">ปริมาณยาฟ้าทะลายโจร</span></a><span style="font-size:16pt;"> 
+สำหรับผู้ไม่แสดงอาการ หรือมีอาการไม่รุนแรงเริ่มต้น 
+ปริมาณที่ทานไม่ใช่ตามฉลากซึ่งสำหรับไข้ทั่วไป&nbsp;แต่ทานตามที่มีในประกาศของกระทรวงสาธารณสุขหรือสถาบันที่น่าเชื่อถือได้ทำการวิจัยทดลองแล้ว &nbsp;เนื่องจากการสถานพยาบาลและบุคคลากรแพทย์มีจำกัดจนเกินขีดความสามารถ&nbsp;&nbsp;จึงจำเป็นยิ่งที่ควรรู้เพื่อช่วยตัวเองในยามฉุกเฉินเท่าที่สามารถทำได้จนกว่าจะถึงมือหมอ 
+เพื่อป้องกันไม่ให้เชื้อลงสู่ปอดก่อน</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="5033.htm#อุปกรณ์"><span style="font-size:16pt;">อุปกรณ์ที่ควรมี 
+&nbsp;</span></a><span style="font-size:16pt;">&nbsp;และระดับอ็อกซิเจนในกระแสเลือด 
+และอุณหภูมิที่ต้องระวัง &nbsp;และน้ำยาที่ใช้ทำความสะอาดของใช้</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://www.thaihealth.or.th/Books/735/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD+%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99+(Home+Isolation).html"><span style="font-size:16pt;">คู่มือ 
+การแยกกักตัวที่บ้าน</span></a><span style="font-size:16pt;"> (Home Isolation) 
+&nbsp;ที่คุณหมอหลายท่านช่วยกันรวบรวมข้อมูลสำคัญ เพื่อให้ใครก็ตามที่กำลังมองหาทางเลือกในการดูแลรักษาผู้ป่วยโควิดในสถานการณ์นี้ 
+&nbsp;เนื่องจากสถานการณ์ศูนย์กักตัวไม่เพียงพอแล้ว</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://sri.hdc.moph.go.th/covid19/report/5904079dfef460299694172b852fb022.jpg"><span style="font-size:16pt;">การปฏิบัติตัวผู้ป่วยที่กักตัวเองในที่พักอาศัย</span></a><span style="font-size:16pt;"> 
+(ราชการทั่วไป) &nbsp;ที่ควรรู้ไว้ &nbsp;</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><span style="font-size:16pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="Leelawadee"><a href="https://health.kapook.com/view240505.html"><span style="font-size:16pt;">อาการโควิดลงปอดเป็นยังไง</span></a><span style="font-size:16pt;"> 
+เป็นอาการที่ต้องระวัง</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><span style="font-size:16pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="Leelawadee"><span style="font-size:16pt;">ATK 
+ชุดตรวจหาโควิดด้วยตนเอง</span></font><span style="font-size:16pt;"><font face="Leelawadee"> 
+โดยตรวจหาแอนติเจนในน้ำลายด้วยตนเอง เช่นของ </font></span><font face="Leelawadee"><a href="covid.htm" title="วิธีใช้"><span style="font-size:16pt;">HOYOTEK 
+(HYT-G01-03)</span></a></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><span style="font-size:16pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;</font></span><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ATK 
+ชุดตรวจหาโควิดด้วยน้ำลาย ของ <yt-formatted-string force-default-style="" class="style-scope ytd-video-primary-info-renderer" style="word-break: break-word;"></span><a href="javascript:na_open_window('win', 'https://www.youtube.com/watch?v=S1ryAXzFifM', 0, 0, 1250, 620, 1, 0, 0, 1, 1)"><span style="font-size:16pt;">PCL COVID19 Ag Gold&nbsp;</span></a><span style="font-size:16pt;"></yt-formatted-string> 
+(ราคา 200-400 บาท) บ้วนล้างปากด้วยน้ำดื่มและงดบุหรี่ ก่อนตรวจ 30 นาที</span></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ที่ตรวจ 
+&quot;ATK&quot; ชุดตรวจหาโควิดด้วยตนเอง ผลเป็นบวก</b> สามารถเข้า&quot;<b>โครงการกักตัวที่บ้าน</b>&quot;ของรัฐได้เลย 
+กระทรวงสาธารณะสุขประกาศยอมรับแล้ว โดยเมื่อตรวจ<b>ผลเป็นบวก </b>ให้เข้าไปลงทะเบียนได้เลยที่โทร 
+<b>1330</b> ต่อ<b> 14 &nbsp;ทั่วประเทศ</b> &nbsp;ซึ่งจะประสานจัดการให้ ทั้งคำแนะนำ 
+และ<b>อาจ</b>มี ยา หรืออุปกรณ์ต่างๆ เช่น ปรอท เครื่องวัดอ็อกซิเจน จัดหามาให้ 
+ขึ้นอยู่กับแต่ละท้องที่นั้นๆ (ส่วนในผู้ที่มีประกัน Covid อาจต้องเข้าทำการตรวจยืนยัน 
+แบบ RT-PCR อีกครั้ง เพื่อเคลมเงินประกัน โปรดติดต่อประกันของท่าน) &nbsp;</span><a href="javascript:na_open_window('win', 'https://www.khaosod.co.th/breaking-news/news_6544615', 0, 0, 1250, 620, 1, 0, 0, 1, 1)"><span style="font-size:16pt;">ประกาศกรมการแพทย์ 
+ให้ใช้ &quot;ATK&quot;ตรวจโควิดเอง ผลบวกให้เข้าระบบรับยา ไม่ต้องรอแล็บ</span></a></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="javascript:na_open_window('win', 'https://www.matichon.co.th/local/quality-life/news_2676865', 0, 0, 1250, 620, 1, 0, 0, 1, 1)"><span style="font-size:16pt;">อภัยภูเบศรเคลียร์ชัด 
+ฟ้าทะลายโจรมีฤทธิ์สกัดโควิด-19 ได้</span></a></font></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0cm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://www.ryt9.com/s/iq01/3245987"><span style="font-size:16pt;">ถอนงานวิจัยฟ้าทะลายโจร 
+สาธารณสุขยืนยันไม่เกี่ยวกับสรรพคุณใช้รักษาโควิด</span></a></font></p>
+<p style="line-height:1.8; margin-top:3mm; margin-bottom:2mm;" align="center"><font face="Leelawadee"><span style="font-size:16pt; line-height:1.8;"><img src="bar_y_1.gif" width="100" height="3" border="0"></span></font></p>
+<p style="line-height:1.8;" align="center"><font face="Leelawadee">&nbsp;</font></p>
+<p style="line-height:1.8; margin-top:3mm; margin-bottom:0; margin-left:0;" align="center"><a href="javascript:history.go(-1)"><font face="Leelawadee"><span style="font-size:14pt;"><img src="back1.gif" width="94" height="40" border="0" alt="กลับหน้าเดิม"></span></font></a></p>
+<p style="font-family:'MS Sans Serif',serif; line-height:1.8; margin-top:0; margin-bottom:0; margin-left:0;" align="center"><a href="BLANK1.htm"><b><font face="Leelawadee" color="#C98B32"><span style="font-size:14pt;"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></span></font></b></a><font face="Leelawadee"><span style="font-size:14pt;">&nbsp;</span></font></p>
+<p align="center" style="line-height:1.8;"><font face="Leelawadee"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+</font><a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><font face="Leelawadee"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></font></a><font face="Leelawadee">
+</font><a target="_blank" href="http://truehits.net/"><font face="Leelawadee">Truehits.net</font></a><font face="Leelawadee">
+</noscript>
+<!-- END WEBSTAT CODE --> </font></p>
+<p style="line-height:1.8;" align="center">&nbsp;</p>
+<p style="line-height:1.8;" align="center">&nbsp;</p>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>มุมพักผ่อน</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<script language="JavaScript">
+<!--
+// convert decimal value (0 - 255) to hexadecimal
+// (use .toString(16) method supported by IE)
+function toHex(dec) {
+        // create list of hex characters
+        var hexCharacters = "0123456789ABCDEF"
+        // if number is out of range return limit
+        if (dec < 0)
+
+
+                return "00"
+        if (dec > 255)
+                return "FF"
+        // decimal equivalent of first hex character in converted number
+        var i = Math.floor(dec / 16)
+
+
+
+
+
+        // decimal equivalent of second hex character in converted number
+
+
+        var j = dec % 16
+
+
+
+
+
+        // return hexadecimal equivalent
+
+
+        return hexCharacters.charAt(i) + hexCharacters.charAt(j)
+
+
+}
+
+
+// set background color to specified descriptors
+
+
+function setbgColor(red, green, blue) {
+
+
+         document.bgColor = "#" + toHex(red) + toHex(green) +
+toHex(blue)
+
+
+}
+
+
+// fade from start to end descriptors (increase step to increase transition speed)
+
+
+function fade(sred, sgreen, sblue, ered, egreen, eblue, step) {
+
+
+        // loop to create fade effect
+
+
+        for(var i = 0; i <= step; ++i) {
+
+
+                // set current red descriptor
+
+
+                var red = Math.floor(sred * ((step - i) / step) + ered
+* (i / step))
+
+
+
+
+
+                // set current green descriptor
+
+
+                var green = Math.floor(sgreen * ((step - i) / step) +
+egreen * (i / step))
+
+
+
+
+
+                // set current green descriptor
+
+
+                var blue = Math.floor(sblue * ((step - i) / step) +
+eblue * (i / step))
+
+
+
+                // set background color according to descriptors
+                setbgColor(red, green, blue)
+        }
+}
+// -->
+</script>
+<meta name="keywords" content="พระพุทธชินราช">
+<script language="JavaScript">
+<!--
+function namosw_goto_byselect(sel, targetstr)
+{
+  var index = sel.selectedIndex;
+  if (sel.options[index].value != '') {
+     if (targetstr == 'blank') {
+       window.open(sel.options[index].value, 'win1');
+     } else {
+       var frameobj;
+       if (targetstr == '') targetstr = 'self';
+       if ((frameobj = eval(targetstr)) != null)
+         frameobj.location = sel.options[index].value;
+     }
+  }
+}
+
+// -->
+</script>
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="Beige.jpeg">
+<p align="center" style="line-height:100%; margin-top:3mm; margin-bottom:0;"><b><font face="Tahoma" color="#AA7226"><span style="font-size:14pt;">มุมพักผ่อน 
+1</span></font></b></p>
+<p align="left" style="line-height:2.2;"><font face="Tahoma" color="#A26601">ภาพพุทธศิลป์เหล่านี้ 
+ผู้เขียนรวบรวมมาจากโฮมเพจและรูปภาพต่างๆ จึงใคร่ขออนุญาติต่อผู้เป็นเจ้าของภาพทั้งหลาย 
+เพื่อเหล่ากัลยาณมิตรผู้ศึกษาและปฏิบัติธรรมจักได้ยลความงดงามของพุทธศิลป์เพื่อยังปีติ 
+อิ่มเอิบในธรรม</font></p>
+<form name="form1">
+    <p align="center" style="line-height:2.2;"><font face="Tahoma"><select name="formselect2" size="1" onchange="namosw_goto_byselect(this, 'self')" style="font-family:Tahoma; font-size:12pt; color:rgb(0,0,102); background-color:rgb(222,166,53);">
+    <option selected>ภาพแสดงธรรมต่างๆ</option>
+    <option>------------------------------------------</option>
+    <option value="751.htm">แสดงไตรลักษณ์ของกายสังขาร</option>
+    <option value="750.htm">แสดงอนิจจังของกายสังขาร</option>
+    <option value="752.htm">คิดนึกปรุงแต่งเหมือนปาหินลงนํ้า</option>
+    <option value="755.htm">แสดงอนิจจังในระดับอะตอม</option>
+    <option value="756.htm">แสดงอนิจจังระดับจักราวาล</option>
+    <option>=======================</option>
+    <option value="Buddha.htm">เราตถาคต สอนแต่เรื่องการดับทุกข์</option>
+    <option value="754.htm">พระพุทธเจ้า</option>
+    </select></font></p>
+</form>
+<table border="1" style="line-height:100%; margin-top:0; margin-bottom:0;" bordercolor="#A26601" bordercolordark="#A26601" bordercolorlight="#A26601" align="center">
+    <tr>
+        <td width="246" height="193">
+            <p align="center" style="line-height:100%; margin-top:3mm; margin-bottom:0;"><a href="shinnaraj.htm"><font face="Tahoma,MS Sans Serif"><img src="b1.gif" width="120" height="165" border="0" alt="คลิ๊ก ชมภาพพระพุทธชินราชเต็มองค์"></font></a></p>
+        </td>
+        <td width="246" height="193">
+            <p align="center" style="margin-top:3mm;"><font face="Tahoma,MS Sans Serif"><img src="b2.gif" width="120" height="193" border="0"></font></p>
+        </td>
+        <td width="246" height="193">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b8.gif" width="104" height="129" border="0"></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><a href="shinnaraj.htm" title="  ต้องต่อ Internet  ">ภาพขยายพระพุทธชินราช</a></font></p>
+        </td>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif" color="#000066">หลวงพ่อเพชร 
+            จ.พิจิตร</font></p>
+        </td>
+        <td width="246">
+            <p align="center"><a href="Buddha-image.htm"><font face="Tahoma,MS Sans Serif">ภาพขยาย</font></a></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="246" height="114">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b4.gif" width="133" height="151" border="0"></font></p>
+        </td>
+        <td width="246" height="114">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b5.gif" width="116" height="181" border="0"></font></p>
+        </td>
+        <td width="246" height="114">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b6.gif" width="112" height="146" border="0"></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="246">
+            <p><font face="Tahoma,MS Sans Serif">&nbsp;</font></p>
+        </td>
+        <td width="246">
+            <p><font face="Tahoma,MS Sans Serif">&nbsp;</font></p>
+        </td>
+        <td width="246">
+            <p align="center"><font face="Tahoma">&nbsp;</font><a href="aurloki1.gif"><font face="Tahoma,MS Sans Serif">ภาพขยาย</font></a></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="246" height="135">
+            <p align="center"><font face="Tahoma"><img src="b50.gif" width="67" height="102" border="0"></font></p>
+        </td>
+        <td width="246" height="135">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b3.gif" width="120" height="150" border="0"></font></p>
+        </td>
+        <td width="246" height="135">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b9.gif" width="112" height="150" border="0"></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="246">
+            <p><font face="Tahoma,MS Sans Serif">&nbsp;</font></p>
+        </td>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif">&nbsp;</font></p>
+        </td>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><a href="Enlightentment.jpg">วันตรัสรู้</a></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif">&nbsp;<img src="b10.gif" width="89" height="89" border="0"></font></p>
+        </td>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif">&nbsp;<img src="b11.jpg" align="middle" width="84" height="127" border="0"></font></p>
+        </td>
+        <td width="246">
+            <p align="center"><font face="Tahoma,MS Sans Serif"><img src="b49.gif" width="98" height="94" border="0"></font></p>
+        </td>
+    </tr>
+</table>
+<p align="center" style="margin-top:2mm; margin-right:0px; margin-bottom:0px; margin-left:0px; padding:0;"><a href="347.htm"><font face="Tahoma">ห้องไหว้พระ-สวดมนต์</font></a></p>
+<p align="center" style="margin-top:2mm; margin-right:0px; margin-bottom:0px; margin-left:0px; padding:0;"><a href="javascript:na_open_window('win', 'http://www.dhammathai.org/gallery/index.php', 0, 0, 770, 550, 1, 1, 1, 1, 1)" target="_self"><font face="Tahoma">ศูนย์รวมภาพ 
+พระพุทธศาสนา</font></a></p>
+<p align="center" style="margin-top:2mm; margin-right:0px; margin-bottom:0px; margin-left:0px; padding:0;"><a href="javascript:na_open_window('win', 'https://www.papaiwat.com/th/story/category/index/id/8', 0, 0, 1250, 620, 1, 1, 1, 1, 1)" target="_self"><font face="Tahoma">ภาพวัดในประเทศไทย</font></a></p>
+<p align="center" style="margin-top:2mm; margin-right:0px; margin-bottom:0px; margin-left:0px; padding:0;"><font face="Tahoma">&nbsp;</font></p>
+<p align="center"><b><a href="BLANK1.htm"><font face="Tahoma,MS Sans Serif">กลับไปสารบัญ</font></a></b><font face="Tahoma"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><b><font face="Tahoma">ไปมุมพักผ่อน 
+<img src="button1s.gif" align="top" border="0" width="27" height="27"></font><a href="b-image2.htm"><font face="Tahoma,MS Sans Serif"><img src="button2.gif" align="top" border="0" width="27" height="27"></font></a><a href="b-image3.htm"><font face="Tahoma,MS Sans Serif"><img src="button3.gif" align="top" border="0" width="27" height="27"></font></a><a href="b-image4.htm"><font face="Tahoma,MS Sans Serif"><img src="button4.gif" align="top" border="0" width="27" height="27"></font></a><a href="b-image5.htm"><font face="Tahoma,MS Sans Serif"><img src="button5.gif" border="0" align="top" width="27" height="32"></font></a></b></p>
+<p align="center"><font size="2" face="Tahoma" color="#D1A62E">&nbsp;</font></p>
+<table align="center" border="0" width="284">
+    <tr>
+        <td width="274" align="center" valign="middle">
+            <table align="center" border="0" width="255">
+                <tr align="center" valign="middle">
+                    <td width="245" align="center" valign="middle">
+                        <p align="center"><font face="Tahoma">&nbsp;<script language="javascript1.1">
+page="Misc.";
+                        </script><script language="javascript1.1" src="http://hits.truehits.in.th/data/h0012229.js">
+                        </script></font></p>
+                    </td>
+                </tr>
+            </table>
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+        </td>
+    </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>

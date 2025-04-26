@@ -1,0 +1,174 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="author" content="พนมพร">
+<meta name="generator" content="Namo WebEditor v5.0">
+<bgsound src="enya-fromwhereiam.mid" loop="infinite">
+<script src="rightmenu.js" type=text/javascript>
+//Right-click menu- By Eyecon (http://www.webteam.ro)
+//Slight modifications by JK
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+</script>
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<script type="text/javascript">
+/***********************************************
+* Bullet Link script- ฉ Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Write out bullet image. Change "mybullet.gif" below to desired image path:
+var bulletimg='<img id="bullet" style="position:absolute; left: -300px" src="bookAnimate.gif">'
+
+var bulletoffX=2 //Set horizontal offset of bullet image from link's root. (ie: -2 or 5)
+var bulletoffY=15 //Set vertical offset of bullet image from link's root. (ie: -2 or 5)
+
+function caloffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function displaybullet(linkobj){
+bulletobj.style.left=caloffset(linkobj, "left")-bulletobj.width-bulletoffX+"px"
+bulletobj.style.top=caloffset(linkobj, "top")-bulletoffY+linkobj.offsetHeight/3+"px"
+bulletobj.style.visibility="visible"
+}
+
+function modifylinks(){
+bulletobj=document.all? document.all.bullet : document.getElementById("bullet")
+for (i=0; i<document.links.length; i++){
+if (document.links[i].className=="ddbullet"){
+document.links[i].onmouseover=function(){displaybullet(this)}
+document.links[i].onmouseout=function(){bulletobj.style.visibility="hidden"}
+}
+}
+}
+
+if (document.all || document.getElementById)
+document.write(bulletimg)
+
+if (window.addEventListener)
+window.addEventListener("load", modifylinks, false)
+else if (window.attachEvent)
+window.attachEvent("onload", modifylinks)
+else if (document.getElementById || document.all)
+window.onload=modifylinks
+
+</script>
+<title>ขันธ์๕</title>
+<meta name="keywords" content="ขันธ์๕,ขันธ์ ๕">
+<meta name="description" content="แสดงรายละเอียดการทำงานเนื่องสัมพันธ์กันกระบวนธรรมของขันธ์๕">
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="#FFFFEF" text="black" link="blue" vlink="purple" alink="red" style="font-family:Tahoma; font-size:12pt; color:rgb(0,0,51); margin-right:4mm; margin-left:4mm;">
+<p align="center" style="line-height:2; margin-top:-2mm; margin-bottom:-3mm;"><span style="font-size:20pt;">&nbsp;</span><font face="Leelawadee"><span style="font-size:20pt;">&nbsp;&nbsp;&nbsp;<script>
+var text="รายละเอียดของขันธ์ทั้ง ๕ เพื่อการดับทุกข์" 
+var speed=80 
+if (document.all||document.getElementById){document.write('<span id="highlight">'+text+'</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){if (seq==6){b--
+if (b==0)
+seq=1
+}
+if (seq==5){r++
+if (r==12)
+seq=6
+}
+if (seq==4){g--
+if (g==0)
+seq=5
+}
+if (seq==3){b++
+if (b==12)
+seq=4
+}
+if (seq==2){r--
+if (r==0)
+seq=3
+}
+if (seq==1){g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script> &nbsp;&nbsp;</span></font></p>
+<p align="center" style="line-height:2; margin-top:5mm;"><font face="Leelawadee"><span style="font-size:20pt; line-height:1.8;"><img src="bar_y_1.gif" width="100" height="3" border="0"></span></font></p>
+<p style="line-height:2; margin-top:3mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:18pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt;"><font face="Leelawadee"><img src="update5.gif" align="absmiddle" width="46" height="12" border="1"></font></span><font face="Leelawadee"><span style="font-size:18pt;">&nbsp;&nbsp;</span><a href="772.htm"><span style="font-size:18pt;">ขันธ์ 
+๕ โดยลำดับ</span></a><span style="font-size:18pt;"> &nbsp;</span><span style="font-size:16pt;">แสดงกระบวนธรรมการทำงานเนื่องสัมพันธ์กันของขันธ์ทั้ง 
+๕ ที่ใช้ในการดำเนินชีวิต</span></font></p>
+<p style="line-height:2; margin-top:-3mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="detail.htm"><span style="font-size:16pt;">ขันธ์ 
+๕ (๒)</span></a><span style="font-size:16pt;"> &nbsp;เมื่อกระบวนธรรมของขันธ์ ๕ ในการดำเนินชีวิต 
+&nbsp;ดำเนินไปแต่กลายเป็นอุปาทานขันธ์ ๕ อันเป็นทุกข์</span></font></p>
+<p style="line-height:2; margin-top:-3mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="6.htm"><span style="font-size:16pt;">ขันธ์ 
+๕ (๓)</span></a><span style="font-size:16pt;"> &nbsp;ขันธ์ทั้ง ๕ โดยทั่วไป</span></font></p>
+<p style="line-height:2; margin-top:-3mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="565.htm"><span style="font-size:16pt;">ขันธ์ทั้ง 
+๕ ทำงานโดยอิสระจากเรา</span></a><span style="font-size:16pt;"> &nbsp;แต่</span><a href="javascript:na_open_window('win', 'ex3.htm#ปุถุชน', 0, 0, 1250, 300, 1, 0, 0, 1, 1)"><span style="font-size:16pt;">ปุถุชน</span></a><span style="font-size:16pt;">นึกคิดกันไปว่าสามารถควบคุมบังคับมันได้ 
+อันเป็นความเข้าใจผิดอย่างร้ายแรง &nbsp;</span></font></p>
+<p style="line-height:2; margin-top:-3mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เพราะแท้จริงแล้วมันทำงานตามหน้าที่ตนเท่านั้น 
+&nbsp;ดุจดั่งเครื่องจักรยนต์ ไปแทรกแซงไม่ได้เลย</span></font></p>
+<p style="line-height:2; margin-top:-3mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="578.htm"><span style="font-size:16pt;">มารู้จัก 
+ธรรมชาติการทำงานของขันธ์ทั้ง ๕</span></a><span style="font-size:16pt;"> &nbsp;แท้จริงแล้วเมื่อเกิดการกระทบกันแล้ว 
+&nbsp;ก็ไม่อยู่ในการควบคุมใดๆของใครๆได้อีกเลย</span></font></p>
+<p align="center" style="line-height:2;"><font face="Leelawadee"><span style="font-size:18pt; line-height:1.8;"><img src="bar_y_1.gif" width="100" height="3" border="0"></span></font></p>
+<p style="line-height:2; margin-top:3mm; margin-bottom:0; margin-left:0;" align="center"><a href="javascript:history.go(-1)"><font face="Leelawadee"><span style="font-size:14pt;"><img src="back1.gif" width="94" height="40" border="0" alt="กลับหน้าเดิม"></span></font></a></p>
+<p style="font-family:'MS Sans Serif',serif; line-height:200%; margin-top:0; margin-bottom:0; margin-left:0;" align="center"><a href="BLANK1.htm"><b><font face="Leelawadee" color="#C98B32"><span style="font-size:14pt;"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></span></font></b></a><font face="Leelawadee"><span style="font-size:14pt;">&nbsp;</span></font></p>
+<p align="center"><font face="Leelawadee"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+</font><a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><font face="Leelawadee"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></font></a><font face="Leelawadee">
+</font><a target="_blank" href="http://truehits.net/"><font face="Leelawadee">Truehits.net</font></a><font face="Leelawadee">
+</noscript>
+<!-- END WEBSTAT CODE --> </font></p>
+</body>
+
+</html>

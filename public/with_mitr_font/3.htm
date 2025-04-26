@@ -1,0 +1,498 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body, p, div, span, h1, h2, h3, h4, h5, h6, li, td, th {
+    font-family: "Mitr", sans-serif !important;
+  }
+  </style><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>ศึกษาวงจรจําลองปฏิจจสมุปบาท</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<bgsound src="ButterflyFairies.mid" loop="1">
+<script type="text/javascript" src="textsizer.js">
+/***********************************************
+* Document Text Sizer- Copyright 2003 - Taewook Kang.  All rights reserved.
+* Coded by: Taewook Kang (http://www.txkang.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+<script src="rightmenu.js" type=text/javascript>
+//Right-click menu- By Eyecon (http://www.webteam.ro)
+//Slight modifications by JK
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+</script>
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="Beige.jpeg" style="font-family:Leelawadee; font-size:12pt;">
+<table align="center" border="4" width="20" height="3" bgcolor="#FFFFCC" bordercolordark="#CE9C0A" bordercolorlight="#916F0D">
+    <tr>
+        <td>
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><a href="BLANK1.htm"><font face="Leelawadee"><span style="font-size:16pt;"><img src="wheel.gif" width="64" height="86" border="0"></span></font></a></p>
+        </td>
+    </tr>
+</table>
+<table border="0" align="center" width="100%">
+    <tr>
+        <td width="281" align="left" valign="bottom">
+            <p align="left"><font color="fuchsia" face="Leelawadee"><span style="font-size:12pt;"><img src="Mouse.gif" align="absmiddle" width="32" height="32" border="0"></span></font><font color="#8F6BFF" face="Leelawadee"><span style="font-size:12pt;"> 
+            ขวา</span></font></p>
+        </td>
+        <td width="676">
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:12pt; letter-spacing:0.25;"><b><a href="BLANK1.htm"><font face="Leelawadee"><img src="3smartbutton.gif" width="392" height="89" border="0"></font></a></b></span></p>
+        </td>
+        <td width="258" align="right" valign="bottom">
+            <p align="right"><font face="Leelawadee"><span style="font-size:12pt;"><img src="Magnify0b.gif" width="32" height="32" border="0" alt="Magnify0b.gif" align="absmiddle"> 
+            </span></font><a href="javascript:ts('body',1)"><font color="#8F6BFF" face="Leelawadee"><span style="font-size:12pt;">+ 
+            ขยาย</span></font></a><font color="#8F6BFF" face="Leelawadee"><span style="font-size:12pt;"> | </span></font><a href="javascript:ts('body',-1)"><font color="#8F6BFF" face="Leelawadee"><span style="font-size:12pt;">- 
+            ย่อ</span></font></a><font color="#8F6BFF" face="Leelawadee"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:16pt; letter-spacing:0.25;"><b><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><a name=" สิ่งทั้งหลาย"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;สิ่งทั้งหลาย</font></span></a><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">ทั้งปวงล้วนเกิดแต่เหตุปัจจัย 
+กล่าวคือมี</font><a href="javascript:na_open_window('win', 'ex3.htm#เหตุ', 0, 0, 770, 220, 1, 0, 0, 1, 1)"><b><font face="Leelawadee">เหตุ</font></b></a><font face="Leelawadee">มาเป็น</font><a href="javascript:na_open_window('win', 'ex3.htm#ปัจจัย', 0, 0, 770, 220, 1, 0, 0, 1, 1)"><b><font face="Leelawadee">ปัจจัย</font></b></a><font face="Leelawadee">แก่กันและกัน 
+ที่เกี่ยวเนื่องสัมพันธ์กัน อันคือ&nbsp;</font><font color="blue" face="Leelawadee">ปัจจัยหนึ่ง</font><font face="Leelawadee">เป็นเหตุปัจจัยให้เกิด</font><font color="fuchsia" face="Leelawadee">ปัจจัยอีกอันหนึ่ง</font><font face="Leelawadee"> 
+&nbsp;และ</font><font color="fuchsia" face="Leelawadee">ปัจจัยอีกอันหนึ่ง</font><font face="Leelawadee">นี้ก็เป็นปัจจัยให้เกิด</font><font color="red" face="Leelawadee">ปัจจัยอีกอันหนึ่ง</font><font face="Leelawadee"> 
+ต่อเนื่องกันไปเช่นนี้เป็นวงจักรหรือวงจรที่ไม่รู้จักจบสิ้น&nbsp; &nbsp;มองในมุมมองนามธรรมอันไม่มีตัวตนเพียงสัมผัสได้ด้วยใจอาจจักไม่เห็นชัดแจ้ง 
+&nbsp;ลองพิจารณาจากวงจรจําลองของวงจรปฏิจจสมุปบาท เพื่ออธิบายนามธรรมอันไม่มีตัวตน 
+ให้เห็นเป็นภาพพจน์หรือรูปธรรมที่ชัดเจนขึ้น &nbsp;เพื่อความเข้าใจในปฏิจจสมุปบาทในกาลต่อไป</font></span></p>
+<p style="line-height:2; margin-top:0px; margin-bottom:0mm;" align="center"><font color="#000099" face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;<img src="sun.gif" width="42" height="43" border="0">&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:3mm; margin-bottom:0px;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Magnify0b.gif" width="32" height="32" border="0" align="texttop"></span></font></p>
+<p style="line-height:2; margin-top:3mm; margin-bottom:0px;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height:100%; margin-top:-1.5cm; margin-bottom:0px;" align=center><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height=78 src="fire.gif" width=48 border=0 align="absbottom"></span></font></p>
+<p style="line-height:100%; margin-top:-3mm; margin-bottom:0px;" align="center"><b><font color="#6D4918" face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></b><font color="red" face="Leelawadee"><span style="font-size:16pt;"><b><strike>---</strike></b></span></font><b><font color="red" face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;&nbsp;&nbsp;</span></font></b></p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; LINE-HEIGHT: 2" align="center"><font color="red" face="Leelawadee"><span style="font-size:16pt;">ไฟ 
+</span></font><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt;">อันลุกโพลง อันเกิดขึ้นจากเหตุ 
+อันมี แว่นขยาย(เลนส์นูน) ใช้ส่องรับแสงแดด ไปที่เชื้อไฟหรือฟืน</span></font></p>
+<p style="line-height:2; margin-top:0px; margin-bottom:0px;" align="center"><font color="red" face="Leelawadee"><span style="font-size:16pt;">ไฟที่เกิดขึ้นมานั้น</span></font><font color="#333333" face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:16pt;">มิได้มีตัวมีตนอยู่ในแว่นขยายนั้น &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0px; margin-bottom:0px;" align="center"><font color="red" face="Leelawadee"><span style="font-size:16pt;">ไฟที่เกิดขึ้นมานั้น 
+&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:16pt;">ก็มิได้มีตัวมีตนอยู่ในแสงแดดนั้น &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0px; margin-bottom:0px;" align="center"><font color="red" face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ไฟที่เกิดขึ้นมานั้น 
+&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:16pt;">ก็มิได้มีตัวมีตนอยู่ในสิ่งที่เป็นเชื้อไฟนั้น 
+&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0px; margin-bottom:0px;" align="center"><font color="red" face="Leelawadee"><span style="font-size:16pt;">ไฟที่เกิดขึ้นมานั้น 
+&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:16pt;">ก็มิได้มีตัวมีตนอยู่ในผู้กระทำ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0px; margin-bottom:0px;"><font color="#333333" face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee"><span style="font-size:16pt;">แต่ 
+</span></font><font color="red" face="Leelawadee"><span style="font-size:16pt;">ไฟ </span></font><font face="Leelawadee"><span style="font-size:16pt;">นั้นเกิดจาก</span></font><font color="#000099" face="Leelawadee"><span style="font-size:16pt;">เหตุปัจจัย</span></font><font face="Leelawadee"><span style="font-size:16pt;">ทั้ง 
+๔ มาประชุมรวมเป็น</span></font><font color="#000099" face="Leelawadee"><span style="font-size:16pt;">ปัจจัยแก่กันและกันชั่วขณะหรือระยะหนึ่ง</span></font><font face="Leelawadee"><span style="font-size:16pt;">หรือ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ปฏิจจสมุปบันธรรม', 0, 0, 770, 220, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:16pt;">ปฏิจจสมุปบันธรรม</span></font></a><font face="Leelawadee"><span style="font-size:16pt;"> 
+ขาดสิ่งใดสิ่งหนึ่งไปก็ไม่เกิดผลหรือไฟขึ้น &nbsp;และเป็น</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ปัจจัย', 0, 0, 770, 220, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:16pt;">ปัจจัย</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">อย่างผสมกลมกลืนเนื่องสัมพันธ์กัน 
+&nbsp;ดุจดั่ง</span></font><font color="#000099" face="Leelawadee"><a href="javascript:na_open_window('win', 'ex3.htm#กรรม', 0, 0, 790, 230, 1, 0, 0, 1, 1)" title="     การกระทำ"><span style="font-size:16pt;">กรรม</span></a></font><font face="Leelawadee"><span style="font-size:16pt;">คือการกระทำที่ใช้แว่นขยายส่องไปยังเชื้อไฟก็ต้องถูกต้องสอดคล้องได้ระยะกันอีกด้วย 
+ถึงจักรวมแสงให้เกิดไฟขึ้นได้ &nbsp;จิตหรือชีวิตเราก็เฉกเช่นกัน เกิดแต่เหตุปัจจัยต่างๆมาประชุมกันดังกล่าวแล้ว 
+มาเป็นจิตหรือชีวิต &nbsp;และยังมีเหตุปัจจัยปรุงแต่งหลัก อันคือกรรม(</span></font><a href="javascript:na_open_window('win', 'ex3.htm#กรรม', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">การกระทํา</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">) 
+อันทําให้ชีวิตเป็นไปตามกรรม(การกระทํา)นั้นๆอีกด้วย</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอให้สังเกตุดีๆว่า</font><font color="red" face="Leelawadee">ไฟ</font><font face="Leelawadee">นั้น 
+มิได้เกิดแต่สิ่งหนึ่งสิ่งใดโดยตรงๆ &nbsp;แต่เกิดจากเหตุปัจจัยมาประชุมปรุงแต่งกัน</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ถ้าเราจักจําลองคําอธิบายให้เป็นวงจร 
+ดั่งวงจรแบบปฏิจจสมุปบาท(ประ-ติด-จะ-สะ-มุป-บาท)เพื่อให้เห็นภาพการทํางานที่ชัดเจนขึ้น 
+เพื่อความเข้าใจในกาลต่อไปอย่างแจ่มแจ้ง เราจักจําลองได้เป็นดั่งนี้ </font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">คน 
+</font><font color="#990000" face="Leelawadee">เป็นปัจจัยจึงมี</font><font color="#000099" face="Leelawadee"> กรรม</font><font face="Leelawadee"> 
+อันหมายความถึง เพราะ</font><font color="#000099" face="Leelawadee">คนเป็นเหตุปัจจัย</font><font color="#990000" face="Leelawadee">จึงเป็นปัจจัยให้มี</font><font color="#000099" face="Leelawadee">การกระทํา</font><font face="Leelawadee">ที่มีเจตนาจุดไฟขึ้น</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">กรรม 
+</font><font color="#990000" face="Leelawadee">เป็นปัจจัยจึงมี</font><font face="Leelawadee"> แสงแดด อันไม่ได้หมายถึงการกระทําให้มีแสงแดด 
+แต่หมายถึง </font><font color="#000099" face="Leelawadee">การกระทํา</font><font face="Leelawadee">ที่มีเจตนาเป็นเหตุจึงเป็นปัจจัยให้</font><font color="#000099" face="Leelawadee">ใช้ประโยชน์จากแสงแดดและแว่นขยาย</font><font face="Leelawadee">นั้นได้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">&nbsp;แสงแดด 
+</font><font color="#990000" face="Leelawadee">เป็นปัจจัยจึงมี</font><font face="Leelawadee"> แว่นขยาย </font><font color="white" face="Leelawadee">..</font><font face="Leelawadee">อันหมายความถึง 
+</font><font color="#000099" face="Leelawadee">แสงแแดดเป็นเหต</font><font face="Leelawadee">ุ จึงเป็นปัจจัยทําให้</font><font color="#000099" face="Leelawadee">แว่นขยาย</font><font face="Leelawadee">ได้ทําหน้าที่ส่วนของตน 
+คือรวมแสงแดดนั้นได้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">แว่นขยาย 
+</font><font color="#990000" face="Leelawadee">เป็นปัจจัยจึงมี</font><font face="Leelawadee"> เชื้อไฟ </font><font color="white" face="Leelawadee">.</font><font face="Leelawadee">อันหมายความถึง 
+</font><font color="#000099" face="Leelawadee">แว่นขยาย</font><font face="Leelawadee">เป็นเหตุปัจจัยทําให้เกิดไฟได้ จึงทําให้เกิด</font><font color="#000099" face="Leelawadee">การหาเชื้อไฟ</font><font face="Leelawadee"> 
+&nbsp;&nbsp;</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">&nbsp;เชื้อไฟ 
+</font><font color="#990000" face="Leelawadee">เป็นปัจจัยจึงมี</font><font face="Leelawadee"> </font><font color="#000099" face="Leelawadee">ไฟเกิด 
+</font><font color="white" face="Leelawadee">..</font><font face="Leelawadee">อันหมายความถึง </font><font color="#000099" face="Leelawadee">เชื้อไฟ 
+</font><font face="Leelawadee">เป็นปัจจัย ที่ทําให้</font></span><font color="#000099" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ไฟเกิดการลุกไหม้</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">&nbsp;&nbsp;ไฟเกิด 
+</font><font color="#990000" face="Leelawadee">เป็นปัจจัยจึงมี</font><font face="Leelawadee"> การลุกไหม้ที่แปรปรวนและดับไป 
+อันหมายความถึง ไฟที่เกิดลุกไหม้เป็นปัจจัยให้ไฟที่เกิดนั้นย่อมมีการแปรปรวนลุกไหม้สว่างบ้าง 
+หรื่บ้าง มอดบ้าง สว่างโพลงบ้าง ปะทุบ้าง..ฯลฯ และต้องดับไป</font></span><font color="#990000" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ในที่สุด</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000099" face="Leelawadee">การลุกไหม้ที่แปรปรวนและดับไป 
+เป็นปัจจัยจึงมี คน</font><font face="Leelawadee"> อันหมายความถึง ไฟที่ได้แปรปรวนและดับไปเป็นเหตุ</font><font color="white" face="Leelawadee">.</font><font face="Leelawadee">ปัจจัยให้คนต้องจุดหรือเริ่มกระบวนการเกิด</font><font color="red" face="Leelawadee">ไฟ</font><font face="Leelawadee">ขึ้นใหม่เพื่อใช้ประโยชน์จาก</font><font color="red" face="Leelawadee">ไฟ</font><font color="black" face="Leelawadee">....อันเป็นการเริ่มวงจรขึ้นมาใหม่ไม่รู้จักจบสิ้น 
+</font><font color="#990000" face="Leelawadee">&nbsp;</font><font face="Leelawadee">อันเป็นไปตามวงจรนี้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><font color="navy" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;</span></font></p>
+<p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;<img src="3vj.gif" align="absmiddle" width="382" height="391" border="0" alt="วงจรจําลองปฏิจจสมุปบาท"></font></span></p>
+<p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากกระบวนการเกิดไฟจากเหตุปัจจัยต่างๆที่มาประชุมกันชั่วขณะ 
+ถ้าเราพิจารณาจักเห็นการเกิดของไฟเกิดจากเหตุปัจจัยมาประชุมกันเป็นปัจจัยแก่กันและกันเป็นวงจรต่อเนื่องกันได้, 
+&nbsp;เมื่อพิจารณาวงจรให้ดีจักเห็นได้ว่าถ้าเราต้องการดับไฟ (อันอุปมาดั่งดับอุปาทานทุกข์ในวงจรปฏิจจสมุปบาท) 
+&nbsp;วงจรจักเป็นเช่นนี้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">คนดับ... 
+กรรมดับ... แสงแดดดับ... แว่นขยายดับ... เชื้อไฟดับ...ไฟดับ... ไฟที่ลุกไหม้แปรปรวนดับ... 
+</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ความหมายของวงจร</font><font color="red" face="Leelawadee">ดับไฟ</font><font face="Leelawadee">ก็จักเป็นดังนี้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คนดับ 
+อันหมายถึงไม่มีใครหรือบุคคลที่ลงมือกระทํา ไฟนั้นย่อมไม่สามารถเกิดขึ้นได้แน่นอน 
+อันคือไฟดับหรือทุกข์ดับลงนั่นเอง เพราะไม่มีคนตัวตนที่กระทํา</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กรรมดับ 
+อันหมายถึง ไม่มีการกระทํา ไฟนั้นหรือทุกข์นั้นย่อมไม่สามารถเกิดขึ้นได้เช่นกัน</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แสงแดดดับ 
+อันหมายถึง ไม่มีแสงแดดหรือดับแสงแดดโดยใช้วิธีการต่างๆ ไฟย่อมเกิดไม่ได้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แว่นขยายดับ 
+อันหมายถึง แว่นขยายไม่ทําหน้าที่หรือไม่มีแว่นขยาย ไฟนั้นหรือทุกข์นั้นย่อมเกิดไม่ได้เช่นกัน</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เชื้อไฟดับ 
+อันหมายถึง ไม่มีเชื้อไฟเช่นกระดาษ,ไม้นั่นเอง ไฟย่อมไม่สามารถติดได้แน่นอน</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากกระบวนธรรมต่างๆเหล่านี้ถ้าขาดหรือดับหรือทำให้เสียสมดุลย์ไปล้วนย่อมสามารถดับไฟไม่ให้เกิดได้ทั้งสิ้น 
+อันอุปมาดั่งเช่นเดียวกันกับการดับหรือตัดวงจรการเกิดขึ้นของทุกข์(ปฏิจจสมุปบาท)นั่นเอง 
+แต่มีข้อสังเกตุที่ควรพิจารณา คือแสงแดดซึ่งเป็นกระบวนธรรม อันเป็นธรรมชาติที่ไม่สามารถควบคุมบังคับได้โดยคน 
+เป็นกระบวนธรรมที่เราควรละเว้นไว้เช่นไม่มีแดดไฟย่อมไม่เกิดและจักบังคับให้มีให้เป็นก็มิได้ 
+ดังนั้นปัจจัยนี้เราจึงควรหลีกเลี่ยงในการที่จะดับไฟเพราะแสงแดดเป็นเหตุเป็นปัจจัย 
+</font><font color="#0000CC" face="Leelawadee">เพราะเป็นสภาวะธรรมหรือกระบวนการธรรมชาติอันยิ่งใหญ่อันควบคุมบังคับโดยตรงไม่ได้</font><font face="Leelawadee"> 
+&nbsp;และแสงแดดดับในวงจรจําลองการเกิดแห่งไฟนี้จึงมีความหมายถึงแสงแดดไม่สามารถทํางานหรือทําหน้าที่ได้นั่นเอง&nbsp;&nbsp;มิได้ไปควบคุมบังคับแสงแดดนั้นให้ดับ 
+ถ้าทําก็ต้องโดยทางอ้อมและยุ่งยากดังเช่นต้องหาอุปกรณ์มากั้นมากางเป็นต้น และเวลากลางคืนย่อมไม่มีแสงแดดอันจะบังคับให้มีแสงแดดย่อมไม่ได้เช่นกัน&nbsp;เหตุที่กล่าวนี้เพราะว่าในวงจรของปฏิจจสมุปบาท 
+ก็มีกองธรรมหรือองค์ธรรมหลายๆองค์ที่แสดงไว้ให้เห็นถึงปัจจัยอันเนื่องให้เกิดอีกสิ่งหนึ่งแต่ไม่สามารถควบคุมบังคับได้ดั่งแสงแดดนี้ 
+หรือควบคุมบังคับได้ยากเกินกำลังปุถุชน ดังถ้าเรา</font><font color="red" face="Leelawadee">เข้าไปยุ่งหรือพยายามปฏิบัติย่อมเสียเวลาและเสียกําลังและเกิดผลร้ายขึ้นได้ 
+และย่อมไม่บังเกิดผลอย่างถาวร </font><font face="Leelawadee">ดังเช่นแสงแดดนี้ &nbsp;และทุกข์ทั้งหลายอันคืออุปาทานขันธ์๕ 
+อันเกิดเนื่องจาก</font><font color="#000099" face="Leelawadee">อุปาทาน</font><font face="Leelawadee">เป็นมูลเหตุปัจจัยสําคัญที่สุดและโดยตรง 
+แต่ในทางปฏิบัติกลับไม่ดับอุปาทานนั้นโดยตรงๆแต่ฝ่ายเดียว เหตุเนื่องจากกําลังอันแก่กล้าดุจดั่งพระอาทิตย์ 
+ยากแก่การควบคุมบังคับโดยตรง &nbsp;&nbsp;หรือแม้เป็นเหตุโดยตรงก็จริงอยู่ &nbsp;แต่ไม่สามารถไปดับมันได้เพราะมีความจำเป็นต้องใช้ในการดำเนินยังชีวิต&nbsp;ดังเช่นในกรณีของ 
+</font><font color="#000099" face="Leelawadee"><b>&nbsp;เวทนา</b></font><b><font face="Leelawadee">เป็นปัจจัย จึงมี</font><font color="#000099" face="Leelawadee">ตัณหา</font></b><font face="Leelawadee"> 
+&nbsp;&nbsp;เราย่อมไม่สามารถดับเวทนาได้เลยแม้จะเป็น</font><a href="javascript:na_open_window('win', 'ex3.htm#เหตุ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><b><font face="Leelawadee">เหตุ</font></b></a><font face="Leelawadee">ให้เกิดตัณหาโดยตรง 
+&nbsp;เพราะความที่เป็นขันธ์หรือธรรมที่จำเป็นยิ่งในการดำรงชีวิต ไม่มีเสียก็ดำรงขันธ์หรือชีวิตไม่ได้เลย&nbsp;&nbsp;จึงต้องเป็นการปฏิบัติในลักษณะการใช้ปัญญาไปรู้ไปเข้าใจ</font><font color="#000099" face="Leelawadee">เวทนา</font><font face="Leelawadee"> 
+เพื่อไม่ให้เป็น</font><a href="javascript:na_open_window('win', 'ex3.htm#ปัจจัย', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><b><font face="Leelawadee">ปัจจัย</font></b></a><font face="Leelawadee">เกิด</font><font color="#000099" face="Leelawadee">ตัณหา</font><font face="Leelawadee">ขึ้นนั่นเอง 
+เป็นต้น.</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ด้วยพระปรีชาญาณขององค์สมเด็จพระสัมมาสัมพุทธเจ้า 
+พระองค์ท่านจึงใช้วิธีตัดทอนกําลังอันแรงกล้าของอุปาทานนี้ </font><font color="#0000CC" face="Leelawadee">โดยการลดละ 
+หรือนําออกซึ่งกิเลส ตัณหา, </font><font face="Leelawadee">หรือทําให้อ่อนกําลังลงเช่นใน</font><font color="#0000CC" face="Leelawadee">เวทนา</font><font face="Leelawadee">ด้วยปัญญา 
+เพื่อให้เกิด</font><a href="javascript:na_open_window('win', 'ex3.htm#นิพพิทา', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+ดูความหมาย"><font face="Leelawadee">นิพพิทา</font></a><font face="Leelawadee">ทอนกําลังของอุปาทานอันแกร่งกล้าลงก่อนนั่นเอง &nbsp;ในขณะเดียวกันนั้นก็ให้พัฒนาสติ,สมาธิ 
+อันเพื่อนําไปใช้ให้เกิด&quot;</font><font color="#0000CC" face="Leelawadee">ปัญญา</font><font face="Leelawadee">&quot;ในการดับทุกข์เป็นที่สุด 
+</font><font color="#0000CC" face="Leelawadee">เพื่อทําลายอุปาทานให้สิ้นไปจากจิตอันหมายถึงนิโรธหรือพระนิพพาน 
+</font><font face="Leelawadee">&nbsp;&nbsp;บางครั้งพระองค์ท่านทรงทอนกําลังของอุปาทานโดยขั้นตอนการปฏิบัติในขั้นทาน 
+ศีล สติ สมาธิ ปัญญา หรือตามเพศ(บรรพชิต, นักบวช) ตามกิเลสตัณหาอันหลากหลาย และตามกําลังสติ 
+ปัญญา หรือสถานะการณ์นั้นๆ&nbsp;อันล้วนแล้วแต่</font><font color="#0000CC" face="Leelawadee">เพื่อตัดทอนกําลังของอุปาทานหรือความทุกข์เพื่อให้เหมาะแก่สถานะภาพนั้นๆของผู้ที่ท่านสั่งสอนนั่นเอง 
+คําสั่งสอนของท่านจึงแตกแขนงออกไปถึง๘๔๐๐๐ พระธรรมขันธ์แต่ล้วนมุ่งสู่จุดหมายเดียวกันทั้งสิ้นคือ</font><font color="#990000" face="Leelawadee">ดับทุกข์</font><font color="#0000CC" face="Leelawadee">หรือ</font></span><font color="#990000" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ดับอุปาทานทุกข์</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากวงจรจําลองปฏิจจสมุปบาทนี้ควรสังเกตุพิจารณาดังต่อไปนี้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๑. 
+พิจารณาความเป็น</font><font color="#0000CC" face="Leelawadee">เหตุปัจจัย</font><font face="Leelawadee">อันมาประชุมรวมกันชั่วขณะ(ระยะเวลาหนึ่ง 
+มิใช่ตัวตน หรืออย่างถาวรแท้จริง) จึงทําให้เกิดไฟหรืออุปมาดั่ง</font><font color="#990000" face="Leelawadee">ความทุกข์ 
+&nbsp;</font><font face="Leelawadee">หรือสิ่งทั้งหลายเกิดแต่เหตุอันคือ &quot;</font><font color="blue" face="Leelawadee">ธรรมใด 
+เกิดแต่เหต</font><font color="navy" face="Leelawadee">ุ</font><font face="Leelawadee">&quot; ใน</font><a href="javascript:na_open_window('win', '28.htm#พุทธอุทานคาถาที่ ๑', 0, 0, 790, 450, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">พุทธอุทานคาถาที่๑</font></a><font face="Leelawadee"> 
+นั่นเอง</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๒. 
+พิจารณาให้เห็นความเป็น</font><font color="#0000CC" face="Leelawadee">ปัจจัยอันเกี่ยวเนื่องสัมพันธ์กัน</font><font face="Leelawadee"> 
+คือปัจจัยอันหนึ่งยังให้เกิดหรือเป็นเหตุ ทําให้เกิดปัจจัยอีกอันหนึ่งหรือผล &nbsp;และปัจจัยนี้ก็ไปยังให้เกิดปัจจัยอื่นๆต่อเนื่องไป 
+เป็นความสัมพันธ์อันสืบเนื่องต่อกันเป็นวงจร &nbsp;อันยังให้เกิดแรงหมุนเวียนอย่างสืบเนื่องขับดัน</font><font color="red" face="Leelawadee">วงจร</font><font face="Leelawadee">อย่างไม่รู้จักจบสิ้น 
+อันเป็นไปตามหลักธรรม</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; word-spacing:0; letter-spacing:0;"><a href="javascript:na_open_window('win', 'ex3.htm#อิทัปปัจจยตา', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+แสดงหลักธรรมอิทัปปัจจยตา">อิทัปปัจจยตา</a></span></font><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee"> 
+เพราะเหตุนี้มี ผลนี้จึงเกิด</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๓. 
+พิจารณาให้เห็น เมื่อปัจจัยอันหนึ่งซึ่งเป็นเหตุเกิด ทําให้ปัจจัยอันต่อไปหรือผลก็ต้องเกิดเป็นธรรมดาเป็นปัจจัยต่อเนื่องเป็นลูกโซ่หรือวงจร 
+&nbsp;และเมื่อปัจจัยอันหนึ่งดับ ปัจจัยอันเนื่องสัมพันธ์กันนั้นก็ต้องดับตามๆกันไปด้วยเป็นวงจร 
+(ดับนั้นไม่ได้หมายถึง ดับสูญ แตกดับไป แต่เป็นภาษาธรรม ซึ่งในบางครั้งหมายความถึงไม่สามารถทําหน้าที่นั้นๆแห่งตนได้) 
+อันจักเป็นไปตาม</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;"><a href="javascript:na_open_window('win', 'ex3.htm#อิทัปปัจจยตา', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+แสดงหลักธรรมอิทัปปัจจยตา">หลักธรรมอิทัปปัจจยตา</a></span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;วงจักรหรือวงจรปฏิจจสมุปบาท 
+ก็คล้ายๆกับการทํางานของวงจรจําลองนี้ เพียงแต่ไม่ใช่วงจรง่ายๆดังนี้ เป็นวงจรกระบวนการเกิดขึ้นและดับไปแห่งทุกข์ที่เป็นปรมัตถ์คือตามความเป็นจริงถึงแก่นแท้หรือขั้นสูงสุด 
+และละเอียดอ่อนเป็นที่สุด</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font color="#0000CC" face="Leelawadee">คงพอจะเห็นได้ว่าสิ่งทั้งหลายเกิดแต่</font><font color="red" face="Leelawadee">เหตุปัจจัย</font><font face="Leelawadee"> 
+อันเป็นปัจจัยที่เนื่องสัมพันธ์กัน ไม่ใช่เฉพาะแต่รูปธรรมข้างต้นเท่านั้น &nbsp;แต่หมายถึงทุกๆสรรพสิ่ง 
+อันรวมทั้งสิ่งที่เป็นทั้ง</font><font color="#CC0000" face="Leelawadee">นามธรรม</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">และรูปธรรม 
+&nbsp;ดังเช่นสิ่งที่เป็นรูปธรรมหรือวัตถุ</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นํ้าก็ประกอบด้วยปัจจัยของ 
+2H+O เป็น &nbsp;H<sub>2</sub>O หรือ นํ้า</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โมเลกุลก็ประกอบคือเกิดขึ้นจากการเหตุคืออะตอมหลายๆอะตอมมาเป็นปัจจัยกัน 
+กล่าวคือประชุมรวมตัวกัน 
+</span></font></p>
+<p style="line-height:2; margin-top:1mm; margin-bottom:1mm;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="atom1.gif" align="absmiddle" width="30" height="28" border="0"> 
+แม้แต่อะตอมเพียงอะตอมเดียวอันเป็นสิ่งที่เล็กเกือบที่สุดที่มนุษย์รู้จักก็ประกอบด้วยเหตุปัจจัยของโปรตอนและอิเลคตรอน 
+&nbsp;และยังแสดงอาการไม่เที่ยงโดยการเคลื่อนไหวอยู่ตลอดเวลา แสดงให้เห็นอนิจจังความแปรปรวนอันไม่เที่ยงอยู่ตลอดเวลา 
+จึงเกิดแรงบีบคั้นให้คืนสู่สภาพเดิมๆก่อนการปรุงแต่ง จึงคงทนอยู่ไม่ได้ จนต้องดับไปในที่สุด ฯลฯ</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เซล 
+เซลเดียวก็ประกอบด้วยเหตุปัจจัยต่างๆมากหลายมาประชุมกัน เช่นสารประกอบต่างๆ แร่ธาตุมากมาย 
+โปรตีน นํ้า อากาศ สารอาหาร ชีวเคมี ฯลฯ.ที่เคลื่อนไหวแปรปรวนอยู่ตลอดเวลา</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กายหรือตัวตนก็ประกอบด้วยเหตุปัจจัยมากมาย 
+ดังเช่น ธาตุดิน อันหมายถึงแร่ธาตุต่างๆ &nbsp;และธาตุนํ้า ธาตุลม ธาตุไฟ ช่องว่าง 
+วิญญาณธาตุ, ที่มีการเสริมแต่งแปรปรวนอยู่ตลอดเวลาทุกขณะเช่นกัน</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นเช่นนี้ในทุกสรรพสิ่ง 
+แม้แต่จักรวาลอันใหญ่โตก็ล้วนแล้วแต่ประกอบด้วยธาตุต่างๆ ดาวต่างๆ พลังงานต่างๆ 
+แรงดึงดูด สิ่งต่างๆทั้งมีชีวิตและไม่มีชีวิต ฯลฯ ที่แปรปรวนเปลี่ยนแปลงหมุนรอบตนเอง 
+และเป็นปัจจัยแก่กันและกัน &nbsp;อันล้วนเป็นเหตุเป็นปัจจัยให้เกิดจักรวาลขึ้นเช่นกัน</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;พิจารณาในทางรูปธรรมหรือวัตถุสิ่งของต่างๆหรือกาย 
+ทุกชนิดทุกสิ่งในโลกนี้ที่สงสัยอยู่ให้เห็นให้เข้าใจเสียก่อนว่าล้วนเกิดแต่เหตุปัจจัยนั่นเอง 
+เพื่อเป็นบาทฐานกําลังปัญญา ความเชื่อมั่น ว่ามันเป็นเช่นนั้นจริงๆ อันเป็นไปตามกฏของความเป็นเหตุเป็นผลตามหลักวิทยาศาตร์นั่นเอง 
+หรือความเป็นเหตุปัจจัยตามหลัก</span></font><a href="javascript:na_open_window('win', '306.htm', 0, 0, 430, 170, 0, 0, 0, 0, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+แสดงหลักธรรมอิทัปปัจจยตา"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; word-spacing:0; letter-spacing:0;">อิทัปปัจจยตา</span></font></a><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">, 
+&nbsp;การพิจารณาในสิ่งที่เป็นรูปธรรมอันเป็นของหยาบกว่าก็เพื่อให้เกิดความเข้าใจในหลักความเป็นปัจจัยอย่างแจ้งชัดเสียก่อน, 
+ตลอดจนวิทยาศาสตร์ในปัจจุบันก็สามารถยืนยันในคําสอนของพระพุทธองค์ที่มีมากว่า๒๕๐๐ปีได้เป็นอย่างดี</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ในทาง</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font color="#CC0000" face="Leelawadee">นามธรรม</font><font color="#0000CC" face="Leelawadee">อันเป็นของละเอียดอ่อน 
+ก็เช่นเดียวกัน ทุกๆสรรพสิ่ง(ยกเว้นเพียงสิ่งเดียวคือ</font><font color="#000066" face="Leelawadee">อสังขตธรรม</font><font face="Leelawadee"> 
+คือสิ่งที่ไม่ได้ถูกเหตุปัจจัยปรุงแต่งขึ้น เช่น </font><font color="#000066" face="Leelawadee">นิพพาน</font><font face="Leelawadee"> 
+ซึ่งมีอธิบายขยายความในภายหลัง) &nbsp;ก็เป็นเฉกเช่นเดียวกันกับรูปธรรมคือเกิดแต่เหตุปัจจัย 
+เช่น จิตหรือใจจริงๆแล้วก็ประกอบด้วยเหตุปัจจัย ดังเช่น เวทนา สัญญา สังขาร วิญญาณ 
+ทั้งสี่หรือที่เรียกกันว่านาม จึงเป็นสิ่งที่เรียกว่าจิตหรือใจ และจิตนี้ก็ยังต้องม</font><font color="blue" face="Leelawadee">ี</font><font color="#990000" face="Leelawadee">กายหรือตัวตน</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">เป็นเหตุปัจจัยร่วมอีกด้วย</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font color="#0000CC" face="Leelawadee">&nbsp;แม้แต่ส่วนย่อยๆของจิตเองก็เกิดแต่เหตุปัจจัย 
+ดังเช่น</font><font color="#993300" face="Leelawadee">เวทนา</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ก็เกิดแต่เหตุปัจจัยอันหลากหลายมาประชุมปรุงแต่งกันชั่วขณะ 
+อันคือเกิดมาแต่เหตุปัจจัยต่างๆ ดังเช่นเวทนาจักเกิดขึ้นได้แต่ละครั้งแต่ละทีก็ย่อมมีเหตุมีปัจจัย 
+พอจักเขียนเป็นกระบวนธรรมของเวทนา เพื่อให้เห็นเป็นรูปธรรมได้ชัดเจนขึ้นดังนี้</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ตา+รูป+วิญญาณ 
+&gt;&gt; ผัสสะ(การกระทบรับรู้ของทั้ง๓สิ่งนั้น) &gt;&gt; พร้อมความจําได้ &gt;&gt; 
+จึงเกิด</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font color="#990000" face="Leelawadee">เวทนา</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ความรู้สึกรับรู้สิ่งที่กระทบสัมผัสเป็นชอบ, 
+ไม่ชอบ หรือเฉยๆ(สุขเวทนา,ทุกขเวทนา,อทุกขมสุข)</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แม้แต่ความทุกข์ที่ครอบสรรพสัตว์ไว้ 
+ก็ล้วนแล้วต้องเกิดแต่เหตุปัจจัยต่างๆเช่นกัน ดังที่พระพุทธองค์ท่านได้ทรงค้นพบและบัญญัติเปิดเผยเพื่อประโยชน์แก่</span></font><span style="font-size:16pt; letter-spacing:0.25;"><a href="javascript:na_open_window('win', 'ex3.htm#เวไนยสัตว์', 0, 0, 770, 200, 1, 0, 0, 1, 1)" target="_self"><font color="#0000CC" face="Leelawadee">เวไนยสัตว์</font></a><font face="Leelawadee"> 
+ใน</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><font color="#B9941A" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;"><b>ปฏิจจสมุปบาท 
+กระบวนธรรมของการเกิดขึ้นและการดับไปแห่งทุกข์</b></span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">ดังนั้นถ้าเราต้องการดับทุกข์ 
+เราจึงควรรู้แจ้งว่าความทุกข์นั้นเกิดมาแต่เหตุปัจจัยใดบ้าง &nbsp;เราก็ย่อมมีโอกาสดับเหตุปัจจัยต่างๆเหล่านั้นเสียแต่ต้นมือได้ง่าย 
+ก่อนที่จะเป็นทุกข์, &nbsp;อุปมาดั่งดับไฟที่เหตุหรือ</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font color="#993300" face="Leelawadee">ต้นเพลิง</font><font face="Leelawadee"> 
+มิได้พยายามดับไฟที่</font><font color="#990000" face="Leelawadee">เปลวเพลิง</font></span><font color="#0000CC" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">นั่นเอง</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0.25;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;การปฏิบัติในโฮมเพจหรือหนังสือเล่มนี้ 
+เป็นการปฏิบัติที่</font><font color="#0000CC" face="Leelawadee">จิต โดยใช้</font><font color="#990000" face="Leelawadee">สติ</font><font color="#0000CC" face="Leelawadee">และ</font><font color="#990000" face="Leelawadee">ปัญญา</font><font face="Leelawadee">เป็นสําคัญ 
+และปัญญานี้ไม่ใช่ปัญญาอย่างความหมายในทางโลก แต่หมายถึง</font><font color="#0000CC" face="Leelawadee">วิชาหรือปัญญาความรู้ความเข้าใจในสภาวธรรม(<a href="javascript:na_open_window('win', 'ex3.htm#ธรรมชาติ', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ธรรมชาติ</a>)ของทุกข์และการดับทุกข์ 
+</font><font face="Leelawadee">&nbsp;ผู้ที่ไม่เคยปฏิบัติหรือปฏิบัติในแนวอื่น ในการอ่านแรกๆอาจจะงุนงงหรือรู้สึกขัดแย้งกับความเชื่อบ้างเป็นธรรมดา 
+แต่ถ้ามีความเพียรโดยเฉพาะการหมั่นพิจารณาด้วยใจที่สงบ สบายๆ ถ้าใช้สมาธิก็แค่ระดับขณิกกะคือแค่ใจไม่วอกแวก 
+ไม่ฟุ้งซ่าน และวางจากความเชื่อ ความยึดมั่นชั่วขณะ&nbsp;แล้วพิจารณาตามความเป็นจริงของธรรม(ธรรมชาติ)&nbsp;ผู้เขียนเชื่อว่าจัก</font><font color="#0000CC" face="Leelawadee">เกิดคุณอนันต์ต่อผู้ปฏิบัติในที่สุด</font><font face="Leelawadee"> 
+&nbsp;ตลอดจนสามารถหลีกเลี่ยงและ</font><font color="#0000CC" face="Leelawadee">แก้ไข</font><font face="Leelawadee">ผลร้ายต่างๆ 
+อันจักอาจบังเกิดขึ้นหรือได้บังเกิดขึ้นแล้วเพราะ</font><a href="javascript:na_open_window('win', 'ex3.htm#วิปัสสนูปกิเลส', 0, 790, 790, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee">วิปัสสนูปกิเลส</font></a><font face="Leelawadee"> 
+อันเกิดขึ้นเป็นธรรมดากับนักปฏิบัติเพราะแม้ว่าท่านได้กระทําประพฤติปฏิบัติในสิ่งที่ประเสริฐสูงสุดที่มนุษย์ทั้งหลายพึงปฎิบัติ 
+แต่อย่าลืมสภาวะธรรม(ธรรมชาติ)ตามความเป็นจริงที่ว่า สิ่งที่ยิ่งสูงนั้นถ้าตกก็ยิ่งเจ็บหรือยิ่งอันตรายเช่นกัน 
+จึงไม่ควรประมาทควรปฏิบัติด้วย</font><font color="#0000CC" face="Leelawadee">สติ</font><font face="Leelawadee">และ</font><font color="#0000CC" face="Leelawadee">ปัญญา</font><font face="Leelawadee">จึงจักสัมฤทธิ์ผลตามที่ตั้งใจไว้</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อนึ่งหนังสือหรือและโฮมเพจนี้ 
+ผู้เขียนไม่ได้มีความตั้งใจเขียนเพื่อขัดแย้งกับผู้ใด หรือหลักธรรมใดๆที่ได้ยึดปฏิบัติกันอย่างหลากหลาย 
+&nbsp;เป็นเพียงข้อเขียนของผู้เขียนที่เขียนขึ้นตามความเข้าใจในธรรมขององค์สมเด็จพระสัมมาสัมพุทธเจ้าที่บังเกิดขื้นแก่ผู้เขียน&nbsp;และต้องการเผยแผ่หลักธรรมอันลํ้าค่าที่เข้าใจได้บ้างนี้เป็นธรรมทานแด่เหล่ากัลยาณมิตรนักปฏิบัติที่ต้องการดับทุกข์หรือต้องการจางคลายจากทุกข์เท่านั้น 
+&nbsp;กัลยาณมิตรทั้งหลายมีหน้าที่ต้องใช้</span></font><span style="font-size:16pt; word-spacing:0; letter-spacing:0;"><a href="javascript:na_open_window('win', 'ex3.htm#ธรรมวิจยะ', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+ดูความหมาย"><font face="Leelawadee">ธรรมวิจยะ</font></a></span><font face="Leelawadee"><span style="font-size:16pt;">(การพิจารณาในธรรม) อันเป็น</span></font><a href="javascript:na_open_window('win', 'ex3.htm#สัมโพชฌงค์๗', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">โพชฌงค์</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">องค์ประกอบอันสําคัญยิ่งแห่งการตรัสรู้หรือพ้นทุกข์, 
+อันคือการพิจารณาในธรรมนี้โดยละเอียดและแยบคาย(</span></font><span style="font-size:16pt; word-spacing:0; letter-spacing:0;"><a href="javascript:na_open_window('win', 'ex3.htm#โยนิโสมนสิการ', 0, 0, 790, 230, 1, 0, 0, 1, 1)" title="คลิก เปิดหน้าต่างย่อย
+เพื่อไปอ่านรายละเอียด" target="_self"><font face="Leelawadee">โยนิโสมนสิการ</font></a></span><font face="Leelawadee"><span style="font-size:16pt;">) เพื่อให้ทราบประจักษ์แก่ตัวท่านเองว่า 
+ถูกต้องหรือผิดประการใด อันเป็นไปตามหลัก</span></font><a href="javascript:na_open_window('win', 'ex3.htm#กาลามสูตร', 0, 0, 790, 230, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:16pt;">กาลามาสูตร</span></font></a><font face="Leelawadee"><span style="font-size:16pt;"> 
+&nbsp; แล้วใช้</span></font><font color="blue" face="Leelawadee"><span style="font-size:16pt;">สัมมาญาณ ความเข้าใจหรือปัญญาอันจักเป็นฐานกําลังแห่งจิตนั้นปฏิบัติ</span></font><font face="Leelawadee"><span style="font-size:16pt;">จึงจะเกิดคุณอนันต์สมดังพุทธประสงค์ 
+อันยังให้เกิด</span></font><font color="blue" face="Leelawadee"><a href="javascript:na_open_window('win', 'vimutti.htm', 0, 0, 720, 450, 0, 0, 0, 0, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+ไปดูความหมาย"><span style="font-size:16pt;">สัมมาวิมุตติ</span></a></font><font face="Leelawadee"><span style="font-size:16pt;">สุขจากการหลุดพ้นที่จําเป็นต้องมี</span></font><font color="blue" face="Leelawadee"><span style="font-size:16pt;">สัมมาญาณ</span></font><font face="Leelawadee"><span style="font-size:16pt;">จึงจะเกิดสัมมาวิมุตติขึ้นได้ 
+จาก</span></font><font color="blue" face="Leelawadee"><span style="font-size:16pt;">มรรคองค์๘</span></font><font face="Leelawadee"><span style="font-size:16pt;">แห่งการปฏิบัติเป็น</span></font><font color="blue" face="Leelawadee"><span style="font-size:16pt;">มรรค</span></font><font face="Leelawadee"><span style="font-size:16pt;">มี</span></font><font color="blue" face="Leelawadee"><span style="font-size:16pt;">องค์๑๐</span></font><font face="Leelawadee"><span style="font-size:16pt;">ของพระอริยะเจ้าหรือสัมมัตตะ 
+๑๐ ที่บางท่านอาจไม่เคยได้ยินมาก่อนจึงมิรู้ว่าจำเป็นต้องยังให้เกิดสัมมาญาณหรือสัมมาปัญญาเกิดขึ้นก่อนจึงจะถึงซึ่ง</span></font><font color="blue" face="Leelawadee"><a href="javascript:na_open_window('win', 'vimutti.htm', 0, 0, 720, 450, 0, 0, 0, 0, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+ไปดูความหมาย"><span style="font-size:16pt;">สัมมาวิมุตติ</span></a></font><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;&nbsp;จึงมิใช่สมาธิแต่อย่างเดียว 
+&nbsp;ยังให้เกิด</span></font><font color="blue" face="Leelawadee"><span style="font-size:16pt;">สัมมาวิมุตต</span></font><a href="vimutti.htm"><font color="blue" face="Leelawadee"><span style="font-size:16pt;">ิ</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">โดยตรงๆอย่างที่บางท่านอาจเข้าใจผิดโดยการเชื่อตามๆกันมา</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><a href="341.htm"><b><font face="Leelawadee"><span style="font-size:16pt;">สัมมัตตะ 
+๑๐</span></font></b></a></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">ภาวะที่ถูกต้อง 
+๑๐ ประการ</span></font></p>
+<p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p align="center" style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<table align="center" border="4" width="20" height="3" bgcolor="#FFFFCC" bordercolordark="#E6AD0A" bordercolorlight="#B38606">
+    <tr>
+        <td>
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;"><img src="wheel.gif" width="90" height="120" border="0"></span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;</font></span></p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;</font></span></p>
+<table align="center" border="3" width="337" height="3" bgcolor="#990000" bordercolordark="#E6AD0A" bordercolorlight="#E6AD0A">
+    <tr>
+        <td width="323" height="15">
+            <p align="center"><font color="#FFFF99" face="Leelawadee"><span style="font-size:16pt;">นัตถิ ปัญญาสมา อาภา</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="323" height="13">
+            <p align="center"><font color="#FFFF99" face="Leelawadee"><span style="font-size:16pt;">แสงสว่างเสมอด้วยปัญญาไม่มี</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><span style="font-size:16pt; letter-spacing:0.25;"><font face="Leelawadee">&nbsp;</font></span></p>
+<p style="line-height:2.2; margin:0;" align="center"><a href="BLANK1.htm"><font color="#885C20" face="Leelawadee"><span style="font-size:16pt; letter-spacing:0;"><img src="title.gif" width="93" height="33" border="0" alt="กลับไปสารบัญ"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-right:5; margin-bottom:0; margin-left:10;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-right:5; margin-bottom:0; margin-left:10;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p align="left"><font face="Leelawadee"><span style="font-size:16pt;"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+</span></font><a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><font face="Leelawadee"><span style="font-size:16pt;"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></span></font></a><font face="Leelawadee"><span style="font-size:16pt;">
+</span></font><a target="_blank" href="http://truehits.net/"><font face="Leelawadee"><span style="font-size:16pt;">Truehits.net</span></font></a><font face="Leelawadee"><span style="font-size:16pt;">
+</noscript>
+<!-- END WEBSTAT CODE -->
+</span></font><p align="left"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none" align="center">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:14pt;">วงจรปฏิจจสมุปบาท</span></font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:14pt;">วงจรโดยขยายความ</span></font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee"><span style="font-size:14pt;">กลับสารบัญ</span></font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:14pt;">ค้นหาคำศัพท์</span></font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)"><span style="font-size:14pt;">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</span></a><span style="font-size:14pt;">. 
+        </span></font></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)"><span style="font-size:14pt;">ภาพกระบวนธรรมขันธ์ 
+        ๕</span></a></font></li>
+        <li><a href="Search.htm"><font face="Leelawadee"><span style="font-size:14pt;">ค้นหาในเว็บปฏิจจสมุปบาท</span></font></a></li>
+        <li><a href="guestbook.htm"><span style="font-size:14pt;"><font face="Leelawadee">สมุดเยี่ยม</font></span></a></li>
+        <li><font face="Leelawadee" color="#990000"><span style="font-size:14pt;">ใช้&nbsp;</span><b><span style="font-size:14pt;">Ctrl+C</span></b><span style="font-size:14pt;"> = Copy</span></font></li>
+</div>
+
+
+
+
+
+
+
+
+    </ul>
+<p><font face="Leelawadee">&nbsp;</font></p>
+</body>
+
+</html>

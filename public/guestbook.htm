@@ -1,0 +1,1370 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>สมุดเยี่ยม</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<bgsound src="music2.mid" loop="infinite">
+<meta name="keywords" content="สมุดเยี่ยม,เยี่ยม,Guestbook">
+<style type="text/css">
+#fadeinbox{position:absolute;width:350px;left:0;top:-400px;border:2px solid black;background-color:lightyellow;padding:4px;z-index:100;visibility:hidden;}
+</style>
+<script type="text/javascript">
+var displaymode="always"
+var enablefade="yes" 
+var autohidebox=["yes", 7] 
+var showonscroll="yes" 
+var IEfadelength=4 
+var Mozfadedegree=0 
+if (parseInt(displaymode)!=NaN)
+var random_num=Math.floor(Math.random()*displaymode)
+function displayfadeinbox(){var ie=document.all && !window.opera
+var dom=document.getElementById
+iebody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body
+objref=(dom)? document.getElementById("fadeinbox") : document.all.fadeinbox
+var scroll_top=(ie)? iebody.scrollTop : window.pageYOffset
+var docwidth=(ie)? iebody.clientWidth : window.innerWidth
+docheight=(ie)? iebody.clientHeight: window.innerHeight
+var objwidth=objref.offsetWidth
+objheight=objref.offsetHeight
+objref.style.left=docwidth/2-objwidth/2+"px"
+objref.style.top=scroll_top+docheight/2-objheight/2+"px"
+if (showonscroll=="yes")
+showonscrollvar=setInterval("staticfadebox()", 50)
+if (enablefade=="yes" && objref.filters){objref.filters[0].duration=IEfadelength
+objref.filters[0].Apply()
+objref.filters[0].Play()
+}
+objref.style.visibility="visible"
+if (objref.style.MozOpacity){if (enablefade=="yes")
+mozfadevar=setInterval("mozfadefx()", 30)
+else{objref.style.MozOpacity=1
+controlledhidebox()
+}}
+else
+controlledhidebox()
+}
+function mozfadefx(){if (parseFloat(objref.style.MozOpacity)<1)
+objref.style.MozOpacity=parseFloat(objref.style.MozOpacity)+Mozfadedegree
+else{clearInterval(mozfadevar)
+controlledhidebox()
+}}
+function staticfadebox(){var ie=document.all && !window.opera
+var scroll_top=(ie)? iebody.scrollTop : window.pageYOffset
+objref.style.top=scroll_top+docheight/2-objheight/2+"px"
+}
+function hidefadebox(){objref.style.visibility="hidden"
+if (typeof showonscrollvar!="undefined")
+clearInterval(showonscrollvar)
+}
+function controlledhidebox(){if (autohidebox[0]=="yes"){var delayvar=(enablefade=="yes" && objref.filters)? (autohidebox[1]+objref.filters[0].duration)*1000 : autohidebox[1]*1000
+setTimeout("hidefadebox()", delayvar)
+}}
+function initfunction(){setTimeout("displayfadeinbox()", 100)
+}
+function get_cookie(Name){var search=Name+"="
+var returnvalue=""
+if (window.external.cookie.length > 0){offset=window.external.cookie.indexOf(search)
+if (offset !=-1){offset+=search.length
+end=window.external.cookie.indexOf(";", offset)
+if (end==-1)
+end=window.external.cookie.length;returnvalue=unescape(window.external.cookie.substring(offset, end))
+}}
+return returnvalue}
+if (displaymode=="oncepersession" && get_cookie("fadedin")=="" || displaymode=="always" || parseInt(displaymode)!=NaN && random_num==0){if (window.addEventListener)
+window.addEventListener("load", initfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initfunction)
+else if (document.getElementById)
+window.onload=initfunction
+}
+</script>
+<style type="text/css">
+<!--BODY{scrollbar-face-color:#0000A0;scrollbar-highlight-color:#FFFFFF;scrollbar-3dlight-color:#C0C0C0;scrollbar-darkshadow-color:#000000;scrollbar-shadow-color:#000000;scrollbar-arrow-color:#FFFFFF;scrollbar-track-color:#E0E0E0;}-->
+</style>
+<meta name="author" content="พนมพร คูภิรมย์">
+<script src="rightmenu.js" type=text/javascript>
+//Right-click menu- By Eyecon (http://www.webteam.ro)
+//Slight modifications by JK
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+</script>
+<style>
+<!--
+#men{BORDER-RIGHT:2px outset;BORDER-TOP:2px outset;Z-INDEX:1;LEFT:0px;VISIBILITY:hidden;BORDER-LEFT:2px outset;BORDER-BOTTOM:2px outset;POSITION:absolute;TOP:0px
+}
+#men A{PADDING-RIGHT:1px;PADDING-LEFT:1px;PADDING-BOTTOM:4px;MARGIN:1px 1px 1px 16px;FONT:12px sans-serif;WIDTH:100%;PADDING-TOP:3px;HEIGHT:100%;TEXT-DECORATION:none
+}
+.ico{BORDER-RIGHT:medium none;BORDER-TOP:medium none;FLOAT:left;BORDER-LEFT:medium none;BORDER-BOTTOM:medium none
+}
+//-->
+</style>
+<meta name="description" content="สมุดเยี่ยม เชิญลงนามเป็นที่ระลึกในสมุดเยี่ยมปฏิจจสมุปบาท">
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" link="#FFCC00" vlink="#6666FF" alink="red" background="GoldenButterfly.jpg" leftmargin="0" marginwidth="0" text="#D9C74D" style="font-style:normal; font-weight:normal; font-size:12pt; margin-top:3.4; margin-right:3.1cm; margin-bottom:3.4; margin-left:3.4cm;">
+    <table style="line-height:150%; margin:0;" border="0" cellspacing="0" width="100%" bgcolor="#00003E" bordercolor="#4F0412" bordercolordark="maroon" bordercolorlight="#4F0412">
+        <tr>
+            <td width="1004">
+                <table style="margin-top:0mm; margin-left:0cm;" align="center" border="0" width="100%">
+                    <tr>
+                        <td height="72">            <div id=glow_text>
+    <h1 align="center" style="margin-top:1mm; margin-bottom:0mm;"> 
+    <span style="font-size:16pt;"><font face="Leelawadee"><script language=javascript>
+//----   Choice of variables   ----
+glow_color="#FED586"
+glow_min=2
+glow_max=5
+glow_speed=100
+//---------The description---------
+/*
+glow_color - color of the glow
+glow_min - minimal size
+glow_max - maximal size
+glow_speed - the glow speed
+*/
+//----------------------------------
+function f_glow(){
+ glow_size+=glow_const
+ if (glow_size>glow_max || glow_size<glow_min) glow_const*=(-1)
+ document.all.glow_text.style.filter = "glow(color="+glow_color+", strength="+glow_size+")"
+}
+if(document.all){glow_const=1; glow_size=glow_min; document.all.glow_text.style.width="100%"; setInterval("f_glow()",glow_speed)}
+
+    </script>
+                        </font></span><font face="Leelawadee"><span style="font-size:13pt;">&nbsp;</span></font><a href="https://patitja.123guestbook.com/" title="ลงชื่อเข้าเยี่ยม เปิดใช้งานได้ใหม่แล้ว" target="_self"><font face="Leelawadee"><span style="font-size:13pt;"><img src="guest3.gif" align="absmiddle" width="54" height="54" border="4"></span></font></a></h1>
+</div>
+                        <h1 style="margin-top:1mm; margin-bottom:0mm;" align="center"><span style="font-size:14pt; letter-spacing:0px;"><a href="https://patitja.123guestbook.com/" title="ลงชื่อเข้าเยี่ยม เปิดใช้งานได้ใหม่แล้ว"><font face="Leelawadee" color="#D9C74D">สมุดเยี่ยม</font></a></span></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="margin-top:-1mm; margin-left:0cm;" align="center" border="0" width="100%">
+                                <tr>
+                                    <td width="217" height="49">                        <p style="margin-top:0; margin-bottom:0;" align="left"><font color="#DEBB15" face="Leelawadee"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><a href="1mainpage.htm#x"><font color="yellow" face="Leelawadee"><img src="bookAnimate.gif" width="32" height="32" border="2"></font></a></span></p>
+                        <p style="margin-top:0; margin-bottom:0;" align="left"><span style="font-size:14pt;"><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></span></p>
+                                    </td>
+                                    <td width="554" align="center" height="49">                                                            <table border="1" width="74" height="25" bordercolordark="#DEA635" bordercolorlight="#DEA635" bgcolor="#000099" bordercolor="#DEA635" cellspacing="0" align="center">
+                                        <tr align="center" valign="middle">
+                                            <td height="23" width="68" align="center" valign="middle">
+                                                <p align="center" style="line-height:0.9; margin-top:-0.1; margin-bottom:0cm;"><span style="font-size:10pt;"><a href="javascript:history.go(-1)"><font color="yellow" face="Leelawadee">กลับหน้าเดิม</font></a></span></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                    <td width="220" height="49">                        <p align="right" style="margin-top:0; margin-bottom:0;"><font color="yellow" face="Leelawadee"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><a href="https://patitja.123guestbook.com/" title="ลงชื่อเข้าเยี่ยม เปิดใช้งานได้ใหม่แล้ว"><font color="yellow" face="Leelawadee"><img src="Write2c.ico" width="32" height="32" border="2"></font></a><font color="yellow" face="Leelawadee"> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span></p>
+                        <p align="right" style="margin-top:0; margin-bottom:0;"><a href="https://patitja.123guestbook.com/" title="ลงชื่อเข้าเยี่ยม เปิดใช้งานได้ใหม่แล้ว"><font color="yellow" face="Leelawadee"><span style="font-size:14pt;">ลงชื่อ 
+                                    และดูสมุดเยี่ยมใหม่</span></font></a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+<p style="margin-top:2mm; margin-bottom:2mm; margin-left:0cm;" align="center"><span style="font-size:10pt;"><font face="Leelawadee">ขอเชิญลงชื่อเป็นเครื่องระลึกฯ. 
+ตลอดจนแนะนำ &amp; ติชมเพื่อปรับปรุง&nbsp;หรือเป็นแนวทางให้ข้อคิดความเห็นแก่ผู้แวะมาเยือน</font></span></p>
+<p style="margin-top:0mm; margin-bottom:1mm; margin-left:0cm;" align="center"><span style="font-size:16pt;"><font color="#DEBB15" face="Leelawadee"><b>รายนามในสมุดเยี่ยม</b></font></span></p>
+<p style="margin-top:1mm; margin-bottom:2.2mm; margin-left:0cm;" align="center"><span style="font-size:16pt;"><b><font color="#009900" face="Leelawadee">เล่มปัจจุบัน 
+-&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook009.htm"><font face="Leelawadee">9</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+] &nbsp;[</font><font face="Leelawadee"> </font><b><a href="guestbook008.htm"><font face="Leelawadee">8</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><b><font color="#009900" face="Leelawadee">&nbsp;&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook007.htm"><font face="Leelawadee">7</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><b><font color="#009900" face="Leelawadee">&nbsp;&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook006.htm"><font face="Leelawadee">6</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+] </font><b><font color="#009900" face="Leelawadee">&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook005.htm"><font face="Leelawadee">5</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><b><font face="Leelawadee">&nbsp;&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook004.htm"><font face="Leelawadee">4</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><b><font face="Leelawadee">&nbsp;&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook003.htm"><font face="Leelawadee">3</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><font face="Leelawadee">&nbsp;&nbsp;[ </font><b><a href="guestbook002.htm"><font face="Leelawadee">2</font></a></b><font face="Leelawadee"> 
+</font><font color="#FFFF99" face="Leelawadee">]&nbsp;&nbsp;[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook001.htm"><font face="Leelawadee">1</font></a></b><font face="Leelawadee"> 
+</font><font color="#FFFF99" face="Leelawadee">]</font></span></p>
+<p style="margin-top:-0.1cm; margin-bottom:2mm; margin-left:0cm;" align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="564" height="10" border="0"></font></b></p>
+<P><FONT size=-1 face="Leelawadee">rec no. 623</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ประกอบ&nbsp;และครอบครัว<BR><!-- 125.26.102.42 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+<BLOCKQUOTE><font face="Leelawadee">ขอชมเชย&nbsp;เวป&nbsp;&nbsp;เป็นประโยชน์มากทำให้เข้าถึง&nbsp;&nbsp;ธรรม&nbsp;&nbsp;ของพระพุทธองค์อย่างแท้จริง&nbsp;&nbsp;ตามวลีที่ว่า&nbsp;&nbsp;รู้จักธรรม&nbsp;&nbsp;เข้าใจธรรม&nbsp;และเข้าถึงธรรม&nbsp;&nbsp;เป็นการคลายทุกข์ได้ถูกทาง</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">22/10/2010 11:32</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 622</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อิทธิพล&nbsp;งามผิว<BR><!-- 223.206.186.172 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : itti396@gmexmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ที่สวนโมกผมเคยไปครั้งหนึ่งตอนเป็นเด็ก&nbsp;และชอบ&nbsp;ข้อความที่ท่านเขียนว่า&nbsp;ศีลธรรมของเยาวชนคือสันติสุขของโลก&nbsp;น่าจะเป็นประโยชนจริงๆถ้าสามารถทำข้อความนี้ให้เกิดขึ้นจริง&nbsp;ไม่ใช่ต้องให้อายุมากก่อนแล้วค่อยเข้าวัด&nbsp;เด็กดี&nbsp;วันนี้&nbsp;คือผู้ใหญ่ดี&nbsp;ในวันหน้า</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">15/10/2010 15:35</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 621</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ภูมิชาย&nbsp;วงศ์ศิริ<BR><!-- 61.7.169.48 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : phumchai3448@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">อนุโมทนาครับ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">14/10/2010 00:33</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 620</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วลัยรัตน์ ยิ่งดำนุ่น<BR> 
+            <!-- 110.49.7.218 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : vlairat@hotmail.com&nbsp;<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+            <p><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขออนุญาตนำไปแชร์ให้ผู้อื่นได้ศึกษาค้นคว้านะค่ะ 
+ขออนุโทนาบุญกุศลต่อ http://www.nkgen.comมากมากค่ะ <BR></font><DIV align=right><FONT size=-2 face="Leelawadee">13/10/2010 15:27</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 619</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สมพร&nbsp;เครือบุตร<BR><!-- 110.49.7.218 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : tae@windowslive.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ดีมากครับ&nbsp;ขอบพระคุณมากสำหรับข้อมูล&nbsp;ที่อ่านแล้วเข้าใจง่าย&nbsp;ขอให้คณะผู้จัดทำ&nbsp;รวมทั้งเวปมาสเตอร์&nbsp;มีความสุข&nbsp;และสุขภาพแข็งแรง&nbsp;ยอดเยี่ยมมากครับ&nbsp;จะพยายามตั้งใจศีกษาและปฏิบัติตามให้ได้มากที่สุด</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">11/10/2010 13:03</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 618</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+ตัวตนเราเขามิได้มี&nbsp;&nbsp;&nbsp;เกิดแต่เหตุและปัจจัย<BR><!-- 115.87.80.229 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">&nbsp;หากอ่านแล้วปฏิบัติ&nbsp;จริงๆ&nbsp;นะครับ&nbsp;&nbsp;ขอย้ำปฏิบัติจริง&nbsp;แล้วใช้เนื้อหาของ&nbsp;Web&nbsp;นี้เป็นไกด์พิจารนาอย่างที่&nbsp;Web&nbsp;master&nbsp;กล่าว&nbsp;&nbsp;แล้วถึงที่สุดจะพบว่า&nbsp;ธรรมที่พระพุทธองค์ตรัสรู้นั้นเป็นจริงทุกกาล&nbsp;&nbsp;เหนือกาลเวลา&nbsp;&nbsp;โดยเฉพาะเรื่อง&nbsp;อนัตตา&nbsp;&nbsp;ขอให้ทุกท่านปฏิบัติด้วยความเพียร&nbsp;แล้วถึงที่สุดจะเข้าใจด้วยตัวเองครับ&nbsp;&nbsp;ว่าที่พระองค์ตรัสว่า&nbsp;ไม่ควรยึดมั่นถือมั่น&nbsp;แบบถูกต้องอย่างปรมัตถ์&nbsp;เป็นอย่างไร&nbsp;แล้วจะพบสุขอย่างแท้จริง&nbsp;หลุดพ้นจากสมมุติทั้งหลาย 
+<BR>&nbsp;สุดท้ายขอขอบคุณผู้จัดทำเป็นอย่างสูงที่ท่านมีใจในพรหมวิหาร&nbsp;4&nbsp;&nbsp;ครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">09/10/2010 09:34</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 617</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : เอก<BR><!-- 115.87.175.202 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอขอบคุณสำหรับเวปที่รวบรวมข้อมูลธรรมะ&nbsp;ที่มีประโยชน์เพื่อมวลมนุษย์ต่อการดับและ&nbsp;คลายทุกข์ให้เบาบาง&nbsp;&nbsp;ตอนแรกๆไม่เคยเข้าใจว่า&nbsp; 
+<BR>ปฎิจจสมุปบาท&nbsp;ทำงานอย่างไร&nbsp;&nbsp;แต่อ่านไปๆ&nbsp;ก็เห็นภาพและ&nbsp;เข้าใจในกระบวนการ&nbsp;และ&nbsp;ทึ่งในอัจฉริยภาพและบุญญาธิการขององค์สัมมาสัม 
+<BR>พุทธเจ้าที่ตรัสรู้ถึงการทำงาน&nbsp;การเกิดและดับของทุกข์อย่างนี้&nbsp;&nbsp;&nbsp;จะพยายามอ่านให้มากขึ้น&nbsp;ทำความเข้าใจ&nbsp;และ&nbsp;ปฎิบัติตามให้มากขึ้น&nbsp;ขอ&nbsp; 
+<BR>share&nbsp;ด้วยนะครับ&nbsp;เพื่อให้คนอื่นๆเข้ามาอ่านและร่วมอนุโมทนาครับ&nbsp;:)</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">05/10/2010 02:44</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 616</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : a<BR><!-- 183.89.64.24 --></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : </font><a href="http://www.dhammahome.com"><font face="Leelawadee">http://www.dhammahome.com</font></a><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">http://www.nkgen.com/403.htm 
+<BR>กราบเรียนเวบมาสเตอร์ทราบ&nbsp;&nbsp;สำหรับคำอธิบายประโยคที่ว่า&nbsp;&quot;ธรรมทั้งปวงไม่ควรยึดมั่น&quot; 
+<BR>คำว่า&nbsp;&quot;ธรรม&quot;&nbsp;&nbsp;ในที่นี้&nbsp;หมายถึง&nbsp;&quot;สภาพธรรม&quot;&nbsp;นะขอรับ&nbsp;ไม่ได้แปลว่า&nbsp;หลักธรรม&nbsp; 
+<BR>ดังนั้นประโยคนี้จึงไม่ได้แปลว่า&nbsp;รู้หลักธรรมแล้วจึงยึดไว้ 
+<BR>&nbsp;แต่จริงๆแล้วหมายถึง 
+<BR>&nbsp;เข้าใจสภาพธรรมที่กำลังปรากฏแล้ว&nbsp;ก็ไม่ยึดมั่นถือมั่นว่าเป็นตัวตน 
+<BR>&nbsp;&nbsp;ขอรบกวนทางเวบมาสเตอร์ช่วยพิจารณาแก้ไขทีครับ&nbsp;เพื่อความถูกต้องของอรรถสืบไป</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">02/10/2010 04:50</FONT></DIV>
+            <p align="left"><font face="Leelawadee">Webmaster - ครับ &nbsp;ได้ทบทวนแล้ว เป็นการกล่าวถึงธรรมที่หมายถึงสิ่งทั้งปวงจริงๆครับ 
+            &nbsp;&nbsp;&nbsp;ได้นำอรรถออกแล้วครับ ขอบคุณที่กรุณาแจ้งครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 615</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+นางสาวสมพร&nbsp;&nbsp;&nbsp;จันทรสอน<BR><!-- 125.24.220.5 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : sama2515@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ชอบอ่านแล้วสบายใจ <BR>ปฎิบัติแล้วดี</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">01/10/2010 12:16</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 614</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : จินดานุช<BR> 
+            <!-- 222.123.20.28 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : ninja.2133@hotmail.com&nbsp;<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มีครั้งหนึ่งไปอ่านเจอคำว่า ปฏิจจสุมปบาท เกิดความสนใจ และสงสัยว่าคืออะไร 
+จึงเสริทช์หาจากกูเกิ้ล และมาเจอเวปนี้ ครั้งแรกที่เข้ามาอ่าน ยอมรับตรงๆ เลยว่ายาก 
+ไม่ค่อยเข้าใจ แต่ด้วยความสนใจอยากรู้ ก็พยายามอ่าน ค่อยอ่าน ค่อยๆ 
+ทำความเข้าใจไปเรื่อยๆ ก็เริ่มเข้าใจแล้ว 
+และได้นำมาปฏิบัติในการเจริญภาวนารู้สึกดีมากเลย และจะพยายามอ่านต่อไปเรื่อยๆ 
+กราบอนุโมทนาในกุศลที่ท่านได้จัดทำเวปนี้เพื่อให้ทุกคนได้อ่านด้วยค่ะ <BR></font><DIV align=right><FONT size=-2 face="Leelawadee">29/09/2010 15:15</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><font face="Leelawadee">&nbsp;</font></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 613</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : รังสันต์<BR><!-- 222.123.20.28 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : sepprangsan@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ผมติดตาม&nbsp;web&nbsp;นี้มานานพอสมควรแล้ว&nbsp;&nbsp;อ่านแล้วก็อ่านอีก&nbsp;&nbsp;แล้วลงมือปฏิบัติ&nbsp;&nbsp;พิจารณาทบทวนโดยใช้ปัญญาที่มี&nbsp;&nbsp;มีประโยชน์สูงสุดครับ&nbsp;&nbsp;ขอยืนยันในความเป็นจริงอันสูงสุดนี้</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/09/2010 07:53</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 612</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : kid<BR> <!-- 203.146.150.134 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : krishna-kid@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คุณเอ๊ย...ถ้ามีคนอ่านแล้วเข้าใจเอาแค่10คน ก็คุ้มสุดคุ้มแล้ว เจ๋งสุดๆ 
+ไม่เคยเจอเว็บอะไรที่ให้ความกระจ่างแจ้งอย่างนี้เลย ทำอีกๆๆๆๆๆ ทำดีแล้ว 
+และจงทำต่อไปเถอะ</font> 
+<DIV align=right><FONT size=-2 face="Leelawadee">23/09/2010 09:36</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 611</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : บรรเจิด&nbsp;สุมนานนท์<BR><!-- 203.146.150.134 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : lopburi17@yahoo.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+            </p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นประโยชน์กับผม และ&nbsp;เพื่อนมนุษย์&nbsp;มากครับ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">23/09/2010 09:20</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 610</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อธิวัฒน์ สำราญจิตร์<BR> 
+            <!-- 61.19.65.151 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : worawat_09cia@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+            <p><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็น web ที่ดีจริงๆ <BR></font><DIV align=right><FONT size=-2 face="Leelawadee">22/09/2010 20:07</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 609</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พิเชียร<BR><!-- 118.172.122.249 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณจริงๆได้ความรู้มาก&nbsp;ๆ&nbsp;เลย&nbsp;เป็นเวปที่ดีมากเลย&nbsp;ขออนุโมทนาด้วยครับ&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">18/09/2010 00:46</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 608</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ดวงตา<BR><!-- 58.9.57.27 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">เป็นเว็บไซต์ธรรมะที่สวยงาม&nbsp;และหาลิ้งค์ได้ง่าย&nbsp;ขอขอบคุณและอนุโมทนา</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">17/09/2010 17:15</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 607</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+พระมนัส&nbsp;&nbsp;มหาวิริโย&nbsp;&nbsp;วัดอ่างเวียน&nbsp;อ.บ้านบึง&nbsp;จ.ชลบุรี<BR><!-- 1.46.242.44 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: angwien@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอท่านผู้มีความรู้ช่วยแนะนำหลักธรรมคำสอนของพระพุทธเจ้าไว้กับชาวพุทธบริษัททุกท่านให้คงไว้คู่กับชาติไทยตลอดไป.</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">14/09/2010 12:05</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 606</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ประไพพร<BR><!-- 58.9.200.250 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pkpon53@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอขอบคุณที่ได้ทำ&nbsp;Website&nbsp;ดีๆ&nbsp;&nbsp;สำหรับผู้ที่ต้องการหาความรู้ในพระพุทธศาสนาจริงๆ&nbsp;&nbsp;&nbsp;ขออนุโมทนากับคณะผู้จัดทำทุกๆ&nbsp;ท่านนะค่ะ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">03/09/2010 19:55</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 605</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : นครินทร์<BR><!-- 61.19.65.151 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : ktkbangkok@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ครับผม..รู้สึกดีมากๆ&nbsp;ครับ...หลักธรรมขององค์พระสัมมาสัมพุทธเจ้ารวมถึงแนวทางการฝึกและปฏิบัติธรรม...ที่ให้ข้อคิด&nbsp;ชี้แนวทางและฟอกจิตใจของคนในยุคปัจจุบันนี้ได้เป็นอย่างดี..ถ้ามีโอกาสได้เข้ามา..พบเจอ..แก่นของพระพุทธศาสนา... 
+<BR>ผมเป็นคน&nbsp;ๆ&nbsp;หนึ่งที่บังเอิญได้เปิดเข้ามาเจอweb&nbsp;แห่งนี้.เพียงเพราะอยากฟังเสียงสวดมนต์ทั่วๆไป..เพื่อฝึกสวดมนต์ 
+<BR>นับได้ว่าเป็นนาบุญครับ..และหวังว่าจะได้มีโอกาสมาศึกษาอ่านแก่นแท้ของพระพุทธศาสนา&nbsp;อีกในลำดับต่อไป&nbsp;(แม้จะเป็นการยากที่จะเข้าใจได้ง่าย..แต่ก้อรู้สึกถึงอารมณ์ที่เกิดขึ้นในขณะอ่านแค่เพียงผ่าน..ก้อรู้สึกดีมากๆเลยครับ) 
+<BR>ขอส่งเสริมและสนับสนุน..web&nbsp;แห่งนี้..ครับ..สาธุ๊..สาธุ๊ 
+<BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">02/09/2010 15:06</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 604</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ปัญจขันโธ&nbsp;&nbsp;ภิกขุ<BR><!-- 115.67.13.24 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : chinavon1@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ช่วงนี้มีอารมณ์ธรรมภาคปฏิบัติสติปัฏฐาน๔แบบย่อ อยากบอกต่อเป็นธรรมทาน?</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">31/08/2010 12:14</FONT></DIV>
+            <p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 603</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+นายอดิศักดิ์&nbsp;&nbsp;ตินะโส<BR><!-- 61.19.66.122 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : tinaso_99@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอขอบพระคุณที่ท่านได้จัดสร้างเว็บไซต์ที่ดี&nbsp;มีประโยชน์ต่อมวลมนุษย์ทั้งหลาย&nbsp;และขอเป็นกำลังให้ท่านได้สร้างต่อไปอย่าหยุดยั้งเพราะมนุษย์ทั้งหลายต้องการการช่วยเหลือเพื่อให้ตนเองได้หลุดพ้นจากกองกิเลสทั้งปวง&nbsp;ขอขอบพระคุณเป็นอย่างสูงครับ 
+<BR>&nbsp;</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/08/2010 16:26</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 602</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สุภาณี&nbsp;&nbsp;พิมพ์ศรี<BR><!-- 111.84.232.220 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : moo_pimsri@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณที่มีเวบดีๆให้เข้ามาเรียนรู้&nbsp;ขออนุโมทนาบุญด้วยค่ะ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">24/08/2010 19:56</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 601</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พระมหาวินัย ภูริปญฺโญ<BR><!-- 202.44.45.27 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : <BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เวทนาปริคคหสูตร พระพุทธเจ้าแสดงแก่ปริพพาชกผู้มีเล็บยาว 
+พระสารีบุตรนั่งถวายงานพัดอยู่ส่งกระแสจิตไปตามพระธรรมเทศานา จิตก็หลุดพ้นจากอาสวะ 
+พิจารณาดูแล้วเป็นพระธรรมเทศนาที่ลึกซึ้งมาก 
+จนทำให้คนที่มีปัญญามากอย่างพระสารีบุตรบรรลุธรรมได้</font><DIV align=right><FONT size=-2 face="Leelawadee">24/08/2010 17:15</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 600</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : นำโชค<BR><!-- 202.44.45.27 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : numchoke_gob@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาบุญในเว็บไซต์ที่เป็นประโยชน์มากนี้&nbsp;กับผู้ดูแลและผู้สนับสนุนทุกท่านครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">21/08/2010 22:16</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 599</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วิไล&nbsp;<BR><!-- 58.8.111.87 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอขอบพระคุณทุกท่านมีร่วมกันสร้างWebดีๆทำให้เกิดความเข้าใจธรรมของพระพุทธองค์&nbsp;ขออนุโมธนาค่ะ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">17/08/2010 13:17</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 598</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พรเพ็ญ&nbsp;&nbsp;&nbsp;อรัณยะนาค<BR><!-- 203.157.71.4 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pornpena98@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+            </p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาคุณความดีอันเกิดจากจิตผู้ให้&nbsp;ให้เจริญรุ่งเรืองในทุกสิ่งทุกประการเทอญ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">17/08/2010 11:22</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 597</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ณฐ&nbsp;เสิกภูเขียว<BR><!-- 118.173.239.61 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : natha2513@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ประโยชน์มหาศาลแก่พุทธศาสนิกชนยิ่งแล้ว</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">16/08/2010 13:11</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 596</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สุรปัญโญ<BR><!-- 1.46.190.36 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : surapunyo@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">การให้ธรรมทานดีเลิศ&nbsp;&nbsp;ชนะการให้ทั้งหลายทั้งปวง&nbsp;&nbsp;ขออนุโมทนา&nbsp;&nbsp;สาธุ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/08/2010 21:30</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 595</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : จุฑามาส&nbsp;โร<BR><!-- 115.131.201.183 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : chuthamas07@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณผู้จัดทำเว็ปธรรมให้คนที่อยู่ในต่างประเทศได้อ่าน&nbsp;อยู่ต่างประเทศหนังสือไทยเกี่ยวกับธรรมหาอ่านยาก 
+<BR>ขออนุโมทนาคณะผู้จัดทำทุกคนให้มีความสุข&nbsp;ความเจริญนะคะ <BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/08/2010 16:29</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 594</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+เทียมเมฆ<BR><!-- 119.31.121.78 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : tiemmek@Gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ได้พบอริยทรัพย์ ขออนุโมทนากับผู้ให้อริยทรัพย์ครั้งนี้ 
+&nbsp;เป็นหนทางเดียวเท่านั้นที่ผู้ปฏิบัติจะสิ้นภพชาติ</font> <DIV align=right><FONT size=-2 face="Leelawadee">07/08/2010 19:22</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 593</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+พิเพก&nbsp;พรหมสาขา&nbsp;ณ&nbsp;สกลนคร<BR><!-- 119.31.121.78 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pipak.p@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">จิต&nbsp;คือ&nbsp;พุทธะ&nbsp;ผู้รู้ปัญหา&nbsp;ผู้ตื่นจากความงมงาย&nbsp;&nbsp;ผู้เบิกบานปราศจากทุกข์&nbsp;&nbsp;&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">03/08/2010 14:10</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 592</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : amornchai<BR><!-- 124.122.138.198 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : m2010@hotmail.co.th<BR></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : 
+</font><A href="http://www.nkgen.com/32.htm" 
+target=_blank><font face="Leelawadee">http://www.nkgen.com/32.htm</font></A><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font></p>
+<BLOCKQUOTE><font face="Leelawadee">สวัสดีครับ&nbsp;&nbsp;ท่านคณะทำงาน 
+<BR>ผมอ่านธัมมจักรกัปปวัตตนสูตร&nbsp;&nbsp;ไม่แน่ใจว่า&nbsp;ข้อความผิดหรือไม่ 
+<BR>ข้อความใน&nbsp;2-3&nbsp;บรรทัดแรก&nbsp;ดังนี้ 
+<BR><BR>&quot;พระสูตรว่าด้วยการหมุนวงล้อธรรม&nbsp;ขับเคลื่อนเผยแผ่พระศาสนา&nbsp;เป็นชื่อของ&nbsp;ปฐมเทศนา&nbsp;คือพระธรรมเทศนาครั้งแรก&nbsp;ซึ่งพระพุทธเจ้าทรงแสดงแก่พระปัญจวัคคีย์&nbsp;ที่ป่าอิสิปตนมฤคทายวัน&nbsp;แขวงเมืองพาราณสี&nbsp;ในวันขึ้น&nbsp;๑๕&nbsp;ค่ำ&nbsp;เดือน&nbsp;๘&nbsp;หลังจาก....&quot;นั้น&quot;....&nbsp;ตรัสรู้&nbsp;๒&nbsp;เดือน&nbsp;หรือวันอาสาฬหบูชาในปัจจุบันนั่นเอง&quot; 
+<BR><BR>ข้อความตรงคำว่า&nbsp;หลังจาก...&quot;นั้น&quot;....&nbsp;ตรัสรู้&nbsp;๒&nbsp;เดือน 
+<BR>ผมอ่านแล้วเห็นว่า&nbsp;&nbsp;ไม่น่าจะมีคำว่า&nbsp;&nbsp;&quot;นั้น&quot; 
+<BR>หากเข้าใจผิดก็กราบขอประทานโทษด้วยครับ 
+<BR><BR>ขออนุโมทนาในมหากุศลของคณะทำงาน 
+<BR>และขอขอบพระคุณอย่างสูงยิ่ง&nbsp;ในการนำพระสัทธรรมมาให้สาธารณะชนสามารถเข้าถึงได้โดยง่าย 
+<BR>ขอคุณพระศรีรัตนตรัยโปรดจงคุ้มครองคณะทำงานให้ประสบแต่ความสุขความเจริญครับ 
+<BR><BR>อมรชัย&nbsp;จารุสิน</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/07/2010 18:41</FONT></DIV>
+            <p align="left"><font face="Leelawadee">Webmaster - ครับ ขอบคุณครับ &nbsp;&nbsp;&nbsp;ข้อความทึ่ถูกต้องคือ 
+            &nbsp;&quot;หลังจากตรัสรู้แล้ว ๒ เดือน&quot; &nbsp;&nbsp;แก้ไขแล้วครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 591</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : นรีประพันธ์<BR><!-- 125.25.55.198 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+            </p>
+<BLOCKQUOTE><font face="Leelawadee">สิ่งที่ต้องทำคือความดี&nbsp;&nbsp;สิ่งที่ต้องมีคือคุณธรรม&nbsp;&nbsp;สิ่งที่ต้องจำคือผู้มีพระคุณ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/07/2010 18:22</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">ec no. 590</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วัชระ ธานุวัฒน์<BR> 
+            <!-- 110.164.169.3 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : huayhik_0878173699@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+            </p>
+<font face="Leelawadee">ผมชอบหลักธรรมข้อนี้...ลึกซึ้งมาก <BR>ละเอียดแยบคาย........................................................... 
+<BR>ขออนุโมทนาที่ได้มอบความจริงที่ประเสริฐ 
+<BR>ขององค์พระสัมมาสัมพุทธเจ้าไว้ไห้ได้ศึกษากันต่อไป...ซึ่งผมได้ประโยชน์และความสุข 
+<BR>จึงขอให้ความสุขที่ข้าพเจ้าได้รับให้พวกท่านทั้งหลายมีสุขเช่นกันเทอญ...ขออนุโมทนาครับ 
+<BR></font>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/07/2010 16:07</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 589</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สุระพันธ์&nbsp;&nbsp;สิงหราช<BR><!-- 110.164.169.3 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : auto-tech2003@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+            </p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาบุญ&nbsp;แด่คณะผู้จัดทำด้วยครับ...</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/07/2010 14:23</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 588</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พิสิษฐ์ขัย<BR><!-- 110.164.169.3 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : thongchai8@chaiyo.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+            </p>
+<font face="Leelawadee">โมทนา สาธุครับ ได้รู้ในสิ่งที่ไม่รู้ครับ ขอบคุณครับ</font> 
+<DIV align=right><FONT size=-2 face="Leelawadee">24/07/2010 12:53</FONT></DIV>
+            <p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 587</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อมรรัตน์<BR><!-- 125.24.212.24 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : amornrat48@yahoo.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขอเรียนว่า&nbsp;เพิ่งเข้าแวะเว๊บนี้&nbsp;รู้สึกอึ้งไปทีเดียวในครั้งแรกที่ได้อ่าน&nbsp; 
+<BR>กับความรู้สึกที่อ่านแล้วยากที่จะเข้าใจ&nbsp;แต่ทำไมดูเหมือนคล้ายจะเข้าใจ&nbsp; 
+<BR>จึงมักคอยจะแวะกลับมาที่เว๊บอีกเสมอๆ&nbsp;เมื่อมีโอกาส 
+<BR>แล้วความเข้าใจก็ค่อย&nbsp;ๆ&nbsp;สัมผัสได้ด้วยทีละเล็กที่ละน้อย 
+<BR>รู้ได้ด้วยตนเอง&nbsp;ก็ฝึกไปเรื่อย&nbsp;ๆ&nbsp; 
+<BR><BR>ขออนุโมทนาผู้จัดทำเว๊บนี้&nbsp;และขอเป็นกำลังใจให้เสมอๆ 
+<BR>ขอเรียนย้ำว่า&nbsp;เว๊บนี้เป็นประโยชน์จริง&nbsp;ๆ&nbsp;ค่ะ&nbsp;&nbsp; <BR><BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">22/07/2010 13:24</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 586</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+พระไพโรจน์&nbsp;&nbsp;&nbsp;ทิวากโร<BR><!-- 202.28.52.221 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : rojmcu4774@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาในผลบุญที่ได้ทำแล้วจงเป็นปัจจัยตามส่งให้ถึงพระนิพพาน&nbsp;สาธุ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">21/07/2010 13:50</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 585</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+ธำรงศักดิ์&nbsp;&nbsp;&nbsp;&nbsp;สุกลมไสยื<BR><!-- 119.42.110.236 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+            </p>
+<BLOCKQUOTE><font face="Leelawadee">ดีคับ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">20/07/2010 19:15</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+            <p><FONT size=-1 face="Leelawadee">rec no. 584</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พระประมวล&nbsp;&nbsp;ฐิติโก<BR><!-- 125.27.195.194 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pramul2500@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font></p>
+<BLOCKQUOTE><font face="Leelawadee">เยี่ยมชมเว็ปไซด์เป็นครั้งแรก&nbsp;ความอัศจรรย์ของคำสอนของพระพุทธองค์ก็อยู่ที่ปฏิจจสมุปบาทนี่เอง&nbsp;สมดังที่ทรงตรัสว่า&nbsp;ใครศึกษาและเห็นปฏิจจสมุปบาท&nbsp;บุคคลนั้นย่อมเห็นธรรม&nbsp;และเห็นพระพุทธเจ้า&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">12/07/2010 16:52</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 583</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ไมตรี วสันติวงศ์<BR><!-- 110.49.204.10 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : wmaitree@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<p><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอบคุณมากครับที่นำความรู้ที่ประเสริฐยิ่งนี้มาเผยแพร่ <BR></font><DIV align=right><FONT size=-2 face="Leelawadee">12/07/2010 10:46</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><font face="Leelawadee">&nbsp;</font></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 582</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สุนันทา&nbsp;&nbsp;จุลกิ่ง<BR><!-- 110.49.204.10 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : sjunking@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ชอบมากเลย&nbsp;อนุโมทนาบุญกับผู้จัดทำทุกท่านค่ะ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">10/07/2010 12:01</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 581</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : มานพ&nbsp;&nbsp;&nbsp;กลับดี<BR><!-- 58.147.97.106 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : www.manopkd@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณมาก&nbsp;ที่มีของดี&nbsp;ๆ&nbsp;ไว้ให้ความรู้</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">09/07/2010 08:04</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 580</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ภักดิ์ภูมิ<BR><!-- 180.183.138.66 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : bhakkie@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ผมอ่านเเล้วมันดีมากดีเยี่ยมมันให้คติธรรมกับผม &nbsp; 
+<BR><BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/07/2010 19:41</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 579</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+นพ.พูนเกียรติ&nbsp;เรืองโภคา<BR><!-- 202.28.80.4 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : poonkiat@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">อ่านแล้วมีประโยชน์อย่างสูงที่สุด&nbsp;ผมมีตำราหลายเล่ม&nbsp;มาอ่านในนี้ประกอบแล้วทำให้เกิดความเข้าใจยิ่งยิ่งขึ้น&nbsp;ขอนิพพานจงเป็นแด่ท่านครับ&nbsp;ผมขออนุญาติเอาความรู้ในนี้ไปบรรยายธรรมให้เพื่อนแพทย์และผู้ป่วยครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/07/2010 08:27</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 578</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+น.ท.อิทธยากร&nbsp;&nbsp;เรืองเล็ก<BR><!-- 125.25.22.160 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : ittayakorn@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอกราบอนุโมทนาท่านที่ได้จัดทำเวปนี้ขึ้นด้วยครับ&nbsp;มีประโยชน์มากมากจริงๆครับกับผู้ที่มีความสนใจในพุทธศาสนา&nbsp;และยังทำให้ผมเข้าใจในหัวข้อธรรมต่างๆได้มากขึ้นครับ&nbsp;...&nbsp;ขอกราบขอบพระคุณมากครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">06/07/2010 22:43</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 577</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ฐิติวัฒน์&nbsp;มีช้าง<BR><!-- 58.9.162.120 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : thitiwat.m@egat.co.th<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ผม&nbsp;download&nbsp;ลงเครื่องแล้วทำตามขั้นตอนทุกอย่าง&nbsp;แต่เปิดได้แค่หน้าแรกนะเข้าหน้าต่อไปไม่ได้ครับ 
+<BR>หากมีข้อแนะนำเพิ่มเติมก็ชี้แนะด้วยนะครับ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">04/07/2010 21:12</FONT></DIV>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 576</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ฐิติวัฒน์&nbsp;มีช้าง<BR><!-- 58.9.162.120 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : thitiwat.m@egat.co.th<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<font face="Leelawadee">สวัสดีครับผมDownload ไปเก็บไว้ที่เครื่องเรียบร้อยแล้วครับ 
+ต้องยอมรับว่าเป็นปรมัตถธรรมบันลือโลกจริงๆ 
+ผมได้รับฟังการตีความจากภาพที่ท่านลามะจากทิเบตเอามาฝากท่าน อ.พุทธทาส 
+ผ่านมาทางแม่ชีคนหนึ่ง(จำชื่อท่านไม่ได้)จากนั้นมาเจอกระทู้ที่เกี่ยวข้องกับปฎิจจสมุปบาทในลานธรรม 
+ต้องขอบคุณ Google ที่นำผมจากลานธรรมไปสวนโมกข์จนมาถึงที่แห่งนี้อ่านได้ประมาณ 1 
+อาทิตย์แต่ยังได้แค่นามรูปเป็นปัจจัยให้เกิดสฬยตนะเพราะอ่านไป 
+โยนิโสมนสิการไปตามที่ผู้เขียนแนะนำและตั้งใจไว้ว่าจะอ่านทุกตัวอักษรที่ผู้เขียนได้ทุมเทแรงกายแรงใจลงไป 
+สุดท้ายนี้หากไม่เป็นการล่วงเกฺินผู้เขียน ก็อยากทราบประวัติแนวปฎิบัติของท่านพนมพร 
+คูภิรมย์พอสังเขปเช่น ตอนนี้เป็นฆราวาสหรือภิกษุเป็นต้นตามที่อยู่อีเมล์ครับ 
+<BR>ธรรมะสวัสดี</font><DIV align=right><FONT size=-2 face="Leelawadee">04/07/2010 19:23</FONT></DIV><p align="left"><font face="Leelawadee">Webmaster 
+- ครับ เป็นฆราวาส, &nbsp;&nbsp;ถูกต้องแล้วครับต้อง</font><a href="javascript:na_open_window('win', 'ex3.htm#โยนิโสมนสิการ', 0, 0, 770, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee">โยนิโสมนสิการ</font></a><font face="Leelawadee">ครับ 
+&nbsp;จึงจักบังเกิดผล</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 575</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+ปัญจขันโธ&nbsp;ภิกขุ&nbsp;&nbsp;(ป.ธ.๙)<BR><!-- 115.67.123.30 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : chinavon1@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนา/ถ้าเผื่อให้กอปปี้เป็นธรรมทานง่ายๆจักเป็นมหากุศลยิ่ง</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">03/07/2010 12:59</FONT></DIV><p align="left"><font face="Leelawadee">Webmaster 
+- นมัสการท่านปัญจขันโธ&nbsp;ภิกขุ &nbsp;&nbsp;การกอปปี้ เพียง Download คือดึงข้อมูลลงมา จากหน้า </font><a href="download.htm" target="_top"><font face="Leelawadee">Download</font></a><font face="Leelawadee"> 
+&nbsp;&nbsp;เมื่อแตก file ตามคำอธิบายออกแล้ว &nbsp;&nbsp;ให้ copy Files ทั้งหมดที่มีนั้น 
+ซึ่งFilesควรอยู่ใน c:\program\patitja &nbsp;&nbsp;บันทึกใส่ลงในแผ่นที่ต้องการบันทึกได้เลย 
+&nbsp;&nbsp;แผ่นนั้นก็สามารถใช้งานได้เลยทันทีโดยอัติโนมัติครับ คือเมื่อนำแผ่นใส่ใน 
+Com &nbsp;ก็จะเริ่มทำงานเปิด</font><B><font face="Leelawadee">ปฏิจจสมุปบาท</FONT></B><font face="Leelawadee">เอง</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 574</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+มนูญ โพธิ์ขี<BR><!-- 58.9.39.110 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : <BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นแหล่งข้อมูลที่ดีมากๆ&nbsp;แห่งหนึ่งในการศึกษาหาความรู้เกี่ยวกับพระธรรมคำสอน&nbsp;ขออนุโมทนาบุญกุศลแก่ผู้จัดสร้าง&nbsp;และขอให้ท่านและครอบครัวจงมี&nbsp;ความสุขความเจริญ&nbsp;ตลอดกาลเทอญ</font></BLOCKQUOTE><DIV align=right><FONT size=-2 face="Leelawadee">29/06/2010 12:13</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 573</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+พิษณุ&nbsp;&nbsp;เพ็ญสิริพงศ์<BR><!-- 58.9.39.110 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pitsanu13@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นแหล่งแสวงหาความรู้ทางธรรมเสริมสร้างปัญญาเพื่อความหลุดพ้น&nbsp;&nbsp;ขอบคุณเป็นอย่างยิ่งสำหรับบุคคลที่สร้าง&nbsp;&quot;&nbsp;เวบ&nbsp;&quot;นี้ขึ้นมา&nbsp;ขอให้ท่านมีความเจริญในธรรมยิ่งขึ้นไป&nbsp;&nbsp;&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">28/06/2010 11:49</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 572</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+นายวิระชัย&nbsp;&nbsp;&nbsp;ใจปลื้ม<BR><!-- 112.142.240.126 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : bophut_bookcentre@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">มีประโยชน์มากจากการได้อ่านทําให้เข้าใจในพุทธศาสนายิ่งขึ้น&nbsp;&nbsp;&nbsp;และจะพยายามแนะนําผู้อื่นให้ได้อ่านด้วยครับ&nbsp;&nbsp;ขอบคุณมากครับ&nbsp;&nbsp;&nbsp;สวัสดีครับ&nbsp;&nbsp;&nbsp;วีระบ่อผุด&nbsp;&nbsp;เกาะสมุย</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">26/06/2010 06:55</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 571</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ฐานุตฺตโร&nbsp;ภิกขุ<BR><!-- 118.175.245.41 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : Kosaga1@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">การสรุปเนื้อหาทำให้เข้าใจธรรมะและชีวิตดีขึ้น&nbsp;&nbsp;แต่เนื้อหาในการอธิบายน้อยไปหน่อยสำหรับหนังสือที่มีหนาร่วมพันกว่าหน้า</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">24/06/2010 18:22</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 570</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : โชติ&nbsp;&nbsp;มะลิซ้อน<BR><!-- 113.53.106.64 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : chote.mali@hotmail.com<BR></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> 
+: </font><A href="http://nongkhwai.org" 
+target=_blank><font face="Leelawadee">http://nongkhwai.org</font></A><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">โรงเรียนอนุบาลหนองควาย&nbsp;ขอใช้เพ็จของท่าน&nbsp;เพื่อเผยแพร่ด้วยนะครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">19/06/2010 07:21</FONT></DIV><p><font face="Leelawadee">Webmaster - ครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 569</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+อุไรวรรณ&nbsp;&nbsp;สินสวัสดิ์<BR><!-- 118.172.192.22 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : vanchai2009@windowslive.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาในกุศลเจตนาของผู้จัดทำค่ะ&nbsp;เพิ่งพบ&nbsp;web&nbsp;นี้&nbsp;ดีมากๆค่ะ&nbsp;มีภาพประกอบคำอธิบายทำให้เข้าใจมากขึ้น&nbsp;แต่เปิดฟังเสียงสวดมนต์ไม่ได้ค่ะ&nbsp;ถ้าจะกรุณาแนะนำวิธีเปิดฟังเสียง&nbsp;ขอเป็นคำแนะนำสำหรับผู้สูงอายุนะคะ&nbsp;&nbsp;ขอขอบคุณและขออนุโมทนาอีกครั้งค่ะ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">15/06/2010 12:43</FONT></DIV>
+<p><font face="Leelawadee">Webmaster - เสียงสวดมนต์ เป็นการเชื่อมต่อไปยังเวปอื่นครับ &nbsp;จึงต้องเปิดเป็นไปตามเวปนั้นๆ 
+&nbsp;ส่วนใหญ่แล้วก็คลิกไปตามธรรมดาครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 568</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ธนภัทร&nbsp;&nbsp;อยู่เย็น<BR><!-- 222.123.145.133 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : ppumm@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">อ่านแล้วมีปัญญามากขึ้น&nbsp;เห็นแสงธรรมได้ชัดเจน&nbsp;เป็นการนำเสนอธรรมะได้ดีมาก&nbsp;ๆ&nbsp;เลยครับ&nbsp;ขอให้ผลบุญนำสิ่งดี&nbsp;ๆ&nbsp;สู่ผู้จัดทำมาก&nbsp;ๆ&nbsp;นะครับ&nbsp;&nbsp;สาธุ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">15/06/2010 11:41</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 567</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+นายวินิตย์&nbsp;&nbsp;มูลทองชุน<BR><!-- 58.10.12.149 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : vinit.mooltongchoon@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee"><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เพิ่งเจอเวบในวันนี้&nbsp;&nbsp;รู้สึกดีใจมาก&nbsp;หากได้อ่านไปสักพักแล้วจึงขอแสดงข้อคิดครับ 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จันทร์&nbsp;&nbsp;14&nbsp;&nbsp;มิ.ย.&nbsp;&nbsp;53</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">14/06/2010 15:42</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 566</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : &nbsp;ติยา<BR><!-- 125.26.231.95 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : &nbsp;paro111@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ช่วยโลกให้หายร้อนด้วยการปฎิบัติธรรมและเผยแพร่คำสอน&nbsp;&nbsp;ขออนุโมทนาบุญด้วยค่ะ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">12/06/2010 19:41</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 565</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ปรียาวัฒน์&nbsp;&nbsp;ยอดดี<BR><!-- 125.24.212.135 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : preeyawat_y@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ทุกครั้งที่เข้ามาเยี่ยมก็เปี่ยมสุขทุกครั้ง&nbsp;คำสอนให้เข้าใจธรรมะ&nbsp;ต้องสอนให้ปฏิบัติได้มากกว่าอ่านแล้วจำ&nbsp;ขอบคุณเว็ปดีๆ&nbsp;ที่ทำให้คนไทย&nbsp;หยุดคิด&nbsp;หยุดทำ&nbsp;ปล่อย&nbsp;วางได้&nbsp;เพื่อจิตที่มีสมาธิ&nbsp;คิดสิ่งสร้างสรรค์&nbsp;สร้างพลังบุญให้ชีวิตเป็นสุข&nbsp;ขออนุโมทนาผู้จัดทำเว็ปที่เป็นกุศลทานทางปัญญา&nbsp;ได้พบแต่ความสุข&nbsp;ความเจริญ.....สาธุ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">12/06/2010 18:03</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 564</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ชลิต&nbsp;&nbsp;ทองฤทธิ์<BR><!-- 125.24.97.88 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : charriteat@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาที่ให้ความรู้ธรรมะ&nbsp;ซึ่งกำลังค้นหาปฎิจสมุปบาทอยู่&nbsp;ขอขอบคุณเป็นอย่างสูง</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/06/2010 22:02</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 563</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : boo<BR><!-- 58.8.90.2 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : 1300.sp@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาในจิตกุศล&nbsp;และความตั้งใจของผู้จัดทำ&nbsp;web&nbsp;นี้ค่ะ 
+<BR>เนื่องจากกำสังเริ่มศึกษาเรื่องปฏิจจสมุปบาทอยู่น่ะค่ะ&nbsp; 
+<BR>โชคดีจริงๆ&nbsp;ที่เจอ&nbsp;web&nbsp;นี้&nbsp;ขอบคุณมากนะคะ <BR>-boo- <BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/06/2010 12:51</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 562</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วีรวัต&nbsp;เครือสมบัติ<BR><!-- 118.173.254.107 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : weerawat_tm@yahoo.co.th<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นประโยชน์แก่เพื่อนร่วมทุกข์&nbsp;จริงๆ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">04/06/2010 14:55</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 561</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ภาสวร&nbsp;&nbsp;&nbsp;ไกรเลิศ<BR><!-- 58.9.86.166 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : t_on@live.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">สาธุและอนุโมทนาในกุศลอันดีทั้งหลายครับ.</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">01/06/2010 17:59</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 565</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สุรศักดิ์&nbsp;&nbsp;ทวียศ<BR><!-- 117.47.113.22 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : surasakthaveeyos@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ปัจจุบันการนำเสนอธรรมะจะมัวรอแบบสมัยก่อน&nbsp;ๆ&nbsp;คือคอยฟังเทศน์ตามวัดต่างในเทศกาลต่าง&nbsp;ๆ&nbsp;คงล่าช้าไปแล้ว 
+<BR>แต่เดี๋ยวนี้เราหาข้อมูลได้เร็วขึ้น&nbsp;คือได้จากเว็บก็สะดวกรวดเร็วดีครับ&nbsp;ขอขอบคุณคณะผู้จัดทำ&nbsp;ที่ทำให้พระศาสนายั่งยืน 
+<BR>แบบสมัยใหม่&nbsp;ดีครับ&nbsp;เป็นกำลังใจให้ครับ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">31/05/2010 14:12</FONT></DIV><p align="left"><font face="Leelawadee">Webmaster - ครับ 
+&nbsp;ข้อมูลหาได้ง่ายขึ้นครับ &nbsp;แต่ต้องพึงระวังให้เป็นไปตามหลัก </font><a href="javascript:na_open_window('win', 'ex3.htm#กาลามสูตร', 0, 0, 770, 200, 1, 0, 0, 1, 1)"><font face="Leelawadee">กาลามสูตร</font></a><font face="Leelawadee"> 
+ด้วยนะครับ&nbsp;&nbsp;ไม่เช่นนั้นบางข้อมูลก็กลับกลายเป็นให้โทษได้ครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 564</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อริญชัย&nbsp;&nbsp;หามณี<BR><!-- 117.47.128.94 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : arinchaicyber@gmail.com<BR></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> 
+: <BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณมากครับที่ได้นำความรู้ที่หลวงปู่ได้บันทึกมาเผยแพร่&nbsp;&nbsp;เพื่อจะได้ให้คนรุ่นหลังไปประพฤติปฏิบัติตามแนวพุทธอย่างแท้จริง 
+<BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">30/05/2010 20:21</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 563</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+กรอนงค์&nbsp;วนะไชยเกียรติ<BR><!-- 125.25.133.108 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : svgas2006@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณและรู้สึกดีใจที่มีข้อคิดและธรรมมะดีๆมานำเสนอเพื่อยกสภาพจิตใจของผู้อ่านให้มีความรู้และมีความสุข 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ด้วยความขอบคุณ 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KORNA</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">19/05/2010 20:14</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 562</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ชัยวุฒิ&nbsp;หมีโชติ<BR><!-- 117.47.94.55 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">น้อยคนที่จะสอนให้ใช้ปัญญา&nbsp;พิจารณา 
+<BR><BR>มีโอกาสได้เจอ&nbsp;วัดต่างๆ&nbsp;&nbsp;สำนัก&nbsp;&nbsp;นักเขียนต่างๆ&nbsp;&nbsp;ส่วนมาก&nbsp;กำลังหลงอาการของจิตอยู่&nbsp;พอเห็นว่าเป็นของแปลก&nbsp;ของดี&nbsp;ของไม่เคยเจอ 
+&nbsp;ก็เลยอยากจะเผยแพร่&nbsp;คิดว่าเป็นทางที่ใช่ 
+<BR><BR>&nbsp;เวปต่างๆคนที่ตั้งตนเป็นครูบาอาจารย์ต่างๆ&nbsp;เห็นแล้วเหนื่อยใจและสงสารมาก 
+<BR><BR>ตั้งอุบายขึ้นมา&nbsp;เพื่อแนะนำ&nbsp;คนฟังก็หลงทั้งอุบายและหลงอาจารย์ 
+<BR><BR>จริงๆแล้วอุบายก็เป็นสิ่งที่ดี&nbsp;ถ้ามีคนที่ตั้งอุบายเฉลยให้ทีหลัง&nbsp;และอาจจะเหมาะเฉพาะบุคคล 
+<BR><BR>แต่ว่าการสื่อสารยุคนี้มันรวดเร็ว&nbsp;คนที่รับมาก็เลยอย่างที่เห็น&nbsp;หลงกันไปใหญ่ 
+<BR><BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การพิจารณา&nbsp;ด้วยปัญญา&nbsp;อาจจะไม่ใช่สิ่งที่คุ้นเคยในยุคนี้ 
+<BR><BR>แต่ก็สามารถไปด้วยตนเอง&nbsp;ค่อยๆพิจาณาไป&nbsp;ค่อยทำความเข้าใจไป 
+<BR><BR>ที่ว่า&nbsp;การพิจารณาด้วยตัวเอง&nbsp;เหมาะสมนั้น&nbsp;เพราะว่าสุดท้ายแล้ว 
+<BR><BR>ผล&nbsp;ของการพิจารณานั้นเป็นที่รับรู้ได้เฉพาะตนเอง 
+<BR><BR>&nbsp;จึงต้องพิจารณาด้วยตัวเองด้วยนอกจากจะอาศัยผู้อื่น 
+<BR><BR><BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">06/05/2010 10:06</FONT></DIV>
+<p align="left"><font face="Leelawadee">Webmaster - ครับ &nbsp;เป็นไปเช่นนั้นจริงๆครับ &nbsp;อีกทั้งการพิจารณาก็ต้องเป็นไปดังท่านว่า 
+กล่าวคือ นำความรู้ที่ได้ยิน ได้ฟัง หรืออ่าน ไปพิจารณาอย่างมีเหตุผลโดยละเอียด 
+ด้วยตนเองเท่านั้น</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 561</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : บุญธรรม&nbsp;&nbsp;วุฒิภูมิ<BR><!-- 115.67.59.14 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pi.phung@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอร่วมอนุโมทนาในการจัดทำweb&nbsp;ด้วยครับ&nbsp;หัวข้อ&nbsp;รายละเอียด&nbsp;ชัดเจน&nbsp;&nbsp;อธิบายได้เข้าใจ&nbsp;หลักการเปรียบเทียบดีครับ&nbsp;ถ้าเป็นไปได้&nbsp;แปลหลาย&nbsp;ๆ&nbsp;ภาษานะครับ&nbsp;วิญญูชนที่ต้องการเรียนรู้พุทธศาสนา&nbsp;แต่ติดขัดเรื่องยังมีอีกมาก&nbsp;&nbsp;หลายคนยังเข้าใจผิดว่าหัวใจศาสนาพุทธ&nbsp;เป็นไสยศาสตร์&nbsp;&nbsp;พราหมณ์&nbsp;หรือลัทธิอะไรแปลก&nbsp;ๆ&nbsp;&nbsp;&nbsp;&nbsp;กระผมขอแสดงความคิด&nbsp;เพื่อปัญญา&nbsp;เพื่อความรู้ครับ&nbsp;&nbsp;ในหัวข้อที่&nbsp;34&nbsp;&nbsp;&nbsp;ท้ายบทความ&nbsp;ในข้อความที่ว่า&nbsp;มรรคที่&nbsp;๙&nbsp;และมรรคที่&nbsp;10&nbsp;&nbsp;กระผมมีความรู้น้อย&nbsp;รบกวนขยายความเพื่อความรู้ครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">25/04/2010 01:56</FONT></DIV>
+<p align="left"><font face="Leelawadee">Webmaster - มรรค ๘ เป็นมรรคหรือทางของการปฏิบัติเพื่อให้ถึงการหลุดพ้นหรือดับทุกข์นั่นเอง 
+จึงเป็นมรรคของ</font><a href="javascript:na_open_window('win', 'ex3.htm#ปุถุชน', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee">ปุถุชน</font></a><font face="Leelawadee"> 
+&nbsp;ส่วน</font><a href='11.htm#"ภิกษุทั้งหลาย' title="มรรคมีทั้งสิ้น๑๐, มรรค๘เป็นมรรคแห่งการปฏิบัติ
+เพื่อให้เกิดมรรค๙และมรรค๑๐ ของพระอริยเจ้า"><span style="font-size:12pt;"><font face="Leelawadee">มรรคองค์ที่๙</font></span></a><span style="font-size:12pt;"><font face="Leelawadee"> 
+</font></span><font face="Leelawadee">และ</font><a href="javascript:na_open_window('win', 'ex3.htm#สัมมาวิมุตติ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><span style="font-size:12pt;"><font face="Leelawadee">มรรคองค์ที่๑๐</font></span></a><font face="Leelawadee"> 
+นั้นเป็นองค์มรรคที่บังเกิดขึ้นแก่พระอริยะ &nbsp;กล่าวคือปฏิบัติดีปฏิบัติชอบในมรรคทั้ง ๘ 
+จนถึงผล คือเกิดผลขึ้นแล้วนั่นเอง 
+&nbsp;กล่าวคือย่อมเกิดสัมมาญาณหรือปัญญาระดับการหลุดพ้นหรือระดับการดับทุกข์ขึ้น &nbsp;&nbsp;จึงย่อมยังให้เกิดมรรคองค์ที่ 
+๑๐ คือย่อมบังเกิดความสุขอันเกิดขึ้นจากการหลุดพ้นคือการดับทุกข์ลงไปนั่นเอง &nbsp;อันเป็นไปโดยธรรมคือธรรมชาตินั่นเอง 
+&nbsp;อันเป็นไปดัง</font><a href='11.htm#"ภิกษุทั้งหลาย'><font face="Leelawadee">คำกล่าวขององค์พระศาสดา</font></a></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 560</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : รังสันต์&nbsp;ใยสวรรค์<BR><!-- 124.157.187.237 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : sepprangsan@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เข้ามาอ่านเป็นประจำครับ&nbsp;พิมพ์เข้าเล่มไว้อ่านก็เยอะ&nbsp;ผมอ่านแล้วเข้าใจดีมาก&nbsp;เป็นเว็บท์&nbsp;ที่ทำให้ผมมอบตัวเป็นลูกศิษย์พระพุทธเจ้า 
+<BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">23/04/2010 05:28</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 559</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ซึ้งในธรรม<BR><!-- 124.120.233.230 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : lertchairat@yahoo.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นครั้งแรกที่ได้เข้ามาอ่านเนื้อหาในเว็ปไซต์ค่ะ&nbsp;&nbsp;ขอร่วมอนุโมทนาบุญกับท่านผู้จัดทำเว็ป&nbsp;&nbsp;รู้สึกดีและสงบที่ใจมากๆเลยค่ะ&nbsp;&nbsp;ทำให้ได้มีโอกาสทบทวนและมองย้อนเข้าหาตัวเอง&nbsp;&nbsp;หลังจากที่ตลอดวันจิตใจสับสนและวุ่นวายและส่งออกข้างนอกมาทั้งวัน&nbsp;&nbsp;ขอให้อานิสงค์จากการที่ท่านได้เผยแพร่ธรรมะนี้&nbsp;&nbsp;&nbsp;ดลบันดาลให้ท่านทั้งหลายได้บรรลุธรรมและถึงซึ่งพระนินพพานตามรอยบาทพระศาสดาด้วยเทอญ./</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">06/04/2010 20:22</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 558</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ณัฐกนก&nbsp;&nbsp;เจริญกิตติ<BR><!-- 58.9.138.41 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : tuk2009@yahoo.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">มีความสนใจในปฏิจจสมุปบาท&nbsp;&nbsp;ในเชิงปฏิบัติให้ละความทุกข์ได้อย่างถูกต้องตามสัมมาทิฏฐิ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">04/04/2010 09:51</FONT></DIV><p align="left"><font face="Leelawadee">Webmaster 
+- เป็นสัมมาทิฏฐิแล้วครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 557</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ควันเทียน<BR><!-- 117.47.16.234 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : apichat18@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<font face="Leelawadee">ขออนุโมทนากับผู้จัดสร้างสิ่งดีๆ ให้กับโลก กับวงการไอที ด้วยจิตที่มีแต่ให้ สาธุ 
+<BR></font><DIV align=right><FONT size=-2 face="Leelawadee">29/03/2010 12:18</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 556</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ภีรภพ<BR><!-- 117.47.27.215 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">จิตส่งออกนอกเพื่อรับสนองอามณ์ทั้งสิ้น&nbsp;เป็นสมุทัย 
+<BR>ผลอันเกิดจากจิตส่งออกแล้วหวั่นไหว&nbsp;เป็นทุกข์ 
+<BR><BR>ผมขอเรียนว่าให้ลองตรวจสอบดูให้ดีว่านี่เป็นคำกล่าวดั้งเดิมของหลวงปู่จริงหรือไม่นะครับ 
+<BR>ลองดูในหนังสือเมื่เป็นสิบปีที่แล้วก็ได้&nbsp;ไม่น่าจะมีคำว่าเพื่อรับสนองอามณ์&nbsp;หรือหวั่นไหวอะไรระครับ 
+<BR><BR>แล้วคำว่ารับอารมณ์&nbsp;ก็ไม่ใช่เวทนาด้วยกระมัง&nbsp; 
+<BR>ผมอยากเรียนให้ท่านผู้จัดทำ&nbsp;อย่านำความคิดตัวเองมาปนกับคำสอนครูบาอาจารย์นะครับ 
+<BR>เพราะสังเกตว่า&nbsp;ผู้จัดทำมีความเข้าใจในเรื่อง&nbsp;เวทนา&nbsp;อยู่อย่างเป็นส่วนตัว 
+<BR>จากเจตนาดีที่จะอนุรักษ์คำสอนพระพุทธเจ้าและครูอาจารย์&nbsp;จะกลายเป็นทำให้คลาดเคลื่อนไปได้นะครับ 
+<BR><BR>วงจรความสัมพันธ์ของปฏิจจสมุปบาทและขันธ์5ของมวลมนุษย์&nbsp;ที่ทางผู้จัดทำเขียน 
+<BR>ก็มิใช่ว่าเป็นความเข้าใจที่ถุกต้องอย่างแท้จริง&nbsp;จะเห็นได้ว่ามีความเข้าใจคำว่าตัณหาไปในอีกทางนะครับ 
+<BR><BR>เมื่อพระพุทธเจ้าตรัสรู้&nbsp;คำแรกที่ท่านทัก&nbsp;คือดูก่อนตัณหา&nbsp;นายช่างผู้สร้างเรือน&nbsp; 
+<BR>ตัวท่านเราพบแล้ว&nbsp;ท่านจักสร้างเรือนมิได้อีกแล้ว...ลองเสิร์ชดูนะครับ 
+<BR>จะพบว่าท่านไม่ได้ทักสิ่งอื่นก่อน&nbsp;&nbsp;ทำไมท่านไม่ทักสิ่งอื่นในปฏิจจสมุปบาทก่อนกันเล่า? 
+<BR><BR>ด้วยความเคารพ&nbsp;ผมเรียนว่าท่านผู้จัดทำลองไตร่ตรองเรื่องนี้ดูอีกที&nbsp;และทำการแก้ไขให้ถูกต้อง 
+<BR>จะเป็นประโยชน์กับพวกเราศาสนิกชนอย่างที่ท่านตั้งใจไว้ด้วยเถิดครับ 
+<BR><BR>อนุโมทนาในความตั้งใจและเจตนาที่ดีของท่านนะครับ <BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">25/03/2010 22:18</FONT></DIV>
+<p align="left"><font face="Leelawadee">webmaster - &quot;จิตส่งออกนอกเพื่อรับสนองอารมณ์ทั้งสิ้น&nbsp;&nbsp;&nbsp;&nbsp;เป็นสมุทัย</font></p>
+<p align="left"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผลอันเกิดจากจิตส่งออกแล้วหวั่นไหว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นทุกข์ &quot;</font></p>
+<p align="left"><font face="Leelawadee">คัดลอกมาจากหนังสือ&quot;อตุโล ไม่มีใดเทียม&quot; บันทึกโดยพระโพธินันทะมุนี &nbsp;เรียบเรียงโดย ดร.ปฐม นิคมานนท์ &nbsp;ในบทที่ 
+๑๗. </font><a href="http://www.nkgen.com/532.htm"><font face="Leelawadee">อริยสัจแห่งจิต</font></a><font face="Leelawadee"> หน้าที่ ๔๓ ฉบับพิมพ์ครั้งที่ 
+๓ ครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 555</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พ.อ.อ.เกษม&nbsp;&nbsp;ใจอ่อน<BR><!-- 117.47.16.234 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : lung_sem@hotmail.com<BR></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : 
+</font><A href="http://lungsemairborn13space live.com" 
+target=_blank><font face="Leelawadee">http://lungsemairborn13space&nbsp;live.com</font></A><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">กัลยาณธรรม...ร่วมทางไปสู่การหลุดพ้น(วิมุติ) <BR>สาธุผู้เจริญในธรรม 
+<BR>lungsem@gmail.com <BR>tim6613@gmail.com</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">25/03/2010 22:12</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 554</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ชัยวุฒิ<BR><!-- 114.128.6.162 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">คิดถึงคนเขียนเวป <BR><BR>นิพพานมีจริง&nbsp;ผลการปฏิบัติมีจริง 
+<BR><BR>ชีวิตนี้ไม่ลืมพระคุณ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">21/03/2010 11:59</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 553</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : มาลินี<BR><!-- 124.120.11.35 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">อยากจะศึกษาปฏิบัติในการฝึกจิต</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">19/03/2010 08:58</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 552</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ภรันยู&nbsp;&nbsp;&nbsp;พรรณรงค์<BR><!-- 203.170.177.161 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : pharanyuu@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ผมเพิ่งเริ่มนั่งสมาธิได้ไม่นานนัก&nbsp;และกำลังค้นคว้าศึกษาหาความรู้เพื่อนำไปใช้ประกอบในการนั่งสมาธิ&nbsp;&nbsp; 
+<BR>ก็จะนำความรู้ที่ได้อ่านจากเว็บของคุณไปประยุกต์ใช้ครับ&nbsp;&nbsp;ขออนุโมทนาบุญด้วยนะครับ 
+<BR></font></BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">14/03/2010 15:13</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 551</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อัญชนา&nbsp;&nbsp;อาชวโกศล<BR><!-- 202.149.25.225 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : jook_anchana@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขออนุโมทนาบุญในการมีเว็บธรรมเพื่อเป็นธรรมทานแก่สหธรรมิก&nbsp;อานิสงส์นี้ก่อให้เกิดปัญญาทางธรรมรุ่งเรืองสืบไป</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">12/03/2010 09:05</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 550</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ธีระเกียรติ<BR><!-- 61.7.133.57 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : birdcomloso@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เมื่อก่อนผมไม่เคยสนใจเรื่อง&nbsp;ธรรม&nbsp;เลยครับ&nbsp;พอตั้งแต่เดือน&nbsp;10/2552&nbsp;ผมได้ศึกษาธรรมแล้ว&nbsp;ผมกลับมีความรู้สึกติ่นขึ้นมาเลยครับ 
+    พระธรรมคำสั่งสอนของพระพุทธองค์&nbsp;มีความลึกซึ้งถึงจิตถึงใจจริงๆ&nbsp;ที่สำคัญสิ่งที่ท่านสอน&nbsp;เป็นเรื่องที่อยู่ใกล้ตัวเรามากแต่เราหลงผิดและ&nbsp;ไม่รู้มาตลอด..&nbsp;แต่ก็มีธรรมบางอย่างที่ผมไม่เข้าใจ&nbsp;จนได้มาพบ&nbsp;เว็บ&nbsp;www.nkgen.com&nbsp;นี้ทำให้ผมได้เข้าใจ&nbsp;ธรรมในด้านปริยัติเพิ่มขึ้นจากไม่รู้อะไร&nbsp;อยู่ดีๆมาศึกษาเลย&nbsp;&nbsp;ขอขอบคุณ&nbsp;ผู้จัดทำเว็บ&nbsp;และ&nbsp;เรียบเรียงธรรมในทุกเนื้อหาให้เราได้มาศึกษาและนำไปปฏิบัติกันครับ&nbsp;ขออนุโมทนาบุญ&nbsp;มา&nbsp;ณ&nbsp;ที่นี้ด้วยครับ&nbsp;....ผมขอ&nbsp;อนุญาติ&nbsp;คัดลอกข้อเขียน&nbsp;ข้อความ&nbsp;ธรรมเพื่อนำไป&nbsp;เผย&nbsp;แพร่&nbsp;เพื่อเป็นประโยช์น&nbsp;ของ&nbsp;ผู้&nbsp;ปฏิบัติ&nbsp;ต่อไปครับ&nbsp;กราบขอบพระคุณครับ&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">08/03/2010 18:12</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 549</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วัชระ<BR><!-- 202.149.25.234 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : vachra010@yahoo.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นเว็บไซด์ที่น่ายกย่องและน่าภาคภูมิใจสำหรับพุทธศาสนิกชนเรา&nbsp;ขอขอบคุณมากครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">06/03/2010 20:56</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 548</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วัชระ<BR><!-- 202.149.25.234 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอขอบพระคุณสำหรับเว็บไซด์ดีๆเพื่อพุทธศาสนิกชนเรา&nbsp;รู้สึกดีใจและอบอุ่นใจที่มีคนสนใจในธรรมมากขึ้น</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">06/03/2010 20:52</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 547</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อุษาสวาท&nbsp;สุขวัฒนะ<BR><!-- 114.128.60.194 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : usasawat.sukwattana@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">วิชาความรู้มากมายใดๆ&nbsp;ที่เคยได้ลิ้มลอง&nbsp;ยังไม่มีความรู้ความเข้าใจใดลึกซึ้งและจับใจได้เพียงนี้...&nbsp;ปฏิจจสมุปบาท</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">06/03/2010 11:35</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 546</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ศรัณย์<BR><!-- 61.90.31.193 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : sarun@emperorhouse.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอบคุณครับ&nbsp;ผมหาที่นี่เจอเพราะ search&nbsp;หาคำว่าไตรลักษณ์จาก&nbsp;google&nbsp;ครับ&nbsp;เพราะสงสัยว่าอนัตตาเป็นอนัตตาหรือไม่</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">04/03/2010 13:23</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 545</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วิมุตติ<BR><!-- 114.128.242.95 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : honeypot_klong@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ขอบพระคุณสำหรับเว็บดี&nbsp;ๆ&nbsp;ที่นอกจากจะให้ความรู้เกี่ยวกับพระพุทธศาสนา.....แล้วยังช่วยพัฒนาจิตของมนุษย์ผู้นั้นให้ลดและละจากกิเลส......เมื่อได้ลงมือปฏิบัติ...ขออนุโมทนาบุญด้วยค่ะ...</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">28/02/2010 21:53</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 544</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ปรมัตถ์<BR><!-- 61.7.134.164 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : </font><SPAN style="CURSOR: hand" id=-169 
+title=medyongint@live.com><font face="Leelawadee">medyongint@live.com</font></SPAN><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<font face="Leelawadee">แวะมาเยี่ยม เจ๋งมากครับ <BR>เป็นประโยชน์มหาศาลแก่ผู้ศึกษาและปฏิบัติ 
+<BR>อนุโมทนาครับ <BR></font><DIV align=right><FONT size=-2 face="Leelawadee">21/02/2010 22:28</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 543</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : น.ต.ภัสนุ&nbsp;&nbsp;แก้วพรม<BR><!-- 61.7.134.164 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : passanu.k@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ดีมากเลยครับ&nbsp;ได้รับความรู้ที่ดีมาก&nbsp;ขออนุโมทนาและขอเป็นกำลังใจให้ครับ&nbsp;ขอให้ทำต่อไปนะครับ&nbsp;มีสิ่งใดจะให้ช่วยเหลือบอกได้นะครับ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">17/02/2010 14:38</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 542</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : นาย&nbsp;สมพาน&nbsp;&nbsp;ศิลากุล<BR><!-- 118.172.181.116 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : Sompan_Sila@rtaf.mi.th<BR></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> 
+: </font><A href="http://rtaf.mi.th" 
+target=_blank><font face="Leelawadee">http://rtaf.mi.th</font></A><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ยินดีอย่างยิ่งที่ได้มีโอกาสแวะมาเยี่ยมเยือน&nbsp;ขอให้ผู้ที่ใฝ่ในธรรมทุกท่าน&nbsp;รวมถึงคณะผู้ที่จัดทำ&nbsp;ได้เข้าใจและนำไปใช้เพื่อเป็นแนวทางในการบรรลุจุดมุ่งหมายสูงสุดของพระพุทธศาสนาของเราทั่วกัน&nbsp;&nbsp;และยินดีต้อนรับกับทุกท่านที่จะสนทนาธรรมะเพื่อเป็นการแลกเปลี่ยนความรู้ซึ่งกันละกัน&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">17/02/2010 14:33</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 541</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+เกษมศักดิ์&nbsp;อารยกิตติ&nbsp;และครอบครัว<BR><!-- 202.176.83.171 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : apichaichon@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ในความว่าง&nbsp;(ไม่ยึดมั่น&nbsp;ไม่ถือมั่น&nbsp;ไม่ปรุงแต่ง)&nbsp;ก็ยังมี&nbsp;รูป-นาม&nbsp;ตามธรรมดา-ธรรมชาติ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">12/02/2010 10:42</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 540</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+เกษมศักดิ์&nbsp;อารยกิตติ&nbsp;และครอบครัว<BR><!-- 202.176.83.171 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : apichaichon@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">สสาร&nbsp;และ&nbsp;พลังงาน&nbsp;ก็ควรเป็นดั่ง&nbsp;รูป&nbsp;และ&nbsp;นาม&nbsp;&nbsp;&nbsp;นาม&nbsp;ควรเป็น&nbsp;ความว่าง&nbsp;ตามสมมุติบัญญัติ&nbsp;(เรียนรู้ให้สื่อสารทำความเข้าใจ)&nbsp;&nbsp;เพราะความว่างรวมตัวกัน&nbsp;ในความว่างจึงมีพลังงาน&nbsp;และ&nbsp;ในพลังงานก็มีความว่าง&nbsp;&nbsp;&nbsp;..................... 
+<BR>..................&nbsp;&nbsp;มนุษย์สามารถพยายามศึกษาเรียนรู้&nbsp;นำมาประยุกษ์&nbsp;ใช้&nbsp;จากธรรมชาติ&nbsp;ต่อมา&nbsp;และ&nbsp;ต่อไป&nbsp;&nbsp;&nbsp;&nbsp;</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">12/02/2010 10:05</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 539</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : msn<BR><!-- 115.67.132.50 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> : 
+</font><A href="http://www.msn.in.th" target=_blank><font face="Leelawadee">http://www.msn.in.th</font></A><font face="Leelawadee"><BR></font> 
+</p>
+<font face="Leelawadee">ลงนามครั้งแรกครับ</font> <DIV align=right><FONT size=-2 face="Leelawadee">12/02/2010 08:45</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<P><FONT size=-1 face="Leelawadee">rec no. 538</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : julaporn<BR><!-- 125.26.118.121 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : jula_mtmu@hotmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+<BLOCKQUOTE><font face="Leelawadee">เป็นแหล่งข้อมูลทางธรรมที่ดีมากๆค่ะ &nbsp;ขออนุโมทนาค่ะ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">11/02/2010 17:05</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 537</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : นงลักษณ์<BR><!-- 115.67.132.50 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นการเยี่ยมชมครั้งแรกคะ&nbsp;&nbsp;น่าสนใจและน่าศึกษามากๆ</font> </BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">10/02/2010 23:42</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 536</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+เกษมศักดิ์&nbsp;อารยกิตติ&nbsp;และครอบครัว<BR><!-- 202.176.83.171 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : apichaichon@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">สรรพสิ่ง&nbsp;อยู่ในกฏ&nbsp;ไตรลักษณ์&nbsp;.....สุข....&nbsp;ก็เป็น&nbsp;ไตรลักษณ์&nbsp;ตามภาษาสมมุติ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">09/02/2010 14:24</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 535</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : 
+เกษมศักดิ์&nbsp;อารยกิตติ&nbsp;และครอบครัว<BR><!-- 202.176.83.171 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> : apichaichon@gmail.com<BR></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">ยินดี&nbsp;ดีใจ&nbsp;และขอบคุณ&nbsp;ที่ท่านพยายามถ่ายทอดความรู้&nbsp;เพื่อศึกษาและปฎิบัติสืบไป</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">09/02/2010 13:15</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 534</FONT><font face="Leelawadee"><BR></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : บ้านขนมปัง<BR><!-- 202.149.25.241 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<BR></font>
+</p>
+<BLOCKQUOTE><font face="Leelawadee">เป็นแหล่งรวบรวมธรรมะที่ดีมาก&nbsp;ๆ&nbsp;&nbsp;ขอบคุณทีมงานทุกคน&nbsp;&nbsp;และผู้สนับสนุนที่ทำให้มีแหล่งข้อมูลที่ดี&nbsp;ๆ&nbsp;มีประโยชน์อย่างนี้ 
+<BR>ขอเป็นกำลังใจให้&nbsp;&nbsp;มีความสุขมาก&nbsp;ๆ&nbsp;ที่ได้อ่านทุก&nbsp;ๆ&nbsp;ข้อธรรม&nbsp;&nbsp;ในมี&nbsp;&nbsp;ภาพข้อมูลสวยมาก&nbsp;&nbsp;ขอบคุณจริง&nbsp;ๆ&nbsp;ค่ะ</font> 
+</BLOCKQUOTE>
+<DIV align=right><FONT size=-2 face="Leelawadee">05/02/2010 19:13</FONT></DIV><p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 533</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ต้าร์<br><!-- 112.142.133.249 --></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : </font><A href="http://www.งาน-ราชการ.com" target=_blank><font face="Leelawadee">http://www.งาน-ราชการ.com</font></A><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> 
+</p>
+<font face="Leelawadee">เว็บนี้ มีประโยชน์มาก ๆ เลยครับ <BR></font><div align=right>
+    <FONT size=-2 face="Leelawadee">02/02/2010 16:31</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 532</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : หลวงพ่อบาน<br><!-- 112.142.133.249 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: prakru_ban@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> 
+</p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัดเขาศาลาฯ <BR></font><div align=right>
+    <FONT size=-2 face="Leelawadee">30/01/2010 12:05</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 531</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ต๊ยอด<br><!-- 112.142.133.249 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: soodyodloveaom@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> 
+</p>
+<blockquote>
+<font face="Leelawadee">อนุโมทนาด้วยเน้อโยมเน้อแต่ก็ขอให้ตรวจทานให้ละเอียดๆด้วยเน้อเพื่อจะได้ไม่เกิดความเข้าใจที่ผิดของญาติโยมเน้อ&nbsp;&nbsp;&nbsp;เจริญพร</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">26/01/2010 09:22</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 530</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : praritchaya<br><!-- 114.128.132.129 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: mdsbg_2009@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ดีใจมากๆที่ได้เจอสถานีแหล่งพระธรรม&nbsp;ซึ่งทำให้คนหลายๆคนจิตสงบและรู้วิธีที่จะเอาชนะจิตตนได้</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">25/01/2010 22:00</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 529</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พรศิริ<br><!-- 98.210.228.0 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: lek0613@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">คิดว่าตัวเอง&nbsp;โชคดี&nbsp;ที่ได้มาพบเข้า&nbsp;มีประโยชน์มากๆสำหรับ&nbsp;ค้นหาความรู้&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดิฉันพักอาศัยอยู่ที่&nbsp;อเมริกา&nbsp;มา10ปี&nbsp;ไม่เคยได้ไปวัดที่ไหนเลย&nbsp;&nbsp;ได้แต่สวดมนต์&nbsp;และนั่งทำสมาธิ&nbsp;ด้วยตัวเอง&nbsp;&nbsp;&nbsp;เช่น&nbsp;&nbsp;บทสวด&nbsp;&nbsp;ยอดพระกัณฑ์ไตรปิฎก&nbsp;&nbsp;พระชินบัญชร&nbsp;และ&nbsp;พาหุงมหากา&nbsp;.&nbsp;บางครั้งคิดว่า&nbsp;&nbsp;สกดไม่ถูกก็ไม่รู้จะถามใครได้&nbsp;&nbsp;&nbsp;ที่ตัวเองเคย&nbsp;บวชชี&nbsp;มาก็30ก่วาปีมาแล้ว&nbsp;&nbsp;การที่ได้มีการ&nbsp;บันทึกไว้ในนี้&nbsp;&nbsp;มีประโยชน์มาก&nbsp;&nbsp;สำหรับคนที่อยู่ไกลจากบ้าน&nbsp;&nbsp;&nbsp;ขอขอบคุณอย่างสูง&nbsp;ค่ะ</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">24/01/2010 11:24</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 528</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ธรรมวลี<br><!-- 110.49.50.130 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นบุญจริงที่ได้มาพบเว็บดีๆ 
+เป็นเว็บที่มีประโยชน์ที่สุดเลยค่ะ ขอนุโมทนาบุญคณะทำงานทุกท่านค๊ะ ผู้ให้ธรรมทานเหมือนผู้ให้ชีวิตค่ะ....สาธุ 
+<br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">23/01/2010 14:25</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 527</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ธรรมวลี<br><!-- 110.49.50.130 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">มีบุญจริงๆที่ได้มาเจอเว็บดีๆแบบนี้&nbsp;เป็นเว็บที่ดีที่สุดเลย&nbsp;ขออนุโมทนาบุญอันยิ่งใหญ่ของคณะจัดทำทุกท่าน&nbsp;หนูขออนุญาตนำข้อมูลที่เป็นประโยชน์ไปเผยแผ่ต่อไปน๊ะค๊ะ&nbsp;&nbsp;ผู้ให้สิ่งที่เลิศย่อมได้รับสิ่งที่เลิศ.....สาธุ</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">23/01/2010 13:58</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 526</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : โต<br><!-- 80.6.111.23 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: yomanwazup@hotmail.co.uk<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ผมอยู่ประเทศอังกฤษห่างไกลครูบาอาจารย์&nbsp;ได้เข้ามาอ่านกระจ่างในหลายเรื่อง&nbsp;ขอขอบพระคุณอย่างสูงครับ&nbsp;</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">17/01/2010 03:21</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 525</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : บาน<br><!-- 124.157.185.35 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+    <font face="Leelawadee"><br>สวัสดีปีใหม่&nbsp;ย้อนหลังครับ&nbsp;ขอให้ทุก&nbsp;ๆ&nbsp;ท่าน&nbsp;รวยทรัพย์&nbsp;รวยสุขภาพทุกคนนะจ๊ะ</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">16/01/2010 16:34</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 524</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : วลัยลักษณ์<br><!-- 125.25.138.34 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: fonpond_2363@hotmail.com<br></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : </font><a href="http://dhammaonline.bloggang.com" target=_blank><font face="Leelawadee">http://dhammaonline.bloggang.com</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">เรียนwebmaster&nbsp; <br>เราต้องการขออนุญาติในการคัดลอกข้อมูลธรรมะของเว็บไซต์http://nkgen.comเพราะเห็นว่ามีข้อมูลที่เป็นประโยชน์ในการศึกษาธรรมะเราต้องการนำข้อมูลนี้เพื่อเผยแพร่ให้กับผู้ต้องการศึกษาธรรมะ&nbsp;เป็นการช่วยเผยแพร่ธรรมะอีกเว็บหนึ่ง&nbsp;จึงขออนุญาติมา&nbsp;ณ&nbsp;ที่นี้&nbsp; 
+    <br>ขอบคุณเว็บไซต์ดีๆของท่าน&nbsp;ขอให้บุญกุศลที่ได้เผยแพร่ธรรมะจงบังเกิดให้ท่านมีความสุข&nbsp;สงบ&nbsp;สมหวังในชีวิตท่านเถิด&nbsp;&nbsp;ขอบคุณค่ะ&nbsp; 
+    <br></font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">12/01/2010 09:38</FONT> 
+</div>
+<p align="left"><font face="Leelawadee">Webmaster - เป็นธรรมทานทั้งสิ้นครับ</font></p>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 523</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : chuan<br><!-- 118.174.65.128 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: info@easyhorpak.com<br></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : </font><a href="http://www.easyhorpak.com" target=_blank><font face="Leelawadee">http://www.easyhorpak.com</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> 
+<blockquote>
+<font face="Leelawadee">มาเยี่ยมครับ <br><br><br>ขออนุญาตแนะนำ <br><br>http://www.EasyHorpak.com/superlink&nbsp;-&nbsp;แลกหมื่นลิ้งค์ในคลิ๊กเดียว 
+    <br>http://www.EasyHorpak.com&nbsp;-&nbsp;แหล่งค้นหาหอพัก,อพาร์ทเมนท์,แมนชั่น,คอนโด,โรงแรม&nbsp;และอื่น&nbsp;ๆ 
+    <br>http://www.EasyZoneCorp.net&nbsp;-&nbsp;ซอฟแวร์จัดการ&nbsp;internet&nbsp;คุณภาพสูง&nbsp;Hotpsot&nbsp;และ&nbsp;PPPoE&nbsp;,Anti&nbsp;NetCut,&nbsp;Mac&nbsp; 
+    <br>spoof <br>http://www.thai-school.net&nbsp;-&nbsp;เว็บไซต์โรงเรียน,ศิษย์เก่า&nbsp;สำเร็จรูป&nbsp; 
+    <br></font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">12/01/2010 04:48</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 522</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : หมอยา<br><!-- 58.9.92.40 --></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> 
+: </font><a href="http://www.thaiherbalplus.com/default.asp" target=_blank><font face="Leelawadee">http://www.thaiherbalplus.com/default.asp</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">สวัสดีปีใหม่ครับ <br><br>http://www.thaiherbalplus.com/default.asp</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">10/01/2010 21:58</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 521</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พระจพัฒน์&nbsp;&nbsp;วณฺณธโร<br><!-- 125.27.212.183 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ยินดีและดีใจที่ได้เข้ามาดูอ่านสาธุ <br></font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">08/01/2010 17:18</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 520</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : มงคล<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: </font><a href="http://oster-beehive-blender.blogspot.com/" target=_blank><font face="Leelawadee">http://oster-beehive-blender.blogspot.com/</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<font face="Leelawadee">สวัสดีปีใหม่ ขอให้ทุก ๆ ท่านทำแต่ความดี <br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">8/01/2010 12:03</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 519</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : Annta<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Url</FONT></B><font face="Leelawadee"> 
+: </font><a href="http://thaimisc.pukpik.com/cgi-bin/freeguestbook/งาน-ราชการ.com" target=_blank><font face="Leelawadee">งาน-ราชการ.com</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<font face="Leelawadee">แวะมาลงนามค่ะ</font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">8/01/2010 12:01</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 518</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : lungsem<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: lungsem@gmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<font face="Leelawadee">ผู้รู้...ผู้ตื่น...ผู้เบิกบาน... <br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">3/01/2010 14:45</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 517</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : antactica<br><!-- 118.172.135.196 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">มีประโยชน์มากๆครับ&nbsp;ขอให้เจริญๆ</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">27/12/2009 16:19</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 516</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : lungsem<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: lungsem@gmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<font face="Leelawadee">เราเหมือนโคตัวหนึ่งถูกชาวนาชื่อเวรกรรม <br>สนตระพาย <br>ผู้รู้ ผู้ตื่น ผู้เบิกบาน 
+<br>lungsem <br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">23/12/2009 16:13</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 515</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ปรียาวัฒน์ ยอดดี<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: preeyawat_y@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<font face="Leelawadee">จิตใจของคนไทยเปลี่ยนไปทุกวัน หลักธรรม คำสอนยังมีความสำคัญในการพัฒนาจิตใจ ถ้าเราจะอ่านและทำความเข้าใจหลักธรรม 
+มากกว่าแค่ท่องจำ ผ่านตาและผ่านไป...ขอให้กำลังใจผู้จัดทำ website ดีๆู่นี้ ขอให้พบแต่ความสุข 
+ความเจริญตลอดไปค่ะ.... <br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">22/12/2009 23:23</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 514</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : sanan<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: sanan13_@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ขออนุโมทนาที่นำหลักคำสั่งสอนของพระพุทธศาสนามาให้ได้อ่านกัน&nbsp;สาธุ</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">21/12/2009 09:39</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 513</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : sanan<br><!-- 118.175.62.157 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: sanan13_@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> 
+<blockquote>
+<font face="Leelawadee">ได้เข้ามาดูนับว่ามีบุญมาก&nbsp;สาธุ&nbsp;ต้องขอขอบพระคุณผู้ที่เกี่ยวข้องทุกท่านที่นำหลักธรรมมาแสดงไว้&nbsp;ขอขอบพระคุณจากใจจริง</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">21/12/2009 09:26</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 512</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : mwuser<br> <!-- 124.120.125.108 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: </font><font color="#D9C748" face="Leelawadee">sruengsree@gmail.com</font></p>
+<p style="margin-top:-3mm;"><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : </font><a href="http://www.srthinth.info" target=_blank><font face="Leelawadee">http://www.srthinth.info</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอให้พุทธศาสตร์ จงเจริญยิ่งยืนนาน 
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอให้เจริญเจริญ ครับ <br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">18/12/2009 08:58</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 511</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ภัทรธานี<br> <!-- 124.120.125.108 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: pttn2007@gmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นที่พึ่งในการดำเนินชีวิตได้มากเลยค่ะ 
+จะติดตามอ่านไปเรื่อยๆ ขอบคุณอย่างสูงค่ะ <br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">18/12/2009 23:11</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 510</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ศินานันท์<br> <!-- 118.172.138.193 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: sinanun@windowslive.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">17/12/2009 19:53</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 509</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อรจิรา&nbsp;&nbsp;อินทระเกษม<br><!-- 118.172.138.193 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: ornchira2009@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">อัตตาหิ&nbsp;อัตโน นาโถ&nbsp;&nbsp;ตนเป็นที่พึ่งแห่งตน&nbsp;&nbsp;แท้จริงมากเลยเชียว&nbsp;&nbsp;ขอชื่นชมรายการแสดงธรรม&nbsp;&nbsp;ดีมากค่ะ&nbsp;&nbsp;ขอชื่นชมผู้จัดทำด้วย&nbsp;&nbsp;</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">15/12/2009 17:48</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 508</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พระบัญชายุธ&nbsp;&nbsp;ญษณฉนฺโท&nbsp;&nbsp;เอี่ยมสุนทร<br><!-- 124.120.57.123 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: banchayut@gmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ดีมากครับ</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">15/12/2009 12:49</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 507</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พระศรชัย&nbsp;ธมฺมทีโป<br><!-- 118.174.60.213 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: sornchai2524@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ทุกอย่างดีที่สุดแล้ว จงทำและจงมีอย่างนี้ตลอดกาลนาน</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">03/12/2009 20:10</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 506</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : พระมหาภัครวัฒน์&nbsp;ภูลายยาว<br><!-- 124.120.234.75 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: pakkarawat@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ดีครับ&nbsp;ช่วยกันจรรโลง&nbsp;และเผยแผ่พระพุทธศาสนาให้อยู่กับสังคมไทยตราบนานเท่านนาน</font> 
+    
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">03/12/2009 09:13</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 505</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : ข้าวฟ่าง<br><!-- 117.47.9.61 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: khawfang25@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ขอบคุณที่นำเสนอข้อมูลดีๆ..ได้เข้าใจในข้อธรรมที่สงสัยบางอย่าง..&nbsp;</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">02/12/2009 13:51</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 504</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : TOTO<br><!-- 58.9.101.90 --></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">WEBMASTER&nbsp;ท่านมีสวรรค์เป็นสมบัติแน่&nbsp;ๆ</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">02/12/2009 10:26</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 503</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สุพล<br> <!-- 124.157.174.212 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: spanphan@windowslive.com</font></p>
+<p style="margin-top:-3mm;"><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> : </font><a href="http://waingchaingroung.blogspot.com" target=_blank><font face="Leelawadee">http://waingchaingroung.blogspot.com</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<font face="Leelawadee">มาแวะอ่านบ่อยๆและขอลิงค์ธรรมะไปให้เพื่อนในสายงานได้อ่านและนำไปปฏิบัติครับ <br>หมอน้อยเวียงเชียงรุ้ง 
+<br></font> 
+<div align=right>
+    <FONT size=-2 face="Leelawadee">30/11/2009 17:38</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 502</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : สงกรานต์<br><!-- 124.157.174.212 --></font><B><font face="Leelawadee">Email</FONT></B><font face="Leelawadee"> 
+: K_srichawana@hotmail.com<br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> :<br></font> </p>
+<blockquote>
+<font face="Leelawadee">ได้ประเทืองปัญญาสะสมไว้มากขึ้น</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">30/11/2009 08:05</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b></p>
+<p><FONT size=-1 face="Leelawadee">rec no. 501</FONT><font face="Leelawadee"><br></font><B><font face="Leelawadee">ลงนาม</FONT></B><font face="Leelawadee"> : อาร์ม<br><!-- 113.53.74.225 --></font><B><font face="Leelawadee">Homepage</FONT></B><font face="Leelawadee"> 
+: </font><a href="http://game.zabjung.com" target=_blank><font face="Leelawadee">http://game.zabjung.com</font></a><font face="Leelawadee"><br></font><B><font face="Leelawadee">ความคิดเห็น</FONT></B><font face="Leelawadee"> 
+:<br></font> </p>
+<blockquote>
+<font face="Leelawadee">แวะมาเยี่ยมครับ&nbsp;&nbsp;ได้ความรู้กลับไปเยอะเลย</font> 
+</blockquote>
+<div align=right>
+    <FONT size=-2 face="Leelawadee">26/11/2009 23:17</FONT> 
+</div>
+<p align="center"><b><font color="#DEBB15" face="Leelawadee"><img src="yellowlight.gif" width="1000" height="9" border="0"></font></b><font face="Leelawadee">&nbsp;</font></p>
+<p style="line-height:1.6; margin-top:0; margin-bottom:0cm;" align="center"><font face="Leelawadee">&nbsp;</font></p>
+<div id="fadeinbox" style="filter:progid:DXImageTransform.Microsoft.RandomDissolve(duration=1) progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135) ; -moz-opacity:0">
+    <p align="center" style="margin-top:3mm; margin-bottom:1mm; margin-left:0;"><font color="#B18323" face="Leelawadee"><span style="font-size:12pt;">ยินดีต้อนรับสู่สมุดเยี่ยม<br></span><span style="font-size:16pt;"><b>ปฏิจจสมุปบาท</b></span></font></p>
+    <p align="center" style="line-height:200%; margin-top:0; margin-bottom:0; margin-left:0;"><font color="#B18323" face="Leelawadee"><span style="font-size:16pt;">สมุดเยี่ยมลงชื่อเปิดใช้งานใหม่ได้แล้ว</span></font></p>
+</div>
+<p style="margin-top:1mm; margin-bottom:2.2mm;" align="center"><span style="font-size:12pt;"><b><font color="#009900" face="Leelawadee">เล่มปัจจุบัน</font></b></span><span style="font-size:10pt;"><b><font color="#009900" face="Leelawadee"> 
+-&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook009.htm"><font face="Leelawadee">9</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><b><font color="#009900" face="Leelawadee">&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><font face="Leelawadee"> 
+</font><b><a href="guestbook008.htm"><font face="Leelawadee">8</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+] &nbsp;[</font><font face="Leelawadee"> </font><b><a href="guestbook007.htm"><font face="Leelawadee">7</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+] </font><b><font color="#009900" face="Leelawadee">&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><b><a href="guestbook006.htm"><font face="Leelawadee">6</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+] </font><b><font color="#009900" face="Leelawadee">&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><b><a href="guestbook005.htm"><font face="Leelawadee">5</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+] </font><b><font face="Leelawadee">&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><b><a href="guestbook004.htm"><font face="Leelawadee">4</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><b><font face="Leelawadee">&nbsp;&nbsp;</font></b><font color="#FFFF99" face="Leelawadee">[</font><b><a href="guestbook003.htm"><font face="Leelawadee">3</font></a></b><font color="#FFFF99" face="Leelawadee"> 
+]</font><font face="Leelawadee">&nbsp;&nbsp;[ </font><b><a href="guestbook002.htm"><font face="Leelawadee">2</font></a></b><font color="#FFFF99" face="Leelawadee">]&nbsp;&nbsp;[</font><b><a href="guestbook001.htm"><font face="Leelawadee">1</font></a></b><font color="#FFFF99" face="Leelawadee">]</font></span></p>
+<p style="line-height:1.5;" align="center"><a href="https://patitja.123guestbook.com/"><font color="#FFCC00" face="Leelawadee">ลงนามในสมุดเยี่ยม</font></a></p>
+<form name="form2">
+    <p align="center"><font color="#DEBB15" face="Leelawadee"><input type=button value="กลับหน้าเดิม" onclick="history.go(-1)" style="font-family:Tahoma; font-style:normal; font-weight:lighter; font-size:10pt; color:rgb(201,150,46); text-decoration:underline; background-color:rgb(0,0,153); border-width:2px; border-color:rgb(222,166,53); border-style:solid;"></font></p>
+    <table border="1" width="99" height="25" bordercolordark="#DEA635" bordercolorlight="#DEA635" bgcolor="#000099" align="center" bordercolor="#DEA635" cellspacing="0">
+        <tr align="center" valign="top">
+            <td height="15" width="93" align="center" valign="middle">
+                <p align="right" style="line-height:0.9; margin-top:-0.1; margin-bottom:0cm;"><span style="font-size:10pt;"><a href="BLANK1.htm"><font color="yellow" face="Leelawadee">กลับสารบัญ</font></a><font color="#000099" face="Leelawadee"> 
+                xx</font></span></p>
+            </td>
+        </tr>
+    </table>
+</form>
+<p><font face="Leelawadee">&nbsp;</font></p>
+<p align="center"><a href="http://www.auditmypc.com/freescan/antispam.html" target="_blank"><font face="Leelawadee">AntiSpam</font></a></p>
+<p><font face="Leelawadee">&nbsp;</font></p>
+<form name="form2">
+    <p align="center" style="margin-top:-0.3cm;"><span style="font-size:10pt;"><font color="lime" face="Leelawadee">&nbsp; 
+    </font></span></p>
+</form>
+            <p align="center"><font face="Leelawadee">&nbsp;</font></p>
+<p align="center"><a href="mailto:misc@wobggnxut.us"><font color="#00003E" face="Leelawadee">bggnxut.us</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:hegixnx@jem-eihjv.org"><font color="#00003E" face="Leelawadee">hegixnx@jem-eihjv.org</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:uaalmj@yplz-tiacfyn.biz"><font color="#00003E" face="Leelawadee">uaalmj@yplz-tiacfyn.biz</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:statistic@hdpyqnobqto.com"><font color="#00003E" face="Leelawadee">statistic@hdpyqnobqto.com</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:vad@uw-nwao.info"><font color="#00003E" face="Leelawadee">vad@uw-nwao.info</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:aueedc@qvy-tidexr.org"><font color="#00003E" face="Leelawadee">aueedc@qvy-tidexr.org</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:yacc@ccma.org"><font color="#00003E" face="Leelawadee">yacc@ccma.org</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:truc@clyz-xdxojn.net"><font color="#00003E" face="Leelawadee">truc@clyz-xdxojn.net</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:ghostjob@mllys.biz"><font color="#00003E" face="Leelawadee">ghostjob@mllys.biz</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:ccvd-pkarc@pid-xuodjm.info"><font color="#00003E" face="Leelawadee">ccvd-pkarc@pid-xuodjm.info</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:efcxxqkr@fsrj-oreapt.org"><font color="#00003E" face="Leelawadee">efcxxqkr@fsrj-oreapt.org</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:frm-anti-spam@pzzh.net"><font color="#00003E" face="Leelawadee">frm-anti-spam@pzzh.net</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:upload@klj-esduj.us"><font color="#00003E" face="Leelawadee">upload@klj-esduj.us</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:dvcjzo@uztkbe.net"><font color="#00003E" face="Leelawadee">dvcjzo@uztkbe.net</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:bombed@ggsccor.us"><font color="#00003E" face="Leelawadee">bombed@ggsccor.us</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:jimlacurity@audmypc.com"><font color="#00003E" face="Leelawadee">jimlacurity@adtmypc.com</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:uhnr@rbndg.org"><font color="#00003E" face="Leelawadee">uhnr@rbndg.org</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:emevrapqfreq@eka-oilnc.net"><font color="#00003E" face="Leelawadee">emevrapqfreq@eka-oilnc.net</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:perturbed@evx-ewhyz.us"><font color="#00003E" face="Leelawadee">perturbed@evx-ewhyz.us</font></a><font color="#00003E" face="Leelawadee"><br></font><a href="mailto:eaaxdrrhfa@i-shs.info"><font color="#00003E" face="Leelawadee">eaaxdrrhfa@i-sh</font></a></p>
+            </td>
+        </tr>
+    </table>
+    <script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรปฏิจจสมุปบาท</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรโดยขยายความ</font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee">ค้นหาคำศัพท์</font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</a>. 
+        </font></li>
+        <li><span style="font-size:12pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">ภาพกระบวนธรรมขันธ์ 
+        ๕</a></font></span></li>
+        <li><a href="Search.htm"><font face="Leelawadee">ค้นหาในเว็บปฏิจจสมุปบาท</font></a></li>
+        <li><font face="Leelawadee" color="#990000">ใช้ <b>Ctrl+F</b> ค้นหาในหน้าน</font><font face="Leelawadee" color="white">ี้-</font></li>
+        <li><font face="Leelawadee" color="#990000">ใช้&nbsp;<b>Ctrl+C</b> = Copy</font></li>
+</div>
+</body>
+
+</html>

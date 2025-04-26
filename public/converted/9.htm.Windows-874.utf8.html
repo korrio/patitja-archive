@@ -1,0 +1,889 @@
+<html>
+
+<head>
+<title>วงจรปฏิจจสมุปบาทโดยพิศดาร</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<meta name="description" content="แสดงวงจรกระบวนธรรมของจิต โดยพิสดาร">
+<meta name="keywords" content="วงจร,อวิชชา,เวทนา,วงจรปฏิจจสมุปบาท,วงจรโดยพิสดาร">
+<script type="text/javascript" src="textsizer.js">
+/***********************************************
+* Document Text Sizer- Copyright 2003 - Taewook Kang.  All rights reserved.
+* Coded by: Taewook Kang (http://www.txkang.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<meta name="author" content="พนมพร คูภิรมย์">
+<bgsound src="ButterflyFairies.mid" loop="infinite">
+<meta http-equiv="content-type" content="text/html; charset=windows-874">
+<script language="JavaScript">
+<!--
+function namosw_init_float_layers()
+{
+  var name;
+  var layer;
+  var i;
+  var j;
+
+  j = 0;
+  document._float_layers = new Array(Math.max(1, namosw_init_float_layers.arguments.length/2));
+  for (i = 0; i < namosw_init_float_layers.arguments.length; i += 2) {
+    name  = namosw_init_float_layers.arguments[i];
+    if (name == '')
+      return;
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      layer = document.layers[name];
+      layer._fl_pos_left = layer.left;
+      layer._fl_pos_top  = layer.top;
+    } else {
+      layer = document.all[name];
+      layer._fl_pos_left = layer.style.pixelLeft;
+      layer._fl_pos_top  = layer.style.pixelTop;
+    }
+    layer._fl_pos = namosw_init_float_layers.arguments[i+1];
+    if (layer)
+      document._float_layers[j++] = layer;
+  }
+
+  document._fl_interval = setInterval('namosw_process_float_layers()', 200);
+}
+
+function namosw_page_width()
+{
+  return (navigator.appName.indexOf('Netscape', 0) != -1) ? innerWidth  : document.body.clientWidth;
+}
+
+function namosw_page_height()
+{
+  return (navigator.appName.indexOf('Netscape', 0) != -1) ? innerHeight : document.body.clientHeight;
+}
+
+function namosw_process_float_layers()
+{
+  if (document._float_layers) {
+      var i;
+      var layer;
+      for (i = 0; i < document._float_layers.length; i++) {
+	  layer = document._float_layers[i];
+	  if (navigator.appName.indexOf('Netscape', 0) != -1) {
+	    if (layer._fl_pos == 1)
+	      layer.left = layer._fl_pos_left + window.pageXOffset;
+	    else if (layer._fl_pos == 2 || layer._fl_pos == 5) 
+	      layer.left = window.pageXOffset;
+	    else if (layer._fl_pos == 3 || layer._fl_pos == 6) 
+	      layer.left = window.pageXOffset + (namosw_page_width() - layer.clip.width)/2;
+	    else
+	      layer.left = window.pageXOffset + namosw_page_width() - layer.clip.width - 16;
+	    if (layer._fl_pos == 1)
+	      layer.top = layer._fl_pos_top + window.pageYOffset;
+	    else if (layer._fl_pos == 2 || layer._fl_pos == 3 || layer._fl_pos == 4)
+	      layer.top = window.pageYOffset;
+	    else
+	      layer.top  = window.pageYOffset + namosw_page_height() - layer.clip.height;
+	  } else {
+	    if (layer._fl_pos == 1)
+	      layer.style.pixelLeft = layer._fl_pos_left + document.body.scrollLeft;
+	    else if (layer._fl_pos == 2 || layer._fl_pos == 5)
+	      layer.style.pixelLeft = document.body.scrollLeft;
+	    else if (layer._fl_pos == 3 || layer._fl_pos == 6)
+	      layer.style.pixelLeft = document.body.scrollLeft + (namosw_page_width() - layer.style.pixelWidth)/2;
+	    else
+	      layer.style.pixelLeft = document.body.scrollLeft + namosw_page_width()  - layer.style.pixelWidth;
+	    if (layer._fl_pos == 1)
+	      layer.style.pixelTop = layer._fl_pos_top + document.body.scrollTop;
+	    else if (layer._fl_pos == 2 || layer._fl_pos == 3 || layer._fl_pos == 4)
+	      layer.style.pixelTop = document.body.scrollTop;
+	    else
+	      layer.style.pixelTop  = document.body.scrollTop  + namosw_page_height() - layer.style.pixelHeight;
+         }
+      }
+  }
+}
+
+function namosw_rotate_banner_go() 
+{
+  var targetstr = document._rotatetargets[document._rotate_no];
+  if (targetstr == 'blank') {
+    window.open(document._rotatelinks[document._rotate_no], 'win1');
+  } else {
+    var frameobj;
+    if (targetstr == '') targetstr = 'self';
+    if ((frameobj = eval(targetstr)) != null)
+      frameobj.location = document._rotatelinks[document._rotate_no];
+  }
+}
+
+function namosw_rotate_banner()
+{
+  if (!document._rotateimages) {
+    document._rotateimages  = new Array();
+    document._rotatelinks   = new Array();
+    document._rotatetargets = new Array();
+
+    document._rotate_name = 'image1';
+    document._rotate_interval = 2000;
+    document._rotate_itemnum = 2;
+    document._rotateimages[document._rotateimages.length] = "buddha1-1.gif";
+    document._rotatelinks[document._rotatelinks.length] = "BLANK1.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "buddha1-2.gif";
+    document._rotatelinks[document._rotatelinks.length] = "BLANK1.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    setInterval("namosw_rotate_banner()", document._rotate_interval);
+    document._rotate_no = -1;
+  }
+
+  document._rotate_no++;
+  if (document._rotate_no == document._rotateimages.length)
+    document._rotate_no = 0;
+
+  document.images[document._rotate_name].src = document._rotateimages[document._rotate_no];
+}
+
+// -->
+</script>
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="Beige.jpeg">
+<font face="Tahoma"><span style="font-size:12pt;"><script type=text/javascript>
+//MENU TITLE
+eyesys_title="ปฏิจจสมุปบาท  เมนู"
+//TITLE BACKGROUND COLORS
+eyesys_titlecol1="black"
+eyesys_titlecol2="blue"
+//TITLE COLOR
+eyesys_titletext="white"
+//MENU & ITEM BACKGROUND COLOR
+eyesys_bg="#229922"
+//ITEM BACKGROUND COLOR ON MOUSE OVER
+eyesys_bgov="#006699"
+//MENU COLOR
+eyesys_cl="white"
+//MENU COLOR ON MOUSE OVER
+eyesys_clov="white"
+//MENU WIDTH
+eyesys_width=160
+//menu starts here
+eyesys_init()
+//menu item sintax:  eyesys_item(text,icon,link)
+//for no icon use 'null'
+eyesys_item('กลับสารบัญ','home.gif','BLANK1.htm')
+eyesys_item('ค้นหาคำศัพท์',null,'ex.htm')
+eyesys_item('ดูวงจรปฏิจจสมุปบาท',null,'5vj.htm')
+eyesys_item('ข่าวปรับปรุง',null,'wnews.htm')
+eyesys_item('แจ้งแก้ไข',null,'email2.htm')
+eyesys_item('สมุดเยี่ยม',null,'guestbook.htm')
+//mene closes here
+eyesys_close()
+
+</script>
+</span></font><table align="center" border="0" width="100%">
+    <tr>
+        <td width="405" align="left" valign="bottom">
+            <p><font face="Tahoma"><span style="font-size:10pt;"><a href="BLANK1.htm" title="   กลับสารบัญ   ">&nbsp;</a></span></font><a href="BLANK1.htm" title="   กลับสารบัญ   "><font color="#78091E" face="Leelawadee"><span style="font-size:14pt;"><img src="bookAnimate.gif" width="32" height="32" border="0" align="absmiddle" hspace="0"></span></font><span style="font-size:12pt;"><font color="#78091E" face="Leelawadee">กลับสารบัญ</font></span></a></p>
+        </td>
+        <td width="411">
+<p align="center" style="line-height:100%; margin-bottom:0;"><a href="javascript:namosw_rotate_banner_go()" target="_self"><font face="Leelawadee"><span style="font-size:18pt;"><img src="buddha1-1.gif" width="120" height="154" border="0" alt="  ไปสารบัญ  " name="image1"></span></font></a></p>
+        </td>
+        <td width="409" align="right" valign="bottom">
+            <p align="right"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;<img src="Magnify0b.gif" width="32" height="32" border="0" alt="Magnify0b.gif" align="absmiddle">&nbsp;</span></font><span style="font-size:10pt;"><a href="javascript:ts('body',1)"><font face="Tahoma">+ 
+            ขยาย</font></a><font face="Tahoma"> | </font></span><a href="javascript:ts('body',-1)"><font face="Tahoma"><span style="font-size:10pt;">- 
+            ย่ออักษร</span></font></a></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:100%; margin-top:5mm; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font><font face="Leelawadee" color="#825C26"><span style="font-size:18pt;">แสดงกระบวนธรรมของมวลมนุษย์ 
+โดยวงจรปฏิจจสมุปบาทและขันธ์ ๕</span></font></p>
+<p align="center" style="line-height:200%; margin-top:3mm; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:15pt;">เมื่อโยนิโสมนสิการโดยแยบคายย่อมยังให้เกิด</span></font><a href="javascript:na_open_window('win', 'ex3.htm#ธรรมสามัคคี', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:15pt;">ธรรมสามัคคี</span></font></a><font face="Leelawadee"><span style="font-size:15pt;">ได้เป็นอัศจรรย์</span></font></p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">กระบวนจิตหรือชีวิตควรดําเนินไปตามขันธ์๕ 
+= อายตนะภายนอก </span></font><a href="http://" title="    การกระทบของปัจจัยทั้ง๒  ย่อมเกิด   "><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anicross01_red.gif" width="10" height="10" border="0" vspace="15" align="absmiddle" alt="   กระทบกัน เช่น ตาเห็นรูป"></span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+</span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">สฬายตนะ 
+</span></font><a href="http://" title="    ย่อมเกิด"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="15" hspace="0" alt="   การกระทบกันของปัจจัยทั้ง๒ ย่อมเป็นปัจจัยให้เกิด   "></span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+</span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">วิญญาณ</span></font><font face="Leelawadee" color="#006699"><span style="font-size:15pt;"> 
+</span></font><a href="http://"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="  การประจวบกันของปัจจัยทั้ง ๓  เรียกว่าผัสสะ"></span></font></a><a href="http://" title="   การประจวบกันของปัจจัยทั้ง ๓ เรียกว่า ผัสสะ"><font face="Leelawadee" color="#990000"><span style="font-size:15pt;">ผัสสะ</span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;"> 
+เวทนา </span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมีสัญญาประเภท หมายรู้"></span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">&nbsp;สัญญา 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">&nbsp;สังขารขันธ์</span></font></p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">คือเกิด</span></font><a href="javascript:na_open_window('win', 'ex3.htm#สังขารขันธ์', 0, 0, 1250, 230, 1, 0, 0, 1, 1)"><span style="font-size:15pt;"><font face="Leelawadee">สังขารขันธ์</font></span></a><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">(อารมณ์ทางโลกต่างๆ) 
+ที่แสดงผลออกมาได้ทางกาย 
+วาจา ใจ(</span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)"><span style="font-size:15pt;"><font face="Leelawadee">มโนกรรม</font></span></a><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">) อันเป็นสภาวธรรมหรือธรรมชาติ </span></font></p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">กล่าวคือคงมีแค่<a href="javascript:na_open_window('win', 'ex3.htm#เวทนา', 0, 0, 790, 230, 1, 0, 0, 1, 1)">ทุกขเวทนา</a>และทุกข์ของสังขารขันธ์อันเป็นไปตามธรรมชาติของขันธ์ 
+๕ ทั้งทางกายและใจ </span></font></p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="red"><span style="font-size:15pt;">แต่ไม่มีอุปาทานทุกข์หรือทุกข์อันเร่าร้อนเผาลนเกิดแก่ใจ</span></font></p>
+<h6 style="text-align:center; line-height:2.2; margin-top:0mm; margin-bottom:0;" align="center"><b><font face="Leelawadee" color="#A58136"><span style="font-size:15pt;">ขยายความ</span></font></b></h6>
+
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชีวิตหรือกระบวนจิตควรดําเนินไปตามขันธ์๕ 
+อันเป็นสภาวะธรรม(หรือธรรมชาติแท้ๆ)อันไม่ก่ออุปาทานทุกข์หรือทุกข์ทางใจใดๆ &nbsp;ขันธ์๕เป็นเพียงกระบวนการของกายและจิตในการดําเนินชีวิตอันเป็นปกติธรรมชาติของผู้ที่ยังมีชีวิตอยู่ 
+ทุกหมู่เหล่า ดังขบวนการนี้</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;"><font face="Leelawadee" color="blue"><span style="font-size:15pt;">อายตนะภายนอก 
+</span></font><a href="news:" title="การกระทบของปัจจัยทั้ง๒"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anicross01_red.gif" width="10" height="10" border="0" vspace="15" align="absmiddle" alt="   กระทบกัน เช่น ตาเห็นรูป"></span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+สฬายตนะ(อายตนะภายใน) </span></font><a href="news:" title="เป็นเหตุปัจจัย จึงมี"><span style="font-size:15pt;"><font face="Leelawadee" color="blue"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></font></span></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+วิญญาณ </span></font><a href="news:" title="เป็นเหตุปัจจัย จึงมี"><span style="font-size:15pt;"><font face="Leelawadee" color="blue"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></font></span></a><font face="Leelawadee" color="#660000"><span style="font-size:15pt;">ผัสสะ</span></font><a href="news:" title="เป็นเหตุปัจจัย จึงมี"><span style="font-size:15pt;"><font face="Leelawadee" color="blue"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></font></span></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+เวทนา </span></font><a href="news:" title="เป็นเหตุปัจจัย จึงมี"><span style="font-size:15pt;"><font face="Leelawadee" color="blue"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></font></span></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+สัญญา </span></font><a href="news:" title="เป็นเหตุปัจจัย จึงมี"><span style="font-size:15pt;"><font face="Leelawadee" color="blue"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></font></span></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+สังขารขันธ์</span></font><font face="Leelawadee"><span style="font-size:15pt;"> &nbsp;&nbsp;&nbsp;กระบวนธรรมของขันธ์๕ตามปกติ......แบบย่อ.</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;"><font face="Leelawadee"><span style="font-size:15pt;">หรือ 
+แบบขยายความโดยละเอียดขึ้นมาอีกขั้น เพื่อประโยชน์ในภายหน้า เพื่อประกอบการพิจารณาให้เข้าใจใน</span></font><b><font face="Leelawadee" color="blue"><span style="font-size:15pt;">เวทนา</span></font></b></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;"><font face="Leelawadee"><span style="font-size:15pt;">อายตนะภายนอก</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+</span></font><a href="http://" title="    การกระทบของปัจจัยทั้ง๒  ย่อมเกิด   "><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anicross01_red.gif" width="10" height="10" border="0" vspace="15" align="absmiddle" alt="   กระทบกัน เช่น ตาเห็นรูป"></span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+สฬายตนะ(อายตนะภายใน) <img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+วิญญาณ <img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "></span></font><font face="Leelawadee" color="#660000"><span style="font-size:15pt;">ผัสสะ</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+สัญญา(จํา) <img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+เวทนา <img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+สัญญา(หมายรู้) <img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+สังขารขันธ์ &nbsp;<img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+</span></font><font face="Leelawadee"><span style="font-size:15pt;">เกิดสัญเจตนา 
+<img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+กรรม(การกระทำต่างๆทั้งทางกาย วาจา หรือใจเช่น<a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">มโนกรรม</a>)</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">คือแยก</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="blue">สัญญา</font><font face="Leelawadee">ออกเป็น</font><font face="Leelawadee" color="blue">สัญญาจํา</font><font face="Leelawadee">และ</font><font face="Leelawadee" color="blue">หมายรู้</font><font face="Leelawadee">เพื่อประโยขน์ในการแสดงให้เห็นสภาวธรรมของการเกิด</font><font face="Leelawadee" color="blue">เวทนา</font><font face="Leelawadee">ชนิดต่างๆ 
+อันมีทุกขเวทนา, สุขเวทนา, ไม่ทุกข์ไม่สุขหรือเฉยๆ ได้ชัดเจนขึ้น อันล้วนเกิดขึ้นได้เพราะ</font></span><font face="Leelawadee" color="blue"><span style="font-size:15pt;">สัญญา(จํา)</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขันธ์ 
+๕นี้ก็คือขบวนการทํางานของชีวิต 
+ในการรับรู้, 
+คิดค้น แล้วสั่งการให้ทั้งจิตและกายทํางานนั่นเอง, &nbsp;ขันธ์ ๕แบบนี้เป็นขันธ์ 
+๕ 
+ตามปกติธรรมชาติและไม่เป็นทุกข์ เป็นขันธ์ธรรมดาๆที่ต้องเกิดขึ้นทุกขณะจิตตราบเท่ายังดำรงขันธ์คือชีวิตอยู่, 
+&nbsp;แต่เกิดเป็นทุกขเร่าร้อน์แผดเผา เพราะมี<a href="javascript:na_open_window('win', 'ex3.htm#ตัณหา', 0, 0, 770, 200, 1, 0, 0, 1, 1)">ตัณหา</a>และ<a href="javascript:na_open_window('win', 'ex3.htm#อุปาทาน', 0, 0, 770, 200, 1, 0, 0, 1, 1)">อุปาทาน</a>มาร่วมกับขันธ์ทั้ง ๕ ที่เกิดขึ้นด้วย 
+อันเป็นไปตามกระบวนการปฏิจจสมุปบาทในองค์ธรรม</span></font><a href="http://" title="   หมายถึง องค์ธรรมชรา ในปฏิจจสมุปบาท"><font face="Leelawadee" color="#000099"><span style="font-size:15pt;">ชรา</span></font></a><font face="Leelawadee"><span style="font-size:15pt;">นั่นเอง 
+&nbsp; ดังกระบวนธรรมที่แสดงนี้</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;" align="left"><font face="Leelawadee" color="maroon"><span style="font-size:15pt;">อายตนะภายนอก 
+</span></font><a href="http://" title="    การกระทบของปัจจัยทั้ง๒  ย่อมเกิด   "><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anicross01_red.gif" width="10" height="10" border="0" vspace="15" align="absmiddle" alt="   กระทบกัน เช่น ตาเห็นรูป"></span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+</span></font><font face="Leelawadee" color="maroon"><span style="font-size:15pt;">สฬายตนะ 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+</span></font><font face="Leelawadee" color="maroon"><span style="font-size:15pt;">วิญญาณ 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+</span></font><font face="Leelawadee" color="maroon"><span style="font-size:15pt;">เวทนา 
+</span></font><a href="http://" title="    การกระทบของปัจจัยทั้ง๒  ย่อมเกิด   "><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anicross01_red.gif" width="10" height="10" border="0" vspace="15" align="absmiddle" alt="   กระทบกัน เช่น ตาเห็นรูป"></span></font></a><font face="Leelawadee" color="blue"><span style="font-size:15pt;"> 
+</span></font><font face="Leelawadee" color="#009900"><span style="font-size:15pt;">ตัณหา 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+</span></font><font face="Leelawadee" color="#009900"><span style="font-size:15pt;">อุปาทาน 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+</span></font><font face="Leelawadee" color="#009900"><span style="font-size:15pt;">ภพ 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired02_next.gif" width="10" height="10" border="0" align="absmiddle" vspace="12" hspace="0" alt="   เป็นปัจจัย จึงมี   "> 
+</span></font><font face="Leelawadee" color="#009900"><span style="font-size:15pt;">ชาติเกิดอันคือ</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;">ทุกข์</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:2mm;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตัณหา 
+ในวงจรปฏิจจสมุปบาทจึงเทียบได้กับ สังขารขันธ์ของขันธ์ ๕ นั่นเอง เพียงแต่ตัณหาเป็นสังขารขันธ์หรืออาการของจิตชนิดประกอบด้วยกิเลสคือความทะยานอยาก 
+&nbsp;ส่วนอุปาทานก็คือสัญเจตนา(ความเจตนา,ความจงใจ,ความคิดอ่าน)ในขันธ์ ๕ แต่อุปาทานเป็นเจตนาที่เจือกิเลสคือ 
+ด้วยความยึดมั่นด้วยกิเลสตน 
+&nbsp;จึงเกิดการตกลงปลงใจในสถานะภาพต่างๆ(ภพ)ขึ้น จึงเป็นการเริ่มเกิดขึ้น(</span></font><font color="blue" face="Leelawadee"><span style="font-size:15pt;">ชาติ</span></font><font face="Leelawadee"><span style="font-size:15pt;">)ของความทุกข์ 
+&nbsp;</span></font><font color="blue" face="Leelawadee"><span style="font-size:15pt;">ซึ่งชาติก็คือ ตัณหาหรือสังขารขันธ์คิอความรู้สึกหรืออาการของจิตที่ประกอบด้วยอุปาทานจึงเจตนาเป็นไปตามความเชื่อ 
+ความเข้าใจ ความยึดมั่นของตัวตนเป็นเอก&nbsp;ซึ่งท่านเรียกว่า </span><b><span style="font-size:15pt;">สังขารูปาทานขันธ์</span></b><span style="font-size:15pt;"> 
+&nbsp;จึงเป็นการเริ่มเกิดขึ้นของทุกข์ </span></font><b><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;</span></font></b><font face="Leelawadee"><span style="font-size:15pt;">และเมื่อยังมีการปรุงแต่งฟุ้งซ่าน 
+</span></font><font color="blue" face="Leelawadee"><b><span style="font-size:15pt;">สังขารูปาทานขันธ์</span></b></font><font face="Leelawadee"><span style="font-size:15pt;">นี้ก็จะแปรไปทำหน้าที่เป็น 
+</span></font><b><font face="Leelawadee"><span style="font-size:15pt;">รูป(สิ่งที่ถูกรู้)ในองค์ธรรมชรา </span></font></b><font face="Leelawadee"><span style="font-size:15pt;">หรือก็คือ</span></font><font color="blue" face="Leelawadee"><b><span style="font-size:15pt;">ธรรมารมณ์ที่ย่อมแฝงกิเลสจากอุปาทาน 
+</span></b></font><font face="Leelawadee"><span style="font-size:15pt;">ซึ่งเรียกว่า </span></font><font color="blue" face="Leelawadee"><b><span style="font-size:15pt;">รูปูปาทานขันธ์</span></b></font><font face="Leelawadee"><span style="font-size:15pt;"> แล้วดำเนินวนเวียนเป็นวงจรหมุนเวียนแปรปรวนไปในองค์ธรรมชรา 
+โดยขันธ์ทั้ง ๕ ในชราล้วนเป็นอุปาทานขันธ์ ๕ คิอ รูปูปาทานขันธ์ เวทนูปาทานขันธ์ 
+สัญญูปาทานขันธ์ สังขารูปาทานขันธ์ วิญญาณูปาทานขันธ์ &nbsp;ซึ่งคือเหล่าขันธ์ทั้ง 
+๕ &nbsp;รูปขันธ์ เวทนาขันธ์ &nbsp;สัญญาขันธ์ &nbsp;สังขารขันธ์ &nbsp;วิญญาณขันธ์ 
+เพียงแต่ถูกครอบงำด้วยอุปาทานทั้งสิ้น&nbsp;&nbsp;จึงแสนเร่าร้อนยาวนาน &nbsp;ดังภาพวงจรชราที่แสดงด้านล่างนี้</span></font></p>
+<table border="1" width="80%" align="center" bgcolor="white" style="margin-top:3mm; margin-bottom:3mm;">
+    <tr>
+        <td width="929">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><span style="font-size:10pt;"><font color="#999999">&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="คือ อกุศลสังขารขันธ์"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">ตัณหา</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="เจตนา,คิดอ่านที่แฝงกิเลส"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">อุปาทาน</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="การตกลงปลงจิต"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">ภพ</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"> 
+            </font><b><a href="news:" title='คือ การเกิดสังขารรูปาทานขันธ์ จากสังขารตัณหา 
+คือสังขารขันธ์ ที่ถูกครอบงำแล้วด้วยอุปาทานแล้ว
+จึงคือการเกิดขึ้นแล้วของ"อุปาทานขันธ์ ๕" อันเป็นทุกข์'><font color="#999999">ชาติ</font></a></b></span><a href="news:" title="เป็นสังขารูปาทาทานขันธ์ เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป 
+ด้วยการอุเบกขา ในมโนกรรมที่เกิดจากสังขารูปาทานขันธ์
+(สังขารูปาทานขันธ์ คือสังขารขันธ์ตัณหาที่ประกอบด้วยอุปาทาน)"><img src="magnify4.gif" align="absbottom" width="18" height="18" border="0"></a><span style="font-size:10pt;"><font color="#999999"> </font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee">......</font></span><a href="news:" title='ธรรมารมณ์ แต่แฝงด้วยกิเลส  อันเกิดจาก
+สังขารูปาทานขันธ์ ใน"ชาติ"'><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b>รูปูปาทานขันธ์</b></font></span></a><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b> </b></font></span><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp;&nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัยร่วมกัน"><span style="font-size:12pt;"><font color="#000066" face="Leelawadee"><b><img src="cross01_reda.gif" width="10" height="10" border="0"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> &nbsp;ใจ &nbsp; </b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp; วิญญูาณูปาทานขันธ์ &nbsp; 
+             
+            &nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> &nbsp;
+            เวทนูปาทานขันธ์</b></span><span style="font-size:10pt;"> &nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="fuchsia" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a></span><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="news:" title="เป็นเหตุปัจจัย จึงเกิด  รูปูปาทานขันธ์
+เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป ด้วยการอุเบกขาเสีย"><img src="anired06_up.gif" width="12" height="20" border="0"></a></span></font><a href="news:" title="เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป  ด้วยการอุเบกขา ในเหล่า
+มโนกรรมความคิดนึกต่างๆที่เกิดจากสังขารูปาทานขันธ์"><img src="magnify4.gif" align="absbottom" width="18" height="18" border="0"></a><span style="font-size:10pt;"><font face="Tahoma" color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Tahoma" color="#990033">&nbsp;</font></span><font face="Tahoma" color="#CC0000"><span style="font-size:10pt; background-color:rgb(255,204,255);">อุปาทานขันธ์๕ 
+            </span></font><font face="Tahoma" color="#0000CC"><span style="font-size:10pt; background-color:rgb(255,204,255);">อันเกิดวนเวียนอยู่ใน</span><span style="font-size:12pt; background-color:rgb(255,204,255);"> 
+            </span></font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><span style="font-size:10pt; background-color:rgb(255,204,255);"><b><font face="Tahoma" color="red">ชรา</font></b></span></a><font face="Tahoma" color="#0000CC"><span style="font-size:10pt; background-color:rgb(255,204,255);"><b><i> 
+            </i></b>อันเป็นทุกข์</span><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Tahoma"><span style="font-size:10pt;">&nbsp;<a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><img src="anired06_down.gif" width="12" height="20" border="0"></a> 
+            &nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;</span></font><span style="font-size:10pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#999999" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a></span><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            ดำเนินไปตาม</span></font><a href="news:" title="วงจรปฏิจจสมุปบาท"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">วงจร</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;">ใหม่&nbsp;</span></font><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;อาสวะกิเลส&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;มรณะ 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee">......</font></span><a href="javascript:na_open_window('win', 'ex3.htm#สังขารูปาทานขันธ์', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title='สังขารูปาทานขันธ์ ทำให้เกิดมโนกรรม ซึ่งจะไปทำหน้าที่เป็น 
+ธรรมารมณ์ หรือรูปชนิด"รูปูปาทานขันธ์" ในวงจรใหม่ของ"ชรา"'><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b>สังขารูปาทานขันธ์</b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> 
+            เกิด</b></span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)" title='สังขารูปาทานขันธ์ ทำให้เกิด"มโนกรรม"  ซึ่งจะแปรไปทำหน้าที่เป็น รูปูปาทานขันธ์'><span style="font-size:12pt;"><font face="Tahoma"><b>มโนกรรม</b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>คิดที่เป็นทุกข์  
+            &nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_back.gif" width="30" height="12" border="0" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> 
+            &nbsp;&nbsp;&nbsp;สัญญูปาทานขันธ์</b></span><span style="font-size:10pt;"> 
+            &nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="line-height:2.2; margin-top:1mm; margin-bottom:0;" align="center"> 
+<font face="Leelawadee"><span style="font-size:14pt;">ภาพขยายใน</span></font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><span style="font-size:14pt;"><b><font face="Leelawadee" color="red">ชรา</font></b></span></a><font face="Leelawadee"><span style="font-size:14pt;"> &nbsp;            ล้วนเป็น</span></font><span style="font-size:14pt;"><font face="Leelawadee" color="#CC0310">อุปาทานขันธ์</font></span><font face="Leelawadee"><span style="font-size:14pt;"> </span></font><font face="Leelawadee" color="#990000"><span style="font-size:14pt;">๕</span></font><font face="Leelawadee"><span style="font-size:14pt;"> 
+            อันเป็นทุกข์
+            เพราะเกิดจาก</span></font><font face="Leelawadee" color="#CC0000"><span style="font-size:14pt;">สังขารูปาทานขันธ์</span></font><font face="Leelawadee"><span style="font-size:14pt;">ในชาติ 
+            อันถูกครอบงําโดย</span></font><font face="Leelawadee" color="#999999"><span style="font-size:14pt;"><b>อุปาทาน</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">แล้ว</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขันธ์ 
+๕ ช่วงแรกก่อนเกิดทุกข์เป็นขันธ์ตามปกติธรรมชาติอันมีธรรมารมณ์ รูปเสียง กลิ่น 
+รส สัมผัส มากระทบเป็นสภาวะธรรมชาติ แต่ถ้าไม่มี</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#0000CC">สติ</font><font face="Leelawadee">ก็เป็นปัจจัยให้เกิดตัณหา 
+อันทําให้ขันธ์ส่วนที่เหลืออยู่ยังไม่เกิด, เกิดการแปรปรวนถูกครอบงําไปเกิดใน</font><font face="Leelawadee" color="red">ชาติ....ชรา-มรณะ</font><font face="Leelawadee" color="black">ของ</font><font face="Leelawadee">วงจรปฏิจจสมุปบาท 
+อันล้วนกลับกลายเป็นอุปาทานขันธ์อันถูกครอบงําหรือมีอิทธิพลของอุปาทานครอบงําแล้ว 
+</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;และจักเกิดอุปาทานขันธ์ 
+๕ ทั้งขบวนแบบ</span></font><font face="Leelawadee" color="#660000"><span style="font-size:15pt;">กระบวนธรรมด้านล่างนี้</span></font><font face="Leelawadee" color="red"><span style="font-size:15pt;">
+</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black">อีกกี่ครั้งกี่หนก็ได้ 
+จนกว่าจะมีสติ หรือหยุดไปเพราะสาเหตุอื่นมาเบี่ยงเบนหรือบดบัง จนดับไปในที่สุด 
+แต่ย่อมต้องเก็บนอนเนื่องเป็น</font><font face="Leelawadee" color="red">อาสวะกิเลส</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">หมักหมมนอนเนื่องอยู่ในจิต 
+&nbsp;รอวันกำเริบเสิบสานในภายหน้า</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ซึ่งต่อมาเมื่อระลึกขึ้นมาใหม่อันคือ</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="red">สังขาร</font><font face="Leelawadee" color="black">ในปฏิจจสมุปบาท 
+อันย่อมเป็น</font><font face="Leelawadee" color="#000099">สังขารที่ประกอบด้วยกิเลสจากอาสวะกิเลส</font><font face="Leelawadee" color="black"> 
+</font></span><font face="Leelawadee" color="#336600"><span style="font-size:15pt;">ซึ่งจะเป็นปัจจัยให้เกิดปัจจัยสืบเนื่องตามวงจรปฏิจจสมุปบาทจนเกิด</span></font><b><font face="Leelawadee" color="#336600"><span style="font-size:15pt;">ตัณหา</span></font></b><font face="Leelawadee" color="#336600"><span style="font-size:15pt;"> 
+หรืออันคือมี</span><b><span style="font-size:15pt;">ตัณหา</span></b><span style="font-size:15pt;">ปรุงแต่ง</span></font><b><font face="Leelawadee" color="#336600"><span style="font-size:15pt;">เวทนา</span></font></b><font face="Leelawadee" color="#336600"><span style="font-size:15pt;">เข้าไปอีกครั้ง 
+</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;">ก็จักไปเข้าวงจรของทุกข์ใหม่อีก 
+เกิดความทุกข์นั้นๆขึ้นอีก เป็นวงจรอุบาทไม่รู้จักจบสิ้นเช่นนี้ไปตลอดกาลนาน........</span></font></p>
+<p style="line-height:2.2; margin-top:5mm; margin-bottom:0;" align="center"><font face="Leelawadee" color="#A58136"><span style="font-size:15pt;">แสดงวงจรความสัมพันธ์ของปฏิจจสมุปบาทและขันธ์๕ 
+หรือ กระบวนจิตพื้นฐานของมวลมนุษย์</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:15pt;"><a name="ขยายความ">ขยายความ</a></span></font><font face="Leelawadee" color="#A58136"><span style="font-size:15pt;">รายละเอียด</span></font><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;</span></font></p>
+<p style="line-height:85%; margin-top:0; margin-bottom:0;" align="center"><font face="Tahoma"><span style="font-size:12pt;">&nbsp;</span></font></p>
+<table border="1" width="80%" align="center" cellspacing="0" bordercolordark="white" bordercolorlight="black" bgcolor="white">
+    <tr>
+        <td width="751">
+            <p style="line-height:100%; margin-top:3mm; margin-bottom:0mm;" align="center"><b><font face="Tahoma" color="#000099"><span style="font-size:12pt;">ภาพขยายของ</span></font><font face="Tahoma" color="red"><span style="font-size:12pt;"> 
+            </span></font><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;">ชรา</span></font><span style="font-size:12pt;"><font face="Tahoma" color="red"> 
+            </font><font face="Tahoma" color="#000099">อันแปรปรวน &nbsp;&nbsp;อันมี</font><font face="Tahoma" color="red"> 
+            </font><font face="Tahoma" color="#CC0000">อุปาทานขันธ์ทั้ง ๕</font></span><font face="Tahoma" color="#000099"><span style="font-size:12pt;"> 
+            เกิดวนเวียน ดำเนินไปเป็นวงจรเช่นกัน</span></font></b></p>
+            <p style="line-height:100%; margin-top:3mm; margin-bottom:0mm;" align="center"><b><font face="Tahoma" color="#000099"><span style="font-size:12pt;">เป็นที่เกิดดับๆแห่ง</span></font><span style="font-size:12pt;"><font face="Tahoma" color="red"> 
+            </font><font face="Tahoma" color="#CC0000">อุปาทานขันธ์ทั้ง ๕</font><font face="Tahoma" color="red"> 
+            </font></span><font face="Tahoma" color="#000099"><span style="font-size:12pt;">อันเป็นทุกข์</span><span style="font-size:12pt; line-height:100%;">เร่าร้อน</span><span style="font-size:12pt; line-height:100%; margin-top:3mm; margin-bottom:0mm;">เผาลน</span><span style="font-family:'MS Sans Serif'; font-size:12pt; line-height:100%;"> 
+            หรือ </span></font><span style="font-family:'MS Sans Serif'; font-size:12pt; line-height:100%;"><font face="Tahoma" color="#CC0000">อุปาทานทุกข์</font></span><font face="Tahoma" color="#000099"><span style="font-family:'MS Sans Serif'; font-size:12pt; line-height:100%;"> 
+            </span><span style="font-size:12pt; line-height:100%; margin-top:3mm; margin-bottom:0mm;">นั่นเอง</span></font></b></p>
+            <p style="line-height:100%; margin-top:3mm; margin-bottom:3mm;" align="center"><b><font face="Tahoma" color="#000099"><span style="font-size:12pt;">จน</span></font><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"> 
+            มรณะ</font></span></b><span style="font-size:12pt;"><font face="Tahoma"> 
+            </font></span><b><font face="Tahoma" color="#000099"><span style="font-size:12pt;">อันเป็นการดับไป 
+            แล้วเก็บจำเป็นอาสวะกิเลสอันนอนเนื่อง</span></font></b></p>
+        </td>
+    </tr>
+</table>
+<table border="1" width="80%" align="center" bgcolor="white" style="margin-top:3mm; margin-bottom:3mm;" cellspacing="0" bordercolordark="white" bordercolorlight="black">
+    <tr>
+        <td width="929">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><span style="font-size:10pt;"><font color="#999999">&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="คือ อกุศลสังขารขันธ์"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">ตัณหา</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="เจตนา,คิดอ่านที่แฝงกิเลส"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">อุปาทาน</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="การตกลงปลงจิต"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">ภพ</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"> 
+            </font><b><a href="news:" title='คือ การเกิดสังขารรูปาทานขันธ์ จากสังขารตัณหา 
+คือสังขารขันธ์ ที่ถูกครอบงำแล้วด้วยอุปาทานแล้ว
+จึงคือการเกิดขึ้นแล้วของ"อุปาทานขันธ์ ๕" อันเป็นทุกข์'><font color="#999999">ชาติ</font></a></b></span><a href="news:" title="เป็นสังขารูปาทาทานขันธ์ เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป 
+ด้วยการอุเบกขา ในมโนกรรมที่เกิดจากสังขารูปาทานขันธ์
+(สังขารูปาทานขันธ์ คือสังขารขันธ์ตัณหาที่ประกอบด้วยอุปาทาน)"><img src="magnify4.gif" align="absbottom" width="18" height="18" border="0"></a><span style="font-size:10pt;"><font color="#999999"> </font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee">......</font></span><a href="news:" title='ธรรมารมณ์ แต่แฝงด้วยกิเลส  อันเกิดจาก
+สังขารูปาทานขันธ์ ใน"ชาติ"'><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b>รูปูปาทานขันธ์</b></font></span></a><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b> </b></font></span><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp;&nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัยร่วมกัน"><span style="font-size:12pt;"><font color="#000066" face="Leelawadee"><b><img src="cross01_reda.gif" width="10" height="10" border="0"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> &nbsp;ใจ &nbsp; </b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp; วิญญูาณูปาทานขันธ์ &nbsp; 
+             
+            &nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> &nbsp;
+            เวทนูปาทานขันธ์</b></span><span style="font-size:10pt;"> &nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="fuchsia" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a></span><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="news:" title="เป็นเหตุปัจจัย จึงเกิด  รูปูปาทานขันธ์
+เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป ด้วยการอุเบกขาเสีย"><img src="anired06_up.gif" width="12" height="20" border="0"></a></span></font><a href="news:" title="เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป  ด้วยการอุเบกขา ในเหล่า
+มโนกรรมความคิดนึกต่างๆที่เกิดจากสังขารูปาทานขันธ์"><img src="magnify4.gif" align="absbottom" width="18" height="18" border="0"></a><span style="font-size:10pt;"><font face="Tahoma" color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Tahoma" color="#990033">&nbsp;</font></span><font face="Tahoma" color="#CC0000"><span style="font-size:10pt; background-color:rgb(255,204,255);">อุปาทานขันธ์๕ 
+            </span></font><font face="Tahoma" color="#0000CC"><span style="font-size:10pt; background-color:rgb(255,204,255);">อันเกิดวนเวียนอยู่ใน</span><span style="font-size:12pt; background-color:rgb(255,204,255);"> 
+            </span></font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><span style="font-size:10pt; background-color:rgb(255,204,255);"><b><font face="Tahoma" color="red">ชรา</font></b></span></a><font face="Tahoma" color="#0000CC"><span style="font-size:10pt; background-color:rgb(255,204,255);"><b><i> 
+            </i></b>อันเป็นทุกข์</span><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Tahoma"><span style="font-size:10pt;">&nbsp;<a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><img src="anired06_down.gif" width="12" height="20" border="0"></a> 
+            &nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;</span></font><span style="font-size:10pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#999999" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a></span><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            ดำเนินไปตาม</span></font><a href="news:" title="วงจรปฏิจจสมุปบาท"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">วงจร</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;">ใหม่&nbsp;</span></font><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;อาสวะกิเลส&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;มรณะ 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee">......</font></span><a href="javascript:na_open_window('win', 'ex3.htm#สังขารูปาทานขันธ์', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title='สังขารูปาทานขันธ์ ทำให้เกิดมโนกรรม ซึ่งจะไปทำหน้าที่เป็น 
+ธรรมารมณ์ หรือรูปชนิด"รูปูปาทานขันธ์" ในวงจรใหม่ของ"ชรา"'><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b>สังขารูปาทานขันธ์</b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> 
+            เกิด</b></span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)" title='สังขารูปาทานขันธ์ ทำให้เกิด"มโนกรรม"  ซึ่งจะแปรไปทำหน้าที่เป็น รูปูปาทานขันธ์'><span style="font-size:12pt;"><font face="Tahoma"><b>มโนกรรม</b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>คิดที่เป็นทุกข์  
+            &nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_back.gif" width="30" height="12" border="0" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> 
+            &nbsp;&nbsp;&nbsp;สัญญูปาทานขันธ์</b></span><span style="font-size:10pt;"> 
+            &nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="line-height:2.2; margin-top:1mm; margin-bottom:0;" align="center"> 
+<font face="Leelawadee"><span style="font-size:14pt;">ภาพขยายใน</span></font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><span style="font-size:14pt;"><b><font face="Leelawadee" color="red">ชรา</font></b></span></a><font face="Leelawadee"><span style="font-size:14pt;"> &nbsp;            ล้วนเป็น</span></font><span style="font-size:14pt;"><font face="Leelawadee" color="#CC0310">อุปาทานขันธ์</font></span><font face="Leelawadee"><span style="font-size:14pt;"> </span></font><font face="Leelawadee" color="#990000"><span style="font-size:14pt;">๕</span></font><font face="Leelawadee"><span style="font-size:14pt;"> 
+            อันเป็นทุกข์
+            เพราะเกิดจาก</span></font><font face="Leelawadee" color="#CC0000"><span style="font-size:14pt;">สังขารูปาทานขันธ์</span></font><font face="Leelawadee"><span style="font-size:14pt;">ในชาติ 
+            อันถูกครอบงําโดย</span></font><font face="Leelawadee" color="#999999"><span style="font-size:14pt;"><b>อุปาทาน</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">แล้ว</span></font></p>
+        </td>
+    </tr>
+</table>
+<table align="center" border="0" width="75%">
+    <tr>
+        <td width="373">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">ความ</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="red">คิดนึกปรุงแต่ง 
+             
+            </font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่แค่แว๊บมาหนึ่งครั้ง</span></font></p>
+        </td>
+        <td width="546">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">คือ&nbsp;&nbsp;ขันธ์๕ 
+            ที่เกิดหนึ่งครั้ง</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="373">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">ขันธ์๕ที่เกิดหนึ่งครั้ง</span></font></p>
+        </td>
+        <td width="546">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">คือ 
+            &nbsp;ต้องเกิด</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="blue">เวทนา</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ขึ้นหนึ่งครั้งเช่นกัน</span></font><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"> 
+            โดยธรรมชาติ</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="373">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="blue"><span style="font-size:15pt;">เวทนา</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่เกิดขึ้นหนึ่งครั้ง</span></font></p>
+        </td>
+        <td width="546">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">คือ 
+            &nbsp;หนึ่งโอกาสที่เป็นปัจจัยให้เกิด</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#006600">ตัณหา</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ขึ้นหนึ่งครั้ง</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="373">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="#006600"><span style="font-size:15pt;">ตัณหา</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่เกิดขึ้นหนึ่งครั้ง 
+            &nbsp;</span></font></p>
+        </td>
+        <td width="546">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">คือ 
+            &nbsp;เป็นปัจจัยที่ทําให้เกิด</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#006600">อุปาทาน</font><font face="Leelawadee">จนเป็น</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">อุปาทาน</span><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;">ทุกข์</span></font><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee">ใน</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;">ชรา</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="373" height="38">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">ดังนั้น</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="red">คิดนึกปรุงแต่ง</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่เกิดแว๊บๆ 
+            100 ครั้ง </span></font></p>
+        </td>
+        <td width="546" height="38">
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">คือ 
+            &nbsp;โอกาสเกิด</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="red">อุปาทานทุกข์</font><font face="Leelawadee" color="black">หรือ</font><font face="Leelawadee" color="red">ความทุกข์</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ได้ 
+            100 ครั้งเช่นกัน</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดังนั้นความคิดนึกปรุงแต่งจึงเป็นสิ่งที่ต้อง</span></font><b><font face="Leelawadee" color="black"><span style="font-size:15pt;">นําออก</span></font></b><font face="Leelawadee" color="black"><span style="font-size:15pt;">และ</span></font><b><font face="Leelawadee" color="black"><span style="font-size:15pt;">ละ</span></font></b><font face="Leelawadee" color="black"><span style="font-size:15pt;">เสีย(ตัด, 
+ดับ, เปลี่ยนอิริยาบถ,ใช้กําลังของจิตเข้าช่วยตัดช่วยดับ, ใช้อุเบกขา เป็นกลางวางทีเฉย 
+ไม่เอนเอียงแทรกแซงไปด้วยถ้อยคิดปรุงแต่งใดๆ&nbsp; &nbsp;&nbsp;อย่าไปใช้ว</span></font><span style="font-size:15pt;"><font face="Leelawadee">ิธี</font><font face="Leelawadee" color="red">คิด</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">จะดับจะตัดอย่างไรอันเป็นการเปิดโอกาสให้จิตคิดนึกปรุงแต่งออกไปนอกลู่นอกทางได้, 
+&nbsp;ใช้กําลังของจิตตัด,ดับ,หยุดคิดนึกปรุงแต่งจักได้ผลดีกว่า, &nbsp;ตัด ดับ 
+นี้เป็นภาษาธรรมอันหมายถึงทําเยี่ยงไรจึงหยุดการทํางาน โปรดเข้าใจตามนี้ด้วย มิได้หมายถึง 
+การกดข่ม หรือการทําให้ดับให้สูญ)</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><a href="javascript:na_open_window('win', '9.2pic.htm', 0, 0, 780, 350, 0, 0, 0, 1, 1)" target="_self"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="flower05_blue.gif" width="19" height="19" border="0" alt="วงจรระบุหมายเลขแสดงรายละเอียดปฏิจจสมุปบาทและขันธ์๕"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อควรระวัง 
+จําเป็นต้องใช้ปัญญา(ความเข้าใจ)ในการแยกแยะความคิดนึกของขันธ์๕อันเป็นประโยชน์ในการดําเนินชีวิตและก่อให้เกิดสติปัญญา 
+กับ</span></font><font face="Leelawadee" color="red"><span style="font-size:15pt;">ความคิดนึกปรุงแต่ง</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+อันยังให้เกิดทุกข์ให้ได้ &nbsp;&nbsp;เพราะการตัด ดับ กดข่มทุกๆความคิดนึกก็ก่อให้เกิดโทษอย่างรุนแรงเช่นกัน 
+&nbsp;(</span></font><a href="javascript:na_open_window('win', '717.htm', 0, 0, 780, 550, 1, 0, 0, 1, 1)" target="_self"><font face="Leelawadee"><span style="font-size:15pt;">รายละเอียดของคิดนึกปรุงแต่ง</span></font></a><font face="Leelawadee" color="black"><span style="font-size:15pt;">)</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(เป็นเช่นเดียวกันใน 
+ตา หู จมูก ลิ้น และกาย, เป็นเฉกเช่นเดียวกับ</span></font><span style="font-size:15pt;"><font face="Leelawadee">ใจ</font><font face="Leelawadee" color="black"> 
+&nbsp;&nbsp;ท่านจึงกล่าวอยู่เนืองๆให้ สํารวม สังวร ระวังในอายตนะภายในทั้ง๖ - 
+เป็นการ</font><font face="Leelawadee">ป้องกัน</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ไม่ให้เกิดทุกข์)</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอให้สังเกตุ</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#009900"> 
+</font><font face="Leelawadee" color="#006600">ตัณหา เป็นอาการของจิตอย่างหนึ่ง(สังขารขันธ์)</font><font face="Leelawadee"> 
+ที่</font><font face="Leelawadee" color="black">ความรู้สึกทะยาน</font><font face="Leelawadee" color="#0000CC">อยาก</font><font face="Leelawadee" color="black">หรือ</font><font face="Leelawadee" color="#0000CC">ไม่อยาก</font><font face="Leelawadee" color="black">ในสิ่งใดๆ 
+ความนึก ความคิด ที่อยากให้เป็นเช่นนั้น เป็นเช่นนี้, ไม่อยากอย่างนั้น ไม่อยากอย่างนี้ 
+ผลักไสความรู้สึกที่ไม่ชอบ ไม่ถูกใจ, &nbsp; อันล้วนเป็น</font><font face="Leelawadee" color="#006600">ตัณหา</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่ถ้าไม่เข้าใจแล้วจะสังเกตไม่ออก</span></font></p>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอให้สังเกตุที่ 
+</span></font><font face="Leelawadee" color="red"><span style="font-size:15pt;">ชรา</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black"> 
+</font><font face="Leelawadee">อันดำเนินไปเป็นวงจรเช่นกัน &nbsp;แต่เป็นที่เกิดแห่งวงจรของ</font><font face="Leelawadee" color="red">อุปาทานขันธ์๕</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+อันเป็นทุกข์ล้วนๆ หรือเกิดทุกข์เร่าร้อนเผาลนแล้ว</span></font></p>
+<table border="1" width="75%" align="center" cellspacing="0" bordercolordark="white" bordercolorlight="black" bgcolor="white">
+    <tr>
+        <td width="796">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&rarr;อุปาทาน&rarr;ภพ&rarr;</span></font></b><span style="font-size:10pt;">&nbsp;ชาติ 
+             
+            </span><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&rarr;</span></font></b><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">รูปูปาทานขันธ์</span></font><u><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">24</span></font></u><span style="font-size:10pt;"> 
+            + ใจ + วิญญูาณูปาทานขันธ์</span><u><span style="font-size:10pt;">25</span></u><span style="font-size:10pt;"> 
+            <img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle">เวทนูปาทานขันธ์</span><u><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">26</span></font></u><b><span style="font-size:10pt;"> 
+            </span><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&rarr;</span></font></b><span style="font-size:10pt;"> 
+            มรณะ </span><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&rarr;</span></font></b><span style="font-size:10pt;"> 
+            อาสวะกิเลส</span><u><font face="Tahoma" color="#CC0310"><span style="font-size:10pt;">23</span></font></u><b><span style="font-size:10pt;"> 
+            &rarr; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_up.gif" width="12" height="15" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Tahoma" color="#990033">&nbsp;</font></span><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">อุปาทานขันธ์๕</span></font><span style="font-size:10pt;"> 
+            อันเกิดวนเวียนอยู่ใน<b>ชรา</b>อันเป็นทุกข์&nbsp;&nbsp;</span><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:2mm;" align="center"><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">สังขารูปาทานขันธ์ 
+            </span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)"><span style="font-size:10pt;"><font face="Tahoma" color="#000099">มโนกรรม</font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">คิดนึกที่เกิด </span></font><u><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">28</span></font></u><span style="font-size:10pt;">&nbsp;<img src="anired06_back.gif" width="30" height="12" border="0" align="absmiddle"> 
+            สัญญูปาทานขันธ์</span><u><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">27</span></font></u><span style="font-size:10pt;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><u><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">24</span></font></u><font face="Tahoma" color="#CC0310"><span style="font-size:10pt;">,</span></font><span style="font-size:10pt;"> 
+            <u><font face="Tahoma" color="#CC0000">25</font></u><font face="Tahoma" color="#CC0310">,</font> 
+            <u><font face="Tahoma" color="#CC0000">26</font></u><font face="Tahoma" color="#CC0310">,</font> 
+            <u><font face="Tahoma" color="#CC0000">27</font></u><font face="Tahoma" color="#CC0310">,</font> 
+            </span><u><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">28</span></font></u><b><span style="font-size:10pt;"> 
+            </span></b><font face="Tahoma"><span style="font-size:10pt;">ล้วนเป็น</span></font><span style="font-size:10pt;"><b><font face="Tahoma" color="#CC0310">อุปาทานขันธ์</font></b> 
+            เพราะเกิดจาก</span><b><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">อุปาทานสังขารขันธ์</span></font></b><span style="font-size:10pt;"> 
+            </span><font face="Tahoma"><span style="font-size:10pt;">อันถูกครอบงําโดย</span></font><b><font face="Tahoma" color="#006600"><span style="font-size:10pt;">อุปาทาน</span></font></b><font face="Tahoma"><span style="font-size:10pt;">แล้ว</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2.2; margin-top:2mm; margin-bottom:0;" align="left"><span style="font-size:15pt;"><font face="Leelawadee" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มันทํางาน 
+วนเวียนอยู่เยี่ยงนั้น เกิดดับๆ อยู่บ่อยครั้งแทบทุกขณะจิต &nbsp;&nbsp;และการดับนั้น</font><font face="Leelawadee" color="red">เป็นการดับแบบค่อยๆจางคลายหายไป</font><font face="Leelawadee" color="black"> 
+แต่ยังไม่ทันจางคลายหายไปก็เกิด</font><font face="Leelawadee" color="red">ความคิดปรุงแต่ง(รูปูปาทานขันธ์</font><u><font face="Leelawadee" color="red">24</font></u><font face="Leelawadee" color="red">)</font><font face="Leelawadee" color="black"> 
+ขึ้นอีกเป็นระยะๆเข้าแทรกต่อเนื่อง คือ เกิดความคิดอันล้วนเป็น</font><font face="Leelawadee" color="red">อุปาทานขันธ์๕</font><font face="Leelawadee" color="black"> 
+ขึ้นหลายๆความคิดในเรื่องทุกข์นั้นๆ คือจริงๆแล้วอาจคิดถึง ๑๐... ๒๐...๓๐...๑๐๐...&nbsp;ครั้งวนๆเวียนๆเป็นทุกข์อยู่ใน 
+</font><font face="Leelawadee" color="red">ชรา</font></span><u><span style="font-size:15pt;"><font face="Leelawadee" color="red">14</font></span></u><span style="font-size:15pt;"><font face="Leelawadee" color="red"> 
+</font><font face="Leelawadee" color="black">&nbsp;กล่าวคือ ผลหรือ</font><font face="Leelawadee" color="red">เวทนูปาทานขันธ</font><u><font face="Leelawadee" color="red">์26</font></u><font face="Leelawadee" color="black">ของความคิดหนึ่งยังไม่ทันจางคลายหายไปสิ้น 
+ก็เกิดความ</font><font face="Leelawadee" color="red">คิดปรุงแต่ง(รูปูปาทานขันธ์</font><u><font face="Leelawadee" color="red">24</font></u><font face="Leelawadee" color="red">)</font><font face="Leelawadee" color="black">อีกความคิดหนึ่งขึ้นมาเรื่อยๆเป็นระยะๆ 
+จนราวกับว่าต่อเนื่องเป็นชิ้นเป็นมวลเดียวกัน &nbsp;&nbsp;ดำเนินไปเยี่ยงนี้จนกว่าจะดับไปเป็น</font><font face="Leelawadee" color="red">อาสวะกิเลส</font></span><u><span style="font-size:15pt;"><font face="Leelawadee" color="red">23</font></span></u><span style="font-size:15pt;"><font face="Leelawadee" color="red"> 
+</font><font face="Leelawadee" color="black">&nbsp;&nbsp;ในนักปฏิบัติอาจเป็นเพราะสติรู้เท่าทันและมีปัญญาที่รู้เข้าใจอย่างแจ่มแจ้ง&nbsp;กล่าวคือ&nbsp;สติเป็นผู้ระลึกรู้&nbsp;&nbsp;และปัญญาเป็นตัวจัดการให้ดับ 
+อันเป็นไปในผู้มีวิชชา&nbsp;&nbsp;&nbsp;&nbsp;หรือดับไปเองตามธรรมชาติของปุถุชนโดยการถูกเบี่ยงเบนบดบัง 
+หรือแยกพรากโดยสิ่งอื่นๆเช่น มีสิ่งอื่นมากระทบผัสสะให้เบี่ยงเบน &nbsp;ความเพลีย 
+&nbsp;ความเหนื่อย &nbsp;ความหิว &nbsp;&nbsp;ความง่วง &nbsp;&nbsp;ความอยากในสิ่งอื่นๆ 
+&nbsp;&nbsp;กิจอื่นๆในทางโลกๆ &nbsp;ฯลฯ.</font></span><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2; margin-top:2mm; margin-bottom:0;"><font face="Leelawadee"> 
+&nbsp;และเป็นการดับไปอย่างไม่ถาวร &nbsp;เป็นแบบชั่วคราว กล่าวคือ ชั่วระยะเวลาหนึ่ง 
+&nbsp;อันอาจพึงเกิดขึ้นอีกเมื่อใดก็ได้</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="margin-top:-0.2cm;" align="center">&nbsp;</p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การปฏิบัติเวทนานุปัสสนา 
+(หรือจิตเห็นเวทนา หรือสติเห็นเวทนา) ก็คือการที่มี</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#0000CC">สติรู้เท่าทันและเข้าใจสภาวะธรรม</font><font face="Leelawadee" color="black">(ปัญญา)ของ</font></span><font face="Leelawadee" color="blue"><span style="font-size:15pt;">เวทนา 
+ </span></font><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;">ดังภาพบน 
+ที่เขียนแสดงว่าหยุดแค่เวทนา หมายถึง รู้เท่าทันเวทนาแล้วปล่อยวาง <a href="javascript:na_open_window('win', 'ex3.htm#สักว่า', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">สักว่า</a>เวทนา&nbsp;ไม่พัวพัน 
+ไม่ยึดถือ รู้สึกอย่างไรก็อย่างนั้นเป็นธรรมดา เมื่อเกิดสังขารขันธ์คือมโนกรรมต่างๆแล้ว<a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 770, 280, 1, 0, 0, 1, 1)">อุเบกขา</a>เสียนั่นเอง&nbsp;&nbsp;เพราะเวทนาเป็นขันธ์เขาทำงานตามหน้าที่เขา 
+เป็นอิสระจากเรา เพราะไม่ใช่ของเรา &nbsp;จึงไม่ใช่การไปหยุดหรือดับมันได้ดังคำพูดจา 
+เพราะถ้าสติเท่าทันพร้อมปัญญา กระบวนธรรมที่จะเกิดต่อไปก็คือ &nbsp;วงจรจะขาดไปตามภาพบน 
+แล้วดำเนินไปดังนี้</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font color="blue" face="Leelawadee"><span style="font-size:15pt;">..........ตัณหา 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></span></font><font color="blue" face="Leelawadee"><span style="font-size:15pt;">&nbsp;เวทนา 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></span></font><font color="blue" face="Leelawadee"><span style="font-size:15pt;">&nbsp;สัญญาหมายรู้(ปัญญาที่ย่อมเก็บจำไว้นั่นเอง) 
+</span></font><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></span></font><font color="blue" face="Leelawadee"><span style="font-size:15pt;">&nbsp;สังขารขันธ์ 
+ธรรมหรืออารมณ์ที่ไปปรุงแต่งจิต ให้เกิดสัญเจตนาในการกระทำต่างๆ ทั้งทางกาย วาจา 
+และใจ แม้อาจเป็นสุขใจ เป็นทุกข์ใจ บ้างก็ตามที แต่ก็เป็นเพียงทุกข์ธรรมชาติที่ไม่เผาลนเหมือนที่จะเกิดในองค์ธรรมชรา 
+&nbsp;ซึ่งสามารถ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 770, 280, 1, 0, 0, 1, 1)"><font color="blue" face="Leelawadee"><b><span style="font-size:15pt;">อุเบกขา</span></b></font></a><font color="blue" face="Leelawadee"><span style="font-size:15pt;">ได้ง่ายกว่า 
+เพราะขาดเสียซึ่ง</span><b><span style="font-size:15pt;">ตัณหา</span></b><span style="font-size:15pt;">และ</span><b><span style="font-size:15pt;">อุปาทาน</span></b></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หรือการมีสติเห็น</span></font><font face="Leelawadee" color="red"><span style="font-size:15pt;">อุปาทานเวทนา</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;">(</span></font><font face="Leelawadee" color="red"><span style="font-size:15pt;"><b>เวทนูปาทานขันธ์ 
+</b></span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;"><b>26</b></span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;">)ที่ถูก 
+</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#006600"><b>อุปาทาน</b><u><b>9</b></u><b> 
+</b></font><font face="Leelawadee" color="black">ครอบงําแล้วใน </font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;"><b>ชรา 
+</b></span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;"><b>14</b></span></font></u><font face="Leelawadee" color="red"><span style="font-size:15pt;"> 
+</span><span style="font-size:15pt; line-height:2.2;">&nbsp;</span></font><span style="font-size:15pt; line-height:2.2;"><font face="Leelawadee">ดังภาพขยายของ 
+</font><font face="Leelawadee" color="red">ว<b>งจรอุปาทานขันธ์๕</b> 
+</font></span><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2;">ข้างล่างนี้ 
+&nbsp;แต่่ </span></font><font face="Leelawadee" color="red"><span style="font-size:15pt; line-height:2.2;">เวทนูปาทานขันธ์26</span></font><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2;"> 
+นี้มีกำลังมากจากตัณหาและอุปาทาน จึงต้อง<a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 770, 280, 1, 0, 0, 1, 1)">อุเบกขา</a> 
+&nbsp;ด้วยการหยุดการปรุงแต่งฟุ้งซ่านให้ได้ ด้วยทั้งสติและปัญญา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การมีสติรู้เท่าทันเวทนาทั้ง 
+๒ 
+นี้ &nbsp;&nbsp;ล้วนเป็น</span></font><span style="font-size:15pt;"><font face="Leelawadee">การปฏิบัติ</font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">เวทนานุปัสสนา</span></font><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"> 
+อันถูกต้องดีงาม </span><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2;">&nbsp;</span><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;">ควรใช้ในการดำเนินชีวิตประจำวัน</span></font></p>
+<table border="1" width="80%" align="center" cellspacing="0" bordercolordark="white" bordercolorlight="black" bgcolor="white">
+    <tr>
+        <td width="905">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><b><font face="Leelawadee" color="#999999"><span style="font-size:12pt;">&rarr;อุปาทาน&rarr;ภพ&rarr;</span></font></b><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;ชาติ 
+             
+            </font></span><b><font face="Leelawadee" color="#999999"><span style="font-size:12pt;">&rarr;</span></font></b><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">รูปูปาทานขันธ์</span></font><u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">24</span></font></u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;"> 
+            + ใจ + วิญญูาณูปาทานขันธ์</span><u><span style="font-size:12pt;">25</span></u><span style="font-size:12pt;"> 
+            <img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle">เวทนูปาทานขันธ์</span></font><u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">26</span></font></u><b><font face="Leelawadee"><span style="font-size:12pt;"> 
+            </span></font><font face="Leelawadee" color="#999999"><span style="font-size:12pt;">&rarr;</span></font></b><font face="Leelawadee" color="#999999"><span style="font-size:12pt;"> 
+            มรณะ </span></font><b><font face="Leelawadee" color="#999999"><span style="font-size:12pt;">&rarr;</span></font></b><font face="Leelawadee" color="#999999"><span style="font-size:12pt;"> 
+            อาสวะกิเลส</span></font><u><font face="Leelawadee" color="#CC0310"><span style="font-size:12pt;">23</span></font></u><b><font face="Leelawadee" color="#999999"><span style="font-size:12pt;"> 
+            &rarr;</span></font></b></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><font face="Leelawadee"><span style="font-size:12pt;"><img src="anired06_up.gif" width="12" height="15" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt;"><font face="Leelawadee" color="red">&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#990033">&nbsp;</font></span><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">อุปาทานขันธ์๕ 
+            </span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:12pt;">อันเกิดวนเวียนอยู่ใน<b>ชรา</b>อันเป็นทุกข์&nbsp;&nbsp;&nbsp;</span></font><font face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:2mm;" align="center"><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">สังขารูปาทานขันธ์ 
+            
+            </span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)"><span style="font-size:10pt;"><font face="Tahoma" color="#000099">มโนกรรม</font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">คิดนึกที่เกิด</span></font><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;"> </span></font><u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">28</span></font></u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;"> 
+            &nbsp;<img src="anired06_back.gif" width="30" height="12" border="0" align="absmiddle"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สัญญูปาทานขันธ์</span></font><u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">27</span></font></u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;"> 
+            &nbsp;&nbsp;</span></font></p>
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">24</span></font></u><font face="Leelawadee" color="#CC0310"><span style="font-size:12pt;">,</span></font><span style="font-size:12pt;"><font face="Leelawadee" color="#CC0000"> 
+            </font><u><font face="Leelawadee" color="#CC0000">25</font></u><font face="Leelawadee" color="#CC0310">,</font><font face="Leelawadee" color="#CC0000"> 
+            </font><u><font face="Leelawadee" color="#CC0000">26</font></u><font face="Leelawadee" color="#CC0310">,</font><font face="Leelawadee" color="#CC0000"> 
+            </font><u><font face="Leelawadee" color="#CC0000">27</font></u><font face="Leelawadee" color="#CC0310">,</font></span><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;"> 
+            </span></font><u><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">28</span></font></u><b><font face="Leelawadee" color="#CC0310"><span style="font-size:12pt;"> 
+            </span></font></b><font face="Leelawadee"><span style="font-size:12pt;">ล้วนเป็น</span></font><span style="font-size:12pt;"><b><font face="Leelawadee" color="#CC0310">อุปาทานขันธ์</font></b></span><font face="Leelawadee"><span style="font-size:12pt;"> 
+            เพราะเกิดจาก</span></font><b><font face="Leelawadee" color="#CC0000"><span style="font-size:12pt;">อุปาทานสังขารขันธ์</span></font></b><font face="Leelawadee" color="red"><span style="font-size:12pt;"> 
+            </span></font><font face="Leelawadee"><span style="font-size:12pt;">อันถูกครอบงําโดย</span></font><b><font face="Leelawadee" color="#006600"><span style="font-size:12pt;">อุปาทาน<u>9</u></span></font></b><font face="Leelawadee"><span style="font-size:12pt;">แล้ว</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="red"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:15pt;"><font face="Leelawadee">&nbsp;&nbsp;การปฏิบัติจิตตานุปัสสนา 
+(หรือจิตเห็นจิต หรือสติเห็นจิต หรือสติเห็นจิตสังขาร หรือสติเห็นคิด)&nbsp;คือ 
+การที่สติรู้เท่าทัน</font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">ใจหรือจิต 
+</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black">(อันเป็นส่วนหนึ่งของ</font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">สังขารขันธ์</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+เช่น&nbsp;ความคิดที่เป็นผลออกมาหรือ</span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)"><span style="font-size:15pt;"><font face="Leelawadee" color="black">มโนกรรม</font></span></a><font face="Leelawadee" color="black"><span style="font-size:15pt;">) </span></font><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;">&nbsp;</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;">และเข้าใจธรรมด้วยปัญญา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หรือการเห็น</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#0000CC">จิตหรือคิด</font><font face="Leelawadee" color="black">ที่ถูกครอบงําโดยอุปาทานหรือเป็นทุกข์แล้ว 
+หรือ</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">อุปาทานสังขารขันธ์(สังขารูปาทานขันธ์</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">28</span></font></u><font face="Leelawadee" color="red"><span style="font-size:15pt;">) 
+</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black">ใน</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">ชรา</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สติรู้เท่าทันทั้งสองนี้ล้วนเป็น</span></font><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">การปฏิบัติจิตตานุปัสสนา</span></font><font face="Leelawadee"><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"> 
+อันถูกต้องดีงาม </span><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2;">&nbsp;&nbsp;</span><span style="font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;">ควรใช้ในการดำเนินชีวิตประจำวัน 
+</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทั้ง 
+เวทนานุปัสสนา และ จิตตานุปัสสนา ใช้การมีสติรู้เท่าทันตามความเป็นจริง แล้วเป็นอุเบกขาเป็นกลาง, 
+&nbsp;วางเฉยโดยการไม่คิดนึกปรุงแต่งทั้งในด้านดีหรือชั่ว(ด้านร้าย) อันล้วนต้องยังให้เกิดเวทนา 
+อันอาจเป็นปัจจัยให้เกิด</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#006600">ตัณหา<u>8</u></font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">ขึ้นได้</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black">รู้เท่าทันตัณหาและหยุด(นําออกและละเสีย)ตัณหาเป็นการปฏิบัติโดยตรงต่อ</font><font face="Leelawadee" color="#0000CC">สมุทัยเหตุแห่งทุกข์ 
+</font><font face="Leelawadee" color="black">&nbsp;</font><font face="Leelawadee">เป็นการปฏิบัติที่กระทําต่อ 
+</font><font face="Leelawadee" color="#006600">ตัณหา </font></span><font face="Leelawadee"><span style="font-size:15pt;">โดยตรง 
+เพราะตัณหาแท้จริงแล้วก็เป็นสังขารขันธ์หรืออาการของจิตอย่างหนึ่ง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><a href="javascript:na_open_window('win', '9.2pic.htm', 0, 0, 780, 350, 0, 0, 0, 1, 1)" target="_self"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="flower05_blue.gif" width="19" height="19" border="0" alt="วงจรระบุหมายเลขแสดงรายละเอียดปฏิจจสมุปบาทและขันธ์๕"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><span style="font-size:15pt;"><font face="Leelawadee" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดังนั้นพอสรุปได้ว่า</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><span style="font-size:15pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รู้เท่าทัน(สติ)และเข้าใจสภาวะธรรม(ชาติ)ของเวทนา(อันคือ 
+เวทนานุปัสสนา) &nbsp;เป็นการปฏิบัติที่เห็นเท่าทันต่อ</font><font face="Leelawadee" color="#990000">&nbsp; 
+</font><font face="Leelawadee" color="blue">เวทนา </font><font face="Leelawadee" color="black">เป็นตําแหน่งที่ดีที่สุดในเวทนานุปัสสนา&nbsp;ในวงจรปฏิจจสมุปบาท์</font></span><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"> 
+&nbsp;&nbsp;เพราะความทุกข์จริงๆ คือ อุปาทานทุกข์หรืออุปาทานขันธ์๕ยังไม่เกิดขึ้นนั่นเอง&nbsp;&nbsp; 
+เกิดแต่เวทนาอันเป็นธรรมชาติ ซึ่งไม่สามารถหลบเลี่ยงได้เป็นธรรมดา</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><span style="font-size:15pt;"><font face="Leelawadee" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รู้เท่าทันสังขารหรือจิตสังขารหรือความคิด 
+&nbsp;เป็นการ</font><font face="Leelawadee">ปฏิบัติที่เห็นจิตสังขารหรือใจหรือ</font><font face="Leelawadee" color="blue">ความคิดที่</font><font face="Leelawadee">&nbsp;จึงเป็นตําแหน่งที่ดีที่สุดในการปฏิบัติจิตตานุปัสสนา</font></span><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"> 
+&nbsp;เพราะทุกข์ยังไม่เกิดขึ้นจริงๆ &nbsp;เป็นเพียงสังขารขันธ์๕ อันเป็นธรรมชาติ 
+ซึ่งไม่สามารถหลบเลี่ยงได้เป็นธรรมดา &nbsp;ยังไม่เกิดทุกข์อันเร่าร้อนเผาลนของอุปาทานขันธ์๕</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แต่ในทางปฏิบัติจริงๆแล้ว 
+&nbsp;ใช้รู้เท่าทันสิ่งใดก็ปฏิบัติสิ่งนั้น ตามสติ จริต ปัญญา. ก็ได้ผลเช่นกัน 
+เพราะล้วนเป็นเหตุปัจจัยที่ต่อเนื่องสัมพันธ์กันนั่นเอง เพียงช้าเร็วกว่ากันบ้างเท่านั้น</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0mm;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#9900FF">&nbsp;ดังนั้นเมื่อเกิดความคิดใดๆขึ้นมา 
+อันเป็นเรื่องปกติธรรมดาในการดำเนินชีวิตต่างๆอันล้วนมีในพระอรหันต์เช่นกัน &nbsp;แต่อย่าไปคิดนึกปรุงแต่งต่อไป 
+ต้องเข้าใจและยอมรับสภาวะธรรม(ชาติ)นั้น แล้วหยุดคิด หยุดนึก</font><font face="Leelawadee" color="black">อันหมายถึงการ</font><font face="Leelawadee">หยุด</font></span><font face="Leelawadee" color="#006600"><span style="font-size:15pt;">คิดนึกปรุงแต่ง</span></font><font face="Leelawadee" color="#009900"><span style="font-size:15pt;"> 
+</span></font><span style="font-size:15pt;"><font face="Leelawadee">อันจะไปทําหน้าที่เป็น</font><font face="Leelawadee" color="#006600">สังขาร 
+</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="#006600"> </font></span><font face="Leelawadee" color="blue"><span style="font-size:15pt;">ธรรมารมณ์</span></font><span style="font-size:15pt;"><font face="Leelawadee">ดังที่กล่าวมาแล้ว</font><font face="Leelawadee" color="#009900"> 
+&nbsp;</font><font face="Leelawadee" color="black">&nbsp;และหมายรวมถึงหยุด</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">อุปาทานรูป 
+</span></font><span style="font-size:15pt;"><font face="Leelawadee">(อยู่ในภาพขยายวงจร</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">ชรา</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">14</span></font></u><font face="Leelawadee" color="red"><span style="font-size:15pt;">)</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black"> 
+อันคือ</font><font face="Leelawadee" color="red"> ความคิดที่ถูกครอบงําโดย</font><font face="Leelawadee" color="#006600">อุปาทาน</font><font face="Leelawadee" color="red">แล้ว</font><font face="Leelawadee" color="black">คือเป็นความคิดที่แฝงทุกข์แล้วนั่นเอง,</font><font face="Leelawadee" color="red"> 
+&nbsp;&nbsp;</font><font face="Leelawadee">ส่วน</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่เป็น</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="red">ความคิดปรุงแต่ง</font><font face="Leelawadee" color="black"> 
+ฟุ้งซ่านต่างๆนาๆ</font><font face="Leelawadee" color="#9900FF">อันมักเกิดเมื่อ</font></span><font face="Leelawadee" color="blue"><span style="font-size:15pt;">จิตสังขาร</span></font><font face="Leelawadee" color="#9900FF"><span style="font-size:15pt;">ออกมาเป็นความพึงพอใจ,ความไม่พึงพอใจ 
+&nbsp; ซึ่งเมื่อคิดต่อความยาวสาวความยืดแล้วจักนําไปสู่วงจรทุกข์ในที่สุด เพราะเป็นปัจจัยให้เกิด</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="blue">เวทนา</font><font face="Leelawadee" color="#9900FF">อันอาจเป็นปัจจัยให้เกิด</font><font face="Leelawadee" color="#006600">ตัณหา</font><font face="Leelawadee" color="#9900FF">, 
+&nbsp;&nbsp;</font><font face="Leelawadee" color="black">ที่</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">อุปาทานรูป</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">24</span></font></u><font face="Leelawadee" color="red"><span style="font-size:15pt;"> 
+</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black">นั้นล้วนแต่เป็นความคิดอันเป็นทุกข์แล้วทั้งสิ้น 
+อันล้วนแล้วแต่ถ้าปล่อยจิตให้ไปคิดยิ่งเป็นทุกข์วนเวียนหนักขึ้น ดังนั้นผู้ที่มีเรื่องกระทบใจให้ขุ่นเคืองไม่พอใจในแค่ระดับขันธ์๕อันเป็นสภาวะธรรม(ชาติ)ปกติต้องหยุด</font></span><font face="Leelawadee" color="#006600"><span style="font-size:15pt;">คิดปรุงแต่ง,</span></font><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+&nbsp;ผู้เป็นทุกข์อยู่แล้วต้องหยุดคิดปรุงแต่ง</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">24</span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+, &nbsp;&nbsp;ในตําแหน่ง </span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">24</span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;">นี้มีความแข็งแกร่งมากเพราะถูกครอบงําโดย</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#006600">อุปาทาน</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">มาโดยไม่รู้ตัวแล้ว(สติไม่ทัน) 
+&nbsp;ผู้ปฏิบัติใหม่อาจมีความรู้สึกว่าหยุดไม่ได้ &nbsp;&quot;ฉันหยุดไม่ได้ เป็นไปไม่ได้ 
+ก็มันเป็นทุกข์อยู่นี่&quot; &nbsp;แต่การพิจารณาและความเพียรจักทําให้เห็นจิตและเวทนาในปฏิจจสมุปบาทอันก่อให้เกิดทุกข์ 
+ตลอดจนความเข้าใจในสภาวะธรรมจะทําให้ท่านเห็นและหยุดทุกข์ได้ในที่สุด</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><a href="javascript:na_open_window('win', '9.2pic.htm', 0, 0, 780, 350, 0, 0, 0, 1, 1)" target="_self"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="flower05_blue.gif" width="19" height="19" border="0" alt="วงจรระบุหมายเลขแสดงรายละเอียดปฏิจจสมุปบาทและขันธ์๕"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การเห็นความคิดที่ห</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="black">รือเห็น</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">อุปาทานสังขารขันธ์</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">28</span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;">ที่เกิดในวงจร</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">14</span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+อันล้วนมี</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#006600">อุปาทาน</font><font face="Leelawadee" color="black">ครอบงําจนเกิดความเร่าร้อนแล้ว 
+&nbsp;จึงตัดหรือดับได้ยาก &nbsp;อาจต้องใช้การพิจารณาดับ</font><font face="Leelawadee" color="#006600">ตัณหาอันคือจิตตสังขาร</font><font face="Leelawadee" color="black">เข้าช่วยเช่นพิจารณาให้รู้ว่าเพราะอยากหรือไม่อยากในอะไรหรือสิ่งใดในทุกข์นั้นหรือเปล่า 
+&nbsp;&nbsp;และต้องหยุด</font><font face="Leelawadee" color="red">ความคิดนึกปรุงแต่ง</font><font face="Leelawadee" color="black">อันเป็นทุกข์ 
+ที่ไปกระทำต่อ</font><font face="Leelawadee">เนื่องอีกในวงจร</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">ชรา</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">14</span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;">นั่นเอง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#0000CC">เวทนา</font><font face="Leelawadee" color="#000099"> </font><font face="Leelawadee" color="black">&nbsp;จะเห็นได้ว่าเป็นจุดสําคัญที่จะไปเป็นขันธ์๕ปกติตามธรรมชาติถ้ามีสติรู้เท่าทัน 
+&nbsp; &nbsp;หรือจะหักเหไปเข้ากระบวนการเกิดขึ้นแห่งทุกข์ ก็ย่อมได้,&nbsp;&nbsp;และพิจารณาว่า</font><font face="Leelawadee" color="#0000CC">เวทนา 
+</font><font face="Leelawadee" color="black">เป็นเหตุปัจจัยให้เกิดได้สังขารขันธ์ชนิดตัณหา</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="red">สังขาร 
+ในปฏิจจสมุปบาท </font><font face="Leelawadee" color="black">คือสังขารการกระทําตามที่ได้อบรมสั่งสมประพฤติปฏิบัติไว้แต่อดีต 
+ทั้งทางกายการกระทํา,วาจาทางการพูด,หรือใจ &nbsp;&nbsp;ทางใจนั้นก็คือความคิดหรือธรรมารมณ์ชนิดที่มีอาสวะและอวิชชาแฝงอยู่ 
+&nbsp;หรืออาจกล่าวได้ว่า</font><font face="Leelawadee" color="red">สังขาร</font><font face="Leelawadee" color="black">ในปฏิจจสมุปบาทก็คือทําหน้าที่คล้ายกันกับ</font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">ธรรมารมณ์</span></font><u><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">16</span></font></u><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+&nbsp;แต่เป็นชนิดเกิดจากจิตอันมีอาสวะกิเลสและอวิชชาเป็นเหตุปัจจัยโดยตรง &nbsp; 
+หรือ </span></font><span style="font-size:15pt;"><font face="Leelawadee" color="fuchsia">จิตปรุงกิเลส</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;"> 
+นั่นเอง </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;</span></font><a href="javascript:na_open_window('win', '9.2pic.htm', 0, 0, 780, 350, 0, 0, 0, 1, 1)" target="_self"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="flower05_blue.gif" width="19" height="19" border="0" alt="วงจรระบุหมายเลขแสดงรายละเอียดปฏิจจสมุปบาทและขันธ์๕"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อสําคัญการปฏิบัติในหลักพระพุทธศาสนานั้นต้องยอมรับในสภาวธรรม(ธรรมชาติ)ว่า 
+</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">ทุกข์อันเกิดแต่ขันธ์ 
+๕ นั้นมีอยู่&nbsp; แต่ไม่มีอุปาทานทุกข์หรือทุกข์อันบังเกิดแก่ใจอันเป็นทุกข์จริงๆ</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="blue"> 
+(</font></span><font face="Leelawadee" color="red"><span style="font-size:15pt;">ชรา</span></font><u><font face="Leelawadee" color="red"><span style="font-size:15pt;">14</span></font></u><font face="Leelawadee" color="blue"><span style="font-size:15pt;">)</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">หรือ 
+เหตุแห่งทุกข์นั้นยังคงมีอยู่แต่ไม่มีผู้รับผลทุกข์นั้น </span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee" color="black"><span style="font-size:15pt;">ซึ่งนักปฏิบัติใหม่ๆหรือผู้ที่ปฎิบัติแต่ทางสมถะจักไม่เข้าใจแก่นพุทธอันนี้ดีนัก 
+และทําใจให้ยอมรับเข้าใจไม่ได้ว่า &quot;</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#0000CC">เหตุแห่งทุกข์ยังคงมีอยู่</font><font face="Leelawadee" color="black">&quot; 
+&nbsp;หวังแต่ในทางปาฎิหาริย์ชนิดเป็นสุขดังเขาว่า เหนือกว่าเทวดา เหนือกว่าพรหม 
+จนคิดว่าไม่มีสิ่งใดมากระทบได้ ไม่มีทุกข์ ไม่มีโศก ไม่มีโรคภัย ไม่มีเสนียดจัญไรใดๆมากราย 
+&nbsp;แต่ในความเป็นจริงแล้วมีครบหมดทุกอย่าง</font><font face="Leelawadee" color="#0000CC">แต่ไม่มีผู้รับผลทุกข์นั้นหรือเป็นทุกข์ใดๆอันเกิดแก่ใจ</font></span><font face="Leelawadee" color="black"><span style="font-size:15pt;">กับสิ่งต่างๆเหล่านั้น 
+นี้คือธรรมโอสถขององค์สมเด็จพระสัมมาสัมพุทธเจ้าโดยแท้</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="left"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="black"><span style="font-size:15pt;"><a name="y"></a>&nbsp;</span></font><a href="javascript:na_open_window('win', '9.2pic.htm', 0, 0, 780, 350, 0, 0, 0, 1, 1)" target="_self"><font face="Leelawadee" color="blue"><span style="font-size:15pt;"><img src="flower05_blue.gif" width="19" height="19" border="0" alt="วงจรระบุหมายเลขแสดงรายละเอียดปฏิจจสมุปบาทและขันธ์๕"></span></font></a></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การแสดงการเปรียบเทียบ</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#0000CC">ปฏิจจสมุปบาท</font><font face="Leelawadee">และ</font><font face="Leelawadee" color="#0000CC">ขันธ์๕</font><font face="Leelawadee">&nbsp;&nbsp;เพื่อต้องการให้เห็นว่าธรรมทั้งสองสอดคล้องกลมกลืนเป็นหนึ่งเดียว&nbsp;&nbsp;จึงเป็นไปอย่างถูกต้องดีงาม&nbsp;&nbsp;เมื่อดำเนินชีวิตไปตามกระบวนธรรมของขันธ์๕ก็ไม่เป็นทุกข์ 
+&nbsp;แต่ถ้ามี</font><font face="Leelawadee" color="blue">ตัณหา</font><font face="Leelawadee">ต่อ</font><font face="Leelawadee" color="blue">เวทนา</font><font face="Leelawadee">นั้นก็จะแปรปรวนเป็นไปตามวงจรปฏิจจสมุปบาทนั่นเอง 
+&nbsp;&nbsp;และต้องการแสดงให้เห็นว่าในปฏิจจสมุปบาทนั้นมิได้แสดง</font><font face="Leelawadee" color="#0000CC">สัญญา</font><font face="Leelawadee">ดังเช่นในขันธ์๕ 
+จึงอาจทำให้เกิดวิจิกิจฉาสังสัยในธรรมขึ้น เนื่องเพราะในปฏิจจสมุปบาท สัญญานั้นทำงานแฝงอยู่ในรูปของ</font><font face="Leelawadee" color="#0000CC">อาสวะกิเลส</font></span><font face="Leelawadee"><span style="font-size:15pt;">(สัญญาจำที่แฝงด้วยกิเลส)แล้วนั่นเอง</span></font></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="black"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;พระอริยบุคคล 
+ที่เป็นอรหันต์ยังคงดําเนินชีวิตอยู่ในขันธ์๕(</span></font><a href="javascript:na_open_window('win', '304.htm', 0, 0, 360, 210, 0, 0, 0, 0, 0)" target="_self" title="คลิก เปิดหน้าต่างย่อย
+อธิบายความหมาย"><font face="Leelawadee"><span style="font-size:15pt;">สอุปานิเสสนิพพาน</span></font></a><font face="Leelawadee" color="black"><span style="font-size:15pt;">) 
+อันมีสุขเวทนาบ้าง ทุกขเวทนาบ้าง ทั้งทางกายทางใจตามขบวนการขันธ์๕ อันเป็นสภาวะธรรม(ธรรมชาติแท้)ที่ทุกคนต้องมี 
+&nbsp;</span></font><span style="font-size:15pt;"><font face="Leelawadee" color="#000099">แต่ท่านจักไม่มีอุปาทานทุกข์</font><font face="Leelawadee" color="black">อย่างปุถุชน 
+&nbsp;และความทุกข์ที่เราๆ ทั้งหลายกําลังประสบอยู่ทุกเมื่อเชื่อวัน &nbsp;โดยไม่รู้ตัวว่าเป็นอุปาทานทุกข์แต่ไปนึกกันเอาเองว่าเป็นทุกข์ธรรมชาติ 
+หรือทุกข์ประจําขันธ์ &nbsp;เพราะ</font><font face="Leelawadee" color="#0000CC">ความไม่รู้ไม่เข้าใจในอุปาทานทุกข์หรือก็คือความทุกข์ในองค์ธรรม</font><font face="Leelawadee" color="#990000">ชรา</font></span><font face="Leelawadee" color="#0000CC"><span style="font-size:15pt;">ในวงจรปฏิจสมุปบาท</span></font><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee">หรือ</font></span><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><span style="font-size:15pt; letter-spacing:-0.1px;"><font face="Leelawadee">อวิชชา</font></span></a><span style="font-family:'MS Sans Serif'; font-size:15pt; line-height:2.2; margin-top:0; margin-bottom:0;"><font face="Leelawadee">นั่นเอง</font></span></p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee" color="purple"><span style="font-size:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p align="center" style="line-height:1.8; margin:0;"><a href="javascript:history.go(-1)"><font face="Leelawadee"><span style="font-size:15pt;"><img src="back1.gif" width="94" height="40" border="0" alt="กลับหน้าเดิม"></span></font></a></p>
+<p style="text-indent:0px; line-height:0; margin-top:0; margin-bottom:0; margin-left:0;" align="center"><b><a href="BLANK1.htm"><span style="font-size:12pt;"><font face="Tahoma"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></font></span></a></b></p>
+<p align="center"><font face="Tahoma"><span style="font-size:12pt;">&nbsp;</span></font> 
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Tahoma"><span style="font-size:12pt;">&nbsp;</span></font></p>
+<table align="center" border="0" width="284">
+    <tr>
+        <td width="274" align="center" valign="middle">
+            <table align="center" border="0" width="255" style="line-height:100%; margin-top:0; margin-bottom:0;">
+                <tr align="center" valign="middle">
+                    <td width="245" align="center" valign="middle">
+                        <p align="center" style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Tahoma"><span style="font-size:12pt;">&nbsp;<script language="javascript1.1">
+page="9.Vongjon";
+                        
+                        </script><script language="javascript1.1" src="http://hits.truehits.in.th/data/h0012229.js">
+                        
+                        </script></span></font></p>
+                    </td>
+                </tr>
+            </table>
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Tahoma"><span style="font-size:12pt;">&nbsp;</span></font></p>
+        </td>
+    </tr>
+</table>
+<p align="center">&nbsp;</p>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;"><b><font face="Tahoma" color="#009900"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></b></p>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรปฏิจจสมุปบาท</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรโดยขยายความ</font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee">ค้นหาคำศัพท์</font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</a>. 
+        </font></li>
+        <li><span style="font-size:12pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">ภาพกระบวนธรรมขันธ์ 
+        ๕</a></font></span></li>
+        <li><font face="Leelawadee" color="#990000">ใช้ Ctrl+F ค้นหาในหน้านี้</font></li>
+        <li><font face="Leelawadee" color="#990000">ใช้&nbsp;Ctrl+C = Copy</font></li>
+</div>
+</body>
+
+</html>

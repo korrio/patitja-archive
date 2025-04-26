@@ -1,0 +1,630 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-874">
+<title>ประมวลภาพวงจรปฏิจสมุปบาท</title>
+<meta name="author" content="พนมพร คูภิรมย์">
+<meta name="generator" content="Namo WebEditor v5.0">
+<meta name="keywords" content="ภาพวงจรปฏิจจสมุปบาท,วงจรปฏิจจสมุปบาท">
+<script src="rightmenu.js" type=text/javascript>
+//Right-click menu- By Eyecon (http://www.webteam.ro)
+//Slight modifications by JK
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+</script>
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function namosw_rotate_banner_go() 
+{
+  var targetstr = document._rotatetargets[document._rotate_no];
+  if (targetstr == 'blank') {
+    window.open(document._rotatelinks[document._rotate_no], 'win1');
+  } else {
+    var frameobj;
+    if (targetstr == '') targetstr = 'self';
+    if ((frameobj = eval(targetstr)) != null)
+      frameobj.location = document._rotatelinks[document._rotate_no];
+  }
+}
+
+function namosw_rotate_banner()
+{
+  if (!document._rotateimages) {
+    document._rotateimages  = new Array();
+    document._rotatelinks   = new Array();
+    document._rotatetargets = new Array();
+
+    document._rotate_name = 'image1';
+    document._rotate_interval = 2000;
+    document._rotate_itemnum = 16;
+    document._rotateimages[document._rotateimages.length] = "Took1.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took2.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took3.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took4.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took5.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took6.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took7.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took8.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took9.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took10.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took11.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took12.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took12.1.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took13.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took14.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    document._rotateimages[document._rotateimages.length] = "Took15.jpg";
+    document._rotatelinks[document._rotatelinks.length] = "patijatPic.htm";
+    document._rotatetargets[document._rotatetargets.length] = "self";
+    setInterval("namosw_rotate_banner()", document._rotate_interval);
+    document._rotate_no = -1;
+  }
+
+  document._rotate_no++;
+  if (document._rotate_no == document._rotateimages.length)
+    document._rotate_no = 0;
+
+  document.images[document._rotate_name].src = document._rotateimages[document._rotate_no];
+}
+
+// -->
+</script>
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" style="font-family:'MS Sans Serif';" OnLoad="namosw_rotate_banner();">
+<p style="margin-top:0mm; margin-bottom:0;" align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:18pt;">ประมวลภาพ 
+วงจรปฏิจสมุปบาท</span></font></p>
+<p align="center" style="margin-top:3mm; margin-bottom:-0.2cm;"><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;</span></font></p>
+            <p align="center"><font face="Tahoma"><img src="1buddha3.gif" width="337" height="344" border="0"></font></p>
+            <p align="center"><font face="Leelawadee"><span style="font-size:16pt;">แสดงวงจรปฏิจจสมุปบาท</span></font></p>
+<p align="center"><font face="Tahoma"><a name="a"></a></font>&nbsp;<B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<table align="center" border="0" width="1213">
+    <tr>
+        <td width="438">
+            <p align="right"><font face="Leelawadee"><span style="font-size:14pt;"><b>นอนเนื่องอยู่ในจิต</b></span></font></p>
+            <p align="right"><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>อาสวะกิเลส</b></span></font><font face="Leelawadee"><span style="font-size:14pt;"> </span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;">โสกะ ปริเทวะ ทุกข์ โทมนัส อุปายาส</span></font></p>
+            <p align="right"><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>มรณะ</b></span></font><font face="Leelawadee"><span style="font-size:14pt;"> พรั่งพร้อมด้วย </span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;">โสกะ ปริเทวะ ทุกข์ โทมนัส 
+            อุปายาส</span></font></p>
+            <p align="right"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ชาติ</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ชรา</b></span></font><font face="Leelawadee"><span style="font-size:14pt;"> อันวนเวียน เร่าร้อนเผาลน</span></font></p>
+            <p align="right"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ภพ</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ชาติ</b></span></font></p>
+            <p align="right"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>อุปาทาน</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ภพ</b></span></font></p>
+            <p align="right"><font face="Leelawadee"><span style="font-size:14pt;">เพรา</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ตัณหา</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>อุปาทาน</b></span></font></p>
+            <p align="right"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>เวทนา</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ตัณหา</b></span></font></p>
+        </td>
+        <td width="305"><p align="center"><a href="javascript:namosw_rotate_banner_go()" target="_self"><font face="Leelawadee"><span style="font-size:14pt;"><img src="Took1.jpg" width="333" height="340" border="0" alt="Took1.jpg" name="image1"></span></font></a></p>
+        </td>
+        <td width="448">
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะยังมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>อาสวะกิเลส</b></span></font></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">จึงเป็นเหตุปัจจัย ร่วมกับ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>อวิชชา</b></span></font><font face="Leelawadee"><span style="font-size:14pt;"> </span></font></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>อวิชชา</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>สังขาร</b></span></font></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>สังขาร</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>วิญญาณ</b></span></font></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>วิญญาณ</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>นาม-รูป</b></span></font></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>นาม-รูป</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><FONT 
+            face="Leelawadee" color="red"><b><span style="font-size:14pt;">สฬายตนะ</span></b></FONT></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><FONT 
+            face="Leelawadee" color="red"><b><span style="font-size:14pt;">สฬายตนะ</span></b></FONT><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><FONT 
+            face="Leelawadee" color="red"><b><span style="font-size:14pt;">ผัสสะ</span></b></FONT></p>
+            <p align="left"><font face="Leelawadee"><span style="font-size:14pt;">เพราะ</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>ผัสสะ</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">เป็นปัจจัย จึงมี</span></font><font face="Leelawadee" color="red"><span style="font-size:14pt;"><b>เวทนา</b></span></font></p>
+        </td>
+    </tr>
+</table>
+<p align="center"><span style="font-size:16pt;"><font face="Leelawadee" color="#000099">แบบอนุโลม 
+หรือสมุทยวาร การเกิดของทุกข์</font></span></p>
+<p align="center"><B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<p align="center"><span style="font-size:16pt;"><a href="javascript:na_open_window('win', 'patitjaPic1.htm', 0, 0, 1250, 800, 0, 0, 0, 1, 1)" title="คลิก"><font face="Leelawadee" color="#000099">แสดงภาพแบบปฏิโลม 
+หรือนิโรธวาร หรือการดับไปแห่งทุกข์</font></a></span><font face="Leelawadee"><span style="font-size:16pt;"><a href="javascript:na_open_window('win', 'patitjaPic1.htm', 0, 0, 1250, 800, 0, 0, 0, 1, 1)" title="คลิก">
+</a></span></font></p>
+<p align="center"><font face="Tahoma">&nbsp;</font><B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<table border="2" align="center" width="85%" cellspacing="0" bordercolor="#FFCC99" bordercolordark="#C38902" bordercolorlight="#806000" style="margin-top:3mm;" bgcolor="white">
+    <tr>
+        <td width="955" height="341">
+            <p align="left" style="margin-top:-6mm; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-size:12pt; background-color:rgb(255,162,162);">&nbsp;อาสวะกิเลส 
+            &nbsp;&nbsp;</span></font><a href="news:" title="เป็นเหตุปัจจัยร่วมกัน"><span style="font-size:12pt; background-color:rgb(255,162,162);"><font color="#000066" face="Leelawadee"><img src="cross01_reda.gif" width="10" height="10" border="0"></font></span></a><font color="#000066" face="Leelawadee"><span style="font-size:12pt; background-color:rgb(255,162,162);"> 
+            &nbsp;&nbsp;อวิชชา </span><span style="font-size:12pt;">&nbsp;&nbsp;</span></font><span style="font-size:12pt;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#000066" face="Leelawadee"><img src="anired06_next.gif" width="15" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></a><font color="#000066" face="Leelawadee"> 
+            &nbsp;&nbsp;สังขาร &nbsp;&nbsp;</font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#000066" face="Leelawadee"><img src="anired06_next.gif" width="15" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></a><font color="#000066" face="Leelawadee"> 
+            &nbsp;&nbsp;วิญญาณ &nbsp;&nbsp;</font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#000066" face="Leelawadee"><img src="anired06_next.gif" width="15" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></a><font color="#000066" face="Leelawadee"> 
+            &nbsp;&nbsp;นามรูป</font></span></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#000099" face="Leelawadee"><img src="anired06_up.gif" width="12" height="15" border="0" align="absbottom"></font></a><font color="#000099" face="Leelawadee"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:10pt; letter-spacing:0;"><font color="#000099" face="Leelawadee">&nbsp;&nbsp;</font></span><span style="font-size:12pt; letter-spacing:0;"><font color="#000099" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:12pt;"><font face="Leelawadee"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><img src="anired06_down.gif" width="12" height="15" border="0" align="absbottom"></a></font></span></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มรณะ 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt;"><font color="#000066" face="Leelawadee">สฬายตนะ</font></span></p>
+            <p style="margin-top:0; margin-bottom:0;" align="left"><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#000099" face="Leelawadee"><img src="anired06_up.gif" width="12" height="15" border="0" align="absbottom"></font></a><font color="fuchsia" face="Leelawadee"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee">วงจร</font></span><span style="font-size:10pt;"><font face="Tahoma"><img src="spinning-arrows.gif" align="absmiddle" width="30" height="30" border="0"></font></span><span style="font-size:16pt; letter-spacing:0;"><font face="Leelawadee">ปฏิจจสมุปบาท</font></span><span style="font-size:12pt; letter-spacing:0;"><font color="fuchsia" face="Leelawadee">&nbsp;&nbsp;</font></span></p>
+            <p style="margin-top:0; margin-bottom:0;" align="left"><font color="fuchsia" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="red" face="Leelawadee"><span style="font-size:12pt;">สัญญูปาทานขันธ์ 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font color="red" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><font color="red" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font color="red" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><font color="red" face="Leelawadee"><span style="font-size:12pt;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font color="red" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><font color="red" face="Leelawadee"><span style="font-size:12pt;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:javascript:na_open_window('win', 'ex3.htm#สังขารูปาทานขันธ์', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title='สังขารขันธ์ที่ประกอบด้วยอุปาทาน ทำให้เกิด
+"มโนกรรม" ขึ้นและไปทำหน้าที่เป็น "รูปูปาทานขันธ์"อีก'><span style="font-size:12pt;"><font color="red" face="Leelawadee">สังขารูปาทานขันธ์</font></span></a><font color="fuchsia" face="Leelawadee"><span style="font-size:12pt;">&nbsp;</span></font><font color="red" face="Leelawadee"><span style="font-size:10pt;">(เกิด</span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)"><span style="font-size:10pt;"><font face="Leelawadee">มโนกรรม</font></span></a><font color="red" face="Leelawadee"><span style="font-size:10pt;">)&nbsp;</span><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="fuchsia" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt;"><font face="Leelawadee"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><img src="anired06_down.gif" width="12" height="15" border="0" align="absbottom"></a></font></span></p>
+            <p align="left" style="margin-top:2mm; margin-bottom:1mm;"><span style="font-size:12pt; letter-spacing:0;"><font color="fuchsia" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="fuchsia" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a><font color="fuchsia" face="Leelawadee"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="red" face="Leelawadee">&nbsp;</font><font color="#990000" face="Leelawadee">&nbsp;</font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><font color="#990000" face="Leelawadee">ชรา</font></a><font color="red" face="Leelawadee"> 
+            </font></span><span style="font-size:10pt; letter-spacing:0;"><font face="Leelawadee">อันเป็นทุกข์ 
+            วนเวียน</font></span><span style="font-size:10pt;"><font face="Tahoma"><img src="spinning-arrows.gif" align="absmiddle" width="24" height="24" border="0"></font></span><span style="font-size:10pt; letter-spacing:0;"><font face="Leelawadee">ปรุงแต่งและเร่าร้อน&nbsp;</font></span><span style="font-size:12pt; letter-spacing:0;"><font face="Leelawadee">&nbsp;</font><font color="fuchsia" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด รูปูปาทานขันธ์
+เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป ด้วยการอุเบกขาเสีย"><img src="anired02_down.gif" align="absmiddle" width="10" height="10" border="0" alt="anired02_down.gif"></a></font></span><a href="news:" title="สังขารขันธ์ที่เกิดในชาติ ย่อมเป็นสังขารูปาทานขันธ์ จึงเกิดมโนกรรม(คิด)
+มโนกรรม นี้จึงไม่ควรให้ดำเนินเนื่องต่อไปด้วยการอุเบกขาเสีย
+เพราะสามารถแปรไปทำหน้าที่เป็นธรรมารมณ์ ที่ก่อทุกข์ให้เนื่องต่อไปอีก"><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"></a><span style="font-size:12pt; letter-spacing:0;"><font color="fuchsia" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000066" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font color="#000066" face="Leelawadee"><span style="font-size:12pt;">ผัสสะ 
+            </span></font></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><font color="fuchsia" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt;"><font color="red" face="Leelawadee">เวทนูปาทานขันธ์ &nbsp;
+            </font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font color="red" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><font color="red" face="Leelawadee"><span style="font-size:12pt;"> 
+            &nbsp;วิญญูาณูปาทานขันธ์</span></font><span style="font-size:12pt;"><font color="red" face="Leelawadee"> &nbsp;&nbsp;&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font color="red" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><font color="red" face="Leelawadee"><span style="font-size:12pt;"> &nbsp;
+            &nbsp;</span></font><a href="javascript:na_open_window('win', 'ex3.htm#อุปาทานขันธ์๕', 0, 0, 1300, 400, 1, 0, 0, 1, 1)" title="ใจ เป็น รูปูปาทานขันธ์ คือใจที่แฝงด้วยอุปาทาน"><span style="font-size:12pt; background-color:rgb(255,255,153);"><font color="red" face="Leelawadee">ใจ</font></span><img src="magnify4.gif" align="absbottom" width="18" height="18" border="1"></a><font color="red" face="Leelawadee"><span style="font-size:12pt; background-color:rgb(255,255,153);">&nbsp;&nbsp;<img src="cross01_reda.gif" width="10" height="10" border="0">&nbsp;ธรรมารมณ์</span><span style="font-size:9pt;">&nbsp;</span></font><span style="font-size:9pt;"><font face="Leelawadee">(</font></span><span style="font-size:10pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">มโนกรรม</a></font></span><span style="font-size:9pt;"><font face="Leelawadee">จาก&quot;ชาติ&quot;มาทำหน้าที่เป็นธรรมารมณ์) </font></span></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด  รูปูปาทานขันธ์
+เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป ด้วยการอุเบกขาเสีย"><font color="red" face="Leelawadee"><img src="anired06_up.gif" width="12" height="15" border="0" align="absbottom"></font></a></span><a href="news:" title="สังขารขันธ์ที่เกิดในชาติ ย่อมเป็นสังขารูปาทานขันธ์ จึงเกิดมโนกรรม(คิด)
+มโนกรรม นี้จึงไม่ควรให้ดำเนินเนื่องต่อไปด้วยการอุเบกขาเสีย
+เพราะสามารถแปรไปทำหน้าที่เป็นธรรมารมณ์ ที่ก่อทุกข์ให้เนื่องต่อไปอีก"><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"></a><span style="font-size:12pt;"><font face="Leelawadee" color="red">&nbsp;</font><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:8pt;"><font face="Leelawadee">&nbsp;</font></span><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;</font></span><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;</span></font><span style="font-size:12pt;"><font face="Leelawadee"><a href="news:" title="เป็นเหตุปัจจัย จึงมี เวทนา
+ย่อมต้องเกิดขึ้น เป็นธรรมดา"><img src="anired06_down.gif" width="12" height="15" border="0" align="absbottom"></a></font></span><a href="news:" title="เป็นเหตุปัจจัย จึงมี เวทนา
+ย่อมต้องเกิดขึ้น เป็นธรรมดา"><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"></a><span style="font-size:12pt;"><font face="Leelawadee"> 
+            </font></span></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#000066">&nbsp;&nbsp;&nbsp;</font></span><a href="news:" title='การเกิดขึ้นของ"ทุกข์" เพราะตัณหา อันคือสังขารขันธ์ ได้ถูกครอบงำด้วยอุปาทานแล้ว
+จึงแปรเปลี่ยนไปเป็น"สังขารูปาทานขันธ์"อันเป็นอุปาทานขันธ์อันเป็นทุกข์'><span style="font-size:12pt;"><font color="#000066" face="Leelawadee">ชาติ</font></span></a><font color="#000066" face="Leelawadee"><span style="font-size:12pt;"> 
+            </span></font><span style="font-size:10pt;"><font face="Leelawadee">(สังขารขันธ์ 
+            แปรเป็น<a href="javascript:na_open_window('win', 'ex3.htm#สังขารูปาทานขันธ์', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title="อารมณ์ต่างๆที่เกิดขึ้น ที่ประกอบด้วยอุปาทาน
+ความยึดมั่นในกิเลสตน">สังขารูปาทานขันธ์</a>เกิด<a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">มโนกรรม</a>คิดนึก</font></span><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เวทนา</span></font></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#000099" face="Leelawadee"><img src="anired06_up.gif" width="12" height="15" border="0" align="absbottom"></font></a></span><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:12pt;"><font face="Leelawadee"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><img src="anired06_down.gif" width="12" height="15" border="0" align="absbottom"></a></font></span><a href="news:" title="เป็นเหตุปัจจัย จึงมี เวทนา
+สติระลึกรู้เท่าทันว่า สักว่าเวทนา มันเป็นเช่นนี้เอง"><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"></a></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><font color="blue" face="Leelawadee"><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font color="#000066" face="Leelawadee"><span style="font-size:12pt;">ภพ 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font color="#000066" face="Leelawadee"><img src="anired06_back.gif" width="30" height="8" border="0" align="absmiddle"></font></span></a><font color="#000066" face="Leelawadee"><span style="font-size:12pt;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:" title='เกิด"อกุศลสัญเจตนา" คือเจตนาคิดอ่าน
+ให้เป็นไปตามอุปาทาน คือกิเลสของตัวตน'><span style="font-size:12pt;"><font color="#000066" face="Leelawadee">อุปาทาน</font></span></a><font color="#000066" face="Leelawadee"><span style="font-size:12pt;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด "><span style="font-size:12pt;"><font color="#000066" face="Leelawadee"><img src="anired06_back.gif" width="30" height="8" border="0" align="absmiddle"></font></span></a><font color="#000066" face="Leelawadee"><span style="font-size:12pt;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><a href="javascript:na_open_window('win', '571.htm', 0, 0,1300, 600, 1, 0, 0, 1, 1)" title='อันเป็น"สังขารขันธ์"อย่างหนึ่ง คืออาการของจิต
+หรืออารมณ์ที่ประกอบด้วยปรารถนา ความทะยานอยาก '><span style="font-size:12pt;"><font face="Leelawadee">ตัณหา</font></span></a><font color="#000066" face="Leelawadee"><span style="font-size:12pt;">&nbsp;</span></font></p>
+            <p align="left" style="margin-top:0; margin-bottom:0;"><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:10pt;"><font face="Leelawadee">(<a href="javascript:na_open_window('win', 'ex3.htm#มโนสังขาร', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title='เปรียบเทียบได้ดั่ง มโนสังขาร คือสภาพที่ปรุงแต่งใจให้เกิด "มโนกรรม" ขึ้น 
+หรือ ความตกลงปลงใจที่จะกระทำทางใจ'>มโนสังขาร</a>)</font></span><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:10pt;"><font face="Leelawadee">(<a href="javascript:na_open_window('win', 'ex3.htm#สัญเจตนา', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title='เปรียบเหมือนสัญเจตนา ความจงใจหรือเจตนา
+แต่เป็น"อกุศลเจตนา" คืออุปาทาน'>อกุศลสัญเจตนา</a>)</font></span><span style="font-size:12pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:8pt;"><font face="Leelawadee">&nbsp;</font></span><span style="font-size:10pt;"><font face="Leelawadee">(<a href="javascript:na_open_window('win', 'ex3.htm#สังขารขันธ์', 1, 1, 1250, 230, 1, 1, 1, 1, 1)" title="ตัณหา คือ สังขารขันธ์อย่างหนึ่ง คืออารมณ์ที่แฝงด้วยกิเลส
+คือ ความปรารถนา หรือความทะยานอยาก ความใคร่">สังขารขันธ์</a>)</font></span></p>
+            <p style="margin-top:6mm; margin-bottom:-6mm;" align="center"><font face="Leelawadee"><span style="font-size:16pt;">ภาพวงจรปฏิจจสมุปบาท 
+            &nbsp;แบบขยายความเต็มรูปแบบโดยพิศดาร</span></font></p>
+        </td>
+    </tr>
+</table>
+<p align="center"><span style="font-size:16pt;"><font face="Leelawadee">ภาพแสดงปฏิจจสมุปบาท 
+&nbsp;แบบสมุทยวาร &nbsp;&nbsp;พร้อมรายละเอียดของ</font><font face="Leelawadee" color="#9900FF">อุปาทานขันธ์ ๕ ในชรา</font><font face="Leelawadee"> อันเป็นอุปาทานทุกข์&nbsp;เป็นลำดับ&nbsp;อีกแบบหนึ่ง</font></span></p>
+<p align="center"><span style="font-size:16pt;"><font face="Leelawadee">เมื่อเกิด<a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">มโนกรรม</a> 
+ทั้งใน&quot;ชาติ&quot; และ</font><font face="Leelawadee" color="red">สังขารูปาทานขันธ์</font><font face="Leelawadee">ใน&quot;ชรา&quot; ก็<a href="javascript:na_open_window('win', 'ex3.htm#อุเบกขา', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">อุเบกขา</a>เสีย</font></span></p>
+<p align="center"><span style="font-size:16pt;"><font face="Leelawadee">เหตุก่อให้เกิดทุกข์ขึ้นต่อเนื่องย่อมไม่มี 
+&nbsp;ทุกข์ที่เกิดมาแล้วก็ย่อมเสื่อมดับไป</font></span></p>
+                        <p align="center" style="line-height:150%;"><B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B>&nbsp;</p>
+<table border="1" width="85%" align="center" bgcolor="white" style="margin-top:3mm;">
+    <tr>
+        <td width="929">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><span style="font-size:10pt;"><font color="#999999">&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;&nbsp;</span></font><font face="Tahoma" color="#999999" size="1">&nbsp;&nbsp;</font><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="คือ อกุศลสังขารขันธ์"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">ตัณหา</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="เจตนา,คิดอ่านที่แฝงกิเลส"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">อุปาทาน</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999"> 
+            </font></span><b><a href="news:" title="การตกลงปลงจิต"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">ภพ</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"> 
+            </font><b><a href="news:" title='คือ การเกิดสังขารรูปาทานขันธ์ จากสังขารตัณหา 
+คือสังขารขันธ์ ที่ถูกครอบงำแล้วด้วยอุปาทานแล้ว
+จึงคือการเกิดขึ้นแล้วของ"อุปาทานขันธ์ ๕" อันเป็นทุกข์'><font color="#999999">ชาติ</font></a></b></span><a href="news:" title="ชาติคือการเกิดของทุกข์ ดังนั้นสังขารขันธ์ที่เกิดในชาติ ย่อมเป็นสังขารูปาทานขันธ
+จึงเกิดมโนกรรม(คิด)  และมโนกรรมนี้ไม่ควรให้ดำเนินเนื่องต่อไปด้วยการอุเบกขาเสีย
+เพราะสามารถแปรไปทำหน้าที่เป็นธรรมารมณ์ ที่ก่อทุกข์ให้เนื่องต่อไปอีก"><img src="magnify4.gif" align="absbottom" width="18" height="18" border="1"></a><span style="font-size:10pt;"><font color="#999999"> </font></span><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_next.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee">......</font></span><a href="news:" title='ธรรมารมณ์ แต่แฝงด้วยกิเลส  อันเกิดจาก
+สังขารูปาทานขันธ์ ใน"ชาติ"'><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b>ธรรมารมณ์</b></font></span></a><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b> </b></font></span><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp;&nbsp;
+</b></span></font><a href="news:" title="เป็นเหตุปัจจัยร่วมกัน"><span style="font-size:12pt;"><font color="#000066" face="Leelawadee"><b><img src="cross01_reda.gif" width="10" height="10" border="0"></b></font></span></a><span style="font-size:12pt;"><font color="#000066" face="Leelawadee"><b> 
+            &nbsp;</b></font></span><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp;ใจ</b></span></font><a href="news:" title="ใจ เป็น รูปูปาทานขันธ์ คือใจที่แฝงด้วยกิเลสหรืออุปาทาน"><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"></a> 
+            &nbsp;<font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>  </b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>&nbsp;วิญญูาณูปาทานขันธ์ &nbsp; 
+             
+            &nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> &nbsp;
+            เวทนูปาทานขันธ์</b></span><span style="font-size:10pt;"> &nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><span style="font-size:12pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="fuchsia" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a></span><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วงจร&nbsp;</span></font><span style="font-size:10pt;"><font face="Tahoma"><img src="spinning-arrows.gif" align="absmiddle" width="30" height="30" border="0">ปฏิจจสมุปบาท</font></span><span style="font-size:16pt;"><font face="Leelawadee"> 
+            </font></span><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="news:" title="เป็นเหตุปัจจัย จึงเกิด  รูปูปาทานขันธ์
+เป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป ด้วยการอุเบกขาเสีย"><img src="anired06_up.gif" width="12" height="20" border="0"></a></span></font><a href="news:" title='มโนกรรม จากสังขารูปาทานขันธ์ ด้านล่าง แปรไปทำหน้าที่เป็น"ธรรมารมณ์"ได้ 
+จึงเป็นสิ่งที่ไม่ควรให้ดำเนินต่อไป ด้วยการอุเบกขา ในมโนกรรมเสีย'><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"></a><span style="font-size:10pt;"><font face="Tahoma" color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Tahoma" color="#990033">&nbsp;</font></span><font face="Tahoma" color="#CC0000"><span style="font-size:10pt;">อุปาทานขันธ์๕ 
+            </span></font><font face="Tahoma" color="#0000CC"><span style="font-size:10pt;">อันเกิดวนเวียน</span></font><span style="font-size:16pt;"><font face="Leelawadee"><img src="spinning-arrows.gif" align="absmiddle" width="22" height="22" border="0"></font></span><font face="Tahoma" color="#0000CC"><span style="font-size:10pt;">อยู่ใน</span><span style="font-size:12pt;"> 
+            </span></font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><span style="font-size:10pt;"><b><font face="Tahoma" color="red">ชรา</font></b></span></a><font face="Tahoma" color="#0000CC"><span style="font-size:10pt;"><b><i> 
+            </i></b>อันเป็นทุกข์</span><span style="font-size:12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font face="Tahoma"><span style="font-size:10pt;">&nbsp;<a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><img src="anired06_down.gif" width="12" height="20" border="0"></a> 
+            &nbsp;</span></font></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;</span></font><span style="font-size:10pt; letter-spacing:0;"><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><font color="#999999" face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></a></span><font face="Tahoma" color="#999999"><span style="font-size:10pt;"> 
+            ดำเนินไปตาม</span></font><a href="news:" title="วงจรปฏิจจสมุปบาท"><span style="font-size:10pt;"><font face="Tahoma" color="#999999">วงจร</font></span></a><font face="Tahoma" color="#999999"><span style="font-size:10pt;">ใหม่&nbsp;</span></font><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;อาสวะกิเลส&nbsp;</span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><b><font face="Tahoma" color="#999999"><span style="font-size:10pt;">&nbsp;มรณะ 
+            </span></font></b><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:10pt;"><font color="#999999" face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></font></span></a><span style="font-size:10pt;"><font color="#999999" face="Leelawadee">......</font></span><a href="javascript:na_open_window('win', 'ex3.htm#สังขารูปาทานขันธ์', 0, 0, 1250, 230, 1, 0, 0, 1, 1)" title='สังขารูปาทานขันธ์ ทำให้เกิดมโนกรรม ซึ่งจะไปทำหน้าที่เป็น 
+ธรรมารมณ์ หรือรูปชนิด"รูปูปาทานขันธ์" ในวงจรใหม่ของ"ชรา"'><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b>สังขารูปาทานขันธ์</b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> 
+            เกิด</b></span></font><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)" title='สังขารูปาทานขันธ์ ทำให้เกิด"มโนกรรม"  ซึ่งจะแปรไปทำหน้าที่เป็น รูปูปาทานขันธ์'><span style="font-size:12pt;"><font face="Tahoma"><b>มโนกรรม</b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b>คิดที่เป็นทุกข์  
+            &nbsp;</b></span></font><a href="news:" title="เป็นเหตุปัจจัย จึงเกิด"><span style="font-size:12pt;"><font face="Tahoma" color="#CC0000"><b><img src="anired06_back.gif" width="30" height="12" border="0" align="absmiddle"></b></font></span></a><font face="Tahoma" color="#CC0000"><span style="font-size:12pt;"><b> 
+            &nbsp;&nbsp;&nbsp;สัญญูปาทานขันธ์</b></span><span style="font-size:10pt;"> 
+            &nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="line-height:2.2; margin-top:1mm; margin-bottom:0;" align="center"> 
+<font face="Leelawadee"><span style="font-size:14pt;">ภาพขยายใน</span></font><a href="news:" title="ความแปรปรวน ความเปลี่บนแปลง จึงวนเวียน
+เป็นวงจรของอุปาทานขันธ์ทั้ง๕ อันเป็นทุกข์"><span style="font-size:14pt;"><b><font face="Leelawadee" color="red">ชรา</font></b></span></a><font face="Leelawadee"><span style="font-size:14pt;"> &nbsp;            ล้วนเป็น</span></font><span style="font-size:14pt;"><font face="Leelawadee" color="#CC0310">อุปาทานขันธ์</font></span><font face="Leelawadee"><span style="font-size:14pt;"> </span></font><font face="Leelawadee" color="#990000"><span style="font-size:14pt;">๕</span></font><font face="Leelawadee"><span style="font-size:14pt;"> 
+            อันเป็นทุกข์
+            เพราะเกิดจาก</span></font><font face="Leelawadee" color="#CC0000"><span style="font-size:14pt;">สังขารูปาทานขันธ์</span></font><font face="Leelawadee"><span style="font-size:14pt;">ในชาติ 
+            อันถูกครอบงําโดย</span></font><font face="Leelawadee" color="#999999"><span style="font-size:14pt;"><b>อุปาทาน</b></span></font><font face="Leelawadee"><span style="font-size:14pt;">แล้ว</span></font></p>
+        </td>
+    </tr>
+</table>
+<p style="margin-top:-0.2cm; margin-bottom:1mm;" align="center"><b><font face="Leelawadee" color="#0000CC"><span style="font-size:16pt;">วงจรแบบ</span></font></b><font face="Leelawadee"><span style="font-size:16pt;">&nbsp;ขยายกระบวนจิตในองค์ธรรม 
+<b>ชรา</b></span></font><b><font size="2" face="Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;</font></b></p>
+                        <p align="center" style="line-height:150%;"><B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B>&nbsp;</p>
+<p style="margin-top:0; margin-bottom:0;" align="center"><font face="Tahoma">&nbsp;</font></p>
+<table border="0" width="739" align="center">
+    <tr>
+        <td width="72">
+            <p align="left" style="margin-top:-6mm; margin-bottom:-5mm;">&nbsp;</p>
+        </td>
+        <td width="586">
+            <p style="text-align:center; line-height:1.8; margin-top:-1mm; margin-right:0; margin-bottom:0; margin-left:0; border-width:1; border-style:none;" align="center"><a href="c1.htm" target="_self" title="คลิก แสดงภาพปฏิจจสมุปบาท และอุปาทานขันธ์๕โดยละเอียด แต่ควรศึกษาให้เข้าใจก่อน"><span style="letter-spacing:0;"><font face="Tahoma" color="#382410"><img src="5vj.gif" width="368" height="312" border="0"></font></span></a></p>
+        </td>
+        <td width="67">
+            <p><font face="Tahoma">&nbsp;</font></p>
+        </td>
+    </tr>
+</table>
+<p align="center">&nbsp;<B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<table border="0" align="center" width="745" style="margin-top:-0.2cm;">
+    <tr>
+        <td width="189" height="369">
+            <p align="center"><b><span style="font-size:18pt;"><font face="Tahoma" color="blue"><a name="วงจรแบบที่"></a></font></span></b><span style="font-size:18pt;"><font face="Leelawadee" color="blue">ปฏิจจสมุปบาท</font></span></p>
+            <p style="line-height:2.2; margin-top:-2.5mm; margin-bottom:0;" align="center"><b><span style="font-size:12pt;"><font face="Leelawadee" color="#000099">แสดงเวทนา</font></span></b></p>
+            <p style="line-height:2.2; margin-top:-2.5mm; margin-bottom:0;" align="center"><b><span style="font-size:12pt;"><font face="Leelawadee" color="#000099">ตําแหน่งที่ควรรู้เท่าทัน</font></span></b></p>
+            <p style="line-height:2.2; margin-top:-2.5mm; margin-bottom:0;" align="center"><b><span style="font-size:12pt;"><font face="Leelawadee" color="#000099">ในการดับทุกข์</font></span></b></p>
+            <p align="center"><font face="Leelawadee" color="#0000CC"><span style="font-size:12pt;">และ</span></font></p>
+            <p align="center"><font face="Leelawadee" color="#000099"><span style="font-size:12pt;">แสดงตําแหน่ง</span></font></p>
+            <p align="center"><font face="Leelawadee" color="#000099"><span style="font-size:12pt;">ที่เหตุปัจจัยภายนอก</span></font></p>
+            <p align="center"><font face="Leelawadee" color="#000099"><span style="font-size:12pt;">(อายตนะภายนอก)</span></font></p>
+            <p align="center"><font face="Leelawadee" color="#000099"><span style="font-size:12pt;">เข้ากระทบโดยตรง</span></font></p>
+            <p align="center"><font color="#000099" face="Leelawadee">ได้เช่นกัน</font></p>
+        </td>
+        <td width="380" height="369">
+            <p style="margin-top:-1.2mm; margin-bottom:0;" align="left"><font face="Tahoma"><img src="buddha-patitja1.gif" width="400" height="395" border="0" align="top"></font></p>
+            <p align="left" style="line-height:1.2; margin-top:-0.5mm; margin-bottom:-4mm;"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:10pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired02_down.gif" align="absmiddle" width="8" height="15" border="0" alt="anired02_down.gif"> 
+            </span></font><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="#000099">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Tahoma" color="#FE0A20">&nbsp;(&nbsp;</font><a href="http://" title="   ฟุ้งซ่าน   
+   คิดวนเวียน"><font face="Tahoma" color="#FE0A20">อุทธัจจะ</font></a><font face="Tahoma" color="#FE0A20">)</font></span></p>
+            <p style="line-height:1.2; margin-top:-0.1cm;" align="left"><font face="Tahoma"><span style="font-size:10pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><b><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="#000099">สัญญาหมายรู้ 
+            </font></span></b><span style="font-size:10pt; letter-spacing:0; line-height:1.2; margin-top:-2.5mm;"><font face="Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="Tahoma"><span style="font-size:10pt; letter-spacing:0; line-height:1.2; margin-top:-2.5mm;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:Tahoma; font-size:10pt; letter-spacing:0; line-height:1.2;">&nbsp;</span></font><span style="font-size:10pt; letter-spacing:0; line-height:1.2; margin-top:-2.5mm;"><font face="Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="Tahoma"><span style="font-size:10pt; letter-spacing:0; line-height:1.2; margin-top:-2.5mm;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt; letter-spacing:0; line-height:1.2; margin-top:-2.5mm;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p align="left" style="line-height:1.2; margin-top:-4mm; margin-bottom:2mm;"><font face="Tahoma"><span style="font-size:10pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired02_down.gif" align="absmiddle" width="8" height="15" border="0" alt="anired02_down.gif"></span></font><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="#000099"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font face="Tahoma" color="#000099"><span style="font-size:8pt; letter-spacing:0;">&nbsp;&nbsp;</span></font><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="#000099">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_up.gif" width="12" height="15" border="0" align="texttop"></font></span><font face="Tahoma" color="#000099"><span style="font-family:Tahoma; font-size:10pt; letter-spacing:0; line-height:1.2;"> 
+            </span></font></p>
+            <p align="left" style="line-height:1.2; margin-top:-1mm;"><font face="Tahoma"><span style="font-size:10pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><b><font face="Tahoma" color="#000099"><span style="font-size:10pt; letter-spacing:0;">สังขารขันธ์(คิด)&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_next.gif" width="15" height="12" border="0"> 
+             </span></font></b><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="fuchsia">&nbsp;ถ้ามีการ..</font><font face="Tahoma" color="red">คิดปรุงแต่ง</font><font face="Tahoma" color="fuchsia">..ต่อ</font><font face="Tahoma" color="red">&nbsp;&nbsp;</font></span><b><font face="Tahoma" color="#000099"><span style="font-size:10pt; letter-spacing:0;"><img src="anired06_next.gif" width="15" height="12" border="0"></span></font></b></p>
+            <p style="MARGIN-TOP: -0.5cm; LINE-HEIGHT: 1.2" align=left><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="blue">[ทางกาย 
+            วาจา ใจ อันเป็นขันธ์๕ สภาวะธรรมชาติ]</font></span></p>
+            <p style="MARGIN-TOP: -2mm; LINE-HEIGHT: 1.2" align=left><span style="font-size:10pt; letter-spacing:0;"><font face="Tahoma" color="#000099">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Tahoma" color="fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:12pt; letter-spacing:0;"><font face="Tahoma" color="fuchsia">แล้วถือ</font></span><b><span style="font-size:12pt; letter-spacing:0;"><font face="Tahoma" color="fuchsia">อุเบกขา</font></span></b></p>
+            <p style="line-height:1.2; margin-top:-2mm; margin-bottom:-0.2;" align=left><font face="Tahoma"><span style="font-size:10pt; letter-spacing:0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+        </td>
+        <td width="162" height="369" align="left" valign="top">
+            <form name="form1">
+                <p align="right"> 
+                <font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;</span></font></p>
+            </form>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;</span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;</span></font></p>
+            <p style="margin-top:-0.1; margin-right:0; margin-bottom:-0.4cm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;"><img src="anired06_back.gif" width="15" height="12" border="0"></span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt; letter-spacing:-0.5;"><font face="Tahoma" color="#000099"><img src="anired06_up.gif" width="12" height="15" border="0" align="absbottom"></font></span><font face="Tahoma"><span style="font-size:10pt;">&nbsp;</span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;</span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><span style="font-size:10pt; line-height:1.2;"><font face="Tahoma" color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="left"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;</span></font></p>
+            <p style="margin-top:-1mm; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="right"><font face="Tahoma"><span style="font-size:10pt;">&nbsp;</span></font></p>
+            <p style="margin-top:0; margin-right:0; margin-bottom:-0.5mm; margin-left:0; border-width:2; border-color:rgb(102,51,0); border-style:none;" align="right"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p align="left" style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><span style="font-size:10pt; line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><font face="Tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:10pt; letter-spacing:-0.5;"><font face="Tahoma" color="#000099"><img src="anired06_up.gif" width="12" height="15" border="0" align="middle"></font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Tahoma">&nbsp;</font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><span style="font-size:10pt; letter-spacing:-0.5;"><font face="Tahoma" color="#000099">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_up.gif" width="12" height="15" border="0" align="middle"></font></span></p>
+        </td>
+    </tr>
+</table>
+<p align="center">&nbsp;<B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<p align="center"><font face="Leelawadee"><span style="font-size:14pt;">&nbsp;เปรียบเทียบกระบวนจิตของขันธ์ 
+๕ เมื่อฟุ้งซ่านวนเวียน &nbsp;&nbsp;กับวงจรชราอันฟุ้งซ่านวนเวียนเหมือนกันแต่ล้วนเป็นอุปาทานขันธ์อันเร่าร้อนกว่าปกติ</span></font></p>
+<table border="1" width="993" align="center" bgcolor="white" style="margin-bottom:3mm;" background="Beige.jpeg">
+    <tr>
+        <td width="447">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee">&nbsp;ธรรมารมณ์ &nbsp;+ &nbsp;ใจ &nbsp;+ &nbsp;มโนวิญญูาณขันธ์ &nbsp;&nbsp;<img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"> 
+            &nbsp; 
+            เวทนาขันธ์</font></span></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><span style="font-size:10pt; background-color:yellow;"><font face="Leelawadee"><a href="news:" title='มโนกรรม จากสังขารขันธ์ แปรไปทำหน้าที่
+เป็น"ธรรมารมณ์"ขึ้นได้ใหม่  จึงควรละเสีย '><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"> 
+            </a></font><a href="news:" title='มโนกรรม จากสังขารขันธ์ แปรไปทำหน้าที่
+เป็น"ธรรมารมณ์"ขึ้นได้ใหม่  จึงควรละเสีย '><font face="Leelawadee">มโน<img src="anired06_up.gif" width="12" height="15" border="0">กรรม</font></a></span><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="blue" face="Leelawadee"><b>&nbsp;ขันธ์ทั้ง๕</b></font><font color="#0000CC" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee">&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:2mm;" align="center"><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee">สังขารขันธ์ 
+            </font></span><span style="font-size:10pt; background-color:yellow;"><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)" title="มโนกรรมนี้ไปทำหน้าที่ เป็นรูปคือสิ่งถูกรู้ คือธรรมารมณ์อีกได้"><font face="Leelawadee">มโนกรรม</font></a></span><span style="font-size:10pt; line-height:100%;"><font color="#CC0000" face="Leelawadee">&nbsp;คิดนึก&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee">&nbsp;&nbsp;&nbsp;<img src="anired06_back.gif" width="25" height="12" border="0" align="absmiddle"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สัญญาขันธ์</font></span></p>
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:12pt;"><font face="Leelawadee">วงจรแสดง</font><b><font color="#CC0310" face="Leelawadee">ขันธ์ทั้ง๕ 
+            </font></b><font face="Leelawadee">ที่เกิดการคิดนึกปรุงแต่งจนเป็นวงจร</font></span></p>
+        </td>
+        <td width="530">
+            <p style="line-height:100%; margin-top:5mm; margin-bottom:0mm;" align="center"><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee">ธรรมารมณ์ 
+             
+            + ใจ(รูปูปาทานขันธ์)  <img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"> วิญญูาณูปาทานขันธ์ &nbsp;<img src="anired06_next.gif" width="15" height="12" border="0" alt="anired06_next.gif" align="absmiddle"> 
+            เวทนูปาทานขันธ์</font></span></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:1mm;" align="center"><span style="font-size:10pt; background-color:yellow;"><font face="Leelawadee"><a href="news:" title="มโนกรรม จากสังขารขันธ์ แปรไปทำหน้าที่
+เป้นรูป หรือธรรมารมณ์ได้ใหม่  จึงควรละเสีย "><img src="magnify4.gif" align="absmiddle" width="18" height="18" border="1"> 
+            </a></font><a href="news:" title="มโนกรรม จากสังขารขันธ์ แปรไปทำหน้าที่
+เป้นรูป หรือธรรมารมณ์ได้ใหม่  จึงควรละเสีย "><font face="Leelawadee">มโน<img src="anired06_up.gif" width="12" height="15" border="0">กรรม</font></a></span><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="blue" face="Leelawadee">&nbsp;<b>อุปาทานขันธ์ทั้ง 
+            ๕</b></font><font color="#0000CC" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee">&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span></p>
+            <p style="line-height:100%; margin-top:2mm; margin-bottom:2mm;" align="center"><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee">สังขารูปาทานขันธ์ 
+            </font></span><span style="font-size:10pt; background-color:yellow;"><a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)" title="มโนกรรมนี้ไปทำหน้าที่ เป็นธรรมารมณ์ คือ รูปูาทานขันธ์ได้"><font face="Leelawadee">มโนกรรม</font></a></span><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee">คิดที่เป็นทุกข์ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><span style="font-size:10pt; line-height:100%;"><font color="#CC0000" face="Leelawadee">&nbsp;</font></span><span style="font-size:10pt;"><font color="#CC0000" face="Leelawadee"><img src="anired06_back.gif" width="25" height="12" border="0" align="absmiddle"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;สัญญูปาทานขันธ์</font></span></p>
+            <p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:12pt;"><font face="Leelawadee">วงจร</font><b><font color="#CC0310" face="Leelawadee">อุปาทานขันธ์ทั้ง๕ 
+            </font></b><font face="Leelawadee">ที่ล้วนถูกครอบงําโดย</font><b><font color="#006600" face="Leelawadee">อุปาทาน</font></b></span></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2.2; margin-top:0; margin-bottom:0;" align="center"><font face="Leelawadee"><span style="font-size:14pt;">ดังนั้นเมื่อเกิด<a href="javascript:na_open_window('win', 'ex3.htm#มโนกรรม', 0, 0, 1250, 300, 1, 0, 0, 0, 0)">มโนกรรม 
+</a>แล้วอุเบกขาเสีย ย่อมไม่มีเหตุก่อให้เป็นทุกข์ต่อเนื่องอีกต่อไป ดังภาพ&nbsp;ทุกข์ที่เกิดแล้วก็ย่อมเสื่อมดับไป</span></font></p>
+<p align="center">&nbsp;</p>
+<p align="center"><B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<table border="0" width="498" align="center">
+    <tr>
+        <td width="20"><font face="Leelawadee">&nbsp;</font></td>
+        <td width="434">
+            <p align="center" style="margin-bottom:0cm;"><font face="Leelawadee"><img src="5vj3.gif" border="0" width="368" height="312"></font></p>
+        </td>
+        <td width="30" align="center" valign="top">
+            <p style="line-height:57%; margin-top:0; margin-bottom:0;"><font face="Leelawadee">&nbsp;</font></p>
+            <p><font face="Leelawadee">&nbsp;</font></p>
+            <p align="left"><font face="Leelawadee"><img src="anired02_back.gif" width="10" height="10" border="0"></font></p>
+            <p><font face="Leelawadee">&nbsp;</font></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><font face="Leelawadee">&nbsp;</font></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><font face="Leelawadee">&nbsp;</font></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><font face="Leelawadee">&nbsp;</font></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><font face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0"></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="20">
+            <p><font face="Leelawadee">&nbsp;</font></p>
+</td>
+        <td width="434">
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="aniblue02_tiltupdown_up.gif" align="absmiddle" width="18" height="18" border="0"></font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:0;"><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;</font><font color="#000099" face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปัญญา</font><font color="red" face="Leelawadee">+</font><font color="#000099" face="Leelawadee">สัญญาหมายรู้ 
+            &nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font color="#000099" face="Leelawadee"><span style="font-size:10pt;">&nbsp;&nbsp;(อุทธัจจะ</span><span style="font-family:'MS Sans Serif'; font-size:10pt; line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;">)</span></font></p>
+            <p style="line-height:1.2; margin-top:0mm; margin-bottom:-1mm;"><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="anired06_down.gif" width="12" height="15" border="0"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="aniblue02_tiltupdown_up.gif" align="absmiddle" width="18" height="18" border="0"></font></span></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;"><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span><font color="#000099" face="Leelawadee"><span style="font-size:10pt;">&nbsp;สังขารขันธ์&nbsp;ไม่เป็นทุกข์&nbsp;</span></font><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp; 
+            &nbsp;<img src="aniblue02_tiltupdown_next.gif" align="absmiddle" width="18" height="18" border="0">&nbsp;&nbsp;&nbsp;</font><font color="red" face="Leelawadee">&nbsp;</font><font color="#000099" face="Leelawadee">แต่</font><font color="red" face="Leelawadee">คิดนึกปรุงแต่ง</font></span><font color="#000099" face="Leelawadee"><span style="font-size:10pt;">ต่อ</span></font><font color="red" face="Leelawadee"><span style="font-family:'MS Sans Serif'; font-size:10pt; line-height:1.2;">&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Leelawadee">&nbsp;<img src="anired02_next.gif" width="10" height="10" border="0"></font></span></p>
+        </td>
+        <td width="30" align="center" valign="middle">
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><font face="Leelawadee">&nbsp;</font></p>
+            <p style="line-height:1.2; margin-top:-1mm; margin-bottom:-1mm;" align="left"><span style="font-size:10pt;"><font face="Leelawadee"><img src="anired02_up.gif" width="10" height="10" border="0" align="baseline"></font></span></p>
+        </td>
+    </tr>
+</table>
+<p align="center"><font face="Leelawadee"><span style="font-size:14pt;">ภาพวงจรปฏิจจสมุปบาท อันเป็นทุกข์</span></font></p>
+<p align="center"><B><font face="Leelawadee"><span style="font-size:14pt;"><img src="bar_y_1.gif" width="200" height="2" border="0"></span></FONT></B></p>
+<p align="center">&nbsp;</p>
+<p style="margin-top:0; margin-bottom:0;" align="center"><span style="font-size:10pt;"><a href="#f"><b><font face="Tahoma">กลับขึ้นไปข้างบน</font></b></a></span></p>
+<p align="center"><b><span style="letter-spacing:0;"><a href="BLANK1.htm"><font face="Tahoma" color="blue"><img src="title.gif" width="93" height="33" border="0" alt="กลับไปสารบัญ"></font></a></span></b></p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+<a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></a>
+<a target="_blank" href="http://truehits.net/">Truehits.net</a>
+</noscript>
+<!-- END WEBSTAT CODE --> </p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<p style="line-height:100%; margin-top:1mm; margin-bottom:0;" align="center">&nbsp;</p>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none" align="center">
+    <ul>
+        <li><span style="font-size:10pt;"><font face="Tahoma"><img src="spinning-arrows.gif" align="absmiddle" width="24" height="24" border="0"></font></span><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:14pt;">วงจรปฏิจจสมุปบาท</span></font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:14pt;">วงจรโดยขยายความ</span></font></a></li>
+        <li><a href="570.htm"><font face="Tahoma"><span style="font-size:12pt;"><img src="home.gif" width="16" height="17" border="0" align="absmiddle"></span></font></a><a href="1mainpage.htm#x"><font face="Leelawadee"><span style="font-size:14pt;">กลับสารบัญ</span></font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee"><span style="font-size:14pt;"><img src="Magnify0b.gif" align="absmiddle" width="23" height="23" border="0">ค้นหาคำศัพท์</span></font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)"><span style="font-size:14pt;">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</span></a><span style="font-size:14pt;">. 
+        </span></font></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)"><span style="font-size:14pt;">ภาพกระบวนธรรมขันธ์ 
+        ๕</span></a></font></li>
+        <li><a href="Search.htm"><font face="Leelawadee"><span style="font-size:14pt;">ค้นหาในเว็บปฏิจจสมุปบาท</span></font></a></li>
+        <li><span style="font-size:10pt;"><a href="https://patitja.123guestbook.com/" title="ลงชื่อเข้าเยี่ยม เปิดใช้งานได้ใหม่แล้ว"><font color="yellow" face="Leelawadee"><img src="Write2c.ico" width="25" height="25" border="2" align="absmiddle"></font></a></span><a href="guestbook.htm"><span style="font-size:14pt;"><font face="Leelawadee">สมุดเยี่ยม</font></span></a></li>
+        <li><font face="Leelawadee" color="#990000"><span style="font-size:14pt;">ใช้&nbsp;</span><b><span style="font-size:14pt;">Ctrl+C</span></b><span style="font-size:14pt;"> = Copy</span></font></li>
+</div>
+</body>
+
+</html>

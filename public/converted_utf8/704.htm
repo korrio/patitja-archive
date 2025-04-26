@@ -1,0 +1,509 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>ภพ</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<script language="JavaScript1.2">
+<!--
+
+/*
+Flying Cupids- By Dynamic Drive, based on script by Kurt (kurt.grigg@virgin.net)
+For full source, usage terms, and 100's more DHTML scripts
+Visit http://www.dynamicdrive.com
+*/
+
+Cupid=new Image();
+Cupid.src="earth6.gif";  //specify path to Cupid image
+amount=3;  //Number of cupids, minimum must be 3.
+Xpos=700;  //cupids x coordinates, in pixel
+Ypos=200;  //cupids y coordinates, in pixel
+step=0.1; //Animation speed (smaller is slower)
+dismissafter=10;  //seconds after which Cupids should disappear, in seconds
+
+var ns6=document.getElementById&&!document.all
+bats=new Array(3)
+if (document.layers){
+for (i=0; i < amount; i++) 
+{document.write("<LAYER NAME=n"+i+" LEFT=0 TOP=-50><a href='http://www.dynamicdrive.com'><IMG SRC='"+Cupid.src+"' NAME='nsi' width=69 height=60 border=0></a></LAYER>")}
+}
+else if (document.all||ns6){
+document.write('<div id="out" style="position:absolute;top:0;left:0"><div id="in" style="position:relative">');
+for (i=0; i < amount; i++){
+if (document.all)
+document.write('<a href="http://www.nkgen.com"><img src="'+Cupid.src+'" id="msieBats" style="position:absolute;top:-50;left:0" border=0></a>')
+else
+document.write('<a href="http://www.nkgen.com"><img src="'+Cupid.src+'" id="ns6Bats'+i+'" width=69 height=60 style="position:absolute;top:-50;left:0" border=0></a>')
+}
+document.write('</div></div>');
+}
+
+yBase=xBase=currStep=a_count=0;
+b_count=1;
+c_count=2;
+d_count=3;
+move=1;
+if (document.layers||ns6){
+yBase=window.innerHeight/3;
+xBase=window.innerWidth/6;
+if (document.layers)
+window.captureEvents(Event.MOUSEMOVE);
+
+}
+if (document.all){
+yBase = window.document.body.offsetHeight/3;
+xBase = window.document.body.offsetWidth/6;
+}
+
+function dismisscupid(){
+clearInterval(flycupid)
+if (document.layers){
+for (i2=0; i2 < amount; i2++){
+document.layers['n'+i2].visibility="hide"
+}
+}
+else if (document.all)
+document.all.out.style.visibility="hidden"
+else if (ns6)
+document.getElementById("out").style.visibility="hidden"
+}
+
+if (document.layers){
+for (i=0; i < amount; i++)
+document.layers['n'+i].document.images['nsi'].src=Cupid.src
+}
+else if (document.all){
+for (i=0; i < amount; i++)
+document.all.msieBats[i].src=Cupid.src
+}
+else if (ns6){
+for (i=0; i < amount; i++)
+document.getElementById("ns6Bats"+i).src=Cupid.src
+}
+
+function Animate(){
+a_count+=move;
+b_count+=move;
+c_count+=move;
+currStep+=step;
+if (a_count >= bats.length) a_count=0;
+if (b_count >= bats.length) b_count=0;
+if (c_count >= bats.length) c_count=0;
+if (document.layers){
+for (i=0; i < amount; i++) {
+  var NewL="n"+i
+  document.layers[NewL].top = Ypos+yBase*Math.sin(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/10)
+  document.layers[NewL].left =Xpos+xBase*Math.cos(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/62)
+  }
+}
+
+if (document.all){
+for (i=0; i < amount; i++){
+  document.all.msieBats[i].style.pixelTop = Ypos+yBase*Math.sin(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/10)
+  document.all.msieBats[i].style.pixelLeft =Xpos+xBase*Math.cos(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/62)
+ }
+}
+
+if (ns6){
+for (i=0; i < amount; i++){
+  document.getElementById("ns6Bats"+i).style.top = Ypos+yBase*Math.sin(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/10)
+  document.getElementById("ns6Bats"+i).style.left =Xpos+xBase*Math.cos(((currStep)+i*3.7)/4)*Math.cos((currStep+i*35)/62)
+ }
+}
+
+}
+flycupid=setInterval('Animate()',30);
+setTimeout("dismisscupid()",dismissafter*1000)
+//-->
+</script>
+<base href="www.nkgen.com">
+<meta name="author" content="พนมพร คูภิรมย์">
+<meta name="description" content="อธิบายการคงอยู่ของภพ">
+<meta name="keywords" content="ภพ,รูปภพ.อรูปภพ">
+
+<style>
+<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<style type="text/css">
+    .context-menu {
+        position: absolute;
+        text-align: center;
+        background: lightgray;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul {
+        padding: 0px;
+        margin: 0px;
+        min-width: 150px;
+        list-style: none;
+    }
+  
+    .context-menu ul li {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        border: 1px solid black;
+    }
+  
+    .context-menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+  
+    .context-menu ul li:hover {
+        background: darkgray;
+    }
+</style>
+
+<style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+<script language="JavaScript">
+<!--
+function namosw_goto_byselect(sel, targetstr)
+{
+  var index = sel.selectedIndex;
+  if (sel.options[index].value != '') {
+     if (targetstr == 'blank') {
+       window.open(sel.options[index].value, 'win1');
+     } else {
+       var frameobj;
+       if (targetstr == '') targetstr = 'self';
+       if ((frameobj = eval(targetstr)) != null)
+         frameobj.location = sel.options[index].value;
+     }
+  }
+}
+
+// -->
+</script>
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="Beige.jpeg" style="font-size:12pt;">
+<form name="NK">
+    <p style="line-height:1.8; margin-top:3mm; margin-right:0; margin-bottom:0; margin-left:0;" align="center"><a href="30.htm#b" title="คลิก เลื่อนลง
+เว็บโลกน่ารู้"><b><span style="font-size:14pt;"><font face="Leelawadee" color="#0000CC"><img src="earth6.gif" align="absmiddle" width="32" height="32" border="0"></font></span></b></a></p>
+</form>
+<p align="center" style="line-height:1.8;"><span style="font-size:18pt;"><font face="Leelawadee" color="#A26601">ภพ 
+และกำลังอิทธิพลของภพ</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#A26601"><a href="javascript:na_open_window('win', 'ex3.htm#ภพ', 0, 0, 790, 230, 1, 0, 0, 1, 1)"><b>ภพ</b></a></font><font face="Leelawadee"> 
+&nbsp;แปลว่า&nbsp; โลกอันเป็นที่อยู่ของสัตว์, &nbsp;</font><font face="Leelawadee" color="blue">ภาวะชีวิตของสัตว์</font></span><font face="Leelawadee"><span style="font-size:14pt;"> 
+</span></font><p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#A26601">ภพ</font><font face="Leelawadee"> 
+ในปฏิจจสมุปบาท จึงหมายถึง </font><font face="Leelawadee" color="blue">ภาวะของชีวิต</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="blue">ภาวะของจิต 
+</font><font face="Leelawadee">ที่ปรุงแต่งการกระทำต่างๆ อยู่ภายใต้การครอบงำของ</font><font face="Leelawadee" color="blue">อุปาทาน</font><font face="Leelawadee"> 
+ณ ช่วงระยะเวลาหนึ่งๆ</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#A26601">ภพ</font><font face="Leelawadee"> 
+ในวงจรปฏิจจสมุปบาทเป็นองค์ธรรมที่แสดงการดำเนินและเป็นไปของกระบวนจิตให้ครบถ้วนบริบูรณ์ถูกต้องเท่านั้น 
+&nbsp;ไม่สามารถดับทุกข์ลงไปได้โดยตรงๆ</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กล่าวคือ 
+&nbsp;เมื่อกระบวนจิตดำเนินไปตามวงจรการเกิดขึ้นแห่งทุกข์หรือปฏิจจสมุปบาทจนถึง&nbsp;</font><font face="Leelawadee" color="blue">ตัณหา</font><font face="Leelawadee">ความอยากแล้ว&nbsp;จึงเป็นเหตุปัจจัยจึงมี</font><font face="Leelawadee" color="blue">อุปาทาน</font><font face="Leelawadee"> 
+อันเป็นความยึดมั่นถือมั่นเพื่อให้เป็นไปตามตัณหา ก็เพื่อสนองตอบให้บรรลุ</font><font face="Leelawadee" color="blue">ผล</font><font face="Leelawadee">หรือเป้าหมายเป็นไปความต้องการของตัวตนหรือตัณหาความอยากนั้น 
+&nbsp;คือ เกิดความยึดมั่นถือมั่นที่จะให้</font><font face="Leelawadee" color="blue">เป็นไป</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="blue">เกิดขึ้น</font><font face="Leelawadee">เพื่อสนองความพึงพอใจของตัวของตนนั่นเอง 
+&nbsp;จึงเป็นเหตุปัจจัยให้เกิด</font><font face="Leelawadee" color="blue">ภพ</font><font face="Leelawadee">ของจิตขึ้น 
+กล่าวคือ จิตตกลงใจใน</font><font face="Leelawadee" color="blue">ภาวะชีวิตหรือจิต</font><font face="Leelawadee">ของตนในเรื่องนั้นๆ 
+&nbsp;ที่จะให้ดำเนินและเป็นไป &nbsp;แต่ล้วนอยู่ภายใต้อำนาจของเหตุปัจจัยที่ทำให้เกิดขึ้นอันคือ</font><font face="Leelawadee" color="blue">อุปาทาน</font></span><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="blue"> 
+</font><font face="Leelawadee">&nbsp;&nbsp;</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อันกล่าวได้ดังนี้ว่า 
+คือ มีความต้องการหรือ</font><font face="Leelawadee" color="blue">ความอยาก(ตัณหา)</font><font face="Leelawadee">แล้ว 
+&nbsp;ย่อมเกิด</font></span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;"><font face="Leelawadee">การ</font></span><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="blue">ยึดถือ(อุปาทาน)</font><font face="Leelawadee">ให้เป็นไปเพื่อสนองความตามความต้องการนั้น</font></span><font face="Leelawadee"><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;">ให้เกิดเป็นตัวตนขึ้นจริงๆ 
+หรือสัมฤทธิ์ผล</span><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"> 
+&nbsp;&nbsp;</span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;">แล้ว</span></font><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee">จึงเกิด</font><font face="Leelawadee" color="blue">การตัดสินใจ</font></span><font face="Leelawadee" color="blue"><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;"> 
+</span></font><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="blue">หรือตกลงใจ(ภพ)</font><font face="Leelawadee">ที่จะให้เกิดขึ้นและเป็นไปเช่นนั้นเป็นที่สุด</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หรือพอจะกล่าวสั้นๆในกระบวนธรรมของ 
+</font><font face="Leelawadee" color="blue">ตัณหา </font><font face="Leelawadee" color="#660000">&gt;&gt;</font><font face="Leelawadee" color="blue">&nbsp;อุปาทาน 
+</font><font face="Leelawadee" color="#660000">&gt;&gt;</font><font face="Leelawadee" color="blue">&nbsp;ภพ</font><font face="Leelawadee"> 
+&nbsp;ได้ดังนี้ &nbsp;&nbsp;</font><font face="Leelawadee" color="blue">เมื่อเกิดความอยาก</font></span><font face="Leelawadee" color="blue"><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;">,</span><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;">&nbsp;จึง</span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;">ยึด</span><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;">สนองตอบความอยากนั้น</span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:1.5;">,</span></font><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"><font face="Leelawadee" color="blue"> 
+&nbsp;แล้วตกลงใจในที่สุด</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#A26601">ภพ</font><font face="Leelawadee"> 
+&nbsp;ในปฏิจจสมุปบาท ท่านแบ่งออกเป็น ๓ &nbsp;&nbsp;อันมี</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๑. 
+</font></span><span style="font-size:14pt; letter-spacing:0px;"><font face="Leelawadee" color="blue">กามภพ</font><font face="Leelawadee" color="#000099"> 
+</font><font face="Leelawadee">สภาวะหรือบทบาทต่างๆในแบบทางโลกๆทั้งหลายทั้งปวงที่มนุษย์พึงมี 
+อันเนื่องมาจาก รูป รส กลิ่น เสียง สัมผัส ธรรมารมณ์&nbsp;อันล้วนก่อให้เกิด</font><font face="Leelawadee" color="#000099">ภพย่อย</font><font face="Leelawadee">เจาะจงลงไปได้อีก</font><font face="Leelawadee" color="#000099"> 
+</font><font face="Leelawadee">อันเนื่องมาจากความต้องการใน รูป รส กลิ่น เสียง สัมผัส 
+ธรรมารมณ์นั้น ดังเช่น </font><font face="Leelawadee" color="#000099">ปฏิฆะ</font><font face="Leelawadee">-ความขุ่นเคือง 
+ขัดข้อง, </font><font face="Leelawadee" color="#000099">ราคะ</font><font face="Leelawadee">-ความรัก 
+ความใคร่, โลภ, โมหะ-ความหลง,ความไม่เข้าใจ,ความไม่เห็นตามความเป็นจริง, </font><font face="Leelawadee" color="#000099">โทสะ</font><font face="Leelawadee">-ความโกรธ 
+ความขุ่นเคือง ฯลฯ. &nbsp;&nbsp;</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt; letter-spacing:0px;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กามภพสามารถพิจารณาได้หลายมุมมอง 
+ดังเช่นแบ่งภพไปตามสถานะภาพ ดังเช่น ภพของความเป็นพ่อ, ภพของความเป็นแม่, &nbsp;ภพของความเป็นลูก, 
+&nbsp;ภพความเป็นเจ้าของ, &nbsp;ภพของความเป็นเจ้านาย, ภพของความเป็นลูกน้อง....ฯลฯ.&nbsp;&nbsp;&nbsp;&nbsp;หรือแบ่งออกตาม</font><font face="Leelawadee" color="blue">กิเลส</font><font face="Leelawadee">ที่เกิดขึ้น&nbsp;&nbsp;เช่น 
+&nbsp;ภพของความโลภ(ราคะ), &nbsp;ภพของความขุ่นเคือง(ปฏิฆะ), &nbsp;ภพของความหลง(โมหะ), 
+ภพของความโกรธ(โทสะ) &nbsp;เหล่านี้ล้วนจัดได้ว่าเป็น</font><font face="Leelawadee" color="#0000CC"> 
+ภพย่อย</font><font face="Leelawadee"> ของ</font><font face="Leelawadee" color="#0000CC"> 
+กามภพ</font><font face="Leelawadee"> ทั้งสิ้น &nbsp;&nbsp;&nbsp;ดังนั้นเมื่อเกิด</font><font face="Leelawadee" color="#0000CC">ภพ</font><font face="Leelawadee">ของจิตเยี่ยงใด 
+ย่อมเป็นไปตามวงจรของการเกิดขึ้นแห่งทุกข์คือการเกิด(</font><font face="Leelawadee" color="blue">ชาติ</font><font face="Leelawadee">)</font></span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:150%;"><font face="Leelawadee">ตามมาของจิตเยี่ยงนั้น 
+&nbsp;อันนำไปสู่อุปาทานทุกข์เป็นที่สุด</font></span></p>
+<p style="text-align:left; line-height:1.8; margin-right:0mm; margin-left:0px; border-width:1px;"><span style="font-size:14pt; letter-spacing:0px;"><font face="Leelawadee" color="#382410">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๒. 
+</font><font face="Leelawadee" color="blue">รูปภพ</font><font face="Leelawadee"> &nbsp;สภาวะหรือสถานะที่ยังยึดติดยึดถือใน</font><font face="Leelawadee" color="blue">รูปอันวิจิตร</font><font face="Leelawadee">ที่สัมผัสได้ด้วยใจ 
+กล่าวคือ ละเอียดอ่อนซ่อนรูปกว่า รูป เสียง กลิ่น รส สัมผัส ธรรมารมณ์ ทั้ง ๖ ในกามภพ&nbsp;อันหมายถึง 
+รูปฌานหรือสมาธินั่นเอง&nbsp;แต่หมายถึงรูปฌานหรือสมาธิ&nbsp;อันเกิดขึ้นจาก</font><font face="Leelawadee" color="blue">ตัณหา</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="blue">นันทิ</font><font face="Leelawadee">เท่านั้น 
+&nbsp;อันเนื่องเพราะความสุข,สงบ,สบายอันเป็นผลจากรูปฌานหรือสมาธิ หรือเพราะ</font></span><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><span style="font-size:14pt; letter-spacing:-0.1px;"><font face="Leelawadee">อวิชชา</font></span></a><span style="font-size:14pt; letter-spacing:0px;"><font face="Leelawadee">ที่แอบซ่อนนอนเนื่องโดยไม่รู้ตัว 
+&nbsp;จึงเกิดการ</font><font face="Leelawadee" color="blue">ติดเพลิน</font><font face="Leelawadee">(นันทิ)ขึ้นในที่สุดนั่นเอง 
+&nbsp; เป็นข้อที่น่าพึงโยนิโสมนสิการสังเกตุสําหรับนักปฏิบัติที่ยึดติดเน้นแต่การปฏิบัติในรูปแบบสมถสมาธิหรือฌานอันเป็นสุข 
+โดยไม่ดำเนินไปในการวิปัสสนาให้เกิด</font><font face="Leelawadee" color="blue">ปัญญา</font><font face="Leelawadee">อย่างถูกต้องร่วมด้วย</font></span><span style="font-family:'MS Sans Serif'; font-size:14pt; text-align:left; line-height:150%; margin-right:0mm; margin-left:0px; border-width:1px;"><font face="Leelawadee"> 
+&nbsp;เพราะเกิด</font><font face="Leelawadee" color="blue">ภพ</font><font face="Leelawadee">เมื่อใดย่อมเป็นไปตามวงจรให้เกิด</font><font face="Leelawadee" color="blue">อุปาทานทุกข์</font><font face="Leelawadee">ตามมาเป็นที่สุด</font></span></p>
+<p style="text-align:left; line-height:1.8; margin-right:0mm; margin-left:0px; border-width:1px;"><span style="font-size:14pt; letter-spacing:0px;"><font face="Leelawadee" color="#382410">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;๓. 
+</font><font face="Leelawadee" color="blue">อรูปภพ</font><font face="Leelawadee"> สภาวะหรือสถานะใน</font><font face="Leelawadee" color="blue">อรูป</font><font face="Leelawadee">อันวิจิตรอันสัมผัสได้ด้วยใจ 
+ใน </font><font face="Leelawadee" color="#000099">อรูปฌาน</font><font face="Leelawadee">อันมักเกิดแต่ตัณหาที่แอบซ่อนนอนเนื่องโดยไม่รู้ตัว(นันทิ-ติดเพลิน) 
+เช่นเดียวกับรูปภพ</font></span><font face="Leelawadee"><span style="font-family:'MS Sans Serif'; font-size:14pt; text-align:left; line-height:150%; margin-right:0mm; margin-left:0px; border-width:1px;"> 
+&nbsp;ดังเช่น การไปติดเพลินในอรูปฌานต่างๆหรือความว่างอย่างยึดติดยึดถือ คอยกระทำหรือทรงอยู่แม้ในภาวะจิตตื่น(วิถีจิต) 
+</span></font><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:150%;"><font face="Leelawadee">อันย่อมนำไปสู่อุปาทานทุกข์ในที่สุดเช่นกัน</font></span></p>
+<p style="text-align:left; line-height:1.8; margin-right:0mm; margin-left:0px; border-width:1px;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอแจงสักนิดหนึ่ง 
+&nbsp;ทั้งรูปฌานและอรูปฌาน ที่กล่าวว่าเมื่อเกิดเป็น</font><font face="Leelawadee" color="blue">รูปภพ</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="blue">อรูปภพ</font><font face="Leelawadee">แล้วย่อมก่อให้เกิดอุปาทานทุกข์อย่างแน่นอนนั้น 
+&nbsp;&nbsp;ไม่ได้หมายความว่า รูปฌานหรืออรูปฌานเป็นสิ่งที่ไม่ดีแต่อย่างใด &nbsp;แต่หมายความว่า 
+สิ่งเหล่านี้ซึ่งเป็นแนวทางการปฏิบัติวิปัสสนาอย่างหนึ่งนั้น &nbsp;เป็นมรรคปฏิบัติอันสำคัญยิ่งก็จริงอยู่ 
+&nbsp;แต่ถ้าไปติดเพลิน(นันทิ) กล่าวคือเกิด</font><font face="Leelawadee" color="blue">ตัณหา</font><font face="Leelawadee">ความอยากให้เกิด 
+อยากให้มี อยากให้คงอยู่ จะเพราะความสุขสงบสบายหรือเพราะ</font></span><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><span style="font-size:14pt; letter-spacing:-0.1px;"><font face="Leelawadee">อวิชชา</font></span></a><span style="font-size:14pt;"><font face="Leelawadee"> 
+จะโดยรู้ตัวหรือไม่รู้ตัวก็ตาม &nbsp;กล่าวคือ เกิดตัณหาหรือนันทิขึ้นแล้วย่อมยึดติดยึดถือ(อุปาทาน)แล้วต้องดำเนินไปตามวงจรของทุกข์ปฏิจจสมุปบาทนั่นเอง 
+&nbsp;ถ้าไม่ได้เกิดแต่ตัณหาหรือนันทิการติดเพลินแล้วก็ถือว่าเป็นกำลังอันสำคัญยิ่งในการเจริญวิปัสสนา 
+&nbsp;จึงหมายความว่ามีหรือปฏิบัติรูปฌานหรืออรูปฌานได้ </font><font face="Leelawadee" color="blue">แต่ต้อง</font><font face="Leelawadee">ขาดเสียซึ่งความ</font><font face="Leelawadee" color="blue">ติดเพลิน</font><font face="Leelawadee">หรือ</font><font face="Leelawadee" color="blue">ตัณหา 
+</font><font face="Leelawadee">&nbsp;จึงเป็นคุณประโยชน์คือเครื่องสนับสนุนในการปฏิบัติธรรม 
+&nbsp;จึงเป็นเพียงเครื่องอยู่อันสุขสบายยิ่ง คือในระดับขันธ์ ๕</font></span></p>
+<p style="line-height:1.8; margin-right:0mm; margin-left:0px;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Leelawadee" color="#A26601">ภพ</font><font face="Leelawadee"> 
+&nbsp;ที่อยู่ของสัตว์หรือของจิต &nbsp;</font><font face="Leelawadee" color="blue">ภพจิต</font><font face="Leelawadee">จึงเป็นดั่งเช่น</font><font face="Leelawadee" color="#000099">ภพโลก</font><font face="Leelawadee">เช่นกัน 
+&nbsp;&nbsp;อันเมื่อได้ถือกำเนิดเกิดมาเป็นมนุษย์ในโลกภพแล้ว ถือว่าเป็นภพใหญ่เป็นแก่นเป็นแกนของความเป็นมนุษย์ 
+&nbsp;&nbsp;และยังมีภพย่อยๆเกิดแฝงอยู่เนื่องสัมพันธ์กันอีกด้วย ดังเช่น เกิดมาในภพย่อยลงไป 
+คือ ภพคนไทย &nbsp;อันหมายถึง &nbsp;ชีวิตหรือจิตเมื่อเป็นไปตามกรรมเกิดเป็นมนุษย์ 
+ก็จักมีการกระทำพื้นฐาน ตลอดจนความต้องการเช่นมนุษย์โลกทั้งหลาย &nbsp;&nbsp;และย่อมมีแรงบีบคั้นให้เป็นไปดังเช่น</font><font face="Leelawadee" color="blue">ภพ</font><font face="Leelawadee">ที่ตนได้ตกลงอาศัยอยู่ 
+&nbsp;&nbsp;ดังนั้นจึงเป็นไปตามกำลังอิทธิพลของภพตลอดจนภพย่อยนั้นๆ&nbsp;ดังเช่น 
+ประเทศไทยที่อาศัยอยู่ด้วยอย่างควบคู่กัน &nbsp;&nbsp;ดังนั้นการกระทำ การประพฤติปฏิบัติใดๆ 
+จึงล้วนมีอิทธิพลและแนวโน้มเอียงหรือบีบคั้นให้เป็นไปตามภพมนุษย์นั้นๆที่ได้เกิดมาและยังต้องเป็นไปตามภพย่อยด้วยเช่นกัน 
+&nbsp;เช่น ขนบธรรมเนียม ประเพณี วัฒนธรรมต่างๆ การแต่งกาย รสนิยมในอาหาร ความเชื่อ 
+ความยึด ตามที่ยึดถือปฏิบัติกันใน</font><font face="Leelawadee" color="#000099">ภพ</font><font face="Leelawadee">ย่อยๆหรือในสังคมนั้นๆด้วย 
+&nbsp;ดังนั้นการกระทำใดของผู้อาศัยในภพนั้นๆจึงโน้มเอียงไปตาม</font><font face="Leelawadee" color="blue">อิทธิพล</font><font face="Leelawadee">ที่อยู่ที่อาศัยคือ</font><font face="Leelawadee" color="blue">อิทธิพล</font><font face="Leelawadee">ของภพนั้นๆด้วยเช่นกัน 
+&nbsp;แต่ก็ล้วนแฝงความเป็น</font><font face="Leelawadee" color="#000099">ภพมนุษย์</font><font face="Leelawadee"> 
+อันเป็น</font><font face="Leelawadee" color="#000099">ภพใหญ่</font><font face="Leelawadee">อยู่เต็มปรี่ 
+เช่น เดิน๒ขา มีตัณหา มีความต้องการพื้นฐานเฉกเช่นมนุษย์ทั้งปวง</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โยนิโสมนสิการ 
+จักเห็นว่าการจะออกจากภพอันมีอิทธิพล แรงบีบคั้นต่างๆของสังคมหรือสิ่งแวดล้อมนั้นๆ 
+ไม่ใช่สิ่งที่พึงกระทำได้ง่ายๆ เพราะกฎเกณ ระเบียบแบบแผนของภพหรือสังคมนั้น</font></span><font face="Leelawadee"><span style="font-size:14pt; line-height:1.5; margin-top:0; margin-bottom:0;"> 
+&nbsp;จิตก็เป็นเฉกเช่นเดียวกัน</span></font><span style="font-size:14pt; line-height:150%;"><font face="Leelawadee"> 
+&nbsp;ดังนั้นเมื่อเกิด</font><font face="Leelawadee" color="blue">ภพจิต</font><font face="Leelawadee">ขึ้นแล้วจึงคงทนอยู่ได้นานๆ 
+ไม่สามารถดับไปได้ง่ายๆ &nbsp;และมีความเนื่องสัมพันธ์ไปในสิ่งอื่นๆที่เข้ามาในวิถีเหมือนเช่นภพทางโลกเช่นกัน</font></span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:150%;"><font face="Leelawadee"> 
+&nbsp;ดังเช่น เมื่อจิตอยู่ในกามภพ และมีภพย่อยคือโทสะ &nbsp;ความคิดอื่นที่ปะปนเกิดขึ้นมาในภพนั้นเข้า 
+ย่อมได้รับอิทธิพลของโทสะนั้นไปด้วยเป็นธรรมดา</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สภาพของจิตที่เกิดภพก็เป็นไปในลักษณะเช่นนี้เหมือนกัน 
+&nbsp;เมื่อจิตเกิดภพใดๆขึ้นมาเป็น</font><font face="Leelawadee" color="#000099">ภพใหญ่</font><font face="Leelawadee">แล้ว 
+&nbsp;การเกิด(</font><font face="Leelawadee" color="blue">ชาติ</font><font face="Leelawadee">)หรือการกระทำใดๆจึงตกอยู่ใต้อำนาจหรือโน้มเอียงไปภายใต้ภาวะของ</font><font face="Leelawadee" color="#000099">ภพจิต</font><font face="Leelawadee">นั้นๆ 
+&nbsp;ดังเช่นเกิดกามภพ ก็มีภพย่อยๆ ดั่งทางโลกข้างต้น เช่น ปฏิฆะคือขุ่นข้อง ขุ่นเคืองใจในสิ่งใด 
+ก็จะพลอยให้เกิดความรู้สึกหงุดหงิดรำคาญใจไปในสิ่งอื่นหรือครอบงำสิ่งใกล้เคียงที่เกิดในขณะนั้น 
+เช่นการคิด,การกระทำต่างๆที่บังเกิดขึ้นในขณะนั้นไปด้วยเป็นธรรมดา &nbsp;เพราะ</font><font face="Leelawadee" color="blue">ภพหรือภาวะของจิตขณะนั้น 
+มันเป็นเช่นนั้นเอง...จนกว่าภพนั้นจะดับไป อันอาจกินเวลา ชั่วยาม หรือชั่วโมง หรือวัน 
+หรือเดือน หรือเกิดๆดับๆทั้งภพชาตินี้!</font><font face="Leelawadee"> &nbsp;&nbsp;&nbsp;ภพ 
+จึงแบ่งย่อยออกไปได้หลายรูปและหลายประการ ขึ้นกับมุมมองในการพิจาณานั่นเอง &nbsp;เช่น 
+ภพโลภะ &nbsp;โทสะ &nbsp;ราคะ &nbsp;&nbsp;หรือแม้กระทั่ง ภพของความเป็นพ่อ เป็นแม่ 
+เจ้านาย ลูกน้อง ฯลฯ. &nbsp;แต่ก็ล้วนอยู่ภายใต้อำนาจของกามภพหรือภพทางโลกๆโดยไม่รู้ตัว 
+ไม่อาจฝืนได้</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ลองน้อมพิจาณาดูดังนี้ 
+&nbsp;สมมติเราได้ในสิ่งหนึ่งสิ่งใดที่ถูกจริตถูกใจอย่างมาก เช่น บ้านใหม่ รถใหม่ 
+คนรักใหม่ ฯลฯ. ลองย้อนระลึกภพชาติในอดีตดู จะเห็นสภาวะของกามภพ หรือภพสุขที่เกิดขึ้นนั้นๆ 
+&nbsp;มีความคงทนอยู่ได้นานๆ เป็นชั่วโมง เป็นวันๆ เป็นอาทิตย์ เป็นเดือนๆ ทีเดียว 
+&nbsp;ภพจึงมีอิทธิพลอยู่ได้ยาวนานดังนี้ &nbsp;ภพอันเกิดแต่รูปฌาน อรูปฌาน หรือ</font><font face="Leelawadee" color="blue">อรูปภพ</font><font face="Leelawadee">และ</font><font face="Leelawadee" color="blue">อรูปภพ</font><font face="Leelawadee">ก็เป็นไป 
+เฉกเช่นเดียวกัน ย่อมยังผลให้ความสุข สงบ อุเบกขา ฯ ต่อเนื่องมา แม้เมื่อถอนออกจากการปฏิบัตินั้นๆแล้วก็ตามที 
+จนกว่าจะหวั่นไหวหรือเลื่อนไหลหลุดออกไปด้วยไตรลักษณ์</font></span></p>
+<p style="line-height:1.8;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขอเน้นเรื่อง</font><font face="Leelawadee" color="blue">รูปภพ</font><font face="Leelawadee">และ</font><font face="Leelawadee" color="blue">อรูปภพ</font><font face="Leelawadee">สักหน่อย 
+&nbsp;เพราะนักปฏิบัติส่วนใหญ่</font><font face="Leelawadee" color="blue">ไม่รู้ปฏิจจสมุปบาท</font><font face="Leelawadee">อันเป็นหนึ่งใน</font><a href="http://" title="อ่านรายละเอียดได้ในปฏิจจสมุปบาท"><font face="Leelawadee" color="#000099">อวิชชา๘</font></a><font face="Leelawadee"> 
+&nbsp;จึงไม่รู้ไม่เข้าใจว่ารูปภพและอรูปภพก็มีโทษเช่นเดียวกันกับกามภพ สามารถก่อให้เกิดทุกข์ที่หมายถึง</font><font face="Leelawadee" color="blue">อุปาทานทุกข์</font><font face="Leelawadee">ได้และป็นไปได้อย่างรุนแรงกว่ากามภพเสียอีก 
+กล่าวคือ สุขก็สุขยิ่ง&nbsp;ทุกข์ก็ทุกข์ยิ่ง&nbsp;เมื่อเกิดการติดเพลินเพราะ</font></span><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><span style="font-size:14pt; letter-spacing:-0.1px;"><font face="Leelawadee">อวิชชา</font></span></a><span style="font-size:14pt;"><font face="Leelawadee">ขึ้นแล้ว 
+และอยู่ได้อย่างยาวนาน ในวิถีจิตตื่น แต่อย่าง เกิดดับๆๆ..&nbsp;ไม่เที่ยงไม่เสถียร&nbsp;&nbsp;&nbsp;และก็ยังคงมีภพย่อยๆเกิดขึ้นดังเช่นกามภพเหมือนกันนั่นเอง 
+เช่น ภพของโมหะ โทสะ โลภะ, &nbsp;ภพของความเป็นพ่อ เป็นแม่ เป็นลูก ฯลฯ.&nbsp;&nbsp;แต่เหล่านี้จักล้วนแฝงด้วยกำลังอำนาจของรูปภพหรือฌานสมาธิอันมีกำลังมาก</font><font face="Leelawadee" color="blue">อยู่ในทีโดยไม่รู้ตัว</font><font face="Leelawadee"> 
+&nbsp;&nbsp;รูปภพนี้ปุถุชนนักปฏิบัติเข้าใจกันว่าดีแต่ฝ่ายเดียว &nbsp;ถ้ามีความเข้าใจปฏิจจสมุปบาทแจ่มแจ้งแล้ว 
+จักระลึกถึงพระดำรัสที่ตรัสไว้ว่า เกิดภพ เกิดชาติ เมื่อไรเป็นทุกข์เมื่อนั้น &nbsp;ไม่ว่าจักเป็นกามภพ 
+รูปภพ อรูปภพ อะไรทั้งสิ้น &nbsp;เพราะทั้งรูปภพและอรูปภพก็ล้วนยังไม่เที่ยงยังมีการเกิด 
+การแปรปรวน การดับไป และอย่างรุนแรงเสียยิ่งกว่ากามภพเสียอีก &nbsp;ขณะอยู่ในกามภพ 
+ก็มีทั้งสุขราวกับเทวดาบนสวรรค์และทุกข์ราวกับนรกคละเคล้ากันไป, &nbsp;&nbsp;ส่วนเมื่ออยู่ในรูปภพก็ราวกับเทวดา 
+มีแต่ความสุข ความสงบ ความสบาย &nbsp;ขณะอยู่ในอรูปภพก็ราวกับสงบสบายราวกับพรหม 
+เพียงแต่ภพเหล่านี้ล้วนยังมีการแปรปรวน จึงเป็นทุกข์อย่างสุดแสนทั้งทางกายและทางจิตราวกับลงนรกได้เช่นกัน 
+&nbsp; ดังนั้นต้องปฏิบัติเยี่ยงไรให้สมาธิหรือฌานนั้น</font><font face="Leelawadee" color="blue">มีอยู่แต่ไม่เกิดภพ</font><font face="Leelawadee"> 
+&nbsp;คือ เป็นแค่เครื่องอยู่ของขันธ์๕นั่นเอง กล่าวคือ ไม่ติดเพลิน(</font><font face="Leelawadee" color="blue">นันทิ</font><font face="Leelawadee">)จนเกิด</font><font face="Leelawadee" color="blue">ภพ</font><font face="Leelawadee">เกิด</font><font face="Leelawadee" color="blue">ชาติ</font><font face="Leelawadee">นั่นเอง 
+&nbsp;&nbsp;แต่ปัญหาใหญ่อยู่ที่</font></span><a href="javascript:na_open_window('win', '342.htm', 0, 0, 750, 350, 0, 0, 0, 1, 1)" target="_self" title="คลิก เปิดหน้าต่างย่อย"><span style="font-size:14pt; letter-spacing:-0.1px;"><font face="Leelawadee">อวิชชา</font></span></a><span style="font-size:14pt; letter-spacing:-0.1px;"><font face="Leelawadee"> 
+</font></span><span style="font-size:14pt;"><font face="Leelawadee">นักปฏิบัติจึงไม่เชื่อ 
+ทั้งเพราะความไม่รู้ในปฏิจจสมุปบาท &nbsp;ทั้งรูปภพและอรูปภพเป็นของละเอียดและ 
+</font><font face="Leelawadee" color="blue">เกิดดับๆ</font><font face="Leelawadee"> 
+ติดต่อกันได้ยาวนานเป็นปีๆจวบจนวันตาย &nbsp;จึงละเอียดอ่อนเสียจนผู้ที่ติดเพลินอยู่ในรูปภพหรืออรูปภพที่มีความรู้ดังนี้แล้วก็</font><font face="Leelawadee" color="blue">ยังพิจารณาไม่เห็นว่าเป็นไป 
+รวมทั้งไม่เห็นโทษ เพราะความสุขสงบสบายได้ปิดกั้นไว้เสียแล้ว! &nbsp;นี่คือสภาวะจริงๆที่เกิดขึ้นและเป็นไปในรูปภพและอรูปภพของสัตว์โลก 
+&nbsp;จึงผูกมัดสัตว์ไว้กับภพชาติอยู่ตลอดไปเช่นกัน เหมือนดังกามภพ</font></span><span style="font-family:'MS Sans Serif'; font-size:14pt; line-height:150%;"><font face="Leelawadee"> 
+&nbsp;&nbsp;อันเป็นสิ่งที่ผู้เขียนเพียรพยายามอย่างยิ่งในการแจงให้โลกรู้ ตาม</font><font face="Leelawadee" color="blue">ธรรม</font><font face="Leelawadee">อันถูกต้องดีงาม 
+&nbsp;ไม่ออกนอกลู่แนวทางการปฏิบัติเพื่อการดับไปแห่งทุกข์</font></span></p>
+<table style="line-height:1.8;" border="0">
+    <tr>
+        <td width="397"><p align="left" style="margin-top:0; margin-bottom:0;"><a href="732.htm"><font color="red" face="Leelawadee"><span style="font-size:14pt;"><img src="anired02_back.gif" width="10" height="10" border="0" alt="anired06_next.gif" align="baseline"></span></font></a><font face="Leelawadee"><a href="732.htm"><span style="font-size:14pt;">อุปาทาน</span></a></font></p>
+        </td>
+        <td width="397">
+            <p>&nbsp;</p>
+        </td>
+        <td width="397"><p style="line-height:1.8; margin-top:0; margin-bottom:0;" align="right"><a href="741.htm"><span style="font-size:14pt;"><font face="Leelawadee"><img src="next.gif" width="142" height="41" border="0" align="absmiddle"></font><font face="Leelawadee" color="#845B1D">ชาติ</font></span></a></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0;" align="right">&nbsp;</p>
+<p align="center" style="line-height:1.8; margin-top:0; margin-bottom:0;"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;<select size="1" onchange="namosw_goto_byselect(this, 'self')" style="font-family:Leelawadee; font-weight:normal; font-size:14pt; color:rgb(255,222,156); background-color:rgb(74,7,7); border-width:1; border-color:rgb(204,153,0); border-style:solid;" name="formselect3">
+<option selected>รายละเอียด แต่ละองค์ธรรมในปฏิจจสมุปบาท</option>
+<option>* ควรอ่านปฏิจจสมุปบาทก่อน *</option>
+<option>------------------------------------------------------</option>
+<option value="728.htm">อาสวะกิเลส และ สัญญา</option>
+<option value="14.htm">อวิชชา ความไม่รู้ในอวิชชาทั้ง๘</option>
+<option value="731.htm">สังขาร ที่สั่งสมแล้วปรุงแต่งขึ้น</option>
+<option value="743.htm">วิญญาณ นาม-รูป สฬายตนะ ผัสสะ</option>
+<option value="742.htm">เวทนา ในปฏิจจสมุปบาท</option>
+<option value="730.htm">นันทิ ความติดเพลินโดยไม่รู้ตัว</option>
+<option value="732.htm">อุปาทาน ความยึดมั่นถือมั่นด้วยกิเลส</option>
+<option value="704.htm">ภพ และกำลังอิทธิพลของภพ</option>
+<option value="741.htm">ชาติ ในปฏิจจสมุปบาท</option>
+<option value="737.htm">ชรา-มรณะ ในปฏิจจสมุปบาท</option>
+<option>-----------------------------------------------------</option>
+<option value="739.htm">การตีความปฏิจจสมุปบาท</option>
+<option value="717.htm">คิดนึกปรุงแต่ง ในปฏิจจสมุปบาท</option>
+<option value="748.htm">ลักษณะการเกิดขึ้นของสังขาร</option>
+<option value="757.htm">ปุจฉา - วิสัชนา  ในปัญหาปฏิจจสมุปบาท</option>
+</select>&nbsp;</font></span></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0;" align="center"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;</font><a href="javascript:history.go(-1)"><font face="Leelawadee"><img src="back1.gif" width="94" height="40" border="0"></font></a><font face="Leelawadee">&nbsp;</font></span></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0;" align="center"><a href="BLANK2.htm"><b><span style="font-size:14pt;"><font face="Leelawadee,MS Sans Serif" color="#C98B32"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></font></span></b></a></p>
+<p align="left"><!--BEGIN WEB STAT CODE-->
+<script type="text/javascript" src="http://hits.truehits.in.th/data/h0012229.js"></script>
+<noscript>
+<a target="_blank" href="http://truehits.net/stat.php?id=h0012229"><img src="http://hits.truehits.in.th/noscript.php?id=h0012229" alt="Thailand Web Stat" border="0" 
+width="14" height="17" /></a>
+<a target="_blank" href="http://truehits.net/">Truehits.net</a>
+</noscript>
+<!-- END WEBSTAT CODE -->
+<p style="line-height:1.8; margin-top:0; margin-bottom:0;"><span style="font-size:14pt;"><font face="Leelawadee"><span style="font-size:14pt;"><font face="Leelawadee">&nbsp;</font></span></font></span></p>
+<p style="line-height:1.8; margin-top:0; margin-bottom:0;"><span style="font-size:14pt;"><font face="Leelawadee"><font face="Leelawadee"><span style="font-size:14pt;">&nbsp;</span></font></font></span></p>
+<script>
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+    <script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+    <h1 style="text-align: center;">
+        
+    <font face="Leelawadee">&nbsp;</font></h1>
+    <font face="Leelawadee"><script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+&nbsp;</font><div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="javascript:na_open_window('win', 'patitjatPic.htm', 0, 0, 1250, 450, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรปฏิจจสมุปบาท</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'v1.htm', 0, 0, 1250, 600, 1, 0, 0, 1, 1)"><font face="Leelawadee">วงจรโดยขยายความ</font></a></li>
+        <li><a href="1mainpage.htm#x"><font face="Leelawadee">กลับสารบัญ</font></a></li>
+        <li><a href="javascript:na_open_window('win', 'exm.htm', 0, 0, 1250, 550, 1, 0, 0, 1, 1)"><font face="Leelawadee">ค้นหาคำศัพท์</font></a></li>
+        <li><font face="Leelawadee"><a href="javascript:na_open_window('win', '550.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">&nbsp;ปฏิจจสมุปบาทฉบับย่นย่อ</a>. 
+        </font></li>
+        <li><span style="font-size:12pt;"><font face="Leelawadee"><a href="javascript:na_open_window('win', '702.1.htm', 0, 0, 1900, 800, 1, 0, 0, 1, 1)">ภาพกระบวนธรรมขันธ์ 
+        ๕</a></font></span></li>
+        <li><a href="Search.htm"><font face="Leelawadee">ค้นหาในเว็บปฏิจจสมุปบาท</font></a></li>
+        <li><font face="Leelawadee" color="#990000">ใช้ <b>Ctrl+F</b> ค้นหาในหน้านี้</font></li>
+        <li><font face="Leelawadee" color="#990000">ใช้&nbsp;<b>Ctrl+C</b> = Copy</font></li>
+</div>
+</body>
+
+</html>

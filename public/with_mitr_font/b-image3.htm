@@ -1,0 +1,522 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body, p, div, span, h1, h2, h3, h4, h5, h6, li, td, th {
+    font-family: "Mitr", sans-serif !important;
+  }
+  </style><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>มุมพักผ่อน 3</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+<script language="JavaScript">
+<!--
+function namosw_page_width()
+{
+  return (navigator.appName.indexOf('Netscape', 0) != -1) ? innerWidth  : document.body.clientWidth;
+}
+
+function namosw_page_height()
+{
+  return (navigator.appName.indexOf('Netscape', 0) != -1) ? innerHeight : document.body.clientHeight;
+}
+
+function namosw_init_clip_effect()
+{
+  var rect_left, rect_top, rect_width, rect_height;
+  var type, color;
+  var width, height;
+  var args = namosw_init_clip_effect.arguments;
+
+  if (args[0] == 0 && args.length == 3) {
+    rect_left   = 0;
+    rect_top    = 0;
+    rect_width  = namosw_page_width();
+    rect_height = namosw_page_height();
+    type  = args[1];
+    color = args[2];
+
+  } else if (args[0] == 1 && args.length == 4) {
+    if (args[1] == '')
+      return;
+    var layer;
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      layer = document.layers[args[1]];
+      if (layer) {
+        rect_left   = layer.left;
+	rect_top    = layer.top;
+	rect_width  = layer.clip.width;
+	rect_height = layer.clip.height;
+      } else {
+        return;
+      }
+    } else {
+      layer = document.all[args[1]];
+      if (layer) {
+        rect_left   = layer.style.pixelLeft;
+	rect_top    = layer.style.pixelTop;
+	rect_width  = layer.style.pixelWidth;
+	rect_height = layer.style.pixelHeight;
+      } else {
+        return;
+      }
+    }
+    type  = args[2];
+    color = args[3];
+
+  } else if (args[0] == 2 && args.length == 7) {
+    rect_left   = args[1];
+    rect_top    = args[2];
+    rect_width  = args[3];
+    rect_height = args[4];
+    type        = args[5];
+    color       = args[6];
+
+  } else {
+    return;
+  }
+
+  window._cl_style     = new Array();
+  window._cl_interval  = 0;
+  window._cl_count     = 0;
+  window._cl_max_count = 40;
+
+  if (type == 0) 
+    window._cl_number = 8;
+  else if (type == 1) 
+    window._cl_number = Math.min(64, Math.ceil(rect_height/10));
+  else if (type == 2) 
+    window._cl_number = Math.min(64, Math.ceil(rect_width/10));
+  
+  window._cl_rect_left   = rect_left;
+  window._cl_rect_top    = rect_top;
+  window._cl_rect_width  = rect_width;
+  window._cl_rect_height = rect_height;
+
+  if (type == 0) {
+    width  = Math.floor(rect_width  / window._cl_number);
+    height = Math.floor(rect_height / window._cl_number);
+
+    for (i = 0; i < window._cl_number*window._cl_number; i++) {
+      if (navigator.appName.indexOf('Netscape', 0) != -1) {
+        window._cl_style[i] = eval("document.layers.namoswcliplayer"+i)
+        window._cl_style[i].clip.width  = width;
+        window._cl_style[i].clip.height = height;
+        window._cl_style[i].left = rect_left + (i%window._cl_number) * width;
+        window._cl_style[i].top  = rect_top  + Math.floor(i/window._cl_number) * height;
+	window._cl_style[i].bgColor = color;
+      } else {
+        window._cl_style[i] = eval("document.all.namoswcliplayer" + i + ".style");
+        window._cl_style[i].pixelWidth  = width;
+        window._cl_style[i].pixelHeight = height;
+        window._cl_style[i].pixelLeft = rect_left + (i%window._cl_number) * width;
+        window._cl_style[i].pixelTop  = rect_top  + Math.floor(i/window._cl_number) * height;
+	window._cl_style[i].backgroundColor = color;
+      }
+    }
+    window._cl_interval = setInterval("namosw_cl_remove_box()", 10);
+
+  } else if (type == 1) {
+    height = rect_height / window._cl_number;
+
+    for (i = 0; i < window._cl_number; i++) {
+      if (navigator.appName.indexOf('Netscape', 0) != -1) {
+        window._cl_style[i] = eval("document.layers.namoswcliplayer"+i)
+        window._cl_style[i].clip.width  = rect_width;
+        window._cl_style[i].clip.height = height;
+        window._cl_style[i].left = rect_left;
+        window._cl_style[i].top  = rect_top  + i*height;
+	window._cl_style[i].bgColor = color;
+      } else {
+        window._cl_style[i] = eval("document.all.namoswcliplayer" + i + ".style");
+        window._cl_style[i].pixelWidth  = rect_width;
+        window._cl_style[i].pixelHeight = height;
+        window._cl_style[i].pixelLeft = rect_left;
+        window._cl_style[i].pixelTop  = rect_top  + i*height;
+        window._cl_style[i].clip = "rect(0 " + rect_width + " " + height + " 0)";
+	window._cl_style[i].backgroundColor = color;
+      }
+    }
+    window._cl_interval = setInterval("namosw_cl_change_clip1()", 10);
+
+  } else if (type == 2) {
+    width = rect_width / window._cl_number;
+
+    for (i = 0; i < window._cl_number; i++) {
+      if (navigator.appName.indexOf('Netscape', 0) != -1) {
+        window._cl_style[i] = eval("document.layers.namoswcliplayer"+i);
+        window._cl_style[i].clip.width  = width;
+        window._cl_style[i].clip.height = rect_height;
+        window._cl_style[i].left = rect_left + i*width;
+        window._cl_style[i].top  = rect_top;
+	window._cl_style[i].bgColor = color;
+      } else {
+        window._cl_style[i] = eval("document.all.namoswcliplayer" + i + ".style");
+        window._cl_style[i].pixelWidth  = width;
+        window._cl_style[i].pixelHeight = rect_height;
+        window._cl_style[i].pixelLeft = rect_left + i*width;
+        window._cl_style[i].pixelTop  = rect_top;
+        window._cl_style[i].clip = "rect(0 " + width + " " + rect_height + " 0)";
+	window._cl_style[i].backgroundColor = color;
+      }
+    }
+    window._cl_interval = setInterval("namosw_cl_change_clip2()", 10);
+
+  } else if (type == 3) {
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      window._cl_style[0] = eval("document.layers.namoswcliplayer"+0)
+      window._cl_style[0].clip.width  = rect_width;
+      window._cl_style[0].clip.height = rect_height;
+      window._cl_style[0].left = rect_left;
+      window._cl_style[0].top  = rect_top;
+      window._cl_style[0].bgColor = color;
+    } else {
+      window._cl_style[0] = eval("document.all.namoswcliplayer" + 0 + ".style");
+      window._cl_style[0].pixelWidth  = rect_width;
+      window._cl_style[0].pixelHeight = rect_height;
+      window._cl_style[0].pixelLeft = rect_left;
+      window._cl_style[0].pixelTop  = rect_top;
+      window._cl_style[0].backgroundColor = color;
+    }
+    window._cl_interval = setInterval("namosw_cl_change_clip3()", 10);
+
+  } else if (type == 4 || type == 5 || type == 6) {
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      if (type == 4 || type == 5) {
+        window._cl_style[0] = document.layers.namoswcliplayer0;
+        window._cl_style[0].clip.width  = rect_width/2;
+        window._cl_style[0].clip.height = rect_height;
+        window._cl_style[0].left = rect_left;
+        window._cl_style[0].top  = rect_top;
+        window._cl_style[0].bgColor = color;
+
+        window._cl_style[1] = document.layers.namoswcliplayer1;
+        window._cl_style[1].clip.width  = rect_width/2;
+        window._cl_style[1].clip.height = rect_height;
+        window._cl_style[1].left = rect_left + rect_width/2;
+        window._cl_style[1].top  = rect_top;
+        window._cl_style[1].bgColor = color;
+      }
+
+      if (type == 4 || type == 6) {
+        window._cl_style[2] = document.layers.namoswcliplayer2;
+        window._cl_style[2].clip.width  = rect_width;
+        window._cl_style[2].clip.height = rect_height/2;
+        window._cl_style[2].left = rect_left;
+        window._cl_style[2].top  = rect_top;
+        window._cl_style[2].bgColor = color;
+
+        window._cl_style[3] = document.layers.namoswcliplayer3;
+        window._cl_style[3].clip.width  = rect_width;
+        window._cl_style[3].clip.height = rect_height/2;
+        window._cl_style[3].left = rect_left;
+        window._cl_style[3].top  = rect_top + rect_height/2;
+        window._cl_style[3].bgColor = color;
+      }
+    } else {
+      if (type == 4 || type == 5) {
+        window._cl_style[0] = document.all.namoswcliplayer0.style;
+        window._cl_style[0].pixelWidth  = rect_width/2;
+        window._cl_style[0].pixelHeight = rect_height;
+        window._cl_style[0].pixelLeft = rect_left;
+        window._cl_style[0].pixelTop  = rect_top;
+        window._cl_style[0].clip      = "rect(0" + (rect_width/2) + " " + rect_height + " 0)";
+	window._cl_style[0].backgroundColor = color;
+
+        window._cl_style[1] = document.all.namoswcliplayer1.style;
+        window._cl_style[1].pixelWidth  = rect_width/2;
+        window._cl_style[1].pixelHeight = rect_height;
+        window._cl_style[1].pixelLeft = rect_left + rect_width/2;
+        window._cl_style[1].pixelTop  = rect_top;
+        window._cl_style[1].clip      = "rect(0" + (rect_width/2) + " " + rect_height + " 0)";
+	window._cl_style[1].backgroundColor = color;
+      }
+
+      if (type == 4 || type == 6) {
+        window._cl_style[2] = document.all.namoswcliplayer2.style;
+        window._cl_style[2].pixelWidth  = rect_width;
+        window._cl_style[2].pixelHeight = rect_height/2;
+        window._cl_style[2].pixelLeft = rect_left;
+        window._cl_style[2].pixelTop  = rect_top;
+        window._cl_style[2].clip      = "rect(0" + rect_width + " " + (rect_height/2) + " 0)";
+	window._cl_style[2].backgroundColor = color;
+
+        window._cl_style[3] = document.all.namoswcliplayer3.style;
+        window._cl_style[3].pixelWidth  = rect_width;
+        window._cl_style[3].pixelHeight = rect_height/2;
+        window._cl_style[3].pixelLeft = rect_left;
+        window._cl_style[3].pixelTop  = rect_top + rect_height/2;
+        window._cl_style[3].clip      = "rect(0" + rect_width + " " + (rect_height/2) + " 0)";
+	window._cl_style[3].backgroundColor = color;
+      }
+
+    }
+    window._cl_interval = setInterval("namosw_cl_change_clip456(" + type + ")", 10);
+  }
+}
+
+function namosw_cl_change_clip1()
+{
+  var height = window._cl_rect_height  / window._cl_number;
+
+  window._cl_count += 2;
+
+  for (i = 0; i < window._cl_number; i++) {
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      window._cl_style[i].clip.top  = window._cl_count;
+    } else {
+      window._cl_style[i].clip = "rect(" + window._cl_count + " auto " + height + " auto)";
+    }
+  }
+
+  if (height <= window._cl_count)
+    clearInterval(window._cl_interval);
+}
+
+function namosw_cl_change_clip2()
+{
+  var width = window._cl_rect_width  / window._cl_number;
+
+  window._cl_count += 2;
+
+  for (i = 0; i < window._cl_number; i++) {
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      window._cl_style[i].clip.left  = window._cl_count;
+    } else {
+      window._cl_style[i].clip = "rect(auto " + width + " auto " + window._cl_count + ")";
+    }
+  }
+
+  if (width <= window._cl_count)
+    clearInterval(window._cl_interval);
+}
+
+function namosw_cl_change_clip3()
+{
+  var rect_width  = window._cl_rect_width;
+  var rect_height = window._cl_rect_height;
+
+  var x_delta = rect_width/2/window._cl_max_count*window._cl_count;
+  var y_delta = rect_height/2/window._cl_max_count*window._cl_count;
+
+  window._cl_count++;
+
+    if (navigator.appName.indexOf('Netscape', 0) != -1) {
+      window._cl_style[0].clip.left = x_delta;
+      window._cl_style[0].clip.top  = y_delta;
+      window._cl_style[0].clip.right  = rect_width  - x_delta;
+      window._cl_style[0].clip.bottom = rect_height - y_delta;
+    } else {
+      var top, right, bottom, left;
+      top    = y_delta;
+      right  = rect_width - x_delta;
+      bottom = rect_height - y_delta;
+      left   = x_delta;
+      window._cl_style[0].clip = "rect(" + top + " " + right + " " + bottom + " " + left + ")";
+    }  
+
+  if (window._cl_max_count < window._cl_count)
+    clearInterval(window._cl_interval);
+}
+
+function namosw_cl_change_clip456(type)
+{
+  var rect_width  = window._cl_rect_width;
+  var rect_height = window._cl_rect_height;
+
+  var x_delta = rect_width/2/window._cl_max_count*window._cl_count;
+  var y_delta = rect_height/2/window._cl_max_count*window._cl_count;
+
+  window._cl_count++;
+
+  if (navigator.appName.indexOf('Netscape', 0) != -1) {
+    if (type == 4 || type == 5) {
+      window._cl_style[0].clip.right = rect_width/2 - x_delta;
+      window._cl_style[1].clip.left  = x_delta;
+    }
+    if (type == 4 || type == 6) {
+      window._cl_style[2].clip.bottom = rect_height/2 - y_delta;
+      window._cl_style[3].clip.top    = y_delta;
+    }
+  } else {
+    var top, right, bottom, left;
+
+    right   = rect_width/2 - x_delta;
+    left    = x_delta;
+    bottom  = rect_height/2 - y_delta;
+    top     = y_delta;
+
+    if (type == 4 || type == 5) {
+      window._cl_style[0].clip = "rect(auto " + right + " auto 0)";
+      window._cl_style[1].clip = "rect(auto " + (rect_width/2) + " auto " + left + ")";
+    }
+    if (type == 4 || type == 6) {
+      window._cl_style[2].clip = "rect(0 auto " + bottom + " auto)";
+      window._cl_style[3].clip = "rect(" + top + " auto " + (rect_height/2) + " auto)";
+    }
+  }  
+
+  if (window._cl_max_count < window._cl_count)
+    clearInterval(window._cl_interval);
+}
+
+function namosw_cl_remove_box() 
+{
+  var i;
+
+  i = Math.round(Math.random()*(window._cl_number*window._cl_number-1));
+  while (window._cl_style[i].visibility == 'hidden' || window._cl_style[i].visibility == 'hide') 
+    i = Math.round(Math.random()*(window._cl_number*window._cl_number-1));
+  window._cl_style[i].visibility = 'hidden';
+
+  window._cl_count++;
+  if (window._cl_number*window._cl_number <= window._cl_count)
+    clearInterval(window._cl_interval);
+}
+
+// -->
+</script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="Brown_bg.gif" onload="namosw_init_clip_effect(0, 0, '#A26601');">
+<p align="center"><b><font face="Tahoma" color="#AA7226"><span style="font-size:14pt;">มุมพักผ่อน 
+3</span></font></b></p>
+<p align="center"><font face="Tahoma"><img src="b27.jpg" width="500" height="335" border="4"></font></p>
+<p align="center"><font face="Tahoma">&nbsp;</font></p>
+<p align="center"><font face="Tahoma"><img src="b29.jpg" width="350" height="224" border="4"></font></p>
+<p align="center"><font face="Tahoma">&nbsp;</font></p>
+<p align="center"><font face="Tahoma"><img src="b30.gif" width="200" height="134" border="4"></font></p>
+<p align="center"><b><font face="Tahoma">Borobuddur ในประเทศอินโดนิเซีย</font></b></p>
+<p align="center"><font face="Tahoma">&nbsp;</font></p>
+<p align="center"><b><a href="BLANK1.htm"><font face="Tahoma">กลับไปสารบัญ</font></a><font face="Tahoma"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font face="Tahoma" color="black">มุมพักผ่อน</font><font face="Tahoma"> 
+&nbsp; </font><a href="b-image.htm"><font face="Tahoma"><img src="button1.gif" align="top" width="27" height="25" border="0"></font></a><font face="Tahoma"> 
+</font><a href="b-image2.htm"><font face="Tahoma"><img src="button2.gif" align="top" width="27" height="27" border="0"></font></a><font face="Tahoma"> 
+<img src="b-image3_htm_button3s.gif" namo_npi=":EmbededNPI1" border="0" align="top" width="27" height="32">&nbsp;</font><a href="b-image4.htm"><font face="Tahoma"><img src="button4.gif" width="27" height="27" border="0" align="top"></font></a><font face="Tahoma"> 
+</font><a href="b-image5.htm"><font face="Tahoma,MS Sans Serif"><img src="b-image3_htm_button5.gif" namo_npi=":EmbededNPI2" border="0" align="top" width="27" height="32"></font></a></b></p>
+<p align="center"><font face="Tahoma">&nbsp;</font></p>
+<p align="center"><font face="Tahoma">&nbsp;</font></p>
+<p align="center"><font face="Tahoma">&nbsp;</font></p>
+<table align="center" border="0" width="284">
+    <tr>
+        <td width="274" align="center" valign="middle">
+            <table align="center" border="0" width="255">
+                <tr align="center" valign="middle">
+                    <td width="245" align="center" valign="middle">
+                        <p align="center"><font face="Tahoma">&nbsp;<script language="javascript1.1">
+page="Misc.";
+                        </script><script language="javascript1.1" src="http://hits.truehits.in.th/data/h0012229.js">
+                        </script></font></p>
+                    </td>
+                </tr>
+            </table>
+            <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+        </td>
+    </tr>
+</table>
+<p align="center">&nbsp;</p>
+
+<div id="namoswcliplayer0" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer1" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer2" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer3" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer4" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer5" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer6" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer7" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer8" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer9" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer10" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer11" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer12" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer13" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer14" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer15" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer16" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer17" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer18" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer19" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer20" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer21" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer22" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer23" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer24" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer25" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer26" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer27" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer28" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer29" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer30" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer31" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer32" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer33" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer34" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer35" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer36" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer37" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer38" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer39" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer40" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer41" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer42" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer43" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer44" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer45" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer46" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer47" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer48" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer49" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer50" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer51" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer52" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer53" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer54" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer55" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer56" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer57" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer58" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer59" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer60" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer61" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer62" style="position:absolute; left:-100; top:-100; z-index:1000;"></div>
+<div id="namoswcliplayer63" style="position:absolute; left:-100; top:-100; z-index:1000;"></div></body>
+<!--Namo WebEditor Data 4.0
+:EmbededNPI1
+ixEAAHhe7ZbPaxNBFMdfYqNVK1gvikJdVMRShWqlKF5SD1Ih9KAevJnN79DNbkjWmN4q3rSF
+2pO9CSoexR8HBdEee6ge9NoKSvFPKBSl6/fN7KabH03ipsQobpjdtzPz3ryZ/c4nk9RNlYh8
+93pxxzWmZgzlsm7Gc2rUTBfisnbj+rQjQAeomwZoW2WTp/cueCkJPdaP5yu2zVT+boBo2bZn
+YSe3y3q213YTZYxzuuNDFEQrl/0+Ip7KIfYky7LIJzraAcfIoBxl0EXzlGirThnjrK7kJpKz
+CORvNRiFMI8JimNGCg16iIa1wjIiI7Nonkc6rX/Ma8imSCbyOe0hH7jE7uM2jcQyxrCuaOnE
+BdZlZaw5okeXgjeOnyBaXVYj5tRjWvwwQy+4ow8fHK7jZn58kxQcjZxB99vuPj45EO4QpK96
+2Op4YqhMoihmO3mU83Z1EumUOwmHW7F8n8hUNm90E62mnnjATiO5tKopFzU1utlEvC1xs167
+0PGZswyHkWQMFTtR9qFySAonZWaHtkQ4VykFMWchH29SlsLpbSSc6affaghGiq1cOFWag+t1
+TFU7MkMLaNxrrPmD/PGerL4XXxLLhWZPwqFjTQpHK0QUHtPPO5ULw/KUwJwUlpY86NJcgMJ3
+LLz3IXwSzx5Z9kgFyDckXDJkrT1z0SRrbMMl5lKN7S6aOI5YAdtYeW1ZHxfXLSQqh3BIzAi/
+AhJr+BlUEARr99W5JB7Zkg3VJhKP9oPFuGpvrEYkZs8YNtQU/s8Hlyx/kMXrbCgpZG8bqlJN
+v0FiogTNye1URuJ2C9Q1XjfsEokHMJcoKviE00MBcQiIYAtpfyeR3z3/4ZXIcF3C/xETOYRn
+9kuFgFohcrMCKhGZichE/o5Sj8jFopvIw+gNGNpElm+IVDI4jYBDZNEka+oTmd3F5pGGHZCN
++XWLJi0mshzCTeRRSuNfIgUhyafZZsX/J3KDBW/ubHwz/lDEqb2xmiXyT6hy/mtnEFkeSDqX
+yCfts/E/QuQ3Lz97JTJcQ6ANE/ktw3DlTxLZOSMv1CVyF4XDnUTkX5oAbTw=
+-->
+<!--Namo WebEditor Data 4.0
+:EmbededNPI2
+ixEAAHhe7ZZNaBNBFMdfYqPWVGlFEGqtC3opVvCzKF5SQalQiqjgRTDfH3R3U9I1puCh4k0t
+1IBgwENBRW+i9qAg2qOC9KDngoiIh54LRej6fzObdPPRJG5KjOKGzb6dmffmzdv//HZjuhEg
+ItftLvzjGAloSeWsbkRSgZCRSEdk6+rxaZOHeshL3bSjtMvRfRu8lKge7sN1lm0jPn7LQ7Rg
+2VnYsY2yne1lL5GWPK7nfYh86OVzp4uIl7KLPck0TXKJgVbAEUpSijQMUR0l2qiTljyqK6mJ
+WBaB3I0Go2GsY4IiWJFCBx1EQ61QRmRkZIwTSGeDgxjFLheRTYYM5HPIWazwXfhNITEtOaAr
+aiJ6knVZFitHD8/4rsy3Ey0tBILDdx5Rz4dpesEDXXjgcB01xkfXSCGvkcMYfsM+xiUnwj8E
+6aowbVlAMZUWzYjVTu7lvG1jRDrFPsLhWni8V2Qqu1eHiV5Dj95np8FUIqAqp9RAaK2FOCtx
+vV5bMPBZvgx7kGQYDag4bUfjMSmcuDF2ZF2Ec4HiEPMY5ONMyiSE01VLOFNPvlYQjBRbsXDK
+NAdXrlwH8d7N0tPT90Qh53ZP0w9+kigXKuFIOLSvTuGo6aDCgnHzTuWTYXlAYE4KS4112zTn
+If9NE/e9CB8TuYtzq1SAvEPCBUO2WisXXbLFMmxiLrRY7qKL44gKWMa3V6Y5/3HFRKJyijyJ
+GeHnQWIVvySlBcGafbQuiQfXZUM1icRDfTnx5CpvrFokZs9ZbKB+vM872y+5fSzex0vvBBql
+kJ1tqFI1/QaJiaKUk9upiMTNFqhtvs2wCyTej7WE0MBfOB3kER8BQWwh9e8k8tvnP50SGa7X
+8T56AwEtokTnvCUCaoTI9QqoQGQmIhP5O85qRM5k7EQewGjA0CKyvEOkgsFpePJEFl2ypTqR
+2V1sHmlYAdmYWzFp0mQiyynsRB6iBN4ScQhJXo0mK/4/kWsUvL5v46uRGRGn8saql8gPoMqZ
+ba1BZPkuaF0i91vfxv8IkV+//OyUyHBdBFuYyJdx/dL5J4mc/0Z+X5XIbeT3txKRfwGyjmLU
+-->
+
+
+
+</html>

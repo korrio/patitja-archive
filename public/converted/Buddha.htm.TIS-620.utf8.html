@@ -1,0 +1,286 @@
+<html>
+
+<head>
+<title>Buddha</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+
+<script language="Javascript">
+
+// Fireworks Script
+
+// Craig Blanchette - Craiga    http://www.Craiga.us
+
+// Works in IE5+ and NS6+
+
+
+
+howmany     = 120                                                // How many sparks come off firework?
+
+howbig      = 100                                                // How big (radius, will be about 8 times as big as this number)
+
+launchspeed = 15                                                // Speed of the launcher
+
+colors = new Array('yellow','orange','blue','white','red','lightgreen');  // Colors of sparks
+
+
+
+function spark(div)
+
+{
+
+  this.css    = document.getElementById(div).style; 
+
+  
+
+  this.show   = function()   { this.css.visibility="visible"; }
+
+  this.hide   = function()   { this.css.visibility="hidden"; }
+
+  this.moveTo = function(x,y){ this.x=x; this.y=y; this.css.left=x; this.css.top=y; }
+
+  this.bg     = function(col){ this.css.backgroundColor=col; }
+
+  this.resize = function(w,h){ this.css.overflow="hidden"; this.css.width=w; this.css.height=h; }
+
+  
+
+  return this; 
+
+}
+
+
+
+function init(){
+
+  if(parseInt(launch.top) > center_y){
+
+     launch.top = parseInt(launch.top)-launchspeed; 
+
+     setTimeout('init()',1); 
+
+  }else{
+
+     launch.visibility="hidden"; 
+
+     for(i=0;i<sparks.length;i++){
+
+       sparks[i].show(); 
+
+       sparks[i].inc = (Math.random()*10); 
+
+       sparks[i].ang = (Math.random()*360); 
+
+     }
+
+     counter = 0; 
+
+     doExplode(); 
+
+  }
+
+}
+
+
+
+function doExplode(){
+
+  if(counter < howbig){
+
+    counter++; 
+
+    for(i=0;i<sparks.length;i++){
+
+      x = center_x + (counter*sparks[i].inc) * Math.sin(sparks[i].ang * Math.PI/180); 
+
+      y = center_y + (counter*sparks[i].inc) * Math.cos(sparks[i].ang * Math.PI/180); 
+
+      sparks[i].moveTo(x,y); 
+
+    }
+
+   setTimeout('doExplode()',1);
+
+  }else{
+
+    for(i=0;i<sparks.length;i++){
+
+      sparks[i].hide(); 
+
+    }
+
+    launch.visibility="visible"; 
+
+    getDimens(); 
+
+    launch.top = bottom-15; 
+
+    launch.left = l; 
+
+    init();
+
+   } 
+
+}
+
+
+
+function getDimens(){
+
+    if(document.all){
+
+      bottom = document.body.clientHeight; 
+
+      width  = document.body.clientWidth;
+
+    }else{
+
+      bottom = innerHeight;
+
+      width  = innerWidth;   
+
+    }
+
+      center_y = (bottom/2)-50; 
+
+      center = width/2; 
+
+      l = (Math.random()*(width/2))+(width/4); 
+
+      center_x = l; 
+
+}
+
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=windows-874">
+<meta name="keywords" content="Boddha"></head>
+
+<body bgcolor="black" text="gray" onload="starter();">
+<script language="Javascript">
+
+sparks = new Array(); 
+
+  document.write('<div id="launcher" style="position: absolute; width: 3; height: 15; overflow: hidden; background-color: white"></div>');
+
+  launch = document.getElementById('launcher').style;  
+
+for(i=0;i<howmany;i++){
+
+  document.write('<div id="spark'+i+'" style="position: absolute"></div>'); 
+
+    
+
+  sparks[i] = new spark('spark'+i); 
+
+  sparks[i].resize(1,1); 
+
+  sparks[i].hide(); 
+
+  num = Math.round(Math.random()*(colors.length-1))
+
+  col = colors[num]; 
+
+  sparks[i].bg(col); 
+
+}
+
+function starter(){
+
+getDimens(); 
+
+launch.top = bottom-15; 
+
+launch.left = l; 
+
+init(); 
+
+}
+
+</script>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;<applet archive="startext.jar" code="startext.class" width="300" height="334">
+<param name="credits" value="Applet by Anfy Team (www.anfyteam.com)">
+<param name="res" value="1">
+<param name="textfilename" value="speech.txt">
+<param name="textfont" value="Helvetica">
+<param name="textbold" value="YES">
+<param name="textitalic" value="NO">
+<param name="textsize" value="12">
+<param name="textcolor" value="C0C0C0">
+<param name="textcolorfar" value="666666">
+<param name="textcenter" value="YES">
+<param name="textloop" value="YES">
+<param name="textlooptime" value="800">
+<param name="textscrollspeed" value="7">
+<param name="textlinespace" value="1">
+<param name="textDist" value="250">
+<param name="textzoom" value="100">
+<param name="textangle" value="1.2">
+<param name="textanglechange" value="NO">
+<param name="textanglespeed" value="0.003">
+<param name="textanglemin" value="0.003">
+<param name="textanglemax" value="0.003">
+<param name="textStopMouse" value="YES">
+<param name="starsNumber" value="2000">
+<param name="starsDiffSize" value="YES">
+<param name="starsMaxSize" value="2">
+<param name="starsColor" value="DDE4FF">
+<param name="starsColorFar" value="888888">
+<param name="starsSpeed" value="7">
+<param name="starsSmooth" value="YES">
+<param name="starsScreenDist" value="100">
+<param name="starsMaxZ" value="400">
+<param name="starsZangle" value="0.003">
+<param name="backImage" value="buddha34-1.jpg">
+<param name="bgColor" value="767301">
+<param name="overimg" value="NO">
+<param name="overimgX" value="">
+<param name="overimgY" value="">
+<param name="regcode" value="qj9pypojjtixfzgxd">
+<param name="reglink" value="NO">
+<param name="regnewframe" value="NO">
+<param name="regframename" value="_blank">
+<param name="statusmsg" value="StarText applet">
+<param name="memdelay" value="200">
+<param name="priority" value="1">
+<param name="MinSYNC" value="30">
+Please <a href="http://www.anfyteam.com/java/">download Java(tm)</a>.
+</applet></p>
+<p align="center"></p>
+<form name="form1">
+    <p align="center"><u><font face="MS Sans Serif" color="#339900"><input type=button value="กลับหน้าเดิม" onclick="history.go(-1)" style="font-family:'MS Sans Serif'; font-style:normal; font-weight:lighter; font-size:15px; color:rgb(254,213,134); background-color:rgb(162,112,37); border-width:2px; border-color:rgb(128,64,0); border-style:solid;"></font></u></p>
+</form>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"><FONT face="MS Sans Serif">&nbsp;</FONT><b><a href="BLANK1.htm"><font face="MS Sans Serif"><img src="title.gif" width="93" height="33" border="0" alt="กลับสารบัญ"></font></a></b></p>
+
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"><FONT face="MS Sans Serif"><FONT 
+face="MS Sans Serif">&nbsp;</font></font></p>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;">
+<FONT face="MS Sans Serif"><FONT 
+face="MS Sans Serif"><!--BEGIN WEB STAT CODE---->
+<script language="javascript1.1">
+page="รูป";
+</script>
+<script language="javascript1.1" src="http://truehits1.gits.net.th/data/h0012229.js">
+</script>
+<!-- END WEBSTAT CODE --><!-- Begin Nedstat Basic code -->
+<!-- Title: 4*!82 -->
+<!-- URL: http://www.nkgen.com/ -->
+</font></font>&nbsp;</p>
+<p style="line-height:2; margin-top:0; margin-bottom:0;" align="center">&nbsp;</p>
+<table border=4 align="center" bordercolordark="#927B48" bordercolorlight="#DBB971" style="line-height:100%; margin-top:0; margin-bottom:0;" width="61">
+    <tr>
+        <td height="6" width="45">
+            <p align="center" style="line-height:100%; margin-top:0; margin-bottom:0;"><a href="http://www.tinycounter.com" target="_blank" title="hit counter"><img border="0" alt="hit counter" src="http://mycounter.tinycounter.com/index.php?user=Patitja"></a></p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:2; margin-top:0; margin-bottom:0;"><FONT face="MS Sans Serif"><FONT 
+face="MS Sans Serif">&nbsp;</font></font></p>
+<p align="left" style="line-height:2; margin-top:0; margin-bottom:0;"><FONT face="MS Sans Serif"><FONT 
+face="MS Sans Serif">&nbsp;</font></font></p>
+<p align="center" style="line-height:2; margin-top:0; margin-bottom:0;"></p></body>
+
+</html>
