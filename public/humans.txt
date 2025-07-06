@@ -1,0 +1,50 @@
+# humans.txt - ข้อมูลเกี่ยวกับผู้สร้างและดูแลเว็บไซต์
+# The humans behind this website
+
+/* TEAM */
+
+Original Author: พนมพร คูภิรมย์
+Site: nkgen.com (original)
+Location: Thailand
+
+Site Migrator/Maintainer: Korrio
+Role: Developer
+Tasks: Character encoding conversion, Firebase hosting migration, font modernization
+Location: Thailand
+
+/* THANKS */
+
+Thanks to: All the Buddhist teachers and practitioners who have preserved and shared the dhamma
+Special thanks: Firebase for providing free hosting for this dhamma-dana project
+
+/* SITE */
+
+Language: Thai (th)
+Standards: HTML, CSS
+Components: Static HTML pages
+Software: Firebase Hosting
+Font: Mitr (Google Fonts)
+
+/* PROJECT */
+
+Name: ปฏิจจสมุปบาท (Paṭiccasamuppāda Archive)
+Description: บรรยายเรื่องปฏิจจสมุปบาท อิทัปปัจจยตา ปรมัตถธรรม กระบวนธรรมจิตในการเกิดขึ้นและดับไปแห่งทุกข์ ใช้ในการปฏิบัติเพื่อการดับทุกข์
+Purpose: ธรรมทาน (Dhamma-dana) - freely sharing Buddhist teachings
+Original site: nkgen.com
+Current site: https://patitja1.web.app
+Migration date: 2024-2025
+
+/* TECHNICAL */
+
+Character encoding: UTF-8 (converted from Windows-874/TIS-620)
+Total pages: ~5,000+ HTML files
+Images: 661 image files (GIF, JPG, JPEG, PNG)
+Legacy features: Background music (.wma files), animated GIFs
+
+/* PHILOSOPHY */
+
+"สพฺเพ สตฺตา สุขิตา โหนฺตุ"
+"May all beings be happy"
+
+This is a dhamma-dana project - all content is freely shared for the benefit of all beings.
+ให้เป็นธรรมทาน dhamma-dana

@@ -1,0 +1,49 @@
+# robots.txt for https://patitja1.web.app
+# This file tells search engine crawlers which parts of the site they can access
+
+User-agent: *
+Allow: /
+Disallow: /converted/
+Disallow: /converted_utf8/
+Disallow: /*.sh
+Disallow: /*.py
+
+# Allow search engines to index all content pages
+Allow: /*.htm
+Allow: /*.html
+Allow: /*.gif
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+
+# Sitemap location
+Sitemap: https://patitja1.web.app/sitemap.xml
+
+# Crawl-delay for responsible crawling (in seconds)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Block bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
